@@ -1,0 +1,16 @@
+{
+  "status": "Exploratory application evaluation after V1-V3 forecasting results and one portfolio smoke test; not a confirmatory holdout.",
+  "protocols": ["static_matched", "origin_2020", "origin_2022", "origin_2024"],
+  "models": ["Ridge_sequence_market", "LSTM_market"],
+  "presets": ["Diversified five", "Technology five"],
+  "target": 0.10,
+  "cost_bps": [0, 10, 25],
+  "correlation_window": 60,
+  "rebalance_days": 20,
+  "execution": "signal close t, trade close t+1, new allocation earns return from t+2",
+  "cash_return": 0,
+  "leverage": false,
+  "primary_metric": "absolute gap between rolling 20-session net strategy volatility and target, averaged across dates",
+  "secondary_metrics": ["net_return", "drawdown", "realized_volatility", "equity_exposure", "turnover", "cost"],
+  "scope": "Same fixed survivor sample; historical revised vendor prices; proportional costs; no taxes or forced terminal liquidation. Static and 2024 protocols overlap. Fixed 50% equity is an exposure sanity check, not a matched-risk comparator."
+}

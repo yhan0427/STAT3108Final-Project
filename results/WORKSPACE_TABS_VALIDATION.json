@@ -1,0 +1,19 @@
+{
+  "html_unique_ids": true,
+  "three_linked_tabs": true,
+  "settings_only_in_agent": true,
+  "javascript_syntax_check": "passed",
+  "browser_checks": {
+    "optional_drawer_and_full_agent_shared_node": true,
+    "escape_closes_drawer": true,
+    "tab_keyboard_navigation": true,
+    "selection_context_sync": true,
+    "375px_no_horizontal_page_overflow_all_tabs": true,
+    "default_viewport_restored": true,
+    "console_errors": []
+  },
+  "test_suite": "26 passed",
+  "v3_source_hashes_match_completed_fit": true,
+  "screenshot": "results/workspace-tabs-home.png",
+  "live_api_reply": "Not tested: no configured key. No simulated reply."
+}

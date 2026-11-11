@@ -1,0 +1,402 @@
+[
+  {
+    "preset": "Diversified five",
+    "protocol": "static_matched",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.00010360752651990962,
+    "net_return_difference": 0.01784358885961912,
+    "equity_exposure_difference": 0.035656870228397364,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.00010360752651991426,
+        "ci95_low": -0.003408201411283536,
+        "ci95_high": 0.004162180539504661,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.00010360752651991426,
+        "ci95_low": -0.0035207623449712627,
+        "ci95_high": 0.003945132083010005,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "static_matched",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": -0.001685982706434698,
+    "net_return_difference": 0.013629669024853186,
+    "equity_exposure_difference": 0.018283578693874092,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": -0.0016859827064346967,
+        "ci95_low": -0.00459126899983585,
+        "ci95_high": 0.0012436608950137675,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0016859827064346967,
+        "ci95_low": -0.005430196802828033,
+        "ci95_high": 0.0010923272804987142,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "origin_2020",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.0016041775043551185,
+    "net_return_difference": 0.01082732492613292,
+    "equity_exposure_difference": 0.0473551507534663,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.0016041775043551191,
+        "ci95_low": -0.007815484199273585,
+        "ci95_high": 0.012895101412667464,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0016041775043551191,
+        "ci95_low": -0.007157489394645235,
+        "ci95_high": 0.009548376952016912,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "origin_2020",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.01745912972789212,
+    "net_return_difference": 0.08341689627576232,
+    "equity_exposure_difference": 0.18313127377581895,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.017459129727892115,
+        "ci95_low": 0.0019980724129376706,
+        "ci95_high": 0.034748131036546,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.017459129727892115,
+        "ci95_low": 0.008406641356030973,
+        "ci95_high": 0.027495598371427146,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "origin_2022",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.011897747963164968,
+    "net_return_difference": -0.014123562576107584,
+    "equity_exposure_difference": 0.13146685028231342,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.011897747963164958,
+        "ci95_low": 0.0008524757322577546,
+        "ci95_high": 0.022397595960357716,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.011897747963164958,
+        "ci95_low": 0.001657763539561522,
+        "ci95_high": 0.022782527236894702,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "origin_2022",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.00965660263280307,
+    "net_return_difference": -0.0054090410079628,
+    "equity_exposure_difference": 0.11590431321574357,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.009656602632803062,
+        "ci95_low": -0.0010694220620851595,
+        "ci95_high": 0.021334997957751834,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.009656602632803062,
+        "ci95_low": 0.0005973432766230932,
+        "ci95_high": 0.021159950713542118,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "origin_2024",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": -0.0012384242927464765,
+    "net_return_difference": 0.00612847973598174,
+    "equity_exposure_difference": 0.010956167032038056,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": -0.0012384242927464765,
+        "ci95_low": -0.0033078153534071212,
+        "ci95_high": 0.00029796864086355284,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0012384242927464765,
+        "ci95_low": -0.0033550705444609775,
+        "ci95_high": 0.0005532938292831267,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Diversified five",
+    "protocol": "origin_2024",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": -0.0015734233214876239,
+    "net_return_difference": 0.005453858624397956,
+    "equity_exposure_difference": 0.0072366455416419395,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": -0.0015734233214876271,
+        "ci95_low": -0.004152344473601963,
+        "ci95_high": 0.00028112927897380556,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0015734233214876271,
+        "ci95_low": -0.004169740287032056,
+        "ci95_high": 0.0005412062849477609,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "static_matched",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.003538793055932632,
+    "net_return_difference": -0.09091928842659591,
+    "equity_exposure_difference": 0.03606680749799729,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.0035387930559326345,
+        "ci95_low": -0.004371411387668348,
+        "ci95_high": 0.01386893923141486,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0035387930559326345,
+        "ci95_low": -0.005722174585491224,
+        "ci95_high": 0.014859850204860726,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "static_matched",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.013859242657107196,
+    "net_return_difference": -0.023855796570435128,
+    "equity_exposure_difference": 0.1042753265411549,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.013859242657107201,
+        "ci95_low": 0.006196579541303903,
+        "ci95_high": 0.023099453900356483,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.013859242657107201,
+        "ci95_low": 0.005638453391365071,
+        "ci95_high": 0.023458531920552993,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "origin_2020",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.0014527681981496635,
+    "net_return_difference": 0.007114221740502247,
+    "equity_exposure_difference": 0.010991007686144139,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.001452768198149658,
+        "ci95_low": -0.006173151950358977,
+        "ci95_high": 0.010694519400134859,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.001452768198149658,
+        "ci95_low": -0.00600345503203221,
+        "ci95_high": 0.00869353258069336,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "origin_2020",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.021316886321607387,
+    "net_return_difference": 0.1109729941584916,
+    "equity_exposure_difference": 0.13053356996710952,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.021316886321607387,
+        "ci95_low": 0.002323202237404497,
+        "ci95_high": 0.041842758260042724,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.021316886321607387,
+        "ci95_low": 0.0026536782401780194,
+        "ci95_high": 0.03847669533926119,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "origin_2022",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": -0.0001227479238396119,
+    "net_return_difference": -0.02190686757296678,
+    "equity_exposure_difference": 0.03506833213292576,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": -0.00012274792383960872,
+        "ci95_low": -0.005659990997496562,
+        "ci95_high": 0.005732102517593977,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.00012274792383960872,
+        "ci95_low": -0.007045191720656329,
+        "ci95_high": 0.007595088254850559,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "origin_2022",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.018297105621441392,
+    "net_return_difference": -0.04009223987130939,
+    "equity_exposure_difference": 0.10163992307733827,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.018297105621441396,
+        "ci95_low": 0.009045656615958403,
+        "ci95_high": 0.02610805651108964,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.018297105621441396,
+        "ci95_low": 0.0053169947186521285,
+        "ci95_high": 0.028772931215769373,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "origin_2024",
+    "model": "Ridge_sequence_market",
+    "cost_bps": 10,
+    "risk_error_difference": -0.0019076818434197451,
+    "net_return_difference": -0.016436313675101566,
+    "equity_exposure_difference": 0.029736506018149145,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": -0.0019076818434197427,
+        "ci95_low": -0.00848811823509221,
+        "ci95_high": 0.004927736503574371,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0019076818434197427,
+        "ci95_low": -0.008864573094628809,
+        "ci95_high": 0.006635805589491098,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  {
+    "preset": "Technology five",
+    "protocol": "origin_2024",
+    "model": "LSTM_market",
+    "cost_bps": 10,
+    "risk_error_difference": 0.008792941723293375,
+    "net_return_difference": 0.023021121645183218,
+    "equity_exposure_difference": 0.09270637240353863,
+    "paired_intervals": {
+      "20": {
+        "mean_difference": 0.008792941723293382,
+        "ci95_low": 0.002052727873933005,
+        "ci95_high": 0.015182231420618765,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.008792941723293382,
+        "ci95_low": 0.002568913734240459,
+        "ci95_high": 0.014171994011078213,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  }
+]

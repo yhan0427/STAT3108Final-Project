@@ -1,0 +1,20 @@
+{
+  "unit_tests_passed": 25,
+  "api_contract_tests": "Mock transport only; no real model reply verified",
+  "live_api_status": "No OpenAI key configured at delivery",
+  "browser_checks": [
+    "five-protocol selection",
+    "excluded-company cohort has eight rows",
+    "future outcome reveal",
+    "explicit missing-key failure",
+    "no browser console errors",
+    "Markdown evidence export downloaded and inspected"
+  ],
+  "evidence_export": "risk-review-2024-01-02-NVDA.md",
+  "claims_not_evaluated": [
+    "LLM semantic accuracy",
+    "human efficiency",
+    "investment performance"
+  ],
+  "model_api": "OpenAI Responses API; configurable model, default gpt-4.1-mini"
+}
