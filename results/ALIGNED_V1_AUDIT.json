@@ -1,0 +1,455 @@
+{
+  "created_utc": "2026-11-11T15:17:08.379301+00:00",
+  "status": "Exploratory execution-aligned method transfer, fixed before this run after V1-V3 and portfolio V1 inspection; not an untouched holdout or exact paper replication.",
+  "plan_sha256": "03c231c00ed752f3af46f3dd4fa3f1499e8fa13e3f6adbe1c8be269a108c0e92",
+  "split_counts": {
+    "train": 52260,
+    "validation": 14400,
+    "test": 14430
+  },
+  "last_train_target_end": "2021-12-31 00:00:00",
+  "last_validation_target_end": "2023-12-29 00:00:00",
+  "target_definition": "sqrt(252) * population std(log returns t+2 through t+21)",
+  "old_vs_aligned_target_mean_abs_difference": 0.010631998697595988,
+  "ridge_candidates": [
+    {
+      "alpha": 1.0,
+      "validation_log_mse": 0.101265578512008
+    },
+    {
+      "alpha": 100.0,
+      "validation_log_mse": 0.10070778014286971
+    },
+    {
+      "alpha": 10000.0,
+      "validation_log_mse": 0.09415011422234389
+    }
+  ],
+  "selected_alpha": 10000.0,
+  "ridge_solver": "float64 lsqr, tol 1e-8",
+  "validation_only_volatility_scales": {
+    "Persistence": 1.1537930376639898,
+    "LogHAR_proxy": 1.1493636804055434,
+    "Ridge_sequence_market": 1.1817407446076889,
+    "TTM_zero_shot": 1.0797160193290904
+  },
+  "ttm": {
+    "created_utc": "2026-11-11T15:17:07.679094+00:00",
+    "model": {
+      "model_id": "ibm-granite/granite-timeseries-ttm-r2",
+      "revision": "3442406f106122f414a11f72b4ebfe4878bec89d",
+      "branch_description": "512-96-ft-r2.1",
+      "granite_tsfm_version": "0.3.12",
+      "input": "512 trailing observations of annualized daily-return rv20, including signal close",
+      "standardization": "Mean and population standard deviation of each context only; inverse transform output",
+      "prediction_step": 21,
+      "positive_floor": 1e-06,
+      "frequency_token": 8,
+      "batch_size": 64,
+      "device": "cpu",
+      "pretraining_overlap": "Release/checkpoint postdates some evaluation observations. Exact training cutoff and complete disjointness are unverified; zero-shot here means no local fitting. Retrospective transfer benchmark, not historically available trading simulation."
+    },
+    "parameter_count": 855100,
+    "contexts": 28830,
+    "floored_predictions": 0,
+    "input_sha256": "972e930f15d991b1c868673cecf1a24249674e4931e7896d31d0193cccb9e24a",
+    "output_sha256": "52cd47ac4d4c0f9c4507e124cafea2264c364caf4521106359e01a0389ae1dff",
+    "model_files": {
+      "model.safetensors": "37fa184887f260cda022d3ae9f1c642fdba579d0aefeabdf751f83f45383a761",
+      "config.json": "9e437e55d74815fb77e2c89fd674c587224bab2156ae142bca64456217501ace",
+      "README.md": "e20234ff1a9eec054fd643d5ef7a4683857c8b24c7b00b466a9f55b6e22728ff"
+    },
+    "packages": {
+      "granite-tsfm": "0.3.12",
+      "torch": "2.11.0",
+      "transformers": "4.57.6",
+      "numpy": "2.5.4"
+    }
+  },
+  "paired_qlike_intervals_vs_raw_loghar": {
+    "2024-2025/Persistence": {
+      "20": {
+        "mean_difference": 0.14055007510878068,
+        "ci95_low": 0.07087305209552626,
+        "ci95_high": 0.2045935168859427,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.14055007510878068,
+        "ci95_low": 0.07561856799945825,
+        "ci95_high": 0.2034589448448142,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/LogHAR_proxy": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/Ridge_sequence_market": {
+      "20": {
+        "mean_difference": -0.020921445634119778,
+        "ci95_low": -0.09005366871632525,
+        "ci95_high": 0.036700843883009475,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.020921445634119778,
+        "ci95_low": -0.07884167353793145,
+        "ci95_high": 0.028251275222786466,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/TTM_zero_shot": {
+      "20": {
+        "mean_difference": -0.0330030743975133,
+        "ci95_low": -0.0906199595537946,
+        "ci95_high": 0.016928634778607135,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0330030743975133,
+        "ci95_low": -0.09888885464184863,
+        "ci95_high": 0.03534016549132003,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/Persistence_calibrated": {
+      "20": {
+        "mean_difference": 0.037073414405697405,
+        "ci95_low": -0.06642031952571037,
+        "ci95_high": 0.11774983106192752,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.037073414405697405,
+        "ci95_low": -0.05359151660510432,
+        "ci95_high": 0.11874042978299874,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": -0.07365949075689823,
+        "ci95_low": -0.1442243264646982,
+        "ci95_high": -0.023826124685328257,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.07365949075689823,
+        "ci95_low": -0.14824199683223138,
+        "ci95_high": -0.017298602057306718,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/Ridge_sequence_market_calibrated": {
+      "20": {
+        "mean_difference": -0.11537805383534787,
+        "ci95_low": -0.18703437149194785,
+        "ci95_high": -0.04920794216944438,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.11537805383534787,
+        "ci95_low": -0.19676510304795278,
+        "ci95_high": -0.04287384386020099,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": -0.07621796193193152,
+        "ci95_low": -0.12133348102774748,
+        "ci95_high": -0.03400415876648166,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.07621796193193152,
+        "ci95_low": -0.136538523769356,
+        "ci95_high": -0.020559721341144893,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Persistence": {
+      "20": {
+        "mean_difference": 0.2222106314938618,
+        "ci95_low": 0.15698466840188754,
+        "ci95_high": 0.28541518317281833,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.2222106314938618,
+        "ci95_low": 0.180040880544624,
+        "ci95_high": 0.26458041304446117,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/LogHAR_proxy": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Ridge_sequence_market": {
+      "20": {
+        "mean_difference": 0.007916712540217093,
+        "ci95_low": -0.01909128654545491,
+        "ci95_high": 0.03785028867010992,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.007916712540217093,
+        "ci95_low": -0.014237441758546552,
+        "ci95_high": 0.031080283039201316,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/TTM_zero_shot": {
+      "20": {
+        "mean_difference": -0.011521517564553711,
+        "ci95_low": -0.03446914727636559,
+        "ci95_high": 0.009558172463560024,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.011521517564553711,
+        "ci95_low": -0.03279079784157957,
+        "ci95_high": 0.010349784894448032,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Persistence_calibrated": {
+      "20": {
+        "mean_difference": 0.13095798555499596,
+        "ci95_low": 0.10250529721585193,
+        "ci95_high": 0.1609148865218349,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.13095798555499596,
+        "ci95_low": 0.10616981243074346,
+        "ci95_high": 0.156902064034416,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": -0.016917303465267975,
+        "ci95_low": -0.054950919830748846,
+        "ci95_high": 0.018935804012367604,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.016917303465267975,
+        "ci95_low": -0.052555675149686995,
+        "ci95_high": 0.010079990198303712,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Ridge_sequence_market_calibrated": {
+      "20": {
+        "mean_difference": -0.0321069900651104,
+        "ci95_low": -0.07182646337824403,
+        "ci95_high": 0.005300911020333228,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0321069900651104,
+        "ci95_low": -0.06966776786318744,
+        "ci95_high": -0.0019133033581678663,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": -0.017930337378489165,
+        "ci95_low": -0.0529811006810734,
+        "ci95_high": 0.01621651420862472,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.017930337378489165,
+        "ci95_low": -0.05962880214005685,
+        "ci95_high": 0.02673482445514197,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Persistence": {
+      "20": {
+        "mean_difference": 0.05068780345358225,
+        "ci95_low": -0.053050479492014566,
+        "ci95_high": 0.1352375001350142,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.05068780345358225,
+        "ci95_low": 0.0023560979787389724,
+        "ci95_high": 0.09839354445645361,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/LogHAR_proxy": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Ridge_sequence_market": {
+      "20": {
+        "mean_difference": -0.05265601270806255,
+        "ci95_low": -0.1719839722663491,
+        "ci95_high": 0.05817262744021258,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.05265601270806255,
+        "ci95_low": -0.16036834151748078,
+        "ci95_high": 0.049304264395731934,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/TTM_zero_shot": {
+      "20": {
+        "mean_difference": -0.05664216750627231,
+        "ci95_low": -0.15555737673001144,
+        "ci95_high": 0.04603247184697404,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.05664216750627231,
+        "ci95_low": -0.17711003041219456,
+        "ci95_high": 0.07274814771875926,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Persistence_calibrated": {
+      "20": {
+        "mean_difference": -0.06624061148785382,
+        "ci95_low": -0.23145708368006124,
+        "ci95_high": 0.08041153992244425,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.06624061148785382,
+        "ci95_low": -0.19394911185999425,
+        "ci95_high": 0.04621977474392951,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": -0.13610067502541712,
+        "ci95_low": -0.2538938183059183,
+        "ci95_high": -0.04743932574124385,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.13610067502541712,
+        "ci95_low": -0.25522126624590974,
+        "ci95_high": -0.04724796712586386,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Ridge_sequence_market_calibrated": {
+      "20": {
+        "mean_difference": -0.20701258689255245,
+        "ci95_low": -0.3246484104015049,
+        "ci95_high": -0.10724707469309001,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.20701258689255245,
+        "ci95_low": -0.3061465163679653,
+        "ci95_high": -0.11111729065536878,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": -0.14035980205187681,
+        "ci95_low": -0.21003469136526948,
+        "ci95_high": -0.07978022993360462,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.14035980205187681,
+        "ci95_low": -0.2145786889079506,
+        "ci95_high": -0.07992801866754669,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  }
+}

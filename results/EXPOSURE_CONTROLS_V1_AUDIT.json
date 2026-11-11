@@ -1,0 +1,896 @@
+{
+  "created_utc": "2026-11-11T20:48:50.756291+00:00",
+  "fixed_validation_exposure": {
+    "Diversified five": {
+      "Persistence": 0.711333594926319,
+      "LogHAR_proxy": 0.7348043639055687,
+      "Ridge_sequence_market": 0.8105487212866723,
+      "TTM_zero_shot": 0.6855032692197947,
+      "Persistence_calibrated": 0.6271699635852508,
+      "LogHAR_proxy_calibrated": 0.642481806894807,
+      "Ridge_sequence_market_calibrated": 0.6931931694808093,
+      "TTM_zero_shot_calibrated": 0.6348921910464476
+    },
+    "Technology five": {
+      "Persistence": 0.3755718661187641,
+      "LogHAR_proxy": 0.4347786636014588,
+      "Ridge_sequence_market": 0.4019993927599674,
+      "TTM_zero_shot": 0.3788281901648632,
+      "Persistence_calibrated": 0.3255106018659639,
+      "LogHAR_proxy_calibrated": 0.37827771227993806,
+      "Ridge_sequence_market_calibrated": 0.34017562193256023,
+      "TTM_zero_shot_calibrated": 0.35085909941417553
+    }
+  },
+  "comparisons": [
+    {
+      "preset": "Diversified five",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.711333594926319,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.007215207183667943,
+      "return_difference": 0.08565519833527913,
+      "equity_difference": 0.19882734592921247,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.00721520718366794,
+          "ci95_low": -0.01342670457855569,
+          "ci95_high": -0.0007852213334101704,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.00721520718366794,
+          "ci95_low": -0.01463889292104352,
+          "ci95_high": 0.0009329622091841485,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.711333594926319,
+      "benchmark": "historical",
+      "risk_error_difference": 0.0,
+      "return_difference": 0.0,
+      "equity_difference": 0.0,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "LogHAR_proxy",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.7348043639055687,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.0055699776638690746,
+      "return_difference": 0.07810479755112132,
+      "equity_difference": 0.17960430590197385,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.005569977663869077,
+          "ci95_low": -0.011571033655140847,
+          "ci95_high": 0.000900396270506016,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.005569977663869077,
+          "ci95_low": -0.012513794621381994,
+          "ci95_high": 0.0021778976676008637,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "LogHAR_proxy",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.7348043639055687,
+      "benchmark": "historical",
+      "risk_error_difference": 0.00034679333201392826,
+      "return_difference": 0.003474558162218422,
+      "equity_difference": 0.004183271817079115,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0003467933320139265,
+          "ci95_low": -0.0016402660521466826,
+          "ci95_high": 0.002742985175917129,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0003467933320139265,
+          "ci95_low": -0.0014879148149629924,
+          "ci95_high": 0.00235252554196724,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Ridge_sequence_market",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.8105487212866723,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.002566133776358153,
+      "return_difference": 0.05734000843557063,
+      "equity_difference": 0.13644987100474026,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0025661337763581513,
+          "ci95_low": -0.007477977372449267,
+          "ci95_high": 0.0023166400065496003,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0025661337763581513,
+          "ci95_low": -0.007343572357180069,
+          "ci95_high": 0.0028183775527028006,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Ridge_sequence_market",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.8105487212866723,
+      "benchmark": "historical",
+      "risk_error_difference": 0.00017115479356791252,
+      "return_difference": 0.018814305908035678,
+      "equity_difference": 0.036522372880195,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.00017115479356791138,
+          "ci95_low": -0.003342912786335091,
+          "ci95_high": 0.004294833459096917,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.00017115479356791138,
+          "ci95_low": -0.0034316681547232894,
+          "ci95_high": 0.004035065880892507,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "TTM_zero_shot",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6855032692197947,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.005539332389433195,
+      "return_difference": 0.08797997954111825,
+      "equity_difference": 0.2286324522369526,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.005539332389433198,
+          "ci95_low": -0.014382768917131465,
+          "ci95_high": 0.007052508065600622,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.005539332389433198,
+          "ci95_low": -0.01638481044118644,
+          "ci95_high": 0.009689139301178434,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "TTM_zero_shot",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6855032692197947,
+      "benchmark": "historical",
+      "risk_error_difference": 0.0032273760265313575,
+      "return_difference": -0.009720139466621092,
+      "equity_difference": 0.00403838838164583,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.003227376026531359,
+          "ci95_low": -0.0019696246822596174,
+          "ci95_high": 0.010286093042559064,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.003227376026531359,
+          "ci95_low": -0.0017000014619030844,
+          "ci95_high": 0.01004730459585915,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6271699635852508,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.013446727787157633,
+      "return_difference": 0.08464928951541162,
+      "equity_difference": 0.20150007286732585,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.013446727787157635,
+          "ci95_low": -0.01887755698164492,
+          "ci95_high": -0.007246137781693468,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.013446727787157635,
+          "ci95_low": -0.02023648904315972,
+          "ci95_high": -0.00427774667047527,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6271699635852508,
+      "benchmark": "historical",
+      "risk_error_difference": -0.0003672483731346453,
+      "return_difference": -0.03991585157141975,
+      "equity_difference": -0.0813121554397429,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0003672483731346454,
+          "ci95_low": -0.0052043442058868055,
+          "ci95_high": 0.0032750789427598436,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0003672483731346454,
+          "ci95_low": -0.005561974293660802,
+          "ci95_high": 0.00371329396387679,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "LogHAR_proxy_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.642481806894807,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.010901849610294684,
+      "return_difference": 0.06970748001268467,
+      "equity_difference": 0.17130374076639454,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.010901849610294684,
+          "ci95_low": -0.01582867029008635,
+          "ci95_high": -0.005404705481281064,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.010901849610294684,
+          "ci95_low": -0.017485725113071785,
+          "ci95_high": -0.0020777696308045784,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "LogHAR_proxy_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.642481806894807,
+      "benchmark": "historical",
+      "risk_error_difference": 0.0009905185975868196,
+      "return_difference": -0.04785098964593271,
+      "equity_difference": -0.09622302136464478,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0009905185975868167,
+          "ci95_low": -0.0027999372592179177,
+          "ci95_high": 0.004482567613785948,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0009905185975868167,
+          "ci95_low": -0.003633493297758775,
+          "ci95_high": 0.005020615726673546,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Ridge_sequence_market_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6931931694808093,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.009539139411269715,
+      "return_difference": 0.07485569068338283,
+      "equity_difference": 0.181992886656137,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.009539139411269713,
+          "ci95_low": -0.014778719434019255,
+          "ci95_high": -0.0037528225761663423,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.009539139411269713,
+          "ci95_low": -0.01640784078746207,
+          "ci95_high": -0.002145505167649072,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "Ridge_sequence_market_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6931931694808093,
+      "benchmark": "historical",
+      "risk_error_difference": -0.0012591811357369406,
+      "return_difference": -0.019268211248953726,
+      "equity_difference": -0.0349294078813156,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0012591811357369406,
+          "ci95_low": -0.004315164579063736,
+          "ci95_high": 0.0015362846538610078,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0012591811357369406,
+          "ci95_low": -0.004484128183954935,
+          "ci95_high": 0.0014229013994539713,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "TTM_zero_shot_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6348921910464476,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.009543610927694221,
+      "return_difference": 0.08984854246300245,
+      "equity_difference": 0.23144149470135833,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.00954361092769422,
+          "ci95_low": -0.017617381308133066,
+          "ci95_high": 0.0019574739349201807,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.00954361092769422,
+          "ci95_low": -0.019789068257304393,
+          "ci95_high": 0.004955594894438561,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Diversified five",
+      "model": "TTM_zero_shot_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6348921910464476,
+      "benchmark": "historical",
+      "risk_error_difference": 0.002937058796529883,
+      "return_difference": -0.03118692921234878,
+      "equity_difference": -0.043661465342735295,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0029370587965298813,
+          "ci95_low": -0.0012964270231714571,
+          "ci95_high": 0.007714190839844655,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0029370587965298813,
+          "ci95_low": -0.0004488503626089635,
+          "ci95_high": 0.0068908308474651915,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3755718661187641,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.007116585710162871,
+      "return_difference": 0.14081419928968364,
+      "equity_difference": 0.14027039738981661,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.007116585710162876,
+          "ci95_low": -0.004456886151567575,
+          "ci95_high": 0.019499388329610602,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.007116585710162876,
+          "ci95_low": -0.002786309769102253,
+          "ci95_high": 0.016585802920594743,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3755718661187641,
+      "benchmark": "historical",
+      "risk_error_difference": 0.0,
+      "return_difference": 0.0,
+      "equity_difference": 0.0,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "LogHAR_proxy",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.4347786636014588,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.018507642404531503,
+      "return_difference": 0.061082267049137995,
+      "equity_difference": 0.15419818776227057,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.018507642404531507,
+          "ci95_low": 0.009897170480623588,
+          "ci95_high": 0.027361484810759198,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.018507642404531507,
+          "ci95_low": 0.009002133318425799,
+          "ci95_high": 0.02730919547762744,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "LogHAR_proxy",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.4347786636014588,
+      "benchmark": "historical",
+      "risk_error_difference": 0.00988401541292469,
+      "return_difference": -0.04166388575145086,
+      "equity_difference": 0.07319822450420055,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.009884015412924696,
+          "ci95_low": 0.0008726347448850513,
+          "ci95_high": 0.02186884527239606,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.009884015412924696,
+          "ci95_low": 0.00044205189340020776,
+          "ci95_high": 0.022430458732867233,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Ridge_sequence_market",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.4019993927599674,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.011536565770351195,
+      "return_difference": 0.036643064935094616,
+      "equity_difference": 0.148823998938156,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.011536565770351188,
+          "ci95_low": 0.0014440173041951484,
+          "ci95_high": 0.022591375741186626,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.011536565770351188,
+          "ci95_low": 0.00011261427928597097,
+          "ci95_high": 0.02247825307637055,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Ridge_sequence_market",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.4019993927599674,
+      "benchmark": "historical",
+      "risk_error_difference": 0.0033364560993764947,
+      "return_difference": -0.08726278148385913,
+      "equity_difference": 0.03501709276187137,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.003336456099376488,
+          "ci95_low": -0.004618216004025829,
+          "ci95_high": 0.013773387621715087,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.003336456099376488,
+          "ci95_low": -0.006150857227408073,
+          "ci95_high": 0.014716076404316467,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "TTM_zero_shot",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3788281901648632,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.007790346181838475,
+      "return_difference": 0.035623637220473015,
+      "equity_difference": 0.13527488417731998,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.007790346181838477,
+          "ci95_low": -0.0025358723268524177,
+          "ci95_high": 0.018517867611729313,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.007790346181838477,
+          "ci95_low": -0.0031889192787159953,
+          "ci95_high": 0.019134764059702433,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "TTM_zero_shot",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3788281901648632,
+      "benchmark": "historical",
+      "risk_error_difference": 0.000501676672814616,
+      "return_difference": -0.10311449256064886,
+      "equity_difference": -0.0017340904003028124,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0005016766728146175,
+          "ci95_low": -0.008533857114947236,
+          "ci95_high": 0.013239262799879912,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0005016766728146175,
+          "ci95_low": -0.00954766479485788,
+          "ci95_high": 0.013578643158482012,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3255106018659639,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.0015852289823016785,
+      "return_difference": 0.11895470578236012,
+      "equity_difference": 0.12188293952209378,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.001585228982301676,
+          "ci95_low": -0.011331077252505975,
+          "ci95_high": 0.008339828143173692,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.001585228982301676,
+          "ci95_low": -0.010031382861458082,
+          "ci95_high": 0.005923881271074899,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3255106018659639,
+      "benchmark": "historical",
+      "risk_error_difference": -0.004791633194867192,
+      "return_difference": -0.05351672060520052,
+      "equity_difference": -0.06855114332630552,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004791633194867191,
+          "ci95_low": -0.009292565054016533,
+          "ci95_high": -9.856618904850304e-05,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004791633194867191,
+          "ci95_low": -0.008615840700265082,
+          "ci95_high": -0.00017529934055233334,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "LogHAR_proxy_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.37827771227993806,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.005256747576520272,
+      "return_difference": 0.0525574260647903,
+      "equity_difference": 0.13427695869778372,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.005256747576520269,
+          "ci95_low": -0.00371478045913493,
+          "ci95_high": 0.013904243585521501,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.005256747576520269,
+          "ci95_low": -0.003178154986799367,
+          "ci95_high": 0.013599451882674892,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "LogHAR_proxy_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.37827771227993806,
+      "benchmark": "historical",
+      "risk_error_difference": -0.0020034212832470352,
+      "return_difference": -0.08653180576156494,
+      "equity_difference": -0.003283342457823246,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.002003421283247033,
+          "ci95_low": -0.009451134168004607,
+          "ci95_high": 0.007222703812013291,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.002003421283247033,
+          "ci95_low": -0.009245328795412412,
+          "ci95_high": 0.0070876491971091915,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Ridge_sequence_market_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.34017562193256023,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.0015205615629241241,
+      "return_difference": 0.031125860778462133,
+      "equity_difference": 0.1260987815605949,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0015205615629241243,
+          "ci95_low": -0.010338975236270384,
+          "ci95_high": 0.007937839441521188,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0015205615629241243,
+          "ci95_low": -0.010502707372138332,
+          "ci95_high": 0.008219005642175056,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "Ridge_sequence_market_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.34017562193256023,
+      "benchmark": "historical",
+      "risk_error_difference": -0.006089463386887508,
+      "return_difference": -0.13212250543591209,
+      "equity_difference": -0.04963556137301267,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.006089463386887508,
+          "ci95_low": -0.014337254126005033,
+          "ci95_high": 0.0019618346045471714,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.006089463386887508,
+          "ci95_low": -0.014110391551610764,
+          "ci95_high": 0.0021933354304618674,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "TTM_zero_shot_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.35085909941417553,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.0018114028624323583,
+      "return_difference": 0.03299625677540363,
+      "equity_difference": 0.12532745104218768,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0018114028624323627,
+          "ci95_low": -0.008115408700597262,
+          "ci95_high": 0.012224663035513053,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0018114028624323627,
+          "ci95_low": -0.008927609670028158,
+          "ci95_high": 0.012971504425526383,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "preset": "Technology five",
+      "model": "TTM_zero_shot_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.35085909941417553,
+      "benchmark": "historical",
+      "risk_error_difference": -0.003595481599693827,
+      "return_difference": -0.12350661029003152,
+      "equity_difference": -0.03970059563166789,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0035954815996938243,
+          "ci95_low": -0.01289063115416025,
+          "ci95_high": 0.007203091806098642,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0035954815996938243,
+          "ci95_low": -0.013327362589080604,
+          "ci95_high": 0.008204521818669982,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    }
+  ],
+  "rows": 384,
+  "holdout_2026_accessed": false,
+  "development_period": "2024-2025",
+  "validation_period": "2022-2023",
+  "manifest_sha256": "734a4622c8ac7777a08787151abd928b83ee7a12244686271474cc4d22523994"
+}

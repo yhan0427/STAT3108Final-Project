@@ -1,0 +1,52 @@
+{
+  "status": "DRAFT — SEALED HOLDOUT. Do not download or score 2026 until development is complete and final evaluation is explicitly authorized. This draft has not been registered as a completed freeze.",
+  "download_start": "2014-01-01",
+  "download_end_exclusive": "2026-11-11",
+  "evaluation_start": "2026-01-01",
+  "evaluation_end_exclusive": "2026-11-11",
+  "models": [
+    "Persistence",
+    "LogHAR_proxy",
+    "Ridge_sequence_market",
+    "TTM_zero_shot",
+    "Persistence_calibrated",
+    "LogHAR_proxy_calibrated",
+    "Ridge_sequence_market_calibrated",
+    "TTM_zero_shot_calibrated"
+  ],
+  "fitting": "Reuse aligned-v1 fitted coefficients/scalers, validation-selected Ridge alpha and 2022-2023 volatility calibration unchanged. No refitting on 2024-2026.",
+  "universe": "Same 30 fixed survivor-selected companies; no expansion or historical S&P500 membership claim.",
+  "target": "Annualized population standard deviation of log returns t+2..t+21; only fully observed labels, complete holding cycles.",
+  "presets": [
+    "Diversified five",
+    "Technology five"
+  ],
+  "risk_target": 0.1,
+  "cost_bps": [
+    0,
+    10,
+    25
+  ],
+  "cash_annual": [
+    0,
+    0.04
+  ],
+  "cash_interpretation": "0% primary, constant 4% hypothetical sensitivity (not observed Treasury returns); ACT/365 compound accrual on cash only.",
+  "fixed_control": "For each basket and model, average scheduled target equity exposure during 2022-2023 validation; freeze before 2026 download, rebalance this constant exposure every 20 signal sessions.",
+  "primary_application_comparisons": [
+    "forecast minus fixed_validation",
+    "forecast minus historical"
+  ],
+  "primary_application_metric": "Mean absolute deviation of rolling 20-session net strategy volatility from 10%; lower is better.",
+  "primary_forecast_metric": "Equal-company mean QLIKE ratio relative to frozen raw LogHAR_proxy; include calibrated baselines.",
+  "primary_cost_bps": 10,
+  "primary_cash_annual": 0,
+  "bootstrap_blocks": [
+    20,
+    60
+  ],
+  "bootstrap_replicates": 1000,
+  "data_policy": "Separate immutable full-history vendor snapshot; compare overlapping historical returns to original snapshot; never splice inconsistent adjusted-price levels. Require complete 31-series calendars and final price date 2026-11-10; do not silently shorten data or remove stocks.",
+  "limitations": "Partial year, selected surviving companies and shared market shocks. Validation-matched planned exposure need not match realized test exposure or risk. TTM training cutoff/disjointness unverified. New local holdout is not proof of universal alpha.",
+  "holdout_access": "Deferred on 2026-11-11 to preserve final evaluation. Develop and debug on previously inspected 2024-2025 outcomes; 2026 has not been acquired or scored by this stage."
+}

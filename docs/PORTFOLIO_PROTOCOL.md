@@ -52,3 +52,9 @@ The assistant explains scenarios and limitations. It does not calculate weights,
 ## Next research stage
 
 Choose one recent finance/time-series paper after reviewing its code, target, data and pretraining overlap. Add a reproducible comparator through the existing forecast interface, then register a genuinely new time/company evaluation and cost/cash/correlation sensitivities. Gaps in numerical stability and financial coverage from V2/V3 remain disclosed. Do not change the primary outcome after seeing portfolio returns.
+
+## 2026-11-11 accounting correction and aligned extension
+
+The first V1 CSV computed turnover with previous-close NAV, rather than execution-day pre-trade NAV. The implementation now matches the definition above. `results/PORTFOLIO_V1_TURNOVER_CORRECTION.csv` gives corrected turnover for all 192 records; the companion JSON confirms every other metric is unchanged. The original CSV is retained as an archived result.
+
+A separate execution-aligned TTM / LogHAR-proxy / Ridge comparison is now documented in `docs/ALIGNED_METHOD_TRANSFER.md` and `results/ALIGNED_V1.md`. It does not silently replace the demo's V2 forecasting inputs or establish a new holdout.

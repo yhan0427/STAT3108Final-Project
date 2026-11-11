@@ -36,3 +36,6 @@ Primary errors use overlapping twenty-session net strategy returns. Paired circu
 The account starts in cash, pays entry costs at the first next-close execution, then lets holdings drift. Risk rules rebalance every twenty signal sessions. Cash earns zero; no leverage, taxes, market impact or forced terminal liquidation. The saved forecast label starts one session before the tradable holding window.
 
 See docs/PORTFOLIO_PROTOCOL.md for formulas and timing; config/portfolio-v1.json for the full grid. Read all cost scenarios in PORTFOLIO_V1.csv, including unfavorable results. The previous forecasting results remain separate preliminary evidence.
+## 2026-11-11 turnover erratum
+
+Use `PORTFOLIO_V1_TURNOVER_CORRECTION.csv` for turnover: the original denominator was previous-close NAV; the corrected denominator is execution-day pre-trade NAV. All 192 records were replayed and every other metric verified unchanged. New execution-aligned foundation-model results are reported separately in `ALIGNED_V1.md`; the no-foundation-model statement above describes this original V1 run only.

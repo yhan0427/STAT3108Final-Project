@@ -52,16 +52,22 @@ def rebalance(holdings,cash,target_weights,cost_rate):
     return target_weights*after,float((1-target_weights.sum())*after),cost,traded
 
 
-def simulate(returns,weights,execution_targets,cost_rate):
+def simulate(returns,weights,execution_targets,cost_rate,cash_annual=0.):
     """returns include the initial execution date, when the account starts in cash.
 
     Apply existing holdings' return first, then execute at that day's close.
     New holdings can only earn the following day's return. No forced final sale.
     """
+    if not np.isfinite(cash_annual) or cash_annual <= -1:
+        raise ValueError('Cash annual return must be finite and greater than -100%')
     w=np.asarray(weights); holdings=np.zeros(len(w));cash=1.;nav=1.
+    previous_date=None
     rows=[];trades=[]
     for date,values in returns.iterrows():
+        if previous_date is not None:
+            cash *= (1+cash_annual)**((date-previous_date).days/365.)
         holdings=holdings*(1+values.to_numpy())
+        pre_trade_nav=float(holdings.sum()+cash)
         cost=0.;traded=0.
         if date in execution_targets:
             exposure=execution_targets[date]
@@ -69,8 +75,9 @@ def simulate(returns,weights,execution_targets,cost_rate):
             trades.append({'execution_date':str(date.date()),'target_equity':exposure,'cost':cost,'traded':traded})
         current=float(holdings.sum()+cash)
         rows.append({'date':str(date.date()),'nav':current,'return':current/nav-1,
-                     'equity_fraction':float(holdings.sum()/current),'cost':cost,'turnover':traded/nav})
+                     'equity_fraction':float(holdings.sum()/current),'cost':cost,'turnover':traded/pre_trade_nav})
         nav=current
+        previous_date=date
     frame=pd.DataFrame(rows)
     r=frame['return'].to_numpy(); wealth=np.r_[1.,frame.nav.to_numpy()]
     vol=float(np.std(r,ddof=0)*np.sqrt(252))

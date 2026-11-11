@@ -1,4 +1,8 @@
 .venv/
+.venv-foundation/
+data/models/
+results/aligned/
+results/temporal/
 __pycache__/
 .pytest_cache/
 *.pyc

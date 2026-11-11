@@ -14,6 +14,7 @@
   },
   "test_suite": "26 passed",
   "v3_source_hashes_match_completed_fit": true,
-  "screenshot": "results/workspace-tabs-home.png",
+  "screenshot": null,
+  "screenshot_note": "Temporary verification screenshot removed during workspace cleanup on 2026-11-11; recorded checks retained.",
   "live_api_reply": "Not tested: no configured key. No simulated reply."
 }

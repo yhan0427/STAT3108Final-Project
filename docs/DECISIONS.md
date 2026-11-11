@@ -37,3 +37,15 @@ Freeze architecture, features and hyperparameters before final test evaluation. 
 
 ## Availability and reproducibility
 Public source URLs, retrieval times, file hashes, configuration, package versions and fitted artifacts accompany runs. Raw vendor prices and private configuration are gitignored. Synthetic test fixtures never enter empirical results. Data acquisition failures must remain explicit; never silently substitute invented data or fewer companies.
+
+## 2026-11-11: Execution alignment and TTM method transfer
+
+After Portfolio V1, register `config/aligned-v1.json` before the new run. Fix the tradable marginal target to t+2..t+21, preserve historical splits and purge by the delayed label end. Compare persistence, a per-company LogHAR daily-return proxy, stable float64 sequence Ridge and pinned TTM r2.1 inference. Fit a single multiplicative volatility calibration on validation data for every model, reporting both raw and calibrated versions. The model's pretraining overlap and historical availability are unresolved, so call this retrospective method transfer, not exact replication or a new holdout. Full methods and limitations are in `docs/ALIGNED_METHOD_TRANSFER.md`.
+
+The run completed with 14,430 evaluation firm-days and 192 portfolio strategy records. Aggregate TTM loss and equal-company relative loss lead to different rankings; retain both. Calibration improves some risk-target errors while reducing equity exposure and returns. These findings do not establish alpha or a universal foundation-model advantage.
+
+A separate accounting audit found that turnover used previous-close NAV as its denominator. Correct it to execution-day pre-trade NAV. Preserve the original Portfolio V1 CSV; publish a 192-row turnover correction and verify that every other saved metric is unchanged. This correction does not change holdings or deducted costs.
+
+## 2026-11-11: Reserve 2026 for the final evaluation
+
+Before any 2026 download or scoring, Han raised the risk of exhausting the final holdout. Keep the temporal configuration as a draft and defer access to 2026 outcomes. Finish fixed-exposure controls, cash sensitivity and debugging on already inspected 2024–2025 data first. Freeze the final experiment before opening 2026, with explicit authorization. See `docs/HOLDOUT_POLICY.md`; this local policy does not establish pretrained-data disjointness.

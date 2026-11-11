@@ -51,6 +51,15 @@ def test_buy_hold_weights_drift_and_constant_prices_only_lose_costs():
     assert out['metrics']['total_return']==pytest.approx(-out['metrics']['cost_initial_capital'])
 
 
+def test_turnover_uses_execution_day_pre_trade_nav():
+    dates=pd.bdate_range('2024-01-02',periods=2)
+    frame=pd.DataFrame({'A':[0.,1.]},index=dates)
+    out=simulate(frame,[1.],{dates[0]:1.,dates[1]:.5},0)
+    # Enter with one dollar, then sell one of two dollars: 100% + 50%.
+    assert out['metrics']['turnover']==pytest.approx(1.5)
+    assert out['path'][-1]['nav']==pytest.approx(2.)
+
+
 @pytest.fixture(scope='module')
 def lab():
     root=Path(__file__).resolve().parents[1]

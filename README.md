@@ -68,7 +68,7 @@ python -m volrisk.cli evaluate --run main-v1
 python -m volrisk.cli report --run main-v1
 ```
 
-The earlier individual-stock demo is available at `results/demo/main-v1/index.html`; use the server above for the current Portfolio Risk Lab. The interface uses a navy/blue gradient, frosted-glass panels, metallic highlights and responsive layouts. It requires no API keys, web service or internet connection once generated. `results/RESULTS.md` contains the experiment summary. Full fitted objects and predictions live in `results/runs/main-v1/`.
+The earlier individual-stock demo can be regenerated at `results/demo/main-v1/index.html` with the report command above; its obsolete generated output was removed during workspace cleanup. Use the server above for the current Portfolio Risk Lab. The interface uses a navy/blue gradient, frosted-glass panels, metallic highlights and responsive layouts. The generated individual-stock demo requires no API keys, web service or internet connection. `results/RESULTS.md` contains the experiment summary. Full fitted objects and predictions live in `results/runs/main-v1/`.
 
 Existing run names are never overwritten. Final-test evaluation is guarded against repetition; if you change the design after reading test results, record the change and treat the next experiment as exploratory. Do not rename a run to pretend that the same test period is untouched. A failed evaluation leaves an explicit start marker for audit rather than silently restarting.
 
@@ -146,3 +146,15 @@ The server recomputes portfolio evidence; the model explains it. Hindsight outco
 The final presentation is on December 10, 2026; the course report is due December 13 and repository December 15. The application pivot follows actual preliminary work, not a retrospective rewrite of the experiments. Do not fabricate dates or individual contributions.
 
 AI coding assistance is disclosed. Han should review the implementation and be able to explain target construction, chronology, correlation, costs, and failure cases in the final Q&A.
+
+## Execution-aligned foundation-model experiment
+
+Current implementation ledger: [research status](docs/RESEARCH_STATUS.md). Expansion is a staged design, not an achieved sample size: [dated universe specification](docs/UNIVERSE_EXPANSION.md). The [2026 holdout remains sealed](docs/HOLDOUT_POLICY.md).
+
+A separate exploratory extension now compares pinned IBM TinyTimeMixer r2.1, a LogHAR daily-return proxy, sequence Ridge and persistence on the next-close tradable horizon. It includes validation-only calibration, equal-company comparisons and cost-aware portfolio evaluation. The checkpoint's pretraining overlap and historical availability remain unresolved; this is method transfer, not exact paper replication or an untouched test. The demo still uses its labeled V2/V1 inputs.
+
+- [Methods and reproduction](docs/ALIGNED_METHOD_TRANSFER.md)
+- [Aligned forecast and portfolio results](results/ALIGNED_V1.md)
+- [Run audit](results/ALIGNED_V1_AUDIT.json)
+- [Portfolio V1 turnover correction](results/PORTFOLIO_V1_TURNOVER_CORRECTION.csv): all other metrics verified unchanged.
+- [Fixed validation-exposure controls](results/EXPOSURE_CONTROLS_V1.md): development-only comparisons on 2024–2025, with transaction costs and hypothetical cash-yield sensitivity.

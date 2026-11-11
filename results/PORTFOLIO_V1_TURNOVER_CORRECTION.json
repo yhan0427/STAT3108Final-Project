@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-11-11T15:17:13.949077+00:00",
+  "original_csv_sha256": "2b4592f594f7195b6e5459ad06b6687e899fc705e18d5c76fc56eeee15415978",
+  "corrected_csv_sha256": "c45f45dfcd277b44fb92b11c5618b3c88e41726ea4bf09bc78913ce195df8fc8",
+  "source_sha256": "9ad9677ee380e0a7bbd4c7dba06db35726e2dc96c9fe5ee04d8438d7186d445e",
+  "rows": 192,
+  "correction": "Gross traded dollars divided by execution-day NAV after market movement and before costs, rather than previous close NAV.",
+  "all_other_metrics_unchanged": true
+}
