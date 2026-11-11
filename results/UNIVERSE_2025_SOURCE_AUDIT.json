@@ -1,0 +1,14 @@
+{
+  "retrieved_utc": "2026-11-11T21:08:17.224235+00:00",
+  "reference_date": "2025-12-31",
+  "source_effective_date": "2025-08-23",
+  "url": "https://raw.githubusercontent.com/hanshof/sp500_constituents/a91ef88fad5ace83bed1f3452f451247295bcd18/sp_500_historical_components.csv",
+  "repository_revision": "a91ef88fad5ace83bed1f3452f451247295bcd18",
+  "source_sha256": "02f37a12c11f82218fce422ecf7d95fae1074bd96e664c262a5ea42c120d5fe9",
+  "candidate_sha256": "ba686dfa05263d12df62619352a19f1302af03872fbb255ecb9fbc9d764d6197",
+  "candidate_security_count": 503,
+  "unique_company_count": null,
+  "legacy_symbols_missing": [],
+  "status": "REJECTED for 2025-12-31: source ends 2025-08-23 and omits official September/December additions, retains deleted LKQ",
+  "raw_source_retention": "Downloaded in memory; full historical source not saved to avoid redundant storage."
+}

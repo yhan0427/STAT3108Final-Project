@@ -162,3 +162,5 @@ A separate exploratory extension now compares pinned IBM TinyTimeMixer r2.1, a L
 Recent Transformer development comparison: [Timestral 5M results](results/TIMESTRAL_V1.md), with pinned code/weights, common aligned origins and validation-only calibration. The 2026 holdout remains sealed.
 
 [Company and period failure analysis](results/FAILURE_ANALYSIS_V1.md) reports all firms, sectors, quarters, validation-defined historical market-risk groups and post-hoc influence checks. These are descriptive development diagnostics, not a new holdout.
+
+[Universe verification](results/UNIVERSE_VERIFICATION.md): public candidate lists have unresolved reference-date conflicts; 100/500-company expansion is not yet claimed.

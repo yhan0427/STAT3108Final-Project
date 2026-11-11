@@ -1,0 +1,24 @@
+{
+  "url": "https://raw.githubusercontent.com/chinobing/historical_sp500_constituents/ef41f25cd1ff7e415648ee633c29c61bf035918c/sp_500_historical_components.csv",
+  "revision": "ef41f25cd1ff7e415648ee633c29c61bf035918c",
+  "raw_sha256": "eb5c217ce1f7595b6468dac9c51a69f9f333df6ff7fcfcce85ab1f37fafad1ac",
+  "latest_source_date": "2026-11-11",
+  "selected_date": "2025-12-31",
+  "security_count": 501,
+  "company_count": null,
+  "official_announcement_spotchecks": {
+    "HOOD": true,
+    "APP": true,
+    "EME": true,
+    "CRH": false,
+    "CVNA": false,
+    "FIX": false,
+    "LKQ": false,
+    "SOLS": true,
+    "MHK": false,
+    "CZR": false,
+    "MKTX": false,
+    "ENPH": false
+  },
+  "verification": "REJECTED as ready-to-use year-end roster: missing official December additions CRH/CVNA/FIX and retaining SOLS; requires reconciliation"
+}
