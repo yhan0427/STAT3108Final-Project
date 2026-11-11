@@ -164,3 +164,5 @@ Recent Transformer development comparison: [Timestral 5M results](results/TIMEST
 [Company and period failure analysis](results/FAILURE_ANALYSIS_V1.md) reports all firms, sectors, quarters, validation-defined historical market-risk groups and post-hoc influence checks. These are descriptive development diagnostics, not a new holdout.
 
 [Universe verification](results/UNIVERSE_VERIFICATION.md): public candidate lists have unresolved reference-date conflicts; 100/500-company expansion is not yet claimed.
+
+First expanded training completed: [cohort construction and limitations](docs/EXPANSION_100.md), [training and held-company results](results/EXPANSION_100_V1.md). Frozen candidate cohort: 100 issuers; retained histories: 99; raw company-date observations: 291,416. Actual fitting/validation-label companies: 64; held-company evaluation: 34. These are reconstructed-reference-cohort results; the 2026 temporal holdout remains sealed.

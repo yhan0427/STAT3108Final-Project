@@ -1,0 +1,40 @@
+{
+  "frozen_utc": "2026-11-11T21:19:30.825241+00:00",
+  "scope": "Reconstructed 2025-12-31 fixed cohort; not historical membership at every date. Independent full roster validation remains limited; corrections are explicit.",
+  "historical_page": "https://en.wikipedia.org/w/index.php?oldid=1329075976",
+  "historical_page_sha256": "627bdb61473802173ff58632ec914d676f39e6a577b594f8198d9f81f6ac9809",
+  "official_corrections": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20251205-1480992/1480992_december2025rebalance.pdf",
+  "corrections": {
+    "add": [
+      "CRH",
+      "CVNA",
+      "FIX"
+    ],
+    "remove": [
+      "SOLS"
+    ],
+    "already_removed_in_page": [
+      "LKQ",
+      "MHK"
+    ]
+  },
+  "sec_mapping_sha256": "0f8c121b922d4dd1fa613c5cef85717070025192cbe2142d95099c7489661008",
+  "registry_sha256": "62111564b3da78f7307e8fb6ec887711b9708faab2dd9e3820f6402ecd43c4ca",
+  "selection_sha256": "8b60e4171f46ec39cee2f8667814a62606a02c59549176762e9cdc48f0686167",
+  "selection": "Keep original 30; sector-proportional largest-remainder 70 additions, ranked by SHA256(Han-expansion-v1/issuer_id); alternate hash order into 35 training and 35 held companies. One lexicographically first listed class per CIK.",
+  "roles": {
+    "new_training": 35,
+    "held_company": 35,
+    "original_training": 30
+  },
+  "data_start": "2014-01-01",
+  "data_end_exclusive": "2026-01-01",
+  "train_start": "2015-01-01",
+  "validation_start": "2022-01-01",
+  "test_start": "2024-01-01",
+  "test_end_exclusive": "2026-01-01",
+  "target": "execution aligned t+2..t+21",
+  "missing_policy": "No fabricated/forward-filled prices. Record download/identity/coverage failures, never replace selected firms based on outcomes. Shorter histories allowed after full past context.",
+  "model_scope": "Market-only pooled Ridge and LSTM trained on original+new_training firms; held_company labels excluded from training, selection and calibration. Existing pretrained models remain retrospective comparators.",
+  "holdout_2026": "sealed"
+}

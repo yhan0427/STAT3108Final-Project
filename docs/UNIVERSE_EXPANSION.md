@@ -39,3 +39,7 @@ Neither this design nor a future raw observation count supports an unqualified r
 ## Public-source verification outcome
 
 See `results/UNIVERSE_VERIFICATION.md`: two pinned public candidate sources were checked and rejected as ready-to-use 2025 year-end rosters. One is stale; the other conflicts with official December changes. No sample has been selected and no expanded stock prices downloaded. Public primary-source reconciliation continues before phase-one selection.
+
+## Reconstructed first cohort and actual training
+
+A separate historical-page reconstruction now explicitly records missing December additions and the SOLS deletion using the official announcement. This is distinct from adopting either rejected list unchanged; see docs/EXPANSION_100.md and config/expansion-100-v1.json. It yields 503 securities / 500 CIK identifiers, from which 100 issuers were frozen for staged collection. Complete independent verification remains qualified. Ninety-nine raw histories were retained; WBD is a recorded failure, Q lacks early fitting history, and no missing company was silently replaced. Model fitting and held-company evaluation have completed on this qualified cohort.

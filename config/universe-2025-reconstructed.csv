@@ -1,0 +1,504 @@
+ticker,company,sector,cik,correction,reference_date,issuer_id,provider_symbol,primary_company_security
+A,Agilent Technologies,Health Care,1090872,historical_page,2025-12-31,CIK0001090872,A,True
+AAPL,Apple Inc.,Information Technology,320193,historical_page,2025-12-31,CIK0000320193,AAPL,True
+ABBV,AbbVie,Health Care,1551152,historical_page,2025-12-31,CIK0001551152,ABBV,True
+ABNB,Airbnb,Consumer Discretionary,1559720,historical_page,2025-12-31,CIK0001559720,ABNB,True
+ABT,Abbott Laboratories,Health Care,1800,historical_page,2025-12-31,CIK0000001800,ABT,True
+ACGL,Arch Capital Group,Financials,947484,historical_page,2025-12-31,CIK0000947484,ACGL,True
+ACN,Accenture,Information Technology,1467373,historical_page,2025-12-31,CIK0001467373,ACN,True
+ADBE,Adobe Inc.,Information Technology,796343,historical_page,2025-12-31,CIK0000796343,ADBE,True
+ADI,Analog Devices,Information Technology,6281,historical_page,2025-12-31,CIK0000006281,ADI,True
+ADM,Archer Daniels Midland,Consumer Staples,7084,historical_page,2025-12-31,CIK0000007084,ADM,True
+ADP,Automatic Data Processing,Industrials,8670,historical_page,2025-12-31,CIK0000008670,ADP,True
+ADSK,Autodesk,Information Technology,769397,historical_page,2025-12-31,CIK0000769397,ADSK,True
+AEE,Ameren,Utilities,1002910,historical_page,2025-12-31,CIK0001002910,AEE,True
+AEP,American Electric Power,Utilities,4904,historical_page,2025-12-31,CIK0000004904,AEP,True
+AES,AES Corporation,Utilities,874761,historical_page,2025-12-31,CIK0000874761,AES,True
+AFL,Aflac,Financials,4977,historical_page,2025-12-31,CIK0000004977,AFL,True
+AIG,American International Group,Financials,5272,historical_page,2025-12-31,CIK0000005272,AIG,True
+AIZ,Assurant,Financials,1267238,historical_page,2025-12-31,CIK0001267238,AIZ,True
+AJG,Arthur J. Gallagher & Co.,Financials,354190,historical_page,2025-12-31,CIK0000354190,AJG,True
+AKAM,Akamai Technologies,Information Technology,1086222,historical_page,2025-12-31,CIK0001086222,AKAM,True
+ALB,Albemarle Corporation,Materials,915913,historical_page,2025-12-31,CIK0000915913,ALB,True
+ALGN,Align Technology,Health Care,1097149,historical_page,2025-12-31,CIK0001097149,ALGN,True
+ALL,Allstate,Financials,899051,historical_page,2025-12-31,CIK0000899051,ALL,True
+ALLE,Allegion,Industrials,1579241,historical_page,2025-12-31,CIK0001579241,ALLE,True
+AMAT,Applied Materials,Information Technology,6951,historical_page,2025-12-31,CIK0000006951,AMAT,True
+AMCR,Amcor,Materials,1748790,historical_page,2025-12-31,CIK0001748790,AMCR,True
+AMD,Advanced Micro Devices,Information Technology,2488,historical_page,2025-12-31,CIK0000002488,AMD,True
+AME,Ametek,Industrials,1037868,historical_page,2025-12-31,CIK0001037868,AME,True
+AMGN,Amgen,Health Care,318154,historical_page,2025-12-31,CIK0000318154,AMGN,True
+AMP,Ameriprise Financial,Financials,820027,historical_page,2025-12-31,CIK0000820027,AMP,True
+AMT,American Tower,Real Estate,1053507,historical_page,2025-12-31,CIK0001053507,AMT,True
+AMZN,Amazon,Consumer Discretionary,1018724,historical_page,2025-12-31,CIK0001018724,AMZN,True
+ANET,Arista Networks,Information Technology,1596532,historical_page,2025-12-31,CIK0001596532,ANET,True
+AON,Aon plc,Financials,315293,historical_page,2025-12-31,CIK0000315293,AON,True
+AOS,A. O. Smith,Industrials,91142,historical_page,2025-12-31,CIK0000091142,AOS,True
+APA,APA Corporation,Energy,1841666,historical_page,2025-12-31,CIK0001841666,APA,True
+APD,Air Products,Materials,2969,historical_page,2025-12-31,CIK0000002969,APD,True
+APH,Amphenol,Information Technology,820313,historical_page,2025-12-31,CIK0000820313,APH,True
+APO,Apollo Global Management,Financials,1858681,historical_page,2025-12-31,CIK0001858681,APO,True
+APP,AppLovin,Information Technology,1751008,historical_page,2025-12-31,CIK0001751008,APP,True
+APTV,Aptiv,Consumer Discretionary,1521332,historical_page,2025-12-31,CIK0001521332,APTV,True
+ARE,Alexandria Real Estate Equities,Real Estate,1035443,historical_page,2025-12-31,CIK0001035443,ARE,True
+ARES,Ares Management,Financials,1176948,historical_page,2025-12-31,CIK0001176948,ARES,True
+ATO,Atmos Energy,Utilities,731802,historical_page,2025-12-31,CIK0000731802,ATO,True
+AVB,AvalonBay Communities,Real Estate,915912,historical_page,2025-12-31,CIK0000915912,AVB,True
+AVGO,Broadcom,Information Technology,1730168,historical_page,2025-12-31,CIK0001730168,AVGO,True
+AVY,Avery Dennison,Materials,8818,historical_page,2025-12-31,CIK0000008818,AVY,True
+AWK,American Water Works,Utilities,1410636,historical_page,2025-12-31,CIK0001410636,AWK,True
+AXON,Axon Enterprise,Industrials,1069183,historical_page,2025-12-31,CIK0001069183,AXON,True
+AXP,American Express,Financials,4962,historical_page,2025-12-31,CIK0000004962,AXP,True
+AZO,AutoZone,Consumer Discretionary,866787,historical_page,2025-12-31,CIK0000866787,AZO,True
+BA,Boeing,Industrials,12927,historical_page,2025-12-31,CIK0000012927,BA,True
+BAC,Bank of America,Financials,70858,historical_page,2025-12-31,CIK0000070858,BAC,True
+BALL,Ball Corporation,Materials,9389,historical_page,2025-12-31,CIK0000009389,BALL,True
+BAX,Baxter International,Health Care,10456,historical_page,2025-12-31,CIK0000010456,BAX,True
+BBY,Best Buy,Consumer Discretionary,764478,historical_page,2025-12-31,CIK0000764478,BBY,True
+BDX,Becton Dickinson,Health Care,10795,historical_page,2025-12-31,CIK0000010795,BDX,True
+BEN,Franklin Resources,Financials,38777,historical_page,2025-12-31,CIK0000038777,BEN,True
+BF.B,Brown–Forman,Consumer Staples,14693,historical_page,2025-12-31,CIK0000014693,BF-B,True
+BG,Bunge Global,Consumer Staples,1996862,historical_page,2025-12-31,CIK0001996862,BG,True
+BIIB,Biogen,Health Care,875045,historical_page,2025-12-31,CIK0000875045,BIIB,True
+BK,BNY Mellon,Financials,1390777,historical_page,2025-12-31,CIK0001390777,BK,True
+BKNG,Booking Holdings,Consumer Discretionary,1075531,historical_page,2025-12-31,CIK0001075531,BKNG,True
+BKR,Baker Hughes,Energy,1701605,historical_page,2025-12-31,CIK0001701605,BKR,True
+BLDR,Builders FirstSource,Industrials,1316835,historical_page,2025-12-31,CIK0001316835,BLDR,True
+BLK,BlackRock,Financials,2012383,historical_page,2025-12-31,CIK0002012383,BLK,True
+BMY,Bristol Myers Squibb,Health Care,14272,historical_page,2025-12-31,CIK0000014272,BMY,True
+BR,Broadridge Financial Solutions,Industrials,1383312,historical_page,2025-12-31,CIK0001383312,BR,True
+BRK.B,Berkshire Hathaway,Financials,1067983,historical_page,2025-12-31,CIK0001067983,BRK-B,True
+BRO,Brown & Brown,Financials,79282,historical_page,2025-12-31,CIK0000079282,BRO,True
+BSX,Boston Scientific,Health Care,885725,historical_page,2025-12-31,CIK0000885725,BSX,True
+BX,Blackstone Inc.,Financials,1393818,historical_page,2025-12-31,CIK0001393818,BX,True
+BXP,"BXP, Inc.",Real Estate,1037540,historical_page,2025-12-31,CIK0001037540,BXP,True
+C,Citigroup,Financials,831001,historical_page,2025-12-31,CIK0000831001,C,True
+CAG,Conagra Brands,Consumer Staples,23217,historical_page,2025-12-31,CIK0000023217,CAG,True
+CAH,Cardinal Health,Health Care,721371,historical_page,2025-12-31,CIK0000721371,CAH,True
+CARR,Carrier Global,Industrials,1783180,historical_page,2025-12-31,CIK0001783180,CARR,True
+CAT,Caterpillar Inc.,Industrials,18230,historical_page,2025-12-31,CIK0000018230,CAT,True
+CB,Chubb Limited,Financials,896159,historical_page,2025-12-31,CIK0000896159,CB,True
+CBOE,Cboe Global Markets,Financials,1374310,historical_page,2025-12-31,CIK0001374310,CBOE,True
+CBRE,CBRE Group,Real Estate,1138118,historical_page,2025-12-31,CIK0001138118,CBRE,True
+CCI,Crown Castle,Real Estate,1051470,historical_page,2025-12-31,CIK0001051470,CCI,True
+CCL,Carnival,Consumer Discretionary,815097,historical_page,2025-12-31,CIK0000815097,CCL,True
+CDNS,Cadence Design Systems,Information Technology,813672,historical_page,2025-12-31,CIK0000813672,CDNS,True
+CDW,CDW Corporation,Information Technology,1402057,historical_page,2025-12-31,CIK0001402057,CDW,True
+CEG,Constellation Energy,Utilities,1868275,historical_page,2025-12-31,CIK0001868275,CEG,True
+CF,CF Industries,Materials,1324404,historical_page,2025-12-31,CIK0001324404,CF,True
+CFG,Citizens Financial Group,Financials,759944,historical_page,2025-12-31,CIK0000759944,CFG,True
+CHD,Church & Dwight,Consumer Staples,313927,historical_page,2025-12-31,CIK0000313927,CHD,True
+CHRW,C.H. Robinson,Industrials,1043277,historical_page,2025-12-31,CIK0001043277,CHRW,True
+CHTR,Charter Communications,Communication Services,1091667,historical_page,2025-12-31,CIK0001091667,CHTR,True
+CI,Cigna,Health Care,1739940,historical_page,2025-12-31,CIK0001739940,CI,True
+CINF,Cincinnati Financial,Financials,20286,historical_page,2025-12-31,CIK0000020286,CINF,True
+CL,Colgate-Palmolive,Consumer Staples,21665,historical_page,2025-12-31,CIK0000021665,CL,True
+CLX,Clorox,Consumer Staples,21076,historical_page,2025-12-31,CIK0000021076,CLX,True
+CMCSA,Comcast,Communication Services,1166691,historical_page,2025-12-31,CIK0001166691,CMCSA,True
+CME,CME Group,Financials,1156375,historical_page,2025-12-31,CIK0001156375,CME,True
+CMG,Chipotle Mexican Grill,Consumer Discretionary,1058090,historical_page,2025-12-31,CIK0001058090,CMG,True
+CMI,Cummins,Industrials,26172,historical_page,2025-12-31,CIK0000026172,CMI,True
+CMS,CMS Energy,Utilities,811156,historical_page,2025-12-31,CIK0000811156,CMS,True
+CNC,Centene Corporation,Health Care,1071739,historical_page,2025-12-31,CIK0001071739,CNC,True
+CNP,CenterPoint Energy,Utilities,1130310,historical_page,2025-12-31,CIK0001130310,CNP,True
+COF,Capital One,Financials,927628,historical_page,2025-12-31,CIK0000927628,COF,True
+COIN,Coinbase,Financials,1679788,historical_page,2025-12-31,CIK0001679788,COIN,True
+COO,Cooper Companies (The),Health Care,711404,historical_page,2025-12-31,CIK0000711404,COO,True
+COP,ConocoPhillips,Energy,1163165,historical_page,2025-12-31,CIK0001163165,COP,True
+COR,Cencora,Health Care,1140859,historical_page,2025-12-31,CIK0001140859,COR,True
+COST,Costco,Consumer Staples,909832,historical_page,2025-12-31,CIK0000909832,COST,True
+CPAY,Corpay,Financials,1175454,historical_page,2025-12-31,CIK0001175454,CPAY,True
+CPB,Campbell's Company (The),Consumer Staples,16732,historical_page,2025-12-31,CIK0000016732,CPB,True
+CPRT,Copart,Industrials,900075,historical_page,2025-12-31,CIK0000900075,CPRT,True
+CPT,Camden Property Trust,Real Estate,906345,historical_page,2025-12-31,CIK0000906345,CPT,True
+CRH,CRH PUBLIC LTD CO,Materials,849395,official_2025-12-22_addition,2025-12-31,CIK0000849395,CRH,True
+CRL,Charles River Laboratories,Health Care,1100682,historical_page,2025-12-31,CIK0001100682,CRL,True
+CRM,Salesforce,Information Technology,1108524,historical_page,2025-12-31,CIK0001108524,CRM,True
+CRWD,CrowdStrike,Information Technology,1535527,historical_page,2025-12-31,CIK0001535527,CRWD,True
+CSCO,Cisco,Information Technology,858877,historical_page,2025-12-31,CIK0000858877,CSCO,True
+CSGP,CoStar Group,Real Estate,1057352,historical_page,2025-12-31,CIK0001057352,CSGP,True
+CSX,CSX Corporation,Industrials,277948,historical_page,2025-12-31,CIK0000277948,CSX,True
+CTAS,Cintas,Industrials,723254,historical_page,2025-12-31,CIK0000723254,CTAS,True
+CTRA,Coterra,Energy,858470,historical_page,2025-12-31,CIK0000858470,CTRA,True
+CTSH,Cognizant,Information Technology,1058290,historical_page,2025-12-31,CIK0001058290,CTSH,True
+CTVA,Corteva,Materials,1755672,historical_page,2025-12-31,CIK0001755672,CTVA,True
+CVNA,CARVANA CO.,Consumer Discretionary,1690820,official_2025-12-22_addition,2025-12-31,CIK0001690820,CVNA,True
+CVS,CVS Health,Health Care,64803,historical_page,2025-12-31,CIK0000064803,CVS,True
+CVX,Chevron Corporation,Energy,93410,historical_page,2025-12-31,CIK0000093410,CVX,True
+D,Dominion Energy,Utilities,715957,historical_page,2025-12-31,CIK0000715957,D,True
+DAL,Delta Air Lines,Industrials,27904,historical_page,2025-12-31,CIK0000027904,DAL,True
+DASH,DoorDash,Consumer Discretionary,1792789,historical_page,2025-12-31,CIK0001792789,DASH,True
+DAY,Dayforce,Industrials,1725057,historical_page,2025-12-31,CIK0001725057,DAY,True
+DD,DuPont,Materials,1666700,historical_page,2025-12-31,CIK0001666700,DD,True
+DDOG,Datadog,Information Technology,1561550,historical_page,2025-12-31,CIK0001561550,DDOG,True
+DE,Deere & Company,Industrials,315189,historical_page,2025-12-31,CIK0000315189,DE,True
+DECK,Deckers Brands,Consumer Discretionary,910521,historical_page,2025-12-31,CIK0000910521,DECK,True
+DELL,Dell Technologies,Information Technology,1571996,historical_page,2025-12-31,CIK0001571996,DELL,True
+DG,Dollar General,Consumer Staples,29534,historical_page,2025-12-31,CIK0000029534,DG,True
+DGX,Quest Diagnostics,Health Care,1022079,historical_page,2025-12-31,CIK0001022079,DGX,True
+DHI,D. R. Horton,Consumer Discretionary,882184,historical_page,2025-12-31,CIK0000882184,DHI,True
+DHR,Danaher Corporation,Health Care,313616,historical_page,2025-12-31,CIK0000313616,DHR,True
+DIS,Walt Disney Company (The),Communication Services,1744489,historical_page,2025-12-31,CIK0001744489,DIS,True
+DLR,Digital Realty,Real Estate,1297996,historical_page,2025-12-31,CIK0001297996,DLR,True
+DLTR,Dollar Tree,Consumer Staples,935703,historical_page,2025-12-31,CIK0000935703,DLTR,True
+DOC,Healthpeak Properties,Real Estate,765880,historical_page,2025-12-31,CIK0000765880,DOC,True
+DOV,Dover Corporation,Industrials,29905,historical_page,2025-12-31,CIK0000029905,DOV,True
+DOW,Dow Inc.,Materials,1751788,historical_page,2025-12-31,CIK0001751788,DOW,True
+DPZ,Domino's,Consumer Discretionary,1286681,historical_page,2025-12-31,CIK0001286681,DPZ,True
+DRI,Darden Restaurants,Consumer Discretionary,940944,historical_page,2025-12-31,CIK0000940944,DRI,True
+DTE,DTE Energy,Utilities,936340,historical_page,2025-12-31,CIK0000936340,DTE,True
+DUK,Duke Energy,Utilities,1326160,historical_page,2025-12-31,CIK0001326160,DUK,True
+DVA,DaVita,Health Care,927066,historical_page,2025-12-31,CIK0000927066,DVA,True
+DVN,Devon Energy,Energy,1090012,historical_page,2025-12-31,CIK0001090012,DVN,True
+DXCM,Dexcom,Health Care,1093557,historical_page,2025-12-31,CIK0001093557,DXCM,True
+EA,Electronic Arts,Communication Services,712515,historical_page,2025-12-31,CIK0000712515,EA,True
+EBAY,eBay Inc.,Consumer Discretionary,1065088,historical_page,2025-12-31,CIK0001065088,EBAY,True
+ECL,Ecolab,Materials,31462,historical_page,2025-12-31,CIK0000031462,ECL,True
+ED,Consolidated Edison,Utilities,1047862,historical_page,2025-12-31,CIK0001047862,ED,True
+EFX,Equifax,Industrials,33185,historical_page,2025-12-31,CIK0000033185,EFX,True
+EG,Everest Group,Financials,1095073,historical_page,2025-12-31,CIK0001095073,EG,True
+EIX,Edison International,Utilities,827052,historical_page,2025-12-31,CIK0000827052,EIX,True
+EL,Estée Lauder Companies (The),Consumer Staples,1001250,historical_page,2025-12-31,CIK0001001250,EL,True
+ELV,Elevance Health,Health Care,1156039,historical_page,2025-12-31,CIK0001156039,ELV,True
+EME,Emcor,Industrials,105634,historical_page,2025-12-31,CIK0000105634,EME,True
+EMR,Emerson Electric,Industrials,32604,historical_page,2025-12-31,CIK0000032604,EMR,True
+EOG,EOG Resources,Energy,821189,historical_page,2025-12-31,CIK0000821189,EOG,True
+EPAM,EPAM Systems,Information Technology,1352010,historical_page,2025-12-31,CIK0001352010,EPAM,True
+EQIX,Equinix,Real Estate,1101239,historical_page,2025-12-31,CIK0001101239,EQIX,True
+EQR,Equity Residential,Real Estate,906107,historical_page,2025-12-31,CIK0000906107,EQR,True
+EQT,EQT Corporation,Energy,33213,historical_page,2025-12-31,CIK0000033213,EQT,True
+ERIE,Erie Indemnity,Financials,922621,historical_page,2025-12-31,CIK0000922621,ERIE,True
+ES,Eversource Energy,Utilities,72741,historical_page,2025-12-31,CIK0000072741,ES,True
+ESS,Essex Property Trust,Real Estate,920522,historical_page,2025-12-31,CIK0000920522,ESS,True
+ETN,Eaton Corporation,Industrials,1551182,historical_page,2025-12-31,CIK0001551182,ETN,True
+ETR,Entergy,Utilities,65984,historical_page,2025-12-31,CIK0000065984,ETR,True
+EVRG,Evergy,Utilities,1711269,historical_page,2025-12-31,CIK0001711269,EVRG,True
+EW,Edwards Lifesciences,Health Care,1099800,historical_page,2025-12-31,CIK0001099800,EW,True
+EXC,Exelon,Utilities,1109357,historical_page,2025-12-31,CIK0001109357,EXC,True
+EXE,Expand Energy,Energy,895126,historical_page,2025-12-31,CIK0000895126,EXE,True
+EXPD,Expeditors International,Industrials,746515,historical_page,2025-12-31,CIK0000746515,EXPD,True
+EXPE,Expedia Group,Consumer Discretionary,1324424,historical_page,2025-12-31,CIK0001324424,EXPE,True
+EXR,Extra Space Storage,Real Estate,1289490,historical_page,2025-12-31,CIK0001289490,EXR,True
+F,Ford Motor Company,Consumer Discretionary,37996,historical_page,2025-12-31,CIK0000037996,F,True
+FANG,Diamondback Energy,Energy,1539838,historical_page,2025-12-31,CIK0001539838,FANG,True
+FAST,Fastenal,Industrials,815556,historical_page,2025-12-31,CIK0000815556,FAST,True
+FCX,Freeport-McMoRan,Materials,831259,historical_page,2025-12-31,CIK0000831259,FCX,True
+FDS,FactSet,Financials,1013237,historical_page,2025-12-31,CIK0001013237,FDS,True
+FDX,FedEx,Industrials,1048911,historical_page,2025-12-31,CIK0001048911,FDX,True
+FE,FirstEnergy,Utilities,1031296,historical_page,2025-12-31,CIK0001031296,FE,True
+FFIV,"F5, Inc.",Information Technology,1048695,historical_page,2025-12-31,CIK0001048695,FFIV,True
+FICO,Fair Isaac,Information Technology,814547,historical_page,2025-12-31,CIK0000814547,FICO,True
+FIS,Fidelity National Information Services,Financials,1136893,historical_page,2025-12-31,CIK0001136893,FIS,True
+FISV,Fiserv,Financials,798354,historical_page,2025-12-31,CIK0000798354,FISV,True
+FITB,Fifth Third Bancorp,Financials,35527,historical_page,2025-12-31,CIK0000035527,FITB,True
+FIX,COMFORT SYSTEMS USA INC,Industrials,1035983,official_2025-12-22_addition,2025-12-31,CIK0001035983,FIX,True
+FOX,Fox Corporation (Class B),Communication Services,1754301,historical_page,2025-12-31,CIK0001754301,FOX,True
+FOXA,Fox Corporation (Class A),Communication Services,1754301,historical_page,2025-12-31,CIK0001754301,FOXA,False
+FRT,Federal Realty Investment Trust,Real Estate,34903,historical_page,2025-12-31,CIK0000034903,FRT,True
+FSLR,First Solar,Information Technology,1274494,historical_page,2025-12-31,CIK0001274494,FSLR,True
+FTNT,Fortinet,Information Technology,1262039,historical_page,2025-12-31,CIK0001262039,FTNT,True
+FTV,Fortive,Industrials,1659166,historical_page,2025-12-31,CIK0001659166,FTV,True
+GD,General Dynamics,Industrials,40533,historical_page,2025-12-31,CIK0000040533,GD,True
+GDDY,GoDaddy,Information Technology,1609711,historical_page,2025-12-31,CIK0001609711,GDDY,True
+GE,GE Aerospace,Industrials,40545,historical_page,2025-12-31,CIK0000040545,GE,True
+GEHC,GE HealthCare,Health Care,1932393,historical_page,2025-12-31,CIK0001932393,GEHC,True
+GEN,Gen Digital,Information Technology,849399,historical_page,2025-12-31,CIK0000849399,GEN,True
+GEV,GE Vernova,Industrials,1996810,historical_page,2025-12-31,CIK0001996810,GEV,True
+GILD,Gilead Sciences,Health Care,882095,historical_page,2025-12-31,CIK0000882095,GILD,True
+GIS,General Mills,Consumer Staples,40704,historical_page,2025-12-31,CIK0000040704,GIS,True
+GL,Globe Life,Financials,320335,historical_page,2025-12-31,CIK0000320335,GL,True
+GLW,Corning Inc.,Information Technology,24741,historical_page,2025-12-31,CIK0000024741,GLW,True
+GM,General Motors,Consumer Discretionary,1467858,historical_page,2025-12-31,CIK0001467858,GM,True
+GNRC,Generac,Industrials,1474735,historical_page,2025-12-31,CIK0001474735,GNRC,True
+GOOG,Alphabet Inc. (Class C),Communication Services,1652044,historical_page,2025-12-31,CIK0001652044,GOOG,True
+GOOGL,Alphabet Inc. (Class A),Communication Services,1652044,historical_page,2025-12-31,CIK0001652044,GOOGL,False
+GPC,Genuine Parts Company,Consumer Discretionary,40987,historical_page,2025-12-31,CIK0000040987,GPC,True
+GPN,Global Payments,Financials,1123360,historical_page,2025-12-31,CIK0001123360,GPN,True
+GRMN,Garmin,Consumer Discretionary,1121788,historical_page,2025-12-31,CIK0001121788,GRMN,True
+GS,Goldman Sachs,Financials,886982,historical_page,2025-12-31,CIK0000886982,GS,True
+GWW,W. W. Grainger,Industrials,277135,historical_page,2025-12-31,CIK0000277135,GWW,True
+HAL,Halliburton,Energy,45012,historical_page,2025-12-31,CIK0000045012,HAL,True
+HAS,Hasbro,Consumer Discretionary,46080,historical_page,2025-12-31,CIK0000046080,HAS,True
+HBAN,Huntington Bancshares,Financials,49196,historical_page,2025-12-31,CIK0000049196,HBAN,True
+HCA,HCA Healthcare,Health Care,860730,historical_page,2025-12-31,CIK0000860730,HCA,True
+HD,Home Depot (The),Consumer Discretionary,354950,historical_page,2025-12-31,CIK0000354950,HD,True
+HIG,Hartford (The),Financials,874766,historical_page,2025-12-31,CIK0000874766,HIG,True
+HII,Huntington Ingalls Industries,Industrials,1501585,historical_page,2025-12-31,CIK0001501585,HII,True
+HLT,Hilton Worldwide,Consumer Discretionary,1585689,historical_page,2025-12-31,CIK0001585689,HLT,True
+HOLX,Hologic,Health Care,859737,historical_page,2025-12-31,CIK0000859737,HOLX,True
+HON,Honeywell,Industrials,773840,historical_page,2025-12-31,CIK0000773840,HON,True
+HOOD,Robinhood Markets,Financials,1783879,historical_page,2025-12-31,CIK0001783879,HOOD,True
+HPE,Hewlett Packard Enterprise,Information Technology,1645590,historical_page,2025-12-31,CIK0001645590,HPE,True
+HPQ,HP Inc.,Information Technology,47217,historical_page,2025-12-31,CIK0000047217,HPQ,True
+HRL,Hormel Foods,Consumer Staples,48465,historical_page,2025-12-31,CIK0000048465,HRL,True
+HSIC,Henry Schein,Health Care,1000228,historical_page,2025-12-31,CIK0001000228,HSIC,True
+HST,Host Hotels & Resorts,Real Estate,1070750,historical_page,2025-12-31,CIK0001070750,HST,True
+HSY,Hershey Company (The),Consumer Staples,47111,historical_page,2025-12-31,CIK0000047111,HSY,True
+HUBB,Hubbell Incorporated,Industrials,48898,historical_page,2025-12-31,CIK0000048898,HUBB,True
+HUM,Humana,Health Care,49071,historical_page,2025-12-31,CIK0000049071,HUM,True
+HWM,Howmet Aerospace,Industrials,4281,historical_page,2025-12-31,CIK0000004281,HWM,True
+IBKR,Interactive Brokers,Financials,1381197,historical_page,2025-12-31,CIK0001381197,IBKR,True
+IBM,IBM,Information Technology,51143,historical_page,2025-12-31,CIK0000051143,IBM,True
+ICE,Intercontinental Exchange,Financials,1571949,historical_page,2025-12-31,CIK0001571949,ICE,True
+IDXX,Idexx Laboratories,Health Care,874716,historical_page,2025-12-31,CIK0000874716,IDXX,True
+IEX,IDEX Corporation,Industrials,832101,historical_page,2025-12-31,CIK0000832101,IEX,True
+IFF,International Flavors & Fragrances,Materials,51253,historical_page,2025-12-31,CIK0000051253,IFF,True
+INCY,Incyte,Health Care,879169,historical_page,2025-12-31,CIK0000879169,INCY,True
+INTC,Intel,Information Technology,50863,historical_page,2025-12-31,CIK0000050863,INTC,True
+INTU,Intuit,Information Technology,896878,historical_page,2025-12-31,CIK0000896878,INTU,True
+INVH,Invitation Homes,Real Estate,1687229,historical_page,2025-12-31,CIK0001687229,INVH,True
+IP,International Paper,Materials,51434,historical_page,2025-12-31,CIK0000051434,IP,True
+IQV,IQVIA,Health Care,1478242,historical_page,2025-12-31,CIK0001478242,IQV,True
+IR,Ingersoll Rand,Industrials,1699150,historical_page,2025-12-31,CIK0001699150,IR,True
+IRM,Iron Mountain,Real Estate,1020569,historical_page,2025-12-31,CIK0001020569,IRM,True
+ISRG,Intuitive Surgical,Health Care,1035267,historical_page,2025-12-31,CIK0001035267,ISRG,True
+IT,Gartner,Information Technology,749251,historical_page,2025-12-31,CIK0000749251,IT,True
+ITW,Illinois Tool Works,Industrials,49826,historical_page,2025-12-31,CIK0000049826,ITW,True
+IVZ,Invesco,Financials,914208,historical_page,2025-12-31,CIK0000914208,IVZ,True
+J,Jacobs Solutions,Industrials,52988,historical_page,2025-12-31,CIK0000052988,J,True
+JBHT,J.B. Hunt,Industrials,728535,historical_page,2025-12-31,CIK0000728535,JBHT,True
+JBL,Jabil,Information Technology,898293,historical_page,2025-12-31,CIK0000898293,JBL,True
+JCI,Johnson Controls,Industrials,833444,historical_page,2025-12-31,CIK0000833444,JCI,True
+JKHY,Jack Henry & Associates,Financials,779152,historical_page,2025-12-31,CIK0000779152,JKHY,True
+JNJ,Johnson & Johnson,Health Care,200406,historical_page,2025-12-31,CIK0000200406,JNJ,True
+JPM,JPMorgan Chase,Financials,19617,historical_page,2025-12-31,CIK0000019617,JPM,True
+KDP,Keurig Dr Pepper,Consumer Staples,1418135,historical_page,2025-12-31,CIK0001418135,KDP,True
+KEY,KeyCorp,Financials,91576,historical_page,2025-12-31,CIK0000091576,KEY,True
+KEYS,Keysight Technologies,Information Technology,1601046,historical_page,2025-12-31,CIK0001601046,KEYS,True
+KHC,Kraft Heinz,Consumer Staples,1637459,historical_page,2025-12-31,CIK0001637459,KHC,True
+KIM,Kimco Realty,Real Estate,879101,historical_page,2025-12-31,CIK0000879101,KIM,True
+KKR,KKR & Co.,Financials,1404912,historical_page,2025-12-31,CIK0001404912,KKR,True
+KLAC,KLA Corporation,Information Technology,319201,historical_page,2025-12-31,CIK0000319201,KLAC,True
+KMB,Kimberly-Clark,Consumer Staples,55785,historical_page,2025-12-31,CIK0000055785,KMB,True
+KMI,Kinder Morgan,Energy,1506307,historical_page,2025-12-31,CIK0001506307,KMI,True
+KO,Coca-Cola Company (The),Consumer Staples,21344,historical_page,2025-12-31,CIK0000021344,KO,True
+KR,Kroger,Consumer Staples,56873,historical_page,2025-12-31,CIK0000056873,KR,True
+KVUE,Kenvue,Consumer Staples,1944048,historical_page,2025-12-31,CIK0001944048,KVUE,True
+L,Loews Corporation,Financials,60086,historical_page,2025-12-31,CIK0000060086,L,True
+LDOS,Leidos,Industrials,1336920,historical_page,2025-12-31,CIK0001336920,LDOS,True
+LEN,Lennar,Consumer Discretionary,920760,historical_page,2025-12-31,CIK0000920760,LEN,True
+LH,Labcorp,Health Care,920148,historical_page,2025-12-31,CIK0000920148,LH,True
+LHX,L3Harris,Industrials,202058,historical_page,2025-12-31,CIK0000202058,LHX,True
+LII,Lennox International,Industrials,1069202,historical_page,2025-12-31,CIK0001069202,LII,True
+LIN,Linde plc,Materials,1707925,historical_page,2025-12-31,CIK0001707925,LIN,True
+LLY,Lilly (Eli),Health Care,59478,historical_page,2025-12-31,CIK0000059478,LLY,True
+LMT,Lockheed Martin,Industrials,936468,historical_page,2025-12-31,CIK0000936468,LMT,True
+LNT,Alliant Energy,Utilities,352541,historical_page,2025-12-31,CIK0000352541,LNT,True
+LOW,Lowe's,Consumer Discretionary,60667,historical_page,2025-12-31,CIK0000060667,LOW,True
+LRCX,Lam Research,Information Technology,707549,historical_page,2025-12-31,CIK0000707549,LRCX,True
+LULU,Lululemon Athletica,Consumer Discretionary,1397187,historical_page,2025-12-31,CIK0001397187,LULU,True
+LUV,Southwest Airlines,Industrials,92380,historical_page,2025-12-31,CIK0000092380,LUV,True
+LVS,Las Vegas Sands,Consumer Discretionary,1300514,historical_page,2025-12-31,CIK0001300514,LVS,True
+LW,Lamb Weston,Consumer Staples,1679273,historical_page,2025-12-31,CIK0001679273,LW,True
+LYB,LyondellBasell,Materials,1489393,historical_page,2025-12-31,CIK0001489393,LYB,True
+LYV,Live Nation Entertainment,Communication Services,1335258,historical_page,2025-12-31,CIK0001335258,LYV,True
+MA,Mastercard,Financials,1141391,historical_page,2025-12-31,CIK0001141391,MA,True
+MAA,Mid-America Apartment Communities,Real Estate,912595,historical_page,2025-12-31,CIK0000912595,MAA,True
+MAR,Marriott International,Consumer Discretionary,1048286,historical_page,2025-12-31,CIK0001048286,MAR,True
+MAS,Masco,Industrials,62996,historical_page,2025-12-31,CIK0000062996,MAS,True
+MCD,McDonald's,Consumer Discretionary,63908,historical_page,2025-12-31,CIK0000063908,MCD,True
+MCHP,Microchip Technology,Information Technology,827054,historical_page,2025-12-31,CIK0000827054,MCHP,True
+MCK,McKesson Corporation,Health Care,927653,historical_page,2025-12-31,CIK0000927653,MCK,True
+MCO,Moody's Corporation,Financials,1059556,historical_page,2025-12-31,CIK0001059556,MCO,True
+MDLZ,Mondelez International,Consumer Staples,1103982,historical_page,2025-12-31,CIK0001103982,MDLZ,True
+MDT,Medtronic,Health Care,1613103,historical_page,2025-12-31,CIK0001613103,MDT,True
+MET,MetLife,Financials,1099219,historical_page,2025-12-31,CIK0001099219,MET,True
+META,Meta Platforms,Communication Services,1326801,historical_page,2025-12-31,CIK0001326801,META,True
+MGM,MGM Resorts,Consumer Discretionary,789570,historical_page,2025-12-31,CIK0000789570,MGM,True
+MKC,McCormick & Company,Consumer Staples,63754,historical_page,2025-12-31,CIK0000063754,MKC,True
+MLM,Martin Marietta Materials,Materials,916076,historical_page,2025-12-31,CIK0000916076,MLM,True
+MMC,Marsh McLennan,Financials,62709,historical_page,2025-12-31,CIK0000062709,MMC,True
+MMM,3M,Industrials,66740,historical_page,2025-12-31,CIK0000066740,MMM,True
+MNST,Monster Beverage,Consumer Staples,865752,historical_page,2025-12-31,CIK0000865752,MNST,True
+MO,Altria,Consumer Staples,764180,historical_page,2025-12-31,CIK0000764180,MO,True
+MOH,Molina Healthcare,Health Care,1179929,historical_page,2025-12-31,CIK0001179929,MOH,True
+MOS,Mosaic Company (The),Materials,1285785,historical_page,2025-12-31,CIK0001285785,MOS,True
+MPC,Marathon Petroleum,Energy,1510295,historical_page,2025-12-31,CIK0001510295,MPC,True
+MPWR,Monolithic Power Systems,Information Technology,1280452,historical_page,2025-12-31,CIK0001280452,MPWR,True
+MRK,Merck & Co.,Health Care,310158,historical_page,2025-12-31,CIK0000310158,MRK,True
+MRNA,Moderna,Health Care,1682852,historical_page,2025-12-31,CIK0001682852,MRNA,True
+MS,Morgan Stanley,Financials,895421,historical_page,2025-12-31,CIK0000895421,MS,True
+MSCI,MSCI Inc.,Financials,1408198,historical_page,2025-12-31,CIK0001408198,MSCI,True
+MSFT,Microsoft,Information Technology,789019,historical_page,2025-12-31,CIK0000789019,MSFT,True
+MSI,Motorola Solutions,Information Technology,68505,historical_page,2025-12-31,CIK0000068505,MSI,True
+MTB,M&T Bank,Financials,36270,historical_page,2025-12-31,CIK0000036270,MTB,True
+MTCH,Match Group,Communication Services,891103,historical_page,2025-12-31,CIK0000891103,MTCH,True
+MTD,Mettler Toledo,Health Care,1037646,historical_page,2025-12-31,CIK0001037646,MTD,True
+MU,Micron Technology,Information Technology,723125,historical_page,2025-12-31,CIK0000723125,MU,True
+NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,1513761,historical_page,2025-12-31,CIK0001513761,NCLH,True
+NDAQ,"Nasdaq, Inc.",Financials,1120193,historical_page,2025-12-31,CIK0001120193,NDAQ,True
+NDSN,Nordson Corporation,Industrials,72331,historical_page,2025-12-31,CIK0000072331,NDSN,True
+NEE,NextEra Energy,Utilities,753308,historical_page,2025-12-31,CIK0000753308,NEE,True
+NEM,Newmont,Materials,1164727,historical_page,2025-12-31,CIK0001164727,NEM,True
+NFLX,Netflix,Communication Services,1065280,historical_page,2025-12-31,CIK0001065280,NFLX,True
+NI,NiSource,Utilities,1111711,historical_page,2025-12-31,CIK0001111711,NI,True
+NKE,"Nike, Inc.",Consumer Discretionary,320187,historical_page,2025-12-31,CIK0000320187,NKE,True
+NOC,Northrop Grumman,Industrials,1133421,historical_page,2025-12-31,CIK0001133421,NOC,True
+NOW,ServiceNow,Information Technology,1373715,historical_page,2025-12-31,CIK0001373715,NOW,True
+NRG,NRG Energy,Utilities,1013871,historical_page,2025-12-31,CIK0001013871,NRG,True
+NSC,Norfolk Southern,Industrials,702165,historical_page,2025-12-31,CIK0000702165,NSC,True
+NTAP,NetApp,Information Technology,1002047,historical_page,2025-12-31,CIK0001002047,NTAP,True
+NTRS,Northern Trust,Financials,73124,historical_page,2025-12-31,CIK0000073124,NTRS,True
+NUE,Nucor,Materials,73309,historical_page,2025-12-31,CIK0000073309,NUE,True
+NVDA,Nvidia,Information Technology,1045810,historical_page,2025-12-31,CIK0001045810,NVDA,True
+NVR,"NVR, Inc.",Consumer Discretionary,906163,historical_page,2025-12-31,CIK0000906163,NVR,True
+NWS,News Corp (Class B),Communication Services,1564708,historical_page,2025-12-31,CIK0001564708,NWS,True
+NWSA,News Corp (Class A),Communication Services,1564708,historical_page,2025-12-31,CIK0001564708,NWSA,False
+NXPI,NXP Semiconductors,Information Technology,1413447,historical_page,2025-12-31,CIK0001413447,NXPI,True
+O,Realty Income,Real Estate,726728,historical_page,2025-12-31,CIK0000726728,O,True
+ODFL,Old Dominion,Industrials,878927,historical_page,2025-12-31,CIK0000878927,ODFL,True
+OKE,Oneok,Energy,1039684,historical_page,2025-12-31,CIK0001039684,OKE,True
+OMC,Omnicom Group,Communication Services,29989,historical_page,2025-12-31,CIK0000029989,OMC,True
+ON,ON Semiconductor,Information Technology,1097864,historical_page,2025-12-31,CIK0001097864,ON,True
+ORCL,Oracle Corporation,Information Technology,1341439,historical_page,2025-12-31,CIK0001341439,ORCL,True
+ORLY,O’Reilly Automotive,Consumer Discretionary,898173,historical_page,2025-12-31,CIK0000898173,ORLY,True
+OTIS,Otis Worldwide,Industrials,1781335,historical_page,2025-12-31,CIK0001781335,OTIS,True
+OXY,Occidental Petroleum,Energy,797468,historical_page,2025-12-31,CIK0000797468,OXY,True
+PANW,Palo Alto Networks,Information Technology,1327567,historical_page,2025-12-31,CIK0001327567,PANW,True
+PAYC,Paycom,Industrials,1590955,historical_page,2025-12-31,CIK0001590955,PAYC,True
+PAYX,Paychex,Industrials,723531,historical_page,2025-12-31,CIK0000723531,PAYX,True
+PCAR,Paccar,Industrials,75362,historical_page,2025-12-31,CIK0000075362,PCAR,True
+PCG,PG&E Corporation,Utilities,1004980,historical_page,2025-12-31,CIK0001004980,PCG,True
+PEG,Public Service Enterprise Group,Utilities,788784,historical_page,2025-12-31,CIK0000788784,PEG,True
+PEP,PepsiCo,Consumer Staples,77476,historical_page,2025-12-31,CIK0000077476,PEP,True
+PFE,Pfizer,Health Care,78003,historical_page,2025-12-31,CIK0000078003,PFE,True
+PFG,Principal Financial Group,Financials,1126328,historical_page,2025-12-31,CIK0001126328,PFG,True
+PG,Procter & Gamble,Consumer Staples,80424,historical_page,2025-12-31,CIK0000080424,PG,True
+PGR,Progressive Corporation,Financials,80661,historical_page,2025-12-31,CIK0000080661,PGR,True
+PH,Parker Hannifin,Industrials,76334,historical_page,2025-12-31,CIK0000076334,PH,True
+PHM,PulteGroup,Consumer Discretionary,822416,historical_page,2025-12-31,CIK0000822416,PHM,True
+PKG,Packaging Corporation of America,Materials,75677,historical_page,2025-12-31,CIK0000075677,PKG,True
+PLD,Prologis,Real Estate,1045609,historical_page,2025-12-31,CIK0001045609,PLD,True
+PLTR,Palantir Technologies,Information Technology,1321655,historical_page,2025-12-31,CIK0001321655,PLTR,True
+PM,Philip Morris International,Consumer Staples,1413329,historical_page,2025-12-31,CIK0001413329,PM,True
+PNC,PNC Financial Services,Financials,713676,historical_page,2025-12-31,CIK0000713676,PNC,True
+PNR,Pentair,Industrials,77360,historical_page,2025-12-31,CIK0000077360,PNR,True
+PNW,Pinnacle West Capital,Utilities,764622,historical_page,2025-12-31,CIK0000764622,PNW,True
+PODD,Insulet Corporation,Health Care,1145197,historical_page,2025-12-31,CIK0001145197,PODD,True
+POOL,Pool Corporation,Consumer Discretionary,945841,historical_page,2025-12-31,CIK0000945841,POOL,True
+PPG,PPG Industries,Materials,79879,historical_page,2025-12-31,CIK0000079879,PPG,True
+PPL,PPL Corporation,Utilities,922224,historical_page,2025-12-31,CIK0000922224,PPL,True
+PRU,Prudential Financial,Financials,1137774,historical_page,2025-12-31,CIK0001137774,PRU,True
+PSA,Public Storage,Real Estate,1393311,historical_page,2025-12-31,CIK0001393311,PSA,True
+PSKY,Paramount Skydance Corporation,Communication Services,2041610,historical_page,2025-12-31,CIK0002041610,PSKY,True
+PSX,Phillips 66,Energy,1534701,historical_page,2025-12-31,CIK0001534701,PSX,True
+PTC,PTC Inc.,Information Technology,857005,historical_page,2025-12-31,CIK0000857005,PTC,True
+PWR,Quanta Services,Industrials,1050915,historical_page,2025-12-31,CIK0001050915,PWR,True
+PYPL,PayPal,Financials,1633917,historical_page,2025-12-31,CIK0001633917,PYPL,True
+Q,Qnity Electronics,Information Technology,2058873,historical_page,2025-12-31,CIK0002058873,Q,True
+QCOM,Qualcomm,Information Technology,804328,historical_page,2025-12-31,CIK0000804328,QCOM,True
+RCL,Royal Caribbean Group,Consumer Discretionary,884887,historical_page,2025-12-31,CIK0000884887,RCL,True
+REG,Regency Centers,Real Estate,910606,historical_page,2025-12-31,CIK0000910606,REG,True
+REGN,Regeneron Pharmaceuticals,Health Care,872589,historical_page,2025-12-31,CIK0000872589,REGN,True
+RF,Regions Financial Corporation,Financials,1281761,historical_page,2025-12-31,CIK0001281761,RF,True
+RJF,Raymond James Financial,Financials,720005,historical_page,2025-12-31,CIK0000720005,RJF,True
+RL,Ralph Lauren Corporation,Consumer Discretionary,1037038,historical_page,2025-12-31,CIK0001037038,RL,True
+RMD,ResMed,Health Care,943819,historical_page,2025-12-31,CIK0000943819,RMD,True
+ROK,Rockwell Automation,Industrials,1024478,historical_page,2025-12-31,CIK0001024478,ROK,True
+ROL,"Rollins, Inc.",Industrials,84839,historical_page,2025-12-31,CIK0000084839,ROL,True
+ROP,Roper Technologies,Information Technology,882835,historical_page,2025-12-31,CIK0000882835,ROP,True
+ROST,Ross Stores,Consumer Discretionary,745732,historical_page,2025-12-31,CIK0000745732,ROST,True
+RSG,Republic Services,Industrials,1060391,historical_page,2025-12-31,CIK0001060391,RSG,True
+RTX,RTX Corporation,Industrials,101829,historical_page,2025-12-31,CIK0000101829,RTX,True
+RVTY,Revvity,Health Care,31791,historical_page,2025-12-31,CIK0000031791,RVTY,True
+SBAC,SBA Communications,Real Estate,1034054,historical_page,2025-12-31,CIK0001034054,SBAC,True
+SBUX,Starbucks,Consumer Discretionary,829224,historical_page,2025-12-31,CIK0000829224,SBUX,True
+SCHW,Charles Schwab Corporation,Financials,316709,historical_page,2025-12-31,CIK0000316709,SCHW,True
+SHW,Sherwin-Williams,Materials,89800,historical_page,2025-12-31,CIK0000089800,SHW,True
+SJM,J.M. Smucker Company (The),Consumer Staples,91419,historical_page,2025-12-31,CIK0000091419,SJM,True
+SLB,Schlumberger,Energy,87347,historical_page,2025-12-31,CIK0000087347,SLB,True
+SMCI,Supermicro,Information Technology,1375365,historical_page,2025-12-31,CIK0001375365,SMCI,True
+SNA,Snap-on,Industrials,91440,historical_page,2025-12-31,CIK0000091440,SNA,True
+SNDK,Sandisk,Information Technology,2023554,historical_page,2025-12-31,CIK0002023554,SNDK,True
+SNPS,Synopsys,Information Technology,883241,historical_page,2025-12-31,CIK0000883241,SNPS,True
+SO,Southern Company,Utilities,92122,historical_page,2025-12-31,CIK0000092122,SO,True
+SOLV,Solventum,Health Care,1964738,historical_page,2025-12-31,CIK0001964738,SOLV,True
+SPG,Simon Property Group,Real Estate,1063761,historical_page,2025-12-31,CIK0001063761,SPG,True
+SPGI,S&P Global,Financials,64040,historical_page,2025-12-31,CIK0000064040,SPGI,True
+SRE,Sempra,Utilities,1032208,historical_page,2025-12-31,CIK0001032208,SRE,True
+STE,Steris,Health Care,1757898,historical_page,2025-12-31,CIK0001757898,STE,True
+STLD,Steel Dynamics,Materials,1022671,historical_page,2025-12-31,CIK0001022671,STLD,True
+STT,State Street Corporation,Financials,93751,historical_page,2025-12-31,CIK0000093751,STT,True
+STX,Seagate Technology,Information Technology,1137789,historical_page,2025-12-31,CIK0001137789,STX,True
+STZ,Constellation Brands,Consumer Staples,16918,historical_page,2025-12-31,CIK0000016918,STZ,True
+SW,Smurfit Westrock,Materials,2005951,historical_page,2025-12-31,CIK0002005951,SW,True
+SWK,Stanley Black & Decker,Industrials,93556,historical_page,2025-12-31,CIK0000093556,SWK,True
+SWKS,Skyworks Solutions,Information Technology,4127,historical_page,2025-12-31,CIK0000004127,SWKS,True
+SYF,Synchrony Financial,Financials,1601712,historical_page,2025-12-31,CIK0001601712,SYF,True
+SYK,Stryker Corporation,Health Care,310764,historical_page,2025-12-31,CIK0000310764,SYK,True
+SYY,Sysco,Consumer Staples,96021,historical_page,2025-12-31,CIK0000096021,SYY,True
+T,AT&T,Communication Services,732717,historical_page,2025-12-31,CIK0000732717,T,True
+TAP,Molson Coors Beverage Company,Consumer Staples,24545,historical_page,2025-12-31,CIK0000024545,TAP,True
+TDG,TransDigm Group,Industrials,1260221,historical_page,2025-12-31,CIK0001260221,TDG,True
+TDY,Teledyne Technologies,Information Technology,1094285,historical_page,2025-12-31,CIK0001094285,TDY,True
+TECH,Bio-Techne,Health Care,842023,historical_page,2025-12-31,CIK0000842023,TECH,True
+TEL,TE Connectivity,Information Technology,1385157,historical_page,2025-12-31,CIK0001385157,TEL,True
+TER,Teradyne,Information Technology,97210,historical_page,2025-12-31,CIK0000097210,TER,True
+TFC,Truist Financial,Financials,92230,historical_page,2025-12-31,CIK0000092230,TFC,True
+TGT,Target Corporation,Consumer Staples,27419,historical_page,2025-12-31,CIK0000027419,TGT,True
+TJX,TJX Companies,Consumer Discretionary,109198,historical_page,2025-12-31,CIK0000109198,TJX,True
+TKO,TKO Group Holdings,Communication Services,1973266,historical_page,2025-12-31,CIK0001973266,TKO,True
+TMO,Thermo Fisher Scientific,Health Care,97745,historical_page,2025-12-31,CIK0000097745,TMO,True
+TMUS,T-Mobile US,Communication Services,1283699,historical_page,2025-12-31,CIK0001283699,TMUS,True
+TPL,Texas Pacific Land Corporation,Energy,1811074,historical_page,2025-12-31,CIK0001811074,TPL,True
+TPR,"Tapestry, Inc.",Consumer Discretionary,1116132,historical_page,2025-12-31,CIK0001116132,TPR,True
+TRGP,Targa Resources,Energy,1389170,historical_page,2025-12-31,CIK0001389170,TRGP,True
+TRMB,Trimble Inc.,Information Technology,864749,historical_page,2025-12-31,CIK0000864749,TRMB,True
+TROW,T. Rowe Price,Financials,1113169,historical_page,2025-12-31,CIK0001113169,TROW,True
+TRV,Travelers Companies (The),Financials,86312,historical_page,2025-12-31,CIK0000086312,TRV,True
+TSCO,Tractor Supply,Consumer Discretionary,916365,historical_page,2025-12-31,CIK0000916365,TSCO,True
+TSLA,"Tesla, Inc.",Consumer Discretionary,1318605,historical_page,2025-12-31,CIK0001318605,TSLA,True
+TSN,Tyson Foods,Consumer Staples,100493,historical_page,2025-12-31,CIK0000100493,TSN,True
+TT,Trane Technologies,Industrials,1466258,historical_page,2025-12-31,CIK0001466258,TT,True
+TTD,Trade Desk (The),Communication Services,1671933,historical_page,2025-12-31,CIK0001671933,TTD,True
+TTWO,Take-Two Interactive,Communication Services,946581,historical_page,2025-12-31,CIK0000946581,TTWO,True
+TXN,Texas Instruments,Information Technology,97476,historical_page,2025-12-31,CIK0000097476,TXN,True
+TXT,Textron,Industrials,217346,historical_page,2025-12-31,CIK0000217346,TXT,True
+TYL,Tyler Technologies,Information Technology,860731,historical_page,2025-12-31,CIK0000860731,TYL,True
+UAL,United Airlines Holdings,Industrials,100517,historical_page,2025-12-31,CIK0000100517,UAL,True
+UBER,Uber,Industrials,1543151,historical_page,2025-12-31,CIK0001543151,UBER,True
+UDR,"UDR, Inc.",Real Estate,74208,historical_page,2025-12-31,CIK0000074208,UDR,True
+UHS,Universal Health Services,Health Care,352915,historical_page,2025-12-31,CIK0000352915,UHS,True
+ULTA,Ulta Beauty,Consumer Discretionary,1403568,historical_page,2025-12-31,CIK0001403568,ULTA,True
+UNH,UnitedHealth Group,Health Care,731766,historical_page,2025-12-31,CIK0000731766,UNH,True
+UNP,Union Pacific Corporation,Industrials,100885,historical_page,2025-12-31,CIK0000100885,UNP,True
+UPS,United Parcel Service,Industrials,1090727,historical_page,2025-12-31,CIK0001090727,UPS,True
+URI,United Rentals,Industrials,1067701,historical_page,2025-12-31,CIK0001067701,URI,True
+USB,U.S. Bancorp,Financials,36104,historical_page,2025-12-31,CIK0000036104,USB,True
+V,Visa Inc.,Financials,1403161,historical_page,2025-12-31,CIK0001403161,V,True
+VICI,Vici Properties,Real Estate,1705696,historical_page,2025-12-31,CIK0001705696,VICI,True
+VLO,Valero Energy,Energy,1035002,historical_page,2025-12-31,CIK0001035002,VLO,True
+VLTO,Veralto,Industrials,1967680,historical_page,2025-12-31,CIK0001967680,VLTO,True
+VMC,Vulcan Materials Company,Materials,1396009,historical_page,2025-12-31,CIK0001396009,VMC,True
+VRSK,Verisk Analytics,Industrials,1442145,historical_page,2025-12-31,CIK0001442145,VRSK,True
+VRSN,Verisign,Information Technology,1014473,historical_page,2025-12-31,CIK0001014473,VRSN,True
+VRTX,Vertex Pharmaceuticals,Health Care,875320,historical_page,2025-12-31,CIK0000875320,VRTX,True
+VST,Vistra Corp.,Utilities,1692819,historical_page,2025-12-31,CIK0001692819,VST,True
+VTR,Ventas,Real Estate,740260,historical_page,2025-12-31,CIK0000740260,VTR,True
+VTRS,Viatris,Health Care,1792044,historical_page,2025-12-31,CIK0001792044,VTRS,True
+VZ,Verizon,Communication Services,732712,historical_page,2025-12-31,CIK0000732712,VZ,True
+WAB,Wabtec,Industrials,943452,historical_page,2025-12-31,CIK0000943452,WAB,True
+WAT,Waters Corporation,Health Care,1000697,historical_page,2025-12-31,CIK0001000697,WAT,True
+WBD,Warner Bros. Discovery,Communication Services,1437107,historical_page,2025-12-31,CIK0001437107,WBD,True
+WDAY,"Workday, Inc.",Information Technology,1327811,historical_page,2025-12-31,CIK0001327811,WDAY,True
+WDC,Western Digital,Information Technology,106040,historical_page,2025-12-31,CIK0000106040,WDC,True
+WEC,WEC Energy Group,Utilities,783325,historical_page,2025-12-31,CIK0000783325,WEC,True
+WELL,Welltower,Real Estate,766704,historical_page,2025-12-31,CIK0000766704,WELL,True
+WFC,Wells Fargo,Financials,72971,historical_page,2025-12-31,CIK0000072971,WFC,True
+WM,Waste Management,Industrials,823768,historical_page,2025-12-31,CIK0000823768,WM,True
+WMB,Williams Companies,Energy,107263,historical_page,2025-12-31,CIK0000107263,WMB,True
+WMT,Walmart,Consumer Staples,104169,historical_page,2025-12-31,CIK0000104169,WMT,True
+WRB,W. R. Berkley Corporation,Financials,11544,historical_page,2025-12-31,CIK0000011544,WRB,True
+WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,719955,historical_page,2025-12-31,CIK0000719955,WSM,True
+WST,West Pharmaceutical Services,Health Care,105770,historical_page,2025-12-31,CIK0000105770,WST,True
+WTW,Willis Towers Watson,Financials,1140536,historical_page,2025-12-31,CIK0001140536,WTW,True
+WY,Weyerhaeuser,Real Estate,106535,historical_page,2025-12-31,CIK0000106535,WY,True
+WYNN,Wynn Resorts,Consumer Discretionary,1174922,historical_page,2025-12-31,CIK0001174922,WYNN,True
+XEL,Xcel Energy,Utilities,72903,historical_page,2025-12-31,CIK0000072903,XEL,True
+XOM,ExxonMobil,Energy,34088,historical_page,2025-12-31,CIK0000034088,XOM,True
+XYL,Xylem Inc.,Industrials,1524472,historical_page,2025-12-31,CIK0001524472,XYL,True
+XYZ,"Block, Inc.",Financials,1512673,historical_page,2025-12-31,CIK0001512673,XYZ,True
+YUM,Yum! Brands,Consumer Discretionary,1041061,historical_page,2025-12-31,CIK0001041061,YUM,True
+ZBH,Zimmer Biomet,Health Care,1136869,historical_page,2025-12-31,CIK0001136869,ZBH,True
+ZBRA,Zebra Technologies,Information Technology,877212,historical_page,2025-12-31,CIK0000877212,ZBRA,True
+ZTS,Zoetis,Health Care,1555280,historical_page,2025-12-31,CIK0001555280,ZTS,True

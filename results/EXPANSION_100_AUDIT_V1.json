@@ -1,0 +1,431 @@
+{
+  "created_utc": "2026-11-11T21:23:55.009895+00:00",
+  "panel_manifest": {
+    "built_utc": "2026-11-11T21:21:00.627267+00:00",
+    "roster_sha256": "8b60e4171f46ec39cee2f8667814a62606a02c59549176762e9cdc48f0686167",
+    "panel_sha256": "3d66bb365fb176999df40225acadf253f5d47f7dc97d44ae56788e4522372493",
+    "raw_observations": 291416,
+    "candidate_companies": 100,
+    "retained_companies": 99,
+    "excluded": [
+      {
+        "ticker": "WBD",
+        "role": "held_company",
+        "status": "failed",
+        "reason": "$WBD: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      }
+    ],
+    "split_role_counts": "{('excluded', 'held_company'): 10311, ('excluded', 'new_training'): 10357, ('excluded', 'original_training'): 9450, ('test', 'held_company'): 16354, ('test', 'new_training'): 16354, ('test', 'original_training'): 14430, ('train', 'held_company'): 57163, ('train', 'new_training'): 57697, ('train', 'original_training'): 52260, ('validation', 'held_company'): 16320, ('validation', 'new_training'): 16320, ('validation', 'original_training'): 14400}",
+    "holdout_2026_accessed": false
+  },
+  "ridge_selection": [
+    {
+      "alpha": 1.0,
+      "validation_log_mse": 0.0976567465495531
+    },
+    {
+      "alpha": 100.0,
+      "validation_log_mse": 0.09745494853990164
+    },
+    {
+      "alpha": 10000.0,
+      "validation_log_mse": 0.09441175530742794
+    }
+  ],
+  "calibration": {
+    "Persistence": 1.15382060160852,
+    "Ridge60": 1.1882549522136954,
+    "LSTM60": 1.1448591882417705,
+    "Timestral5M": 1.006227862884078
+  },
+  "train_rows": 109957,
+  "validation_rows": 30720,
+  "evaluation_rows": 47138,
+  "paired_intervals_vs_calibrated_ridge": {
+    "held_company/Persistence": {
+      "20": {
+        "mean_difference": 0.22385491648770414,
+        "ci95_low": 0.1448746744317506,
+        "ci95_high": 0.3139211609521004,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.22385491648770414,
+        "ci95_low": 0.14542920183113373,
+        "ci95_high": 0.31294720170149776,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Ridge60": {
+      "20": {
+        "mean_difference": 0.1135740715703204,
+        "ci95_low": 0.03913485387425999,
+        "ci95_high": 0.2141045226159597,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.1135740715703204,
+        "ci95_low": 0.031115907908201457,
+        "ci95_high": 0.21958021799470798,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/LSTM60": {
+      "20": {
+        "mean_difference": 0.03699018909612077,
+        "ci95_low": -0.006532348084232918,
+        "ci95_high": 0.08151545945865785,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03699018909612077,
+        "ci95_low": -0.006996100133444548,
+        "ci95_high": 0.08403799939414813,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Timestral5M": {
+      "20": {
+        "mean_difference": 0.03071521811803012,
+        "ci95_low": -0.0014323755566663654,
+        "ci95_high": 0.06609224866493066,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03071521811803012,
+        "ci95_low": -0.0022191825380245655,
+        "ci95_high": 0.06839010679611866,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Persistence_calibrated": {
+      "20": {
+        "mean_difference": 0.12156694918364812,
+        "ci95_low": 0.03945745016573757,
+        "ci95_high": 0.18874906185819043,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.12156694918364812,
+        "ci95_low": 0.062440995656081674,
+        "ci95_high": 0.17730090251054634,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Ridge60_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/LSTM60_calibrated": {
+      "20": {
+        "mean_difference": -0.03488719885457362,
+        "ci95_low": -0.07548142824225625,
+        "ci95_high": -0.007548498761061175,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.03488719885457362,
+        "ci95_low": -0.07636927456573349,
+        "ci95_high": -0.005742251179578124,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.028704426843425657,
+        "ci95_low": -0.003467494360083449,
+        "ci95_high": 0.06359118461709731,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.028704426843425657,
+        "ci95_low": -0.0026927532403140915,
+        "ci95_high": 0.06413473603468489,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/Persistence": {
+      "20": {
+        "mean_difference": 0.20655958345368797,
+        "ci95_low": 0.12769066682030303,
+        "ci95_high": 0.2951360943553571,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.20655958345368797,
+        "ci95_low": 0.1444950227265952,
+        "ci95_high": 0.2744069697028292,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/Ridge60": {
+      "20": {
+        "mean_difference": 0.09982484527441993,
+        "ci95_low": 0.024717526836671104,
+        "ci95_high": 0.19817536556601034,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.09982484527441993,
+        "ci95_low": 0.020234790928358174,
+        "ci95_high": 0.20409877685915667,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/LSTM60": {
+      "20": {
+        "mean_difference": 0.017849873354983337,
+        "ci95_low": -0.02339224637112007,
+        "ci95_high": 0.06733653609135656,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.017849873354983337,
+        "ci95_low": -0.02591497049095898,
+        "ci95_high": 0.06696806052073112,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/Timestral5M": {
+      "20": {
+        "mean_difference": 0.01782878620966088,
+        "ci95_low": -0.029678923385071408,
+        "ci95_high": 0.06251345121752844,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.01782878620966088,
+        "ci95_low": -0.018624773285267657,
+        "ci95_high": 0.05645489871020859,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/Persistence_calibrated": {
+      "20": {
+        "mean_difference": 0.11799244135817566,
+        "ci95_low": 0.02052128579749101,
+        "ci95_high": 0.18344951100197507,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.11799244135817566,
+        "ci95_low": 0.04841286784820236,
+        "ci95_high": 0.17751062187181377,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/Ridge60_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/LSTM60_calibrated": {
+      "20": {
+        "mean_difference": -0.04259955335939322,
+        "ci95_low": -0.08039918384437114,
+        "ci95_high": -0.014186779660540473,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.04259955335939322,
+        "ci95_low": -0.08078871719153088,
+        "ci95_high": -0.012374843116695464,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "new_training/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.016448264825099958,
+        "ci95_low": -0.03178833944859371,
+        "ci95_high": 0.061468271485957994,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.016448264825099958,
+        "ci95_low": -0.01914389201572785,
+        "ci95_high": 0.05251307621744375,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/Persistence": {
+      "20": {
+        "mean_difference": 0.24121981778165402,
+        "ci95_low": 0.18535586226733344,
+        "ci95_high": 0.30145952429765027,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.24121981778165402,
+        "ci95_low": 0.19806709407600237,
+        "ci95_high": 0.2886669195566902,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/Ridge60": {
+      "20": {
+        "mean_difference": 0.10552870607209872,
+        "ci95_low": 0.03912320931269584,
+        "ci95_high": 0.1989009951599866,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.10552870607209872,
+        "ci95_low": 0.03053310411894343,
+        "ci95_high": 0.20555184951192398,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/LSTM60": {
+      "20": {
+        "mean_difference": 0.052132317053941266,
+        "ci95_low": 0.00800630710368966,
+        "ci95_high": 0.10346106892734713,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.052132317053941266,
+        "ci95_low": 0.0033627065619517764,
+        "ci95_high": 0.10909087725659967,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/Timestral5M": {
+      "20": {
+        "mean_difference": 0.019639547803791582,
+        "ci95_low": -0.01501328527252337,
+        "ci95_high": 0.05450754279490757,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.019639547803791582,
+        "ci95_low": -0.008520821691561988,
+        "ci95_high": 0.04938776805151561,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/Persistence_calibrated": {
+      "20": {
+        "mean_difference": 0.13773474208866734,
+        "ci95_low": 0.08836889674384206,
+        "ci95_high": 0.17646974113101785,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.13773474208866734,
+        "ci95_low": 0.10797083476210495,
+        "ci95_high": 0.16440070435006227,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/Ridge60_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/LSTM60_calibrated": {
+      "20": {
+        "mean_difference": -0.025948816763757602,
+        "ci95_low": -0.04844152827489484,
+        "ci95_high": -0.006189371366454324,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.025948816763757602,
+        "ci95_low": -0.04839414015427223,
+        "ci95_high": -0.00789567418837592,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "original_training/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.017506940632239967,
+        "ci95_low": -0.01613591566185421,
+        "ci95_high": 0.05039432721738111,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.017506940632239967,
+        "ci95_low": -0.008520134195184353,
+        "ci95_high": 0.04460116931126715,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "holdout_2026_accessed": false
+}

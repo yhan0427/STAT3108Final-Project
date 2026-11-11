@@ -1,0 +1,101 @@
+ticker,company,sector,cik,correction,reference_date,issuer_id,provider_symbol,primary_company_security,role
+AAPL,Apple Inc.,Information Technology,320193,historical_page,2025-12-31,CIK0000320193,AAPL,True,original_training
+ABBV,AbbVie,Health Care,1551152,historical_page,2025-12-31,CIK0001551152,ABBV,True,original_training
+ACGL,Arch Capital Group,Financials,947484,historical_page,2025-12-31,CIK0000947484,ACGL,True,new_training
+ADBE,Adobe Inc.,Information Technology,796343,historical_page,2025-12-31,CIK0000796343,ADBE,True,original_training
+ALLE,Allegion,Industrials,1579241,historical_page,2025-12-31,CIK0001579241,ALLE,True,held_company
+AMAT,Applied Materials,Information Technology,6951,historical_page,2025-12-31,CIK0000006951,AMAT,True,original_training
+AMGN,Amgen,Health Care,318154,historical_page,2025-12-31,CIK0000318154,AMGN,True,held_company
+AMZN,Amazon,Consumer Discretionary,1018724,historical_page,2025-12-31,CIK0001018724,AMZN,True,original_training
+ATO,Atmos Energy,Utilities,731802,historical_page,2025-12-31,CIK0000731802,ATO,True,held_company
+AXP,American Express,Financials,4962,historical_page,2025-12-31,CIK0000004962,AXP,True,new_training
+BBY,Best Buy,Consumer Discretionary,764478,historical_page,2025-12-31,CIK0000764478,BBY,True,new_training
+BDX,Becton Dickinson,Health Care,10795,historical_page,2025-12-31,CIK0000010795,BDX,True,held_company
+BR,Broadridge Financial Solutions,Industrials,1383312,historical_page,2025-12-31,CIK0001383312,BR,True,held_company
+CAT,Caterpillar Inc.,Industrials,18230,historical_page,2025-12-31,CIK0000018230,CAT,True,original_training
+CCL,Carnival,Consumer Discretionary,815097,historical_page,2025-12-31,CIK0000815097,CCL,True,new_training
+CFG,Citizens Financial Group,Financials,759944,historical_page,2025-12-31,CIK0000759944,CFG,True,new_training
+CINF,Cincinnati Financial,Financials,20286,historical_page,2025-12-31,CIK0000020286,CINF,True,new_training
+CMCSA,Comcast,Communication Services,1166691,historical_page,2025-12-31,CIK0001166691,CMCSA,True,new_training
+COST,Costco,Consumer Staples,909832,historical_page,2025-12-31,CIK0000909832,COST,True,original_training
+CPB,Campbell's Company (The),Consumer Staples,16732,historical_page,2025-12-31,CIK0000016732,CPB,True,new_training
+CRWD,CrowdStrike,Information Technology,1535527,historical_page,2025-12-31,CIK0001535527,CRWD,True,new_training
+CSCO,Cisco,Information Technology,858877,historical_page,2025-12-31,CIK0000858877,CSCO,True,original_training
+CTAS,Cintas,Industrials,723254,historical_page,2025-12-31,CIK0000723254,CTAS,True,held_company
+CVX,Chevron Corporation,Energy,93410,historical_page,2025-12-31,CIK0000093410,CVX,True,original_training
+DHI,D. R. Horton,Consumer Discretionary,882184,historical_page,2025-12-31,CIK0000882184,DHI,True,held_company
+DUK,Duke Energy,Utilities,1326160,historical_page,2025-12-31,CIK0001326160,DUK,True,original_training
+DXCM,Dexcom,Health Care,1093557,historical_page,2025-12-31,CIK0001093557,DXCM,True,held_company
+ECL,Ecolab,Materials,31462,historical_page,2025-12-31,CIK0000031462,ECL,True,held_company
+ED,Consolidated Edison,Utilities,1047862,historical_page,2025-12-31,CIK0001047862,ED,True,held_company
+EIX,Edison International,Utilities,827052,historical_page,2025-12-31,CIK0000827052,EIX,True,held_company
+EL,Estée Lauder Companies (The),Consumer Staples,1001250,historical_page,2025-12-31,CIK0001001250,EL,True,held_company
+EQT,EQT Corporation,Energy,33213,historical_page,2025-12-31,CIK0000033213,EQT,True,new_training
+ERIE,Erie Indemnity,Financials,922621,historical_page,2025-12-31,CIK0000922621,ERIE,True,new_training
+ESS,Essex Property Trust,Real Estate,920522,historical_page,2025-12-31,CIK0000920522,ESS,True,held_company
+EVRG,Evergy,Utilities,1711269,historical_page,2025-12-31,CIK0001711269,EVRG,True,new_training
+F,Ford Motor Company,Consumer Discretionary,37996,historical_page,2025-12-31,CIK0000037996,F,True,new_training
+FOX,Fox Corporation (Class B),Communication Services,1754301,historical_page,2025-12-31,CIK0001754301,FOX,True,held_company
+FRT,Federal Realty Investment Trust,Real Estate,34903,historical_page,2025-12-31,CIK0000034903,FRT,True,held_company
+FTNT,Fortinet,Information Technology,1262039,historical_page,2025-12-31,CIK0001262039,FTNT,True,new_training
+GD,General Dynamics,Industrials,40533,historical_page,2025-12-31,CIK0000040533,GD,True,new_training
+GDDY,GoDaddy,Information Technology,1609711,historical_page,2025-12-31,CIK0001609711,GDDY,True,held_company
+GILD,Gilead Sciences,Health Care,882095,historical_page,2025-12-31,CIK0000882095,GILD,True,held_company
+GS,Goldman Sachs,Financials,886982,historical_page,2025-12-31,CIK0000886982,GS,True,new_training
+HD,Home Depot (The),Consumer Discretionary,354950,historical_page,2025-12-31,CIK0000354950,HD,True,original_training
+HON,Honeywell,Industrials,773840,historical_page,2025-12-31,CIK0000773840,HON,True,original_training
+HPQ,HP Inc.,Information Technology,47217,historical_page,2025-12-31,CIK0000047217,HPQ,True,held_company
+HST,Host Hotels & Resorts,Real Estate,1070750,historical_page,2025-12-31,CIK0001070750,HST,True,new_training
+HUBB,Hubbell Incorporated,Industrials,48898,historical_page,2025-12-31,CIK0000048898,HUBB,True,held_company
+IBM,IBM,Information Technology,51143,historical_page,2025-12-31,CIK0000051143,IBM,True,original_training
+IDXX,Idexx Laboratories,Health Care,874716,historical_page,2025-12-31,CIK0000874716,IDXX,True,new_training
+IR,Ingersoll Rand,Industrials,1699150,historical_page,2025-12-31,CIK0001699150,IR,True,held_company
+JBHT,J.B. Hunt,Industrials,728535,historical_page,2025-12-31,CIK0000728535,JBHT,True,held_company
+JKHY,Jack Henry & Associates,Financials,779152,historical_page,2025-12-31,CIK0000779152,JKHY,True,held_company
+JNJ,Johnson & Johnson,Health Care,200406,historical_page,2025-12-31,CIK0000200406,JNJ,True,original_training
+KDP,Keurig Dr Pepper,Consumer Staples,1418135,historical_page,2025-12-31,CIK0001418135,KDP,True,new_training
+KHC,Kraft Heinz,Consumer Staples,1637459,historical_page,2025-12-31,CIK0001637459,KHC,True,new_training
+KIM,Kimco Realty,Real Estate,879101,historical_page,2025-12-31,CIK0000879101,KIM,True,held_company
+KKR,KKR & Co.,Financials,1404912,historical_page,2025-12-31,CIK0001404912,KKR,True,new_training
+KO,Coca-Cola Company (The),Consumer Staples,21344,historical_page,2025-12-31,CIK0000021344,KO,True,original_training
+L,Loews Corporation,Financials,60086,historical_page,2025-12-31,CIK0000060086,L,True,held_company
+LUV,Southwest Airlines,Industrials,92380,historical_page,2025-12-31,CIK0000092380,LUV,True,new_training
+LVS,Las Vegas Sands,Consumer Discretionary,1300514,historical_page,2025-12-31,CIK0001300514,LVS,True,held_company
+LYB,LyondellBasell,Materials,1489393,historical_page,2025-12-31,CIK0001489393,LYB,True,new_training
+MCD,McDonald's,Consumer Discretionary,63908,historical_page,2025-12-31,CIK0000063908,MCD,True,original_training
+MCHP,Microchip Technology,Information Technology,827054,historical_page,2025-12-31,CIK0000827054,MCHP,True,held_company
+MRK,Merck & Co.,Health Care,310158,historical_page,2025-12-31,CIK0000310158,MRK,True,original_training
+MSFT,Microsoft,Information Technology,789019,historical_page,2025-12-31,CIK0000789019,MSFT,True,original_training
+NDAQ,"Nasdaq, Inc.",Financials,1120193,historical_page,2025-12-31,CIK0001120193,NDAQ,True,held_company
+NEE,NextEra Energy,Utilities,753308,historical_page,2025-12-31,CIK0000753308,NEE,True,original_training
+NKE,"Nike, Inc.",Consumer Discretionary,320187,historical_page,2025-12-31,CIK0000320187,NKE,True,original_training
+NVDA,Nvidia,Information Technology,1045810,historical_page,2025-12-31,CIK0001045810,NVDA,True,original_training
+ORCL,Oracle Corporation,Information Technology,1341439,historical_page,2025-12-31,CIK0001341439,ORCL,True,original_training
+ORLY,O’Reilly Automotive,Consumer Discretionary,898173,historical_page,2025-12-31,CIK0000898173,ORLY,True,new_training
+PEP,PepsiCo,Consumer Staples,77476,historical_page,2025-12-31,CIK0000077476,PEP,True,original_training
+PG,Procter & Gamble,Consumer Staples,80424,historical_page,2025-12-31,CIK0000080424,PG,True,original_training
+PLD,Prologis,Real Estate,1045609,historical_page,2025-12-31,CIK0001045609,PLD,True,new_training
+PPG,PPG Industries,Materials,79879,historical_page,2025-12-31,CIK0000079879,PPG,True,new_training
+PSX,Phillips 66,Energy,1534701,historical_page,2025-12-31,CIK0001534701,PSX,True,new_training
+PWR,Quanta Services,Industrials,1050915,historical_page,2025-12-31,CIK0001050915,PWR,True,held_company
+Q,Qnity Electronics,Information Technology,2058873,historical_page,2025-12-31,CIK0002058873,Q,True,new_training
+QCOM,Qualcomm,Information Technology,804328,historical_page,2025-12-31,CIK0000804328,QCOM,True,original_training
+RMD,ResMed,Health Care,943819,historical_page,2025-12-31,CIK0000943819,RMD,True,held_company
+RSG,Republic Services,Industrials,1060391,historical_page,2025-12-31,CIK0001060391,RSG,True,new_training
+STLD,Steel Dynamics,Materials,1022671,historical_page,2025-12-31,CIK0001022671,STLD,True,held_company
+STZ,Constellation Brands,Consumer Staples,16918,historical_page,2025-12-31,CIK0000016918,STZ,True,held_company
+SWK,Stanley Black & Decker,Industrials,93556,historical_page,2025-12-31,CIK0000093556,SWK,True,held_company
+SWKS,Skyworks Solutions,Information Technology,4127,historical_page,2025-12-31,CIK0000004127,SWKS,True,held_company
+TECH,Bio-Techne,Health Care,842023,historical_page,2025-12-31,CIK0000842023,TECH,True,new_training
+TRMB,Trimble Inc.,Information Technology,864749,historical_page,2025-12-31,CIK0000864749,TRMB,True,new_training
+TXN,Texas Instruments,Information Technology,97476,historical_page,2025-12-31,CIK0000097476,TXN,True,original_training
+UHS,Universal Health Services,Health Care,352915,historical_page,2025-12-31,CIK0000352915,UHS,True,held_company
+UNH,UnitedHealth Group,Health Care,731766,historical_page,2025-12-31,CIK0000731766,UNH,True,original_training
+UPS,United Parcel Service,Industrials,1090727,historical_page,2025-12-31,CIK0001090727,UPS,True,original_training
+V,Visa Inc.,Financials,1403161,historical_page,2025-12-31,CIK0001403161,V,True,new_training
+VLO,Valero Energy,Energy,1035002,historical_page,2025-12-31,CIK0001035002,VLO,True,new_training
+WBD,Warner Bros. Discovery,Communication Services,1437107,historical_page,2025-12-31,CIK0001437107,WBD,True,held_company
+WMT,Walmart,Consumer Staples,104169,historical_page,2025-12-31,CIK0000104169,WMT,True,original_training
+WYNN,Wynn Resorts,Consumer Discretionary,1174922,historical_page,2025-12-31,CIK0001174922,WYNN,True,new_training
+XOM,ExxonMobil,Energy,34088,historical_page,2025-12-31,CIK0000034088,XOM,True,original_training
+ZBRA,Zebra Technologies,Information Technology,877212,historical_page,2025-12-31,CIK0000877212,ZBRA,True,new_training
