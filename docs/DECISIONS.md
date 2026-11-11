@@ -49,3 +49,7 @@ A separate accounting audit found that turnover used previous-close NAV as its d
 ## 2026-11-11: Reserve 2026 for the final evaluation
 
 Before any 2026 download or scoring, Han raised the risk of exhausting the final holdout. Keep the temporal configuration as a draft and defer access to 2026 outcomes. Finish fixed-exposure controls, cash sensitivity and debugging on already inspected 2024–2025 data first. Freeze the final experiment before opening 2026, with explicit authorization. See `docs/HOLDOUT_POLICY.md`; this local policy does not establish pretrained-data disjointness.
+
+## 2026-11-11: Complete one recent Transformer comparison
+
+Choose Timestral 5M for local resource feasibility before scoring; pin official code and weight revisions in config/timestral-v1.json. Use 512 past rv20 observations and approximate quantile RMS at step 21, with endpoint-constant tails and a declared positivity floor. Fit one calibration scale on validation only. Retain strong calibrated baselines, both baskets and validation-fixed exposure controls. Results remain exploratory and do not justify a universal modern-model advantage. The 2026 holdout was not accessed.

@@ -1,0 +1,13 @@
+{
+  "status": "Exploratory development comparison, frozen before Timestral scoring; 2026 remains sealed",
+  "model": "mistralai/Timestral-5M",
+  "weight_revision": "bdd20cfc15a3fea0e4cb5ccef37f8d3ca7aa335f",
+  "code_revision": "a534bdbd244d64f3d9d743f46c7bf6fc330ed4ff",
+  "context": "512 trailing annualized rv20 observations, through origin close only; library internal normalization",
+  "horizon": 21,
+  "point": "sqrt(integral Q(u)^2 du), using trapezoid quantile integration with endpoint-constant tails; negative quantiles floored at 1e-6. Approximate conditional RMS volatility, aligned with variance QLIKE; not an exact distributional mean.",
+  "calibration": "One multiplicative volatility scale fitted only on saved 2022-2023 validation targets",
+  "evaluation": "Saved aligned-v1 common 2024-2025 origins; prior results already inspected",
+  "application": "Both existing baskets; 10% target; 10 bps costs; 0% cash; validation-fixed exposure and historical rule comparators",
+  "pretraining": "Training cutoff and full overlap unverified. 2026 release is unavailable historically in 2024-2025; retrospective transfer only. No 2026 local prices or outcomes accessed."
+}

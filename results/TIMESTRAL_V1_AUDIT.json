@@ -1,0 +1,303 @@
+{
+  "created_utc": "2026-11-11T20:56:08.473477+00:00",
+  "calibration_validation_only": 1.0080723389280024,
+  "holdout_2026_accessed": false,
+  "worker": {
+    "created_utc": "2026-11-11T20:56:07.278502+00:00",
+    "n": 28830,
+    "floored_quantiles": 414,
+    "seconds": 16.751005166996038,
+    "input_sha256": "972e930f15d991b1c868673cecf1a24249674e4931e7896d31d0193cccb9e24a",
+    "output_sha256": "8a40f795aa2a892c85d539d3fa81e09b18118c060e25cf4f7267d8a4f8b08150"
+  },
+  "paired_qlike_intervals_vs_calibrated_ridge": {
+    "2024-2025/LogHAR_proxy": {
+      "20": {
+        "mean_difference": 0.11537805383534787,
+        "ci95_low": 0.04920794216944437,
+        "ci95_high": 0.18703437149194785,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.11537805383534787,
+        "ci95_low": 0.042873843860200975,
+        "ci95_high": 0.19676510304795278,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": 0.041718563078449636,
+        "ci95_low": 0.004953098485975749,
+        "ci95_high": 0.08826528423507678,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.041718563078449636,
+        "ci95_low": 0.013054588722228503,
+        "ci95_high": 0.07853465365673108,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/Ridge_sequence_market_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": 0.03916009190341634,
+        "ci95_low": 0.00029638703469344235,
+        "ci95_high": 0.09460171793409662,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03916009190341634,
+        "ci95_low": -0.00553827219522922,
+        "ci95_high": 0.09912354006598789,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/Timestral5M": {
+      "20": {
+        "mean_difference": 0.03434785896626612,
+        "ci95_low": -0.000807635069094858,
+        "ci95_high": 0.07043580161476422,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03434785896626612,
+        "ci95_low": 0.0038546086518775335,
+        "ci95_high": 0.07004986167079419,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024-2025/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.031620573535271077,
+        "ci95_low": -0.0018027150648922297,
+        "ci95_high": 0.06514589119519408,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.031620573535271077,
+        "ci95_low": 0.003793507377149218,
+        "ci95_high": 0.06311607523940974,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/LogHAR_proxy": {
+      "20": {
+        "mean_difference": 0.0321069900651104,
+        "ci95_low": -0.005300911020333231,
+        "ci95_high": 0.07182646337824401,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0321069900651104,
+        "ci95_low": 0.0019133033581678622,
+        "ci95_high": 0.06966776786318743,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": 0.01518968659984242,
+        "ci95_low": -0.0005409219125026725,
+        "ci95_high": 0.02963229174774891,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.01518968659984242,
+        "ci95_low": 0.0022558992954055156,
+        "ci95_high": 0.02869073650189534,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Ridge_sequence_market_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": 0.01417665268662123,
+        "ci95_low": -0.015518215641660326,
+        "ci95_high": 0.042467707515313036,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.01417665268662123,
+        "ci95_low": -0.021334400970939357,
+        "ci95_high": 0.047217047698564225,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Timestral5M": {
+      "20": {
+        "mean_difference": 0.018884912934144436,
+        "ci95_low": -0.018865769593324044,
+        "ci95_high": 0.05396620919064642,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.018884912934144436,
+        "ci95_low": -0.005768829833582796,
+        "ci95_high": 0.04066364972904836,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2024/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.01742208212161924,
+        "ci95_low": -0.018409337647909422,
+        "ci95_high": 0.051285378821012834,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.01742208212161924,
+        "ci95_low": -0.005846511596571089,
+        "ci95_high": 0.038255559030253856,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/LogHAR_proxy": {
+      "20": {
+        "mean_difference": 0.20701258689255245,
+        "ci95_low": 0.10724707469309,
+        "ci95_high": 0.32464841040150483,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.20701258689255245,
+        "ci95_low": 0.11111729065536877,
+        "ci95_high": 0.30614651636796525,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": 0.0709119118671353,
+        "ci95_low": 0.0013024816956989916,
+        "ci95_high": 0.15173269540385498,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0709119118671353,
+        "ci95_low": 0.017352984895657113,
+        "ci95_high": 0.13400434753262266,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Ridge_sequence_market_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": 0.06665278484067559,
+        "ci95_low": -0.003063988055482366,
+        "ci95_high": 0.15642014499265938,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.06665278484067559,
+        "ci95_low": -0.013166094775294502,
+        "ci95_high": 0.1743290257976202,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Timestral5M": {
+      "20": {
+        "mean_difference": 0.05136385197977995,
+        "ci95_low": 0.001174318521959096,
+        "ci95_high": 0.10854824813870978,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.05136385197977995,
+        "ci95_low": 0.004552367659452792,
+        "ci95_high": 0.10752961337753346,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "2025/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.04724511430487921,
+        "ci95_low": 0.0005651857038306532,
+        "ci95_high": 0.09761013900088099,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.04724511430487921,
+        "ci95_low": 0.005473154019604302,
+        "ci95_high": 0.09563369126838762,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  }
+}

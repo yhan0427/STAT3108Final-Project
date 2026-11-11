@@ -158,3 +158,5 @@ A separate exploratory extension now compares pinned IBM TinyTimeMixer r2.1, a L
 - [Run audit](results/ALIGNED_V1_AUDIT.json)
 - [Portfolio V1 turnover correction](results/PORTFOLIO_V1_TURNOVER_CORRECTION.csv): all other metrics verified unchanged.
 - [Fixed validation-exposure controls](results/EXPOSURE_CONTROLS_V1.md): development-only comparisons on 2024–2025, with transaction costs and hypothetical cash-yield sensitivity.
+
+Recent Transformer development comparison: [Timestral 5M results](results/TIMESTRAL_V1.md), with pinned code/weights, common aligned origins and validation-only calibration. The 2026 holdout remains sealed.
