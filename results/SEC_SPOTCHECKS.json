@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "liabilities_to_assets",
+      "snapshot": 0.8202574344305731,
+      "original_statement_ratio": 0.8202574344305731,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "cash_to_assets",
+      "snapshot": 0.09954359234420317,
+      "original_statement_ratio": 0.09954359234420317,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "current_ratio",
+      "snapshot": 1.0745531195957954,
+      "original_statement_ratio": 1.0745531195957954,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "operating_margin",
+      "snapshot": 0.29782377527561593,
+      "original_statement_ratio": 0.29782377527561593,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "income_to_assets",
+      "snapshot": 0.26974205275183616,
+      "original_statement_ratio": 0.26974205275183616,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "cfo_to_assets",
+      "snapshot": 0.2964028694993191,
+      "original_statement_ratio": 0.2964028694993191,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "filing_date": "2021-10-29",
+      "feature": "revenue_growth",
+      "snapshot": 0.33259384733074704,
+      "original_statement_ratio": 0.33259384733074704,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "CAT",
+      "filing_date": "2021-11-03",
+      "feature": "liabilities_to_assets",
+      "snapshot": 0.7933377896613191,
+      "original_statement_ratio": 0.7933377896613191,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/18230/000001823021000260/cat-20210930.htm"
+    },
+    {
+      "ticker": "CAT",
+      "filing_date": "2021-11-03",
+      "feature": "cash_to_assets",
+      "snapshot": 0.11692909487027134,
+      "original_statement_ratio": 0.11692909487027134,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/18230/000001823021000260/cat-20210930.htm"
+    },
+    {
+      "ticker": "CAT",
+      "filing_date": "2021-11-03",
+      "feature": "current_ratio",
+      "snapshot": 1.6127579303972899,
+      "original_statement_ratio": 1.6127579303972899,
+      "match": true,
+      "source": "https://www.sec.gov/Archives/edgar/data/18230/000001823021000260/cat-20210930.htm"
+    }
+  ],
+  "all_match": true,
+  "scope": "Two original filings; ten ratios. No claim of full sample validation."
+}

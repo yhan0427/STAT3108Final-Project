@@ -1,0 +1,14 @@
+{
+  "description": "Convenience sample of 30 established US non-financial large-cap companies; fixed before model fitting on 2026-11-07. This is not historical S&P 500 membership and is subject to survivorship bias. Sector labels are manually assigned broad research groups, not licensed point-in-time GICS data.",
+  "pilot": ["AAPL", "MSFT", "JNJ", "XOM", "CAT"],
+  "historical_cik_overrides": {"XOM": 34088},
+  "historical_cik_notes": {"XOM": "Current ticker map points to the 2026 holding company. Use the 2015–2025 operating issuer, verified at https://www.sec.gov/Archives/edgar/data/34088/000003408825000010/0000034088-25-000010-index.htm"},
+  "companies": {
+    "AAPL": "Technology", "MSFT": "Technology", "NVDA": "Technology", "ORCL": "Technology", "CSCO": "Technology", "IBM": "Technology", "ADBE": "Technology", "AMAT": "Technology", "TXN": "Technology", "QCOM": "Technology",
+    "AMZN": "Consumer discretionary", "HD": "Consumer discretionary", "MCD": "Consumer discretionary", "NKE": "Consumer discretionary",
+    "WMT": "Consumer staples", "COST": "Consumer staples", "PG": "Consumer staples", "KO": "Consumer staples", "PEP": "Consumer staples",
+    "JNJ": "Healthcare", "MRK": "Healthcare", "ABBV": "Healthcare", "UNH": "Healthcare",
+    "CAT": "Industrials", "HON": "Industrials", "UPS": "Industrials",
+    "XOM": "Energy", "CVX": "Energy", "NEE": "Utilities", "DUK": "Utilities"
+  }
+}

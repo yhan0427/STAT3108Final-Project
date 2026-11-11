@@ -1,0 +1,4 @@
+*.pdf binary
+*.png binary
+# Matplotlib emits significant-looking spaces inside generated SVG path data.
+poster/assets/*.svg -whitespace

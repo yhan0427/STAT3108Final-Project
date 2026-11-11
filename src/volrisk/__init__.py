@@ -1,0 +1,1 @@
+"""Reproducible equity volatility experiments."""

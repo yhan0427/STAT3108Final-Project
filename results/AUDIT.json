@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "panel_hash_matches_fitted_data": true,
+    "weights_unchanged": true,
+    "raw_sources_unchanged": true,
+    "train_target_ends_before_boundary": true,
+    "train_filings_strictly_before_origin": true,
+    "train_sequences_stay_within_company": true,
+    "validation_target_ends_before_boundary": true,
+    "validation_filings_strictly_before_origin": true,
+    "validation_sequences_stay_within_company": true,
+    "test_target_ends_before_boundary": true,
+    "test_filings_strictly_before_origin": true,
+    "test_sequences_stay_within_company": true,
+    "market_scaler_equals_training_only_fit": true,
+    "tab_scaler_equals_training_only_fit": true,
+    "har_scaler_equals_training_only_fit": true,
+    "fund_scaler_equals_training_only_fit": true,
+    "target_scaling_training_only": true,
+    "test_prediction_hash_matches_original_evaluation": true,
+    "AAPL_2018-06-30_later_filing_deletion_invariant": true,
+    "AAPL_2021-06-30_later_filing_deletion_invariant": true,
+    "MSFT_2018-06-30_later_filing_deletion_invariant": true,
+    "MSFT_2021-06-30_later_filing_deletion_invariant": true,
+    "JNJ_2018-06-30_later_filing_deletion_invariant": true,
+    "JNJ_2021-06-30_later_filing_deletion_invariant": true,
+    "XOM_2018-06-30_later_filing_deletion_invariant": true,
+    "XOM_2021-06-30_later_filing_deletion_invariant": true,
+    "CAT_2018-06-30_later_filing_deletion_invariant": true,
+    "CAT_2021-06-30_later_filing_deletion_invariant": true
+  },
+  "all_checks_pass": true,
+  "ranking_difference_intervals": {
+    "LSTM_market minus Persistence": {
+      "20": {
+        "mean_difference": 0.08713692946058091,
+        "ci95_low": 0.04688796680497925,
+        "ci95_high": 0.12821576763485476,
+        "block_days": 20,
+        "replicates": 2000
+      },
+      "60": {
+        "mean_difference": 0.08713692946058091,
+        "ci95_low": 0.05020746887966804,
+        "ci95_high": 0.12656639004149373,
+        "block_days": 60,
+        "replicates": 2000
+      }
+    },
+    "LSTM_fundamentals minus LSTM_market": {
+      "20": {
+        "mean_difference": 0.01991701244813278,
+        "ci95_low": -0.004149377593360996,
+        "ci95_high": 0.04315352697095435,
+        "block_days": 20,
+        "replicates": 2000
+      },
+      "60": {
+        "mean_difference": 0.01991701244813278,
+        "ci95_low": 0.0008298755186721989,
+        "ci95_high": 0.03941908713692946,
+        "block_days": 60,
+        "replicates": 2000
+      }
+    }
+  },
+  "note": "Post-hoc audit of existing predictions. Positive ranking differences favor first model. Not a fresh holdout or paper replication. These checks cannot certify the completeness of vendor point-in-time archives."
+}

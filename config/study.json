@@ -1,0 +1,18 @@
+{
+  "study": "equity-volatility-v1",
+  "data_start": "2014-01-01",
+  "data_end_exclusive": "2026-01-01",
+  "train_start": "2015-01-01",
+  "validation_start": "2022-01-01",
+  "test_start": "2024-01-01",
+  "test_end_exclusive": "2026-01-01",
+  "horizon": 20,
+  "lookback": 60,
+  "annualization": 252,
+  "seeds": [7, 42, 2026],
+  "top_k": 5,
+  "bootstrap_replicates": 1000,
+  "bootstrap_block_days": 20,
+  "lstm": {"hidden_size": 24, "epochs": 15, "patience": 4, "batch_size": 512, "learning_rate": 0.001, "weight_decay": 0.0001},
+  "boosting": {"max_iter": 200, "max_leaf_nodes": 15, "learning_rate": 0.05, "l2_regularization": 10.0}
+}

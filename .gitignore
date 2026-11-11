@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.*
+.local.json
+data/raw/
+data/processed/
+results/runs/
+results/demo/
+results/robustness/
+*.egg-info/
+.DS_Store
+.mplconfig/
+
+results/portfolio/

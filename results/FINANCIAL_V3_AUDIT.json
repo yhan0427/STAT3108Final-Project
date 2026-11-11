@@ -1,0 +1,27 @@
+{
+  "original_columns_unchanged": true,
+  "parent_panel_hash_matches": true,
+  "panel_hash_matches": true,
+  "market_controls": {
+    "static_matched": "Identical evaluation rows, targets and market-only forecasts to v2",
+    "origin_2020": "Identical evaluation rows, targets and market-only forecasts to v2",
+    "unseen_companies": "Identical evaluation rows, targets and market-only forecasts to v2"
+  },
+  "original_statement_checks": [
+    {
+      "ticker": "AAPL",
+      "feature": "current_liabilities_to_assets",
+      "expected": 0.35749368949464677,
+      "actual": 0.35749368949464677,
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+    },
+    {
+      "ticker": "CAT",
+      "feature": "current_liabilities_to_assets",
+      "expected": 0.32154882154882153,
+      "actual": 0.32154882154882153,
+      "source": "https://www.sec.gov/Archives/edgar/data/18230/000001823021000260/cat-20210930.htm"
+    }
+  ],
+  "scope": "Two current-liability ratios in two original filings; not full accounting-panel certification."
+}

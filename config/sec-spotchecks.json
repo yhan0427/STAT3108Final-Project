@@ -1,0 +1,16 @@
+{
+  "description": "Manual transcription from original SEC consolidated statements, checked 2026-11-09. Amounts are USD millions. Small spot check, not comprehensive historical validation.",
+  "cases": [
+    {
+      "ticker": "AAPL", "filing_date": "2021-10-29", "report_end": "2021-09-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm",
+      "assets": 351002, "liabilities": 287912, "cash": 34940, "current_assets": 134836, "current_liabilities": 125481,
+      "revenue": 365817, "prior_revenue": 274515, "operating_income": 108949, "income": 94680, "cfo": 104038
+    },
+    {
+      "ticker": "CAT", "filing_date": "2021-11-03", "report_end": "2021-09-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823021000260/cat-20210930.htm",
+      "assets": 80784, "liabilities": 64089, "cash": 9446, "current_assets": 41893, "current_liabilities": 25976
+    }
+  ]
+}
