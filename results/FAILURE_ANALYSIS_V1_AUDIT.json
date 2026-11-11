@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-11-11T21:00:28.487493+00:00",
+  "source_sha256": "5f3899c4dc5b76da4d6786c60655ee50b5eaf9389586c1641436ae005ec88383",
+  "script_sha256": "7fbc522829a75824318951f172cf2c39fcf83393fce90a65e573c84a8e2e5879",
+  "benchmark": "Ridge_sequence_market_calibrated",
+  "models": [
+    "LogHAR_proxy_calibrated",
+    "TTM_zero_shot_calibrated",
+    "Timestral5M",
+    "Timestral5M_calibrated"
+  ],
+  "market_risk_threshold_validation_q75": 0.23545486264296359,
+  "threshold_period": "2022-2023 saved validation origins only",
+  "intervals": {
+    "LogHAR_proxy_calibrated": {
+      "20": {
+        "mean_difference": 0.041718563078449636,
+        "ci95_low": 0.004953098485975749,
+        "ci95_high": 0.08826528423507678,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.041718563078449636,
+        "ci95_low": 0.013054588722228503,
+        "ci95_high": 0.07853465365673108,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "TTM_zero_shot_calibrated": {
+      "20": {
+        "mean_difference": 0.03916009190341634,
+        "ci95_low": 0.00029638703469344235,
+        "ci95_high": 0.09460171793409662,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03916009190341634,
+        "ci95_low": -0.00553827219522922,
+        "ci95_high": 0.09912354006598789,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M": {
+      "20": {
+        "mean_difference": 0.03434785896626612,
+        "ci95_low": -0.000807635069094858,
+        "ci95_high": 0.07043580161476422,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03434785896626612,
+        "ci95_low": 0.0038546086518775335,
+        "ci95_high": 0.07004986167079419,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.031620573535271077,
+        "ci95_low": -0.0018027150648922297,
+        "ci95_high": 0.06514589119519408,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.031620573535271077,
+        "ci95_low": 0.003793507377149218,
+        "ci95_high": 0.06311607523940974,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "holdout_2026_accessed": false,
+  "test_rows": 14430,
+  "companies": 30,
+  "limitations": "Exploratory subgroup/influence analysis on inspected 2024-2025, no new-company holdout. No multiplicity-adjusted subgroup tests; firms share market shocks. Regime uses lagged observed SPY risk, not future market outcomes."
+}

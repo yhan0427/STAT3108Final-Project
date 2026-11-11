@@ -1,0 +1,21 @@
+model,date,mean_company_loss_difference,selection
+LogHAR_proxy_calibrated,2025-03-11,0.6839249123361729,Five worst relative days selected after inspection; explanatory only
+LogHAR_proxy_calibrated,2025-09-03,0.5630758980241706,Five worst relative days selected after inspection; explanatory only
+LogHAR_proxy_calibrated,2025-08-15,0.5584857301056455,Five worst relative days selected after inspection; explanatory only
+LogHAR_proxy_calibrated,2025-09-02,0.5579015321647453,Five worst relative days selected after inspection; explanatory only
+LogHAR_proxy_calibrated,2025-08-14,0.5532139294241041,Five worst relative days selected after inspection; explanatory only
+TTM_zero_shot_calibrated,2025-03-11,1.1864392229931922,Five worst relative days selected after inspection; explanatory only
+TTM_zero_shot_calibrated,2025-03-13,1.0444237195059682,Five worst relative days selected after inspection; explanatory only
+TTM_zero_shot_calibrated,2025-03-12,1.0419420841420037,Five worst relative days selected after inspection; explanatory only
+TTM_zero_shot_calibrated,2025-04-04,0.8722910780535756,Five worst relative days selected after inspection; explanatory only
+TTM_zero_shot_calibrated,2025-03-31,0.8428504577040751,Five worst relative days selected after inspection; explanatory only
+Timestral5M,2025-03-11,0.9592840966314413,Five worst relative days selected after inspection; explanatory only
+Timestral5M,2025-03-13,0.8748495518813121,Five worst relative days selected after inspection; explanatory only
+Timestral5M,2025-03-12,0.8420614629624146,Five worst relative days selected after inspection; explanatory only
+Timestral5M,2025-03-31,0.6799517558210624,Five worst relative days selected after inspection; explanatory only
+Timestral5M,2025-03-28,0.6046068171953013,Five worst relative days selected after inspection; explanatory only
+Timestral5M_calibrated,2025-03-11,0.9210205348909926,Five worst relative days selected after inspection; explanatory only
+Timestral5M_calibrated,2025-03-13,0.8346340430340697,Five worst relative days selected after inspection; explanatory only
+Timestral5M_calibrated,2025-03-12,0.8024847578847034,Five worst relative days selected after inspection; explanatory only
+Timestral5M_calibrated,2025-03-31,0.6240644989341525,Five worst relative days selected after inspection; explanatory only
+Timestral5M_calibrated,2025-03-28,0.5470691865339826,Five worst relative days selected after inspection; explanatory only

@@ -160,3 +160,5 @@ A separate exploratory extension now compares pinned IBM TinyTimeMixer r2.1, a L
 - [Fixed validation-exposure controls](results/EXPOSURE_CONTROLS_V1.md): development-only comparisons on 2024–2025, with transaction costs and hypothetical cash-yield sensitivity.
 
 Recent Transformer development comparison: [Timestral 5M results](results/TIMESTRAL_V1.md), with pinned code/weights, common aligned origins and validation-only calibration. The 2026 holdout remains sealed.
+
+[Company and period failure analysis](results/FAILURE_ANALYSIS_V1.md) reports all firms, sectors, quarters, validation-defined historical market-risk groups and post-hoc influence checks. These are descriptive development diagnostics, not a new holdout.
