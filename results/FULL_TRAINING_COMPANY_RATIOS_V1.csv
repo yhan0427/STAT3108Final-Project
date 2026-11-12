@@ -1,0 +1,9 @@
+model,companies,mean_company_qlike_ratio_vs_calibrated_ridge,companies_with_lower_qlike
+LSTM60,97,1.1079567832301729,28
+LSTM60_calibrated,97,0.8973803892366602,80
+Persistence,97,1.7007052733281673,6
+Persistence_calibrated,97,1.395560176986263,10
+Ridge60,97,1.292767123967343,19
+Ridge60_calibrated,97,1.0,0
+Timestral5M,97,1.044708796955925,43
+Timestral5M_calibrated,97,1.0369769183029798,43

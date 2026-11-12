@@ -68,3 +68,11 @@ Next: run a matched original-30-only training control using the same aligned tar
 ## Pilot control complete; prioritize data scale
 
 The matched original30/expanded64 control is complete. Calibrated LSTM changes QLIKE 0.3023 to 0.2985 on identical held-company origins, with both date-block intervals crossing zero. No reliable expansion benefit is established. Following Han’s 2026-11-12 question, prioritize the full dated universe and coverage ledger rather than retraining every intermediate batch. Run the next comprehensive comparison after final cohort/roles and protocol freeze. Any company already scored during development is not an untouched company holdout for later design choices. The 2026 temporal holdout remains sealed.
+
+## Full-cohort unified run completed
+
+Full reconstructed cohort: 500 frozen issuers, 491 retained raw histories, 1,428,780 company-date observations. Nine unavailable histories remain excluded with reasons, without candidate replacement; BK/MMC were recovered via verified same-security ticker changes. Actual fitting uses 386 firms and 650,683 origins; non-held validation uses 387 firms / 183,780 common-context origins. New-company evaluation uses 97 previously unscored firms / 46,657 origins. Eligible-company counts differ by history requirements and are explicitly audited.
+
+Ridge, three-seed LSTM and pinned Timestral have completed the unified comparison. Calibrated QLIKE: LSTM 0.3533, Ridge 0.3731, Timestral 0.4122. The LSTM-Ridge paired loss difference is -0.01974, with both 20/60-date intervals crossing zero. Retain this uncertainty and every company/year outcome. No universal neural-model superiority, reliable training-expansion benefit or alpha claim is justified. The 2026 temporal holdout is still sealed.
+
+Next: translate the frozen full-run forecasts into portfolio decisions and evaluate against historical-risk and validation-fixed exposure controls, including costs and cash sensitivity. Keep company identity/selection limitations explicit; do not tune the forecast models to these newly seen company outcomes and call them untouched again. See docs/FULL_COHORT.md and results/FULL_TRAINING_V1.md.

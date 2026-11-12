@@ -1,0 +1,304 @@
+{
+  "created_utc": "2026-11-12T17:47:42.688102+00:00",
+  "panel_manifest": {
+    "completed_utc": "2026-11-12T17:39:29.759230+00:00",
+    "candidate_issuers": 500,
+    "retained_raw_histories": 491,
+    "raw_company_date_rows_retained": 1428780,
+    "failed": [
+      {
+        "ticker": "AVB",
+        "issuer_id": "CIK0000915912",
+        "sector": "Real Estate",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$AVB: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      },
+      {
+        "ticker": "CTRA",
+        "issuer_id": "CIK0000858470",
+        "sector": "Energy",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$CTRA: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      },
+      {
+        "ticker": "DAY",
+        "issuer_id": "CIK0001725057",
+        "sector": "Industrials",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$DAY: possibly delisted; no timezone found"
+      },
+      {
+        "ticker": "EA",
+        "issuer_id": "CIK0000712515",
+        "sector": "Communication Services",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$EA: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      },
+      {
+        "ticker": "EQR",
+        "issuer_id": "CIK0000906107",
+        "sector": "Real Estate",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$EQR: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      },
+      {
+        "ticker": "HOLX",
+        "issuer_id": "CIK0000859737",
+        "sector": "Health Care",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$HOLX: possibly delisted; no timezone found"
+      },
+      {
+        "ticker": "KVUE",
+        "issuer_id": "CIK0001944048",
+        "sector": "Consumer Staples",
+        "role": "training_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$KVUE: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      },
+      {
+        "ticker": "PSKY",
+        "issuer_id": "CIK0002041610",
+        "sector": "Communication Services",
+        "role": "held_company",
+        "prior_development": false,
+        "status": "failed",
+        "reason": "$PSKY: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      },
+      {
+        "ticker": "WBD",
+        "issuer_id": "CIK0001437107",
+        "sector": "Communication Services",
+        "role": "training_company",
+        "prior_development": true,
+        "status": "failed",
+        "reason": "$WBD: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+      }
+    ],
+    "verified_alias_recoveries": [
+      "BK",
+      "MMC"
+    ],
+    "panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+    "roster_sha256": "0eca3c9fdb8abee8e60be9a9a3cbd05efa7f9c199ebe812e30521cbdbec34459",
+    "previous_manifest_sha256": "a45076ae0e5eb8483e002e0092a6d880e22d12fd85a671a2909052128ee15d7a",
+    "model_ready_counts": [
+      {
+        "role": "held_company",
+        "split": "test",
+        "firms_context60": 99,
+        "origins_context60": 47042,
+        "firms_context512": 97,
+        "origins_context512": 46657
+      },
+      {
+        "role": "held_company",
+        "split": "train",
+        "firms_context60": 97,
+        "origins_context60": 161686,
+        "firms_context512": 95,
+        "origins_context512": 134028
+      },
+      {
+        "role": "held_company",
+        "split": "validation",
+        "firms_context60": 97,
+        "origins_context60": 46560,
+        "firms_context512": 97,
+        "origins_context512": 46217
+      },
+      {
+        "role": "training_company",
+        "split": "test",
+        "firms_context60": 391,
+        "origins_context60": 187836,
+        "firms_context512": 390,
+        "origins_context512": 186809
+      },
+      {
+        "role": "training_company",
+        "split": "train",
+        "firms_context60": 386,
+        "origins_context60": 650683,
+        "firms_context512": 380,
+        "origins_context512": 541061
+      },
+      {
+        "role": "training_company",
+        "split": "validation",
+        "firms_context60": 389,
+        "origins_context60": 186221,
+        "firms_context512": 387,
+        "origins_context512": 183780
+      }
+    ],
+    "holdout_2026_accessed": false
+  },
+  "ridge_selection": [
+    {
+      "alpha": 1.0,
+      "validation_log_mse": 0.09944754825993282
+    },
+    {
+      "alpha": 100.0,
+      "validation_log_mse": 0.09941075552235852
+    },
+    {
+      "alpha": 10000.0,
+      "validation_log_mse": 0.09817823414729986
+    }
+  ],
+  "calibration": {
+    "Persistence": 1.1628195758868132,
+    "Ridge60": 1.2114583913804933,
+    "LSTM60": 1.1896860405067715,
+    "Timestral5M": 1.0122743337128899
+  },
+  "train_rows": 650683,
+  "validation_rows": 183780,
+  "evaluation_rows": 46657,
+  "paired_intervals_vs_calibrated_ridge": {
+    "held_company/Persistence": {
+      "20": {
+        "mean_difference": 0.24986827447392804,
+        "ci95_low": 0.17764390396257052,
+        "ci95_high": 0.325858841395424,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.24986827447392804,
+        "ci95_low": 0.1907640137554905,
+        "ci95_high": 0.3116678943213252,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Ridge60": {
+      "20": {
+        "mean_difference": 0.13262433059247117,
+        "ci95_low": 0.054602298239888575,
+        "ci95_high": 0.22329364129497792,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.13262433059247117,
+        "ci95_low": 0.061239109248255916,
+        "ci95_high": 0.21923467420360182,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/LSTM60": {
+      "20": {
+        "mean_difference": 0.08751884506354263,
+        "ci95_low": 0.017170723425851447,
+        "ci95_high": 0.1784981209717774,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.08751884506354263,
+        "ci95_low": 0.01610213321730334,
+        "ci95_high": 0.18077564163492793,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Timestral5M": {
+      "20": {
+        "mean_difference": 0.04360683521778499,
+        "ci95_low": -0.0022369469449310345,
+        "ci95_high": 0.09176237408979876,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.04360683521778499,
+        "ci95_low": 0.004669972393416828,
+        "ci95_high": 0.09361688763879802,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Persistence_calibrated": {
+      "20": {
+        "mean_difference": 0.12619680067055142,
+        "ci95_low": 0.05767245191599542,
+        "ci95_high": 0.18022256665532083,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.12619680067055142,
+        "ci95_low": 0.07699413427909804,
+        "ci95_high": 0.1675703570347821,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Ridge60_calibrated": {
+      "20": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/LSTM60_calibrated": {
+      "20": {
+        "mean_difference": -0.01974101988772786,
+        "ci95_low": -0.0684961723729359,
+        "ci95_high": 0.0261213758937097,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.01974101988772786,
+        "ci95_low": -0.08325339885312592,
+        "ci95_high": 0.03933600862551471,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "held_company/Timestral5M_calibrated": {
+      "20": {
+        "mean_difference": 0.03911670236189576,
+        "ci95_low": -0.0046839776764372055,
+        "ci95_high": 0.08355240101274389,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03911670236189576,
+        "ci95_low": 0.0026207306897130344,
+        "ci95_high": 0.08475175549573077,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "holdout_2026_accessed": false
+}
