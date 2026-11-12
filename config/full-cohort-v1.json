@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-11-12T17:35:43.663558+00:00",
+  "roster_sha256": "0eca3c9fdb8abee8e60be9a9a3cbd05efa7f9c199ebe812e30521cbdbec34459",
+  "source_registry_sha256": "62111564b3da78f7307e8fb6ec887711b9708faab2dd9e3820f6402ecd43c4ca",
+  "scope": "All 500 CIK-defined issuers in the explicitly reconstructed 2025-12-31 cohort, one class per issuer; independent official full-list verification remains qualified. Not historical membership at every date.",
+  "roles": {
+    "training_company": 400,
+    "held_company": 100
+  },
+  "selection": "100 held firms selected only from outside the 100 previously scored pilot issuers, sector-proportional largest remainders and fixed SHA256 rank. Earlier pilot held firms now belong to development/training; no longer untouched.",
+  "dates": {
+    "start": "2014-01-01",
+    "end_exclusive": "2026-01-01"
+  },
+  "coverage": "Preserve all candidate rows; do not replace unavailable firms. Require complete observed trading calendar from first price through 2025-12-31. Report model-ready origins separately.",
+  "holdout_2026": "sealed",
+  "stage": "Data collection/quality audit only. No new full training grid until coverage checks pass."
+}

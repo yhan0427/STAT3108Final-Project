@@ -1,0 +1,4 @@
+{
+  "BK": {"provider_symbol":"BNY","issuer_id":"CIK0001390777","kind":"ticker change, legal name/capital/CUSIP unchanged per issuer announcement","effective_date":"2026-05-21","source":"https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-announces-planned-change-of-stock-ticker-symbol-to-bny-130465.html"},
+  "MMC": {"provider_symbol":"MRSH","issuer_id":"CIK0000062709","kind":"ticker change, legal name/CUSIP unchanged per issuer announcement","effective_date":"2026-01-14","source":"https://www.marsh.com/en/corp/about/news/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html"}
+}

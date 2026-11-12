@@ -1,0 +1,147 @@
+{
+  "completed_utc": "2026-11-12T17:39:29.759230+00:00",
+  "candidate_issuers": 500,
+  "retained_raw_histories": 491,
+  "raw_company_date_rows_retained": 1428780,
+  "failed": [
+    {
+      "ticker": "AVB",
+      "issuer_id": "CIK0000915912",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$AVB: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    },
+    {
+      "ticker": "CTRA",
+      "issuer_id": "CIK0000858470",
+      "sector": "Energy",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$CTRA: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    },
+    {
+      "ticker": "DAY",
+      "issuer_id": "CIK0001725057",
+      "sector": "Industrials",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$DAY: possibly delisted; no timezone found"
+    },
+    {
+      "ticker": "EA",
+      "issuer_id": "CIK0000712515",
+      "sector": "Communication Services",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$EA: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    },
+    {
+      "ticker": "EQR",
+      "issuer_id": "CIK0000906107",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$EQR: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    },
+    {
+      "ticker": "HOLX",
+      "issuer_id": "CIK0000859737",
+      "sector": "Health Care",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$HOLX: possibly delisted; no timezone found"
+    },
+    {
+      "ticker": "KVUE",
+      "issuer_id": "CIK0001944048",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$KVUE: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    },
+    {
+      "ticker": "PSKY",
+      "issuer_id": "CIK0002041610",
+      "sector": "Communication Services",
+      "role": "held_company",
+      "prior_development": false,
+      "status": "failed",
+      "reason": "$PSKY: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    },
+    {
+      "ticker": "WBD",
+      "issuer_id": "CIK0001437107",
+      "sector": "Communication Services",
+      "role": "training_company",
+      "prior_development": true,
+      "status": "failed",
+      "reason": "$WBD: Data doesn't exist for startDate = 1388552400, endDate = 1767243600"
+    }
+  ],
+  "verified_alias_recoveries": [
+    "BK",
+    "MMC"
+  ],
+  "panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+  "roster_sha256": "0eca3c9fdb8abee8e60be9a9a3cbd05efa7f9c199ebe812e30521cbdbec34459",
+  "previous_manifest_sha256": "a45076ae0e5eb8483e002e0092a6d880e22d12fd85a671a2909052128ee15d7a",
+  "model_ready_counts": [
+    {
+      "role": "held_company",
+      "split": "test",
+      "firms_context60": 99,
+      "origins_context60": 47042,
+      "firms_context512": 97,
+      "origins_context512": 46657
+    },
+    {
+      "role": "held_company",
+      "split": "train",
+      "firms_context60": 97,
+      "origins_context60": 161686,
+      "firms_context512": 95,
+      "origins_context512": 134028
+    },
+    {
+      "role": "held_company",
+      "split": "validation",
+      "firms_context60": 97,
+      "origins_context60": 46560,
+      "firms_context512": 97,
+      "origins_context512": 46217
+    },
+    {
+      "role": "training_company",
+      "split": "test",
+      "firms_context60": 391,
+      "origins_context60": 187836,
+      "firms_context512": 390,
+      "origins_context512": 186809
+    },
+    {
+      "role": "training_company",
+      "split": "train",
+      "firms_context60": 386,
+      "origins_context60": 650683,
+      "firms_context512": 380,
+      "origins_context512": 541061
+    },
+    {
+      "role": "training_company",
+      "split": "validation",
+      "firms_context60": 389,
+      "origins_context60": 186221,
+      "firms_context512": 387,
+      "origins_context512": 183780
+    }
+  ],
+  "holdout_2026_accessed": false
+}
