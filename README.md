@@ -166,3 +166,5 @@ Recent Transformer development comparison: [Timestral 5M results](results/TIMEST
 [Universe verification](results/UNIVERSE_VERIFICATION.md): public candidate lists have unresolved reference-date conflicts; 100/500-company expansion is not yet claimed.
 
 First expanded training completed: [cohort construction and limitations](docs/EXPANSION_100.md), [training and held-company results](results/EXPANSION_100_V1.md). Frozen candidate cohort: 100 issuers; retained histories: 99; raw company-date observations: 291,416. Actual fitting/validation-label companies: 64; held-company evaluation: 34. These are reconstructed-reference-cohort results; the 2026 temporal holdout remains sealed.
+
+[Matched pilot training-cohort control](results/MATCHED_EXPANSION_V1.md) holds validation/evaluation firms fixed. The small calibrated LSTM improvement has intervals crossing zero; no reliable benefit from expansion is yet established. Next work prioritizes full-cohort data verification before another comprehensive training grid.

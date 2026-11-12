@@ -6,7 +6,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "1f87f966aeae2c8e75db09847d85d60888285d12109f7ab70cddbaa2971793e3"
+    "sha256": "1f87f966aeae2c8e75db09847d85d60888285d12109f7ab70cddbaa2971793e3",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ABBV",
@@ -15,7 +19,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "3ca435efd14b310a0ff359a9172973c29bc42fabbd49f99ab91a8af1a4297215"
+    "sha256": "3ca435efd14b310a0ff359a9172973c29bc42fabbd49f99ab91a8af1a4297215",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ACGL",
@@ -24,7 +32,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "36676d9ffeda03f2c889fb4f59ddabb7318002c90aa33d0d63fe5c1a50ea6897"
+    "sha256": "36676d9ffeda03f2c889fb4f59ddabb7318002c90aa33d0d63fe5c1a50ea6897",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ADBE",
@@ -33,7 +45,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "fb2628ac98d28596e89a2e8ea6f65b8fe1ea9413e1104b64e4671c54d6e5888a"
+    "sha256": "fb2628ac98d28596e89a2e8ea6f65b8fe1ea9413e1104b64e4671c54d6e5888a",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ALLE",
@@ -42,7 +58,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e423e0a948e389ba8d2988163f48fe1b3d6c32d1da944eea25c43581b57d65da"
+    "sha256": "e423e0a948e389ba8d2988163f48fe1b3d6c32d1da944eea25c43581b57d65da",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "AMAT",
@@ -51,7 +71,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "080e0173efb1c45922be0892bde22f3c70765197c86d5ed207873aa93ce26539"
+    "sha256": "080e0173efb1c45922be0892bde22f3c70765197c86d5ed207873aa93ce26539",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "AMGN",
@@ -60,7 +84,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "77a5bdea600a4aa1cd834aa556031594f269735ae9e1c2648081d07c8789b86b"
+    "sha256": "77a5bdea600a4aa1cd834aa556031594f269735ae9e1c2648081d07c8789b86b",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "AMZN",
@@ -69,7 +97,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "a3def7fd1adf4369f5af1bb0f7fbaab537167c417a6bea1e6ae8db4d730a7f4a"
+    "sha256": "a3def7fd1adf4369f5af1bb0f7fbaab537167c417a6bea1e6ae8db4d730a7f4a",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ATO",
@@ -78,7 +110,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "2e92a8c7ccc0c9b21b6a2650844b32fd6aabe5e5fc1f2868634ff7bc7c72ea52"
+    "sha256": "2e92a8c7ccc0c9b21b6a2650844b32fd6aabe5e5fc1f2868634ff7bc7c72ea52",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "AXP",
@@ -87,7 +123,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "ef193d1b6b9c0b19a040dd5d1688e9b58d1ac0d20c2dae259d3b15c7139c583b"
+    "sha256": "ef193d1b6b9c0b19a040dd5d1688e9b58d1ac0d20c2dae259d3b15c7139c583b",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "BBY",
@@ -96,7 +136,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "df52e35830a18453cd2fed975e8b0134ae3681b4baa973313591e1621bacd05a"
+    "sha256": "df52e35830a18453cd2fed975e8b0134ae3681b4baa973313591e1621bacd05a",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "BDX",
@@ -105,7 +149,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "25a57308863e4f05ef5a3fefecb84efd35a41ea6824495e451b0c122beddbcf2"
+    "sha256": "25a57308863e4f05ef5a3fefecb84efd35a41ea6824495e451b0c122beddbcf2",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "BR",
@@ -114,7 +162,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e08ae62e17dc37488309081b7cdb80f379741a1570d873ff80ba63fb548747ca"
+    "sha256": "e08ae62e17dc37488309081b7cdb80f379741a1570d873ff80ba63fb548747ca",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CAT",
@@ -123,7 +175,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "f07ec02650281f107fe6207fbaf06004368725ae0d570b48435ad98d1c60f58f"
+    "sha256": "f07ec02650281f107fe6207fbaf06004368725ae0d570b48435ad98d1c60f58f",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CCL",
@@ -132,7 +188,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e7dbbd362756286d079ec6d8a891168a82ee26edae645c3923c972c57a995453"
+    "sha256": "e7dbbd362756286d079ec6d8a891168a82ee26edae645c3923c972c57a995453",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CFG",
@@ -141,7 +201,11 @@
     "raw_rows": 2835,
     "first_date": "2014-09-24",
     "last_date": "2025-12-31",
-    "sha256": "df82b3868fec024afcb645f8af676ac59fab14304b6a479542e07457dc2f427c"
+    "sha256": "df82b3868fec024afcb645f8af676ac59fab14304b6a479542e07457dc2f427c",
+    "eligible_train_origins": 1692,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CINF",
@@ -150,7 +214,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "08da3a9bb2caff3d0d945bed2af549018b72eeb7795402edf1dff1f7ca160561"
+    "sha256": "08da3a9bb2caff3d0d945bed2af549018b72eeb7795402edf1dff1f7ca160561",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CMCSA",
@@ -159,7 +227,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "c2826d6050d7058b7157a64cd8e1bd705ea37df74ad7e31a09a0373e3b34bc2f"
+    "sha256": "c2826d6050d7058b7157a64cd8e1bd705ea37df74ad7e31a09a0373e3b34bc2f",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "COST",
@@ -168,7 +240,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "0bed69fc73f3e093f3bad03e94b1a8351da41b904069bd66d662ad6e5c8ed554"
+    "sha256": "0bed69fc73f3e093f3bad03e94b1a8351da41b904069bd66d662ad6e5c8ed554",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CPB",
@@ -177,7 +253,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e97a79384a50072cfa3117e66084a3c5596186318702f4603d6ef6ee79c4450f"
+    "sha256": "e97a79384a50072cfa3117e66084a3c5596186318702f4603d6ef6ee79c4450f",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CRWD",
@@ -186,7 +266,11 @@
     "raw_rows": 1649,
     "first_date": "2019-06-12",
     "last_date": "2025-12-31",
-    "sha256": "561cfc74945c901c1e0a5411583164f7ce293b10b30ec236f2ae015800b1e3ee"
+    "sha256": "561cfc74945c901c1e0a5411583164f7ce293b10b30ec236f2ae015800b1e3ee",
+    "eligible_train_origins": 506,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CSCO",
@@ -195,7 +279,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "153bdbe7977e711e8c7daf1f3187de4ed5d3b6b312ad104054c8932a86109031"
+    "sha256": "153bdbe7977e711e8c7daf1f3187de4ed5d3b6b312ad104054c8932a86109031",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CTAS",
@@ -204,7 +292,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "c240d5a18f859c9cc1684bdf5dfcdb8df091357572c2cac3e753c7cfb2ea4e3c"
+    "sha256": "c240d5a18f859c9cc1684bdf5dfcdb8df091357572c2cac3e753c7cfb2ea4e3c",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "CVX",
@@ -213,7 +305,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "db95fb9a8e41718eb696be23ad6bd407b3116c53b6d690ba30341059db588ce8"
+    "sha256": "db95fb9a8e41718eb696be23ad6bd407b3116c53b6d690ba30341059db588ce8",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "DHI",
@@ -222,7 +318,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "915b307bc12d98ad543565d48f0a2acf44d16b0b60cb53e13dea4f863ad3f79b"
+    "sha256": "915b307bc12d98ad543565d48f0a2acf44d16b0b60cb53e13dea4f863ad3f79b",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "DUK",
@@ -231,7 +331,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "fec9f5d1a91df827a815b4efe0ec7e8cbc1d0b2e12d8fb7de766db06f5a01317"
+    "sha256": "fec9f5d1a91df827a815b4efe0ec7e8cbc1d0b2e12d8fb7de766db06f5a01317",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "DXCM",
@@ -240,7 +344,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "3cf63f746c34ffe8e9df243e3f33c436ebafdca8aa4534b48092f7534be1ef13"
+    "sha256": "3cf63f746c34ffe8e9df243e3f33c436ebafdca8aa4534b48092f7534be1ef13",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ECL",
@@ -249,7 +357,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "55d9a5fb50cf6082b1bd54be15ab5c7cf7db2bb9865c30d9e7e6d60ea6f0877b"
+    "sha256": "55d9a5fb50cf6082b1bd54be15ab5c7cf7db2bb9865c30d9e7e6d60ea6f0877b",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ED",
@@ -258,7 +370,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "51edd2187308996538a3eda92700423970c90beb81bbfe296e55567f07a8cb90"
+    "sha256": "51edd2187308996538a3eda92700423970c90beb81bbfe296e55567f07a8cb90",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "EIX",
@@ -267,7 +383,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "2bbd315d49521925c5912dae687fee10a48229a1ede6375e14d140946da9062e"
+    "sha256": "2bbd315d49521925c5912dae687fee10a48229a1ede6375e14d140946da9062e",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "EL",
@@ -276,7 +396,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "0dc3e2d34e5881e8a77ba1f192df0d689b6671fed959919d28691a8a708bd258"
+    "sha256": "0dc3e2d34e5881e8a77ba1f192df0d689b6671fed959919d28691a8a708bd258",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "EQT",
@@ -285,7 +409,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "37cab3428c7f88b1b93f0f15514cabccd6686ad17dfe934b7a46997c737f5101"
+    "sha256": "37cab3428c7f88b1b93f0f15514cabccd6686ad17dfe934b7a46997c737f5101",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ERIE",
@@ -294,7 +422,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "977161869f257140d28fce45b48e13cc99b11dbc57c6f58a05ac1612164b456e"
+    "sha256": "977161869f257140d28fce45b48e13cc99b11dbc57c6f58a05ac1612164b456e",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ESS",
@@ -303,7 +435,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "d32eb8c0b0166e260862cb390950508605e605780d67a8a40fca48c71dc6a6da"
+    "sha256": "d32eb8c0b0166e260862cb390950508605e605780d67a8a40fca48c71dc6a6da",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "EVRG",
@@ -312,7 +448,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "53f7b72c57f012e38269c299d0af9e822472e1c931df4bba903ab1d1847552e3"
+    "sha256": "53f7b72c57f012e38269c299d0af9e822472e1c931df4bba903ab1d1847552e3",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "F",
@@ -321,7 +461,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "5a155590a584936bce88133d98ba0ddc8ac009af90e27d4262f863193e0ce1cd"
+    "sha256": "5a155590a584936bce88133d98ba0ddc8ac009af90e27d4262f863193e0ce1cd",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "FOX",
@@ -330,7 +474,11 @@
     "raw_rows": 1712,
     "first_date": "2019-03-13",
     "last_date": "2025-12-31",
-    "sha256": "fb159d765de858ca49c4a91ad1d0ce636434d2c4ceaf547676a975a95326a9a4"
+    "sha256": "fb159d765de858ca49c4a91ad1d0ce636434d2c4ceaf547676a975a95326a9a4",
+    "eligible_train_origins": 569,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "FRT",
@@ -339,7 +487,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "5a168342473715e75eb462f33632175d899128b365c2f1d9fcab3927928ebb6f"
+    "sha256": "5a168342473715e75eb462f33632175d899128b365c2f1d9fcab3927928ebb6f",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "FTNT",
@@ -348,7 +500,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "5cd09601ed207203610697132d6dbb8c5f43bed948cc7f925a5c031265736b02"
+    "sha256": "5cd09601ed207203610697132d6dbb8c5f43bed948cc7f925a5c031265736b02",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "GD",
@@ -357,7 +513,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "3baf432a0378ca5fd3ed4828efe6db14d9c2a8a10f6f2e659155069111b37810"
+    "sha256": "3baf432a0378ca5fd3ed4828efe6db14d9c2a8a10f6f2e659155069111b37810",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "GDDY",
@@ -366,7 +526,11 @@
     "raw_rows": 2706,
     "first_date": "2015-03-31",
     "last_date": "2025-12-31",
-    "sha256": "03cad31c13fdc1f5bd9ba497d7863bd329a85f90f9c55cf4ab75ea4ce3260a4d"
+    "sha256": "03cad31c13fdc1f5bd9ba497d7863bd329a85f90f9c55cf4ab75ea4ce3260a4d",
+    "eligible_train_origins": 1563,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "GILD",
@@ -375,7 +539,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "3edd3c42ef199b21f1f7bd8c3a2ae66766d5090c1c39b064a6703c9d7fbdce6f"
+    "sha256": "3edd3c42ef199b21f1f7bd8c3a2ae66766d5090c1c39b064a6703c9d7fbdce6f",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "GS",
@@ -384,7 +552,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "6387bb7055cac5370fda04009064bc549b3e48f5c8a525d82b28769e284b2a73"
+    "sha256": "6387bb7055cac5370fda04009064bc549b3e48f5c8a525d82b28769e284b2a73",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "HD",
@@ -393,7 +565,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "be034111ed636a1c31fe25b92159e899439e529083f34028d1fb6d710aab0666"
+    "sha256": "be034111ed636a1c31fe25b92159e899439e529083f34028d1fb6d710aab0666",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "HON",
@@ -402,7 +578,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "048b7a8f494b6df2995f6764a0d4cc12720db70ad01788fc797592f53eb97d69"
+    "sha256": "048b7a8f494b6df2995f6764a0d4cc12720db70ad01788fc797592f53eb97d69",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "HPQ",
@@ -411,7 +591,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "c73ea64de3ea9dcf721b15c40780cbfe307fbdac03f55c1cbdc7534e61f67c1e"
+    "sha256": "c73ea64de3ea9dcf721b15c40780cbfe307fbdac03f55c1cbdc7534e61f67c1e",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "HST",
@@ -420,7 +604,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "7e913cd7bffcdf90b31bbfe205de3db38fac828e55525aa8d8e4cfd537b0d20f"
+    "sha256": "7e913cd7bffcdf90b31bbfe205de3db38fac828e55525aa8d8e4cfd537b0d20f",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "HUBB",
@@ -429,7 +617,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "ef13a36d2b783988de7661b862d5261931a906cfd392dc6a7a94b606f8099574"
+    "sha256": "ef13a36d2b783988de7661b862d5261931a906cfd392dc6a7a94b606f8099574",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "IBM",
@@ -438,7 +630,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "021f9beefeabf5f0e5fccfb16fce84886e2923de0942e98a92c89d0cdfdbffed"
+    "sha256": "021f9beefeabf5f0e5fccfb16fce84886e2923de0942e98a92c89d0cdfdbffed",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "IDXX",
@@ -447,7 +643,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "7e35a2be504a2576ee400fffcb42c6120c39239f367a113822e9ef98ac23e91a"
+    "sha256": "7e35a2be504a2576ee400fffcb42c6120c39239f367a113822e9ef98ac23e91a",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "IR",
@@ -456,7 +656,11 @@
     "raw_rows": 2172,
     "first_date": "2017-05-12",
     "last_date": "2025-12-31",
-    "sha256": "3f9b163e18109c30a926bdaa551bff8de55ab225fb520514cce16f4de75101c9"
+    "sha256": "3f9b163e18109c30a926bdaa551bff8de55ab225fb520514cce16f4de75101c9",
+    "eligible_train_origins": 1029,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "JBHT",
@@ -465,7 +669,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "5309944e5df2538921be2c5a3fb1ba826b8629b6537cc6c05075e59c760343e0"
+    "sha256": "5309944e5df2538921be2c5a3fb1ba826b8629b6537cc6c05075e59c760343e0",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "JKHY",
@@ -474,7 +682,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "38f54e36ac50041b0c94ce6cc3cabb19921ee75b8c8ee7fa916ea167059b9d66"
+    "sha256": "38f54e36ac50041b0c94ce6cc3cabb19921ee75b8c8ee7fa916ea167059b9d66",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "JNJ",
@@ -483,7 +695,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e6b3f67e047f88bc2d6eb2d098542bcc9356f33ee3e22882e0edcfb93bb4b42e"
+    "sha256": "e6b3f67e047f88bc2d6eb2d098542bcc9356f33ee3e22882e0edcfb93bb4b42e",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "KDP",
@@ -492,7 +708,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "00cfd53cb2062ea1c2707074aabae1139093c559e5892d2e37fe492a198cdba9"
+    "sha256": "00cfd53cb2062ea1c2707074aabae1139093c559e5892d2e37fe492a198cdba9",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "KHC",
@@ -501,7 +721,11 @@
     "raw_rows": 2640,
     "first_date": "2015-07-06",
     "last_date": "2025-12-31",
-    "sha256": "5ed73d9c6db2141a1028be6e117d0dc3bd5f747b10fa2f64d3eac08393c48e6b"
+    "sha256": "5ed73d9c6db2141a1028be6e117d0dc3bd5f747b10fa2f64d3eac08393c48e6b",
+    "eligible_train_origins": 1497,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "KIM",
@@ -510,7 +734,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "f8bb06a89014dd9935c01c30e730b0e4e513b7bf454510e5802232418b9174d0"
+    "sha256": "f8bb06a89014dd9935c01c30e730b0e4e513b7bf454510e5802232418b9174d0",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "KKR",
@@ -519,7 +747,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "13d6e06e4c1309fccee074e58350703af345b0934976f6f557fa848f95a2c0c8"
+    "sha256": "13d6e06e4c1309fccee074e58350703af345b0934976f6f557fa848f95a2c0c8",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "KO",
@@ -528,7 +760,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "f068da867edfedb2943fe936aa0bb7dd14673d5e45b0c324814398d11deb4b29"
+    "sha256": "f068da867edfedb2943fe936aa0bb7dd14673d5e45b0c324814398d11deb4b29",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "L",
@@ -537,7 +773,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "778926c5b84eaa6fb4ecb6e44ea069b7e298c4cfa95ba5d33b3e0ef330d67b51"
+    "sha256": "778926c5b84eaa6fb4ecb6e44ea069b7e298c4cfa95ba5d33b3e0ef330d67b51",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "LUV",
@@ -546,7 +786,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "1c876be4ff184f63ae68823fead4ba5c5b51feb9839833c49f964b05f04d76e3"
+    "sha256": "1c876be4ff184f63ae68823fead4ba5c5b51feb9839833c49f964b05f04d76e3",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "LVS",
@@ -555,7 +799,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "3e074f29fb99a08597e84dabc0b3b85b25ac8e95ea3c77cb8f8c6b2928d7859c"
+    "sha256": "3e074f29fb99a08597e84dabc0b3b85b25ac8e95ea3c77cb8f8c6b2928d7859c",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "LYB",
@@ -564,7 +812,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "5f3df040ce18f121b4a65ad6ee9e2a2410f3ea72ae89f21abb7002d55d303997"
+    "sha256": "5f3df040ce18f121b4a65ad6ee9e2a2410f3ea72ae89f21abb7002d55d303997",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "MCD",
@@ -573,7 +825,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "715f99bbe380b22206766418462b911ff30f7ab597368caae0ee44b7ce03b85c"
+    "sha256": "715f99bbe380b22206766418462b911ff30f7ab597368caae0ee44b7ce03b85c",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "MCHP",
@@ -582,7 +838,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "5505aa8484e4ff20258fe5141c518467ff5170f03aeeea44102541d7d726dd11"
+    "sha256": "5505aa8484e4ff20258fe5141c518467ff5170f03aeeea44102541d7d726dd11",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "MRK",
@@ -591,7 +851,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "3faa8733f929c4c14a3c324ac628da2d3e259dba3254c535436c7a4eb0dfa978"
+    "sha256": "3faa8733f929c4c14a3c324ac628da2d3e259dba3254c535436c7a4eb0dfa978",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "MSFT",
@@ -600,7 +864,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "60aed87d95e7f0579b08b37597da691db388763f0ee8d3842877de348d81afad"
+    "sha256": "60aed87d95e7f0579b08b37597da691db388763f0ee8d3842877de348d81afad",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "NDAQ",
@@ -609,7 +877,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "f19bd1a900e63073ed6f463c21ae56f20f3a833a6d647fc84ba951c298428aa3"
+    "sha256": "f19bd1a900e63073ed6f463c21ae56f20f3a833a6d647fc84ba951c298428aa3",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "NEE",
@@ -618,7 +890,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e254b7915be20dbd59175f6750cc4e4ffb10e9c88e40889926f6b7884a6baba9"
+    "sha256": "e254b7915be20dbd59175f6750cc4e4ffb10e9c88e40889926f6b7884a6baba9",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "NKE",
@@ -627,7 +903,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "b203d45d0ddc0f14ce44c9d1bdaf0f0184333df7c40cb1c8ddc057126b1b43f6"
+    "sha256": "b203d45d0ddc0f14ce44c9d1bdaf0f0184333df7c40cb1c8ddc057126b1b43f6",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "NVDA",
@@ -636,7 +916,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "75387809c9fefead515ec5c1e84cd4719416453ef88c3c6dc31fe510822120ed"
+    "sha256": "75387809c9fefead515ec5c1e84cd4719416453ef88c3c6dc31fe510822120ed",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ORCL",
@@ -645,7 +929,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "c31dcac3529789c71da96e3e5409869f87a65d82d70d72b45fa396eb522d2a2c"
+    "sha256": "c31dcac3529789c71da96e3e5409869f87a65d82d70d72b45fa396eb522d2a2c",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ORLY",
@@ -654,7 +942,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "bff012e265bffe2141b9c9f3e563fb887180667705f78ba6464d421d80b31583"
+    "sha256": "bff012e265bffe2141b9c9f3e563fb887180667705f78ba6464d421d80b31583",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "PEP",
@@ -663,7 +955,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "88c60c5648af411d8c1290d92e22e38b86b67328de54008ca96731db20741247"
+    "sha256": "88c60c5648af411d8c1290d92e22e38b86b67328de54008ca96731db20741247",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "PG",
@@ -672,7 +968,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e089b3e8d6554ad0981d1ae8c8aa42d1fb94ec9aad840e5b9e308b7a06b2cbd5"
+    "sha256": "e089b3e8d6554ad0981d1ae8c8aa42d1fb94ec9aad840e5b9e308b7a06b2cbd5",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "PLD",
@@ -681,7 +981,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "816e9b7b60e44d77a7772e77be751f4541e6d97c15990bf78bef2b82dbdb6cde"
+    "sha256": "816e9b7b60e44d77a7772e77be751f4541e6d97c15990bf78bef2b82dbdb6cde",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "PPG",
@@ -690,7 +994,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "ae8a9bfd0f3305a5df5dad3e544261ba906b0d0e17290314aea35315feadff38"
+    "sha256": "ae8a9bfd0f3305a5df5dad3e544261ba906b0d0e17290314aea35315feadff38",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "PSX",
@@ -699,7 +1007,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "0814ef34f165750c620f7620280074da7818527ed7e7d734022537840b18672b"
+    "sha256": "0814ef34f165750c620f7620280074da7818527ed7e7d734022537840b18672b",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "PWR",
@@ -708,7 +1020,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "ced117919062cb5013e8c7c3678ef6c2551ed03058d0973b57f07e5cd80a0d3a"
+    "sha256": "ced117919062cb5013e8c7c3678ef6c2551ed03058d0973b57f07e5cd80a0d3a",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "Q",
@@ -717,7 +1033,11 @@
     "raw_rows": 46,
     "first_date": "2025-10-27",
     "last_date": "2025-12-31",
-    "sha256": "40ead30ddcb06ed8381c2d5ee298e5e559e87e064167073dc3ed3173a8c96cea"
+    "sha256": "40ead30ddcb06ed8381c2d5ee298e5e559e87e064167073dc3ed3173a8c96cea",
+    "eligible_train_origins": 0,
+    "eligible_validation_origins": 0,
+    "eligible_test_origins": 0,
+    "context512_test_origins": 0
   },
   {
     "ticker": "QCOM",
@@ -726,7 +1046,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "4377abf411499cbf017bad538c1b2b7275638cc2fc4986a72a60e4c548557472"
+    "sha256": "4377abf411499cbf017bad538c1b2b7275638cc2fc4986a72a60e4c548557472",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "RMD",
@@ -735,7 +1059,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "ae5df6bd9e2697e3ec861c383f6dba3f952391d2376227bd6c6b8971819ea958"
+    "sha256": "ae5df6bd9e2697e3ec861c383f6dba3f952391d2376227bd6c6b8971819ea958",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "RSG",
@@ -744,7 +1072,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "1c3f6deadc585313b3d39692c165fb0e3743730c75d3b501ed7b1914411f77f6"
+    "sha256": "1c3f6deadc585313b3d39692c165fb0e3743730c75d3b501ed7b1914411f77f6",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "STLD",
@@ -753,7 +1085,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "4dc796ca62b4240777c2b3e06d99c4247dd9b8359bd34431eeadd69affb1df32"
+    "sha256": "4dc796ca62b4240777c2b3e06d99c4247dd9b8359bd34431eeadd69affb1df32",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "STZ",
@@ -762,7 +1098,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "d8288516c5be52caefa351f2e3aa5886f1addf4dd9b3177d28e6b82111fbc739"
+    "sha256": "d8288516c5be52caefa351f2e3aa5886f1addf4dd9b3177d28e6b82111fbc739",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "SWK",
@@ -771,7 +1111,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "bff906bc9eb6149d56982cf0c5486fef45582fbc130d5d8f81270091f868e7ec"
+    "sha256": "bff906bc9eb6149d56982cf0c5486fef45582fbc130d5d8f81270091f868e7ec",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "SWKS",
@@ -780,7 +1124,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "d9cdf93f1c3a73dc97840696c73dd41e8b1496d07b0b8f6e8805a30b73d58f21"
+    "sha256": "d9cdf93f1c3a73dc97840696c73dd41e8b1496d07b0b8f6e8805a30b73d58f21",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "TECH",
@@ -789,7 +1137,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "d09fd142eb6a4d5f2902e2c62ec35d3edda364febc7425dc9f053a03acb1530c"
+    "sha256": "d09fd142eb6a4d5f2902e2c62ec35d3edda364febc7425dc9f053a03acb1530c",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "TRMB",
@@ -798,7 +1150,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "00d0441a5e497b2317b0529a49b400f1b6368d7ccfb847dd53d0683fb8b642bb"
+    "sha256": "00d0441a5e497b2317b0529a49b400f1b6368d7ccfb847dd53d0683fb8b642bb",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "TXN",
@@ -807,7 +1163,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "6d181a70e664f173fa8d40c4ea2410842cc217612856204283cb717d15e0c900"
+    "sha256": "6d181a70e664f173fa8d40c4ea2410842cc217612856204283cb717d15e0c900",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "UHS",
@@ -816,7 +1176,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "ed5938329a8078df1fce82ce186cd48c17acc75adc320b7e4ec090db0284aa83"
+    "sha256": "ed5938329a8078df1fce82ce186cd48c17acc75adc320b7e4ec090db0284aa83",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "UNH",
@@ -825,7 +1189,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "1a0e0dc6fa921cb3ecbc128dcb375302b3c557278fa01756041835e34d841d56"
+    "sha256": "1a0e0dc6fa921cb3ecbc128dcb375302b3c557278fa01756041835e34d841d56",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "UPS",
@@ -834,7 +1202,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "1eca38cbd902a3c8499cabae74f72e350f7ae692f37c98be1fe45e3b1f2e32ed"
+    "sha256": "1eca38cbd902a3c8499cabae74f72e350f7ae692f37c98be1fe45e3b1f2e32ed",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "V",
@@ -843,7 +1215,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "92964a64fa1a44ae1f9f1fbba651230df1b0ee8babf060a200fb94302b2ac512"
+    "sha256": "92964a64fa1a44ae1f9f1fbba651230df1b0ee8babf060a200fb94302b2ac512",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "VLO",
@@ -852,7 +1228,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "42d28f200bfd137cd83c00dd9049123a694e8a0ea47b89fb5d2fa1fc87e6db53"
+    "sha256": "42d28f200bfd137cd83c00dd9049123a694e8a0ea47b89fb5d2fa1fc87e6db53",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "WBD",
@@ -867,7 +1247,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "a9be9cd0ae3e5e99148070bdc007ad0baaab0267827b50d437c662582dcd4fe0"
+    "sha256": "a9be9cd0ae3e5e99148070bdc007ad0baaab0267827b50d437c662582dcd4fe0",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "WYNN",
@@ -876,7 +1260,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "e40da534f8ec087732b3d212e284b63adb4ff7b1c6df876398597e66f03b0db8"
+    "sha256": "e40da534f8ec087732b3d212e284b63adb4ff7b1c6df876398597e66f03b0db8",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "XOM",
@@ -885,7 +1273,11 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "566acf1b4d11a36c665d30f94309e98f700346551dd8311d93d50f511381a673"
+    "sha256": "566acf1b4d11a36c665d30f94309e98f700346551dd8311d93d50f511381a673",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   },
   {
     "ticker": "ZBRA",
@@ -894,6 +1286,10 @@
     "raw_rows": 3018,
     "first_date": "2014-01-02",
     "last_date": "2025-12-31",
-    "sha256": "7bab59db03e5db6ce69d58e16050e12e458f6240bb5fae10ca62937f77ba6abe"
+    "sha256": "7bab59db03e5db6ce69d58e16050e12e458f6240bb5fae10ca62937f77ba6abe",
+    "eligible_train_origins": 1742,
+    "eligible_validation_origins": 480,
+    "eligible_test_origins": 481,
+    "context512_test_origins": 481
   }
 ]
