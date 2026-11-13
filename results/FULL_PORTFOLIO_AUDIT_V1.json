@@ -1,0 +1,1014 @@
+{
+  "completed_utc": "2026-11-13T00:52:19.929366+00:00",
+  "plan": {
+    "started_utc": "2026-11-13T00:52:05.782920+00:00",
+    "status": "Exploratory application after full forecast scores inspected; basket selection uses only role, sector, history coverage and fixed hash, not forecast outcomes.",
+    "baskets": {
+      "Held-sector basket": {
+        "EFX": 0.09090909090909091,
+        "CVS": 0.09090909090909091,
+        "CSGP": 0.09090909090909091,
+        "AMCR": 0.09090909090909091,
+        "WMB": 0.09090909090909091,
+        "KMB": 0.09090909090909091,
+        "ON": 0.09090909090909091,
+        "BK": 0.09090909090909091,
+        "RL": 0.09090909090909091,
+        "CHTR": 0.09090909090909091,
+        "PPL": 0.09090909090909091
+      },
+      "Held-technology basket": {
+        "ON": 0.2,
+        "WDC": 0.2,
+        "TYL": 0.2,
+        "ANET": 0.2,
+        "STX": 0.2
+      }
+    },
+    "models": [
+      "Persistence",
+      "Ridge60",
+      "LSTM60",
+      "Timestral5M",
+      "Persistence_calibrated",
+      "Ridge60_calibrated",
+      "LSTM60_calibrated",
+      "Timestral5M_calibrated"
+    ],
+    "cost_bps": [
+      0,
+      10,
+      25
+    ],
+    "cash_annual": [
+      0,
+      0.04
+    ],
+    "primary": {
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "target": 0.1,
+      "metric": "rolling20 net volatility absolute deviation from target"
+    },
+    "fixed_control": "Each model mean planned equity on common validation-origin basket forecasts; uses past prices/predictions, no held-company labels fit models or calibration.",
+    "source_panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+    "fitted_bundle_sha256": "98c6c6ca17c5ee1d82fdd42b48ee789c49bdf3e6eee9c783fc20ee7f4e97eada",
+    "code_sha256": "2e4948ee9e552eda867e16dbfe021a82108cbd8d10960c04f21f6947c440d1f5",
+    "holdout_2026_accessed": false
+  },
+  "frozen_validation_exposures": {
+    "Held-sector basket": {
+      "Persistence": 0.6219395143912582,
+      "Ridge60": 0.7019659889165671,
+      "LSTM60": 0.6947283278489177,
+      "Timestral5M": 0.5775124688161203,
+      "Persistence_calibrated": 0.5402076930086493,
+      "Ridge60_calibrated": 0.5847060355868935,
+      "LSTM60_calibrated": 0.5839593844044634,
+      "Timestral5M_calibrated": 0.5705098406455491
+    },
+    "Held-technology basket": {
+      "Persistence": 0.347878008365047,
+      "Ridge60": 0.4092003860624067,
+      "LSTM60": 0.40957682385871585,
+      "Timestral5M": 0.32532589447990884,
+      "Persistence_calibrated": 0.2991676572865925,
+      "Ridge60_calibrated": 0.3377750230415348,
+      "LSTM60_calibrated": 0.34427303499690387,
+      "Timestral5M_calibrated": 0.3213811549352002
+    }
+  },
+  "comparisons": [
+    {
+      "basket": "Held-sector basket",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6219395143912582,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.00696940645535743,
+      "return_difference": -0.031145149834898245,
+      "equity_difference": 0.18801263484560782,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.006969406455357432,
+          "ci95_low": -0.0020946393973892015,
+          "ci95_high": 0.01644037052229626,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.006969406455357432,
+          "ci95_low": -0.002132606739460623,
+          "ci95_high": 0.015462339358798597,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6219395143912582,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": 0.0,
+      "return_difference": 0.0,
+      "equity_difference": 0.0,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Ridge60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.7019659889165671,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.0108164766809658,
+      "return_difference": -0.02728377808094984,
+      "equity_difference": 0.18639881402623537,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.010816476680965803,
+          "ci95_low": 0.0025834078686191486,
+          "ci95_high": 0.01929624903103168,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.010816476680965803,
+          "ci95_low": 0.0023645303567077156,
+          "ci95_high": 0.018784900876146336,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Ridge60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.7019659889165671,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": 0.0021084155842188007,
+      "return_difference": 0.02130821837952901,
+      "equity_difference": 0.07828488365315489,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.002108415584218803,
+          "ci95_low": -0.002842468866508142,
+          "ci95_high": 0.007372994765541987,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.002108415584218803,
+          "ci95_low": -0.004356670445671463,
+          "ci95_high": 0.008664239175594186,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "LSTM60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6947283278489177,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.01020700292067625,
+      "return_difference": -0.022969531159103607,
+      "equity_difference": 0.1648731819717717,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.01020700292067625,
+          "ci95_low": 0.0024984101850369774,
+          "ci95_high": 0.018621367877916378,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.01020700292067625,
+          "ci95_low": 0.0023193973442959927,
+          "ci95_high": 0.017396457256564784,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "LSTM60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.6947283278489177,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": 0.0015178429479656141,
+      "return_difference": 0.02404165646908485,
+      "equity_difference": 0.04953536361485744,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0015178429479656087,
+          "ci95_low": -0.003225544084692406,
+          "ci95_high": 0.005665261340524479,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0015178429479656087,
+          "ci95_low": -0.004556206726334828,
+          "ci95_high": 0.0070801389589289195,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5775124688161203,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.0038077939188542326,
+      "return_difference": -0.017557859183511715,
+      "equity_difference": 0.20188643526240735,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.003807793918854233,
+          "ci95_low": -0.005385562032591561,
+          "ci95_high": 0.014583148475088382,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.003807793918854233,
+          "ci95_low": -0.0059181213133355625,
+          "ci95_high": 0.014287388443227769,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5775124688161203,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.0007504828563799013,
+      "return_difference": 0.003933030231897616,
+      "equity_difference": -0.030506034821711547,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0007504828563799059,
+          "ci95_low": -0.0032018646469136342,
+          "ci95_high": 0.0017031794950155298,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0007504828563799059,
+          "ci95_low": -0.0034398425004948325,
+          "ci95_high": 0.0018448380199500175,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5402076930086493,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.0032570003876623184,
+      "return_difference": -0.0392993538542552,
+      "equity_difference": 0.16799112255122395,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0032570003876623214,
+          "ci95_low": -0.011225714490605112,
+          "ci95_high": 0.005669856561558206,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0032570003876623214,
+          "ci95_low": -0.011767328484194567,
+          "ci95_high": 0.0059030452319997675,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5402076930086493,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.004921761191212123,
+      "return_difference": -0.025896918726078244,
+      "equity_difference": -0.10167990397212234,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004921761191212127,
+          "ci95_low": -0.009959342047457983,
+          "ci95_high": 7.003025548619361e-06,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004921761191212127,
+          "ci95_low": -0.010044318457917764,
+          "ci95_high": 0.0009344128268988919,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Ridge60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5847060355868935,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.0006685595503327993,
+      "return_difference": -0.037999064914264524,
+      "equity_difference": 0.18515144491559998,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0006685595503328002,
+          "ci95_low": -0.008164049932363256,
+          "ci95_high": 0.007321312956646537,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0006685595503328002,
+          "ci95_low": -0.007731937225655514,
+          "ci95_high": 0.005885977021688684,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Ridge60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5847060355868935,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.005690923700520434,
+      "return_difference": -0.014946540438759426,
+      "equity_difference": -0.04005393175682048,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.00569092370052044,
+          "ci95_low": -0.010523344965868186,
+          "ci95_high": -0.0013905246851498288,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.00569092370052044,
+          "ci95_low": -0.010697920109918888,
+          "ci95_high": -0.0010978203174727777,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "LSTM60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5839593844044634,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.00025593968369909056,
+      "return_difference": -0.030596675562297282,
+      "equity_difference": 0.16239599405207739,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0002559396836990941,
+          "ci95_low": -0.007347548042578371,
+          "ci95_high": 0.00830545945775533,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0002559396836990941,
+          "ci95_low": -0.006329720371503107,
+          "ci95_high": 0.006633372040321116,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "LSTM60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5839593844044634,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.00472016141645476,
+      "return_difference": -0.007706268646189729,
+      "equity_difference": -0.06355534073587799,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004720161416454758,
+          "ci95_low": -0.00993175461053496,
+          "ci95_high": -0.00015549333687987164,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004720161416454758,
+          "ci95_low": -0.010931043131919605,
+          "ci95_high": 0.00031392743806869154,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5705098406455491,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.002818658546397547,
+      "return_difference": -0.0182177283019338,
+      "equity_difference": 0.19993327252084114,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.00281865854639755,
+          "ci95_low": -0.006243759154338973,
+          "ci95_high": 0.013357061582467545,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.00281865854639755,
+          "ci95_low": -0.006882704700907937,
+          "ci95_high": 0.013537498213867377,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-sector basket",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.5705098406455491,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.0012578019673060784,
+      "return_difference": 0.0017535677588518261,
+      "equity_difference": -0.03945596230784787,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0012578019673060777,
+          "ci95_low": -0.0038821408808425257,
+          "ci95_high": 0.0011955736123003366,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0012578019673060777,
+          "ci95_low": -0.004023468618002146,
+          "ci95_high": 0.0015406627525887606,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.347878008365047,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.007540291315642919,
+      "return_difference": 0.053614305616283886,
+      "equity_difference": 0.07862002923957878,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.007540291315642911,
+          "ci95_low": -0.00033088926983032785,
+          "ci95_high": 0.016476104997002448,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.007540291315642911,
+          "ci95_low": -0.00030048914792265636,
+          "ci95_high": 0.016571346802182262,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Persistence",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.347878008365047,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": 0.0,
+      "return_difference": 0.0,
+      "equity_difference": 0.0,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Ridge60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.4092003860624067,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.013860974242780835,
+      "return_difference": -0.011467514009873891,
+      "equity_difference": 0.08182104623289521,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.013860974242780828,
+          "ci95_low": 0.005563710001524029,
+          "ci95_high": 0.0234861168398686,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.013860974242780828,
+          "ci95_low": 0.004435479813208626,
+          "ci95_high": 0.024306156686976527,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Ridge60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.4092003860624067,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": 0.00977605917004605,
+      "return_difference": 0.00012297944024397545,
+      "equity_difference": 0.0646115301609686,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.009776059170046049,
+          "ci95_low": 0.0027372061987293223,
+          "ci95_high": 0.0186078190376452,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.009776059170046049,
+          "ci95_low": 0.0017558743279412678,
+          "ci95_high": 0.02024133019917176,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "LSTM60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.40957682385871585,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.005119558637195789,
+      "return_difference": -0.0026737988148224368,
+      "equity_difference": 0.04585623166463004,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.005119558637195789,
+          "ci95_low": -0.0017019229889913882,
+          "ci95_high": 0.012855282168750367,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.005119558637195789,
+          "ci95_low": -0.0032038982519684137,
+          "ci95_high": 0.013048651534788088,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "LSTM60",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.40957682385871585,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": 0.0010735900107516488,
+      "return_difference": 0.009323429485018186,
+      "equity_difference": 0.029023460126380407,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0010735900107516519,
+          "ci95_low": -0.00432255879788982,
+          "ci95_high": 0.008535894494815236,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0010735900107516519,
+          "ci95_low": -0.00475209109779854,
+          "ci95_high": 0.008785688232479251,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.32532589447990884,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.00404725641186093,
+      "return_difference": 0.0074533398577503185,
+      "equity_difference": 0.06721145861757216,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.004047256411860925,
+          "ci95_low": -0.003632645496057546,
+          "ci95_high": 0.012730104814070446,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.004047256411860925,
+          "ci95_low": -0.005722581335143747,
+          "ci95_high": 0.013331452798946559,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.32532589447990884,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.003081702930550035,
+      "return_difference": -0.06961606683029653,
+      "equity_difference": -0.03401273756559897,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0030817029305500346,
+          "ci95_low": -0.008665854137669215,
+          "ci95_high": 0.0026581137633092194,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0030817029305500346,
+          "ci95_low": -0.009211073116602119,
+          "ci95_high": 0.0033428140524598988,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.2991676572865925,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.0008150388803519239,
+      "return_difference": 0.04458901520864589,
+      "equity_difference": 0.06780010107935713,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0008150388803519246,
+          "ci95_low": -0.007203102300162589,
+          "ci95_high": 0.009757775337861136,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0008150388803519246,
+          "ci95_low": -0.008471358516756438,
+          "ci95_high": 0.010222501196481227,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Persistence_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.2991676572865925,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.0043953532126230835,
+      "return_difference": -0.059333854802677166,
+      "equity_difference": -0.05965642947166694,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004395353212623079,
+          "ci95_low": -0.00958146388370689,
+          "ci95_high": 0.000727647823166336,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004395353212623079,
+          "ci95_low": -0.009573284733859428,
+          "ci95_high": 0.0009655116394764636,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Ridge60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3377750230415348,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.002505546231337679,
+      "return_difference": -0.00840015039970865,
+      "equity_difference": 0.06752709269714158,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.002505546231337677,
+          "ci95_low": -0.004558852397263477,
+          "ci95_high": 0.010451944345940491,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.002505546231337677,
+          "ci95_low": -0.005159830013860596,
+          "ci95_high": 0.0119118050976609,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Ridge60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3377750230415348,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.004964959746973738,
+      "return_difference": -0.07255676918713427,
+      "equity_difference": -0.021217903425576057,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004964959746973735,
+          "ci95_low": -0.01055363405732851,
+          "ci95_high": 0.0012788386620676705,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004964959746973735,
+          "ci95_low": -0.01087896513166943,
+          "ci95_high": 0.001075926434744383,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "LSTM60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.34427303499690387,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -8.124026282169822e-05,
+      "return_difference": -0.0019133664146671059,
+      "equity_difference": 0.038567932066520094,
+      "intervals": {
+        "20": {
+          "mean_difference": -8.124026282169658e-05,
+          "ci95_low": -0.005176766553920325,
+          "ci95_high": 0.005872445156615205,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -8.124026282169658e-05,
+          "ci95_low": -0.0044457090834657,
+          "ci95_high": 0.005152539123049043,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "LSTM60_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.34427303499690387,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.0076200149651671455,
+      "return_difference": -0.059295903006814976,
+      "equity_difference": -0.04366466652688811,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.007620014965167137,
+          "ci95_low": -0.013841103368413937,
+          "ci95_high": -0.0015036485991071237,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.007620014965167137,
+          "ci95_low": -0.013502056285939553,
+          "ci95_high": -0.0018040646977708762,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3213811549352002,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.0035012367356692317,
+      "return_difference": 0.007377758702039827,
+      "equity_difference": 0.06639859080951188,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.003501236735669229,
+          "ci95_low": -0.0041297306177776475,
+          "ci95_high": 0.012029171818201151,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.003501236735669229,
+          "ci95_low": -0.006260553430396549,
+          "ci95_high": 0.012820622866579465,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held-technology basket",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0.0,
+      "fixed_validation_exposure": 0.3213811549352002,
+      "start": "2024-01-03",
+      "end": "2025-12-31",
+      "benchmark": "historical",
+      "risk_error_difference": -0.003450480423041028,
+      "return_difference": -0.07376543022877935,
+      "equity_difference": -0.0387805672782513,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0034504804230410255,
+          "ci95_low": -0.009138955586780293,
+          "ci95_high": 0.002205795223845882,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0034504804230410255,
+          "ci95_low": -0.00965549072459416,
+          "ci95_high": 0.002977954270169586,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    }
+  ],
+  "strategy_records": 384,
+  "holdout_2026_accessed": false,
+  "calibration_source": "Frozen non-held validation calibration from full training; never refitted on basket labels"
+}

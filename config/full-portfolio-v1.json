@@ -1,0 +1,56 @@
+{
+  "started_utc": "2026-11-13T00:52:05.782920+00:00",
+  "status": "Exploratory application after full forecast scores inspected; basket selection uses only role, sector, history coverage and fixed hash, not forecast outcomes.",
+  "baskets": {
+    "Held-sector basket": {
+      "EFX": 0.09090909090909091,
+      "CVS": 0.09090909090909091,
+      "CSGP": 0.09090909090909091,
+      "AMCR": 0.09090909090909091,
+      "WMB": 0.09090909090909091,
+      "KMB": 0.09090909090909091,
+      "ON": 0.09090909090909091,
+      "BK": 0.09090909090909091,
+      "RL": 0.09090909090909091,
+      "CHTR": 0.09090909090909091,
+      "PPL": 0.09090909090909091
+    },
+    "Held-technology basket": {
+      "ON": 0.2,
+      "WDC": 0.2,
+      "TYL": 0.2,
+      "ANET": 0.2,
+      "STX": 0.2
+    }
+  },
+  "models": [
+    "Persistence",
+    "Ridge60",
+    "LSTM60",
+    "Timestral5M",
+    "Persistence_calibrated",
+    "Ridge60_calibrated",
+    "LSTM60_calibrated",
+    "Timestral5M_calibrated"
+  ],
+  "cost_bps": [
+    0,
+    10,
+    25
+  ],
+  "cash_annual": [
+    0,
+    0.04
+  ],
+  "primary": {
+    "cost_bps": 10,
+    "cash_annual": 0,
+    "target": 0.1,
+    "metric": "rolling20 net volatility absolute deviation from target"
+  },
+  "fixed_control": "Each model mean planned equity on common validation-origin basket forecasts; uses past prices/predictions, no held-company labels fit models or calibration.",
+  "source_panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+  "fitted_bundle_sha256": "98c6c6ca17c5ee1d82fdd42b48ee789c49bdf3e6eee9c783fc20ee7f4e97eada",
+  "code_sha256": "2e4948ee9e552eda867e16dbfe021a82108cbd8d10960c04f21f6947c440d1f5",
+  "holdout_2026_accessed": false
+}
