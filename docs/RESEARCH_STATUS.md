@@ -1,6 +1,6 @@
 # Research status and next decision
 
-Updated 2026-11-11. This ledger separates completed evidence from resume ambitions.
+Updated 2026-11-12. This ledger separates completed evidence from resume ambitions.
 
 ## Question
 
@@ -20,10 +20,10 @@ Does better marginal volatility forecasting improve portfolio risk decisions bey
 | Recent Transformer | Timestral 5M actually evaluated on common aligned 2024–2025 origins; see TIMESTRAL_V1.md |
 | FinBERT financial-text representations | Not implemented |
 | Market / financial / text / combined matched-sample ablation | Not implemented |
-| 500 firms / 1M+ observations | Aspirational, not achieved or audited |
+| Full-scale market observations | Achieved: 500 reference-cohort candidates, 491 usable histories / 1,428,780 rows; not 500 usable firms or full-scale financial/text fusion |
 | 2026 temporal holdout | SEALED; no acquisition/scoring in this stage; user reaffirmed this choice |
 
-The portfolio demo still displays its labeled V2/V1 evidence. Separate new research reports must not be represented as already integrated into the application.
+The interactive portfolio replay uses labeled preliminary V2/V1 evidence. The About tab now displays the completed full-cohort research summary; it does not change the replay or assistant evidence.
 
 ## One modern-model candidate, not a model sweep
 
