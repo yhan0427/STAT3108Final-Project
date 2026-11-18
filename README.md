@@ -1,42 +1,57 @@
 # Portfolio Risk Lab
 
-**Research question:** Can volatility forecasts improve portfolio risk targeting after execution delays and trading costs, relative to a historical-volatility rule?
+**Research question:** Do better volatility forecasts improve portfolio risk targeting after execution delays and transaction costs, beyond simply reducing equity exposure?
 
-Author: Han · STAT UN3108, Applied Deep Learning and AI.
+Han · STAT UN3108, Applied Deep Learning and AI · Research in progress.
 
-A portfolio decision laboratory: define a stock basket, inspect correlation-aware risk, compare equity/cash allocation rules, and reveal historical outcomes. Forecasting experiments V1–V3 supply preliminary evidence; portfolio decision value is the new primary application.
+The project connects a public-data pipeline, chronological forecasting experiments and an equity/cash decision simulator. The current study compares sequence Ridge, LSTM and a pinned recent Transformer (Timestral 5M). Financial experiments and the fixed100-issuer annual-text data/quality/FinBERT pipeline are complete. The first matched multimodal Ridge/LSTM experiment and its registered portfolio evaluation are complete; frozen FinBERT embeddings do not establish stable incremental value in this specification.
 
-## Start the application
+## Current evidence
 
-```bash
-.venv/bin/python -m volrisk.server --port 8766
-```
+| Component | Completed scope |
+|---|---|
+| Reference cohort | 500 CIK-defined issuers reconstructed for 2025-12-31; 491 retained price histories |
+| Market data | 1,428,780 unique company-date observations, ending in 2025 |
+| Unified forecasting | 386 fitting companies; common held-company evaluation: 97 firms / 46,657 origins |
+| Forecast comparison | Validation-calibrated QLIKE: LSTM 0.3533; Ridge 0.3646 after broad-grid audit (original grid: 0.3731); Timestral 0.4122 |
+| Decision evaluation | Two declared baskets; costs, hypothetical cash-yield sensitivity and validation-fixed exposure controls; 384 strategy records |
+| Financial/text extension | Structured coverage:491 firms; financial experiments81 held /80 under identity guard;100-issuer text pipeline and matched forecasting complete(19 evaluated firms);1,632 decision outcomes |
+| Final temporal holdout | **2026 market outcomes remain sealed** |
 
-Open http://127.0.0.1:8766/. The three tabs are **Portfolio Lab**, **Research Agent**, and **About the Project**. The homepage compares buy-and-hold, fixed 50% equity, historical-risk and forecast-risk strategies. Future results appear only when revealed. Export and all portfolio calculations work without an AI key.
+The mean LSTM–Ridge QLIKE difference favors LSTM, but paired 20/60-date block intervals both cross zero, including after the [stronger regularization audit](results/RIDGE_REGULARIZATION_AUDIT_V1.md). The portfolio evaluation does not establish a reliable dynamic-policy advantage over validation-fixed equity exposure. These findings do not establish equivalence, universal model superiority or alpha.
 
-The first version is a historical, long-only, unlevered simulation. Defaults: 10% annualized risk target, 20-session rebalancing, sixty-session correlation estimates, next-close execution, 10 bps cost per dollar traded and zero cash return. Weights drift between trades. Lower risk may come from lower exposure; no alpha or model superiority is assumed.
+This is a reconstructed **fixed reference-date cohort**, not historical S&P 500 membership at every date. Full independent official roster verification remains qualified. Missing histories and current-provider availability can induce selection bias. Company and market observation counts do not imply equally broad financial or text coverage.
 
-Fresh checkouts need local price snapshots and all five V2 prediction files before starting the server. Follow the acquisition/build and V2 commands below. Raw data, per-stock predictions, weights and credentials are not distributed with the repository. Aggregate results and source are shareable; exact vendor history may change on download.
+## Read the research
 
-## Research artifacts
+1. [Cohort definition](docs/FULL_COHORT.md) and [actual coverage](results/FULL_COHORT_COVERAGE_V2.md).
+2. [Full-cohort forecast results](results/FULL_TRAINING_V1.md), with [period diagnostics](results/FULL_TRAINING_PERIODS_V1.csv) and [company comparisons](results/FULL_TRAINING_COMPANY_RATIOS_V1.csv).
+3. [Full-cohort portfolio results](results/FULL_PORTFOLIO_V1.md), [tradeoff figure](results/FULL_PORTFOLIO_V1.png) and [complete metric grid](results/FULL_PORTFOLIO_V1.csv).
+4. [Decision protocol](docs/PORTFOLIO_PROTOCOL.md), [method-transfer definitions](docs/ALIGNED_METHOD_TRANSFER.md) and [sealed-holdout policy](docs/HOLDOUT_POLICY.md).
+5. [Next financial/text stage](docs/MULTIMODAL_NEXT_STAGE.md) and [financial coverage audit](results/FINANCIAL_COVERAGE_V1.md). The structured coverage audit is complete; [joint availability and matching diagnostics](results/FINANCIAL_MATCHING_V1.md) define the next design decision. The [ten-company filing metadata pilot](results/FILING_MANIFEST_PILOT_V1.md) is complete; the [multimodal pipeline pilot](results/MULTIMODAL_PIPELINE_PILOT_V1.md) documents original-report checks, extraction failures and 19 completed frozen FinBERT embeddings. No text predictive improvement is established.
 
-- [Decision protocol](docs/PORTFOLIO_PROTOCOL.md): risk formulas, execution, self-financing costs and evaluation boundaries.
-- [Application design](docs/PRACTICAL_APPLICATION.md) and [demo walkthrough](docs/DEMO_WALKTHROUGH.md).
-- [Current A-theme poster](output/pdf/portfolio_risk_lab_poster.pdf): an exploratory application draft, not the final confirmed study.
-- [Portfolio experiment results](results/PORTFOLIO_V1.md): complete declared scenario grid, cost sensitivity and interpretation limits.
-- [Preliminary V2 forecasting study](results/ROBUSTNESS_V2.md) and [V3 accounting study](results/FINANCIAL_V3.md). These are not portfolio performance results.
+Completed smaller studies remain available through the [experiment index and reproduction guide](docs/REPRODUCIBILITY.md). They preserve earlier findings and specifications; they are not additional independent confirmations of the current study.
 
-```bash
-python scripts/evaluate_portfolio.py
-```
+The [matched financial experiment](results/FINANCIAL_FULL_V1.md) separately compares market history, disclosure availability/age and financial content on the same non-financial origins. Much of its observed calibrated loss difference is also obtained by metadata controls; incremental financial-content intervals cross zero. These scores use a different population from the 97-firm full-market comparison.
 
-The scenario runner refuses to overwrite `results/portfolio/v1`. Its plan is in `config/portfolio-v1.json`. UI exploration does not create new confirmatory evidence. A recent-method comparator and a genuinely new evaluation period/company sample remain future research; existing baselines have not been relabelled as new methods.
+The [documented identity sensitivity](results/FINANCIAL_ENTITY_V1.md) preserves prior results and restricts unverified predecessor histories. Financial-content gains over the simpler filing-age control still have intervals crossing zero. The [100-company text pipeline](results/TEXT_PIPELINE_100_V1.md) reports extraction failures, sampled QA and frozen FinBERT provenance; it does not yet establish text forecast improvement.
 
-## Forecasting foundation and reproducibility
+The [matched multimodal experiment](results/MULTIMODAL_100_V1.md) compares the four information groups and metadata controls on identical origins. Ridge gains from financial values in this subset; LSTM gains depend on the control. Embedding increments are small/uncertain for Ridge and worsen the financial LSTM. [Company/year diagnostics](results/MULTIMODAL_FAILURES_100_V1.md) retain the failures. The [registered decision grid](results/MULTIMODAL_PORTFOLIO_V1.md) does not establish reliable dynamic superiority over fixed equity; the concentrated technology basket exposes worse LSTM risk tracking.
 
-## Quick start
+The [recent Transformer comparison on the same 19 companies](results/MATCHED_TIMESTRAL_V1.md) recalibrates frozen Timestral forecasts on the matched non-held validation set. Its calibrated QLIKE is 0.3199; differences from market-only Ridge/LSTM remain uncertain in both date-block intervals. This is a different-information-set retrospective comparator, not locally trained Transformer fusion. Its unresolved pretraining cutoff also prevents assuming a sealed local2026 sample is unseen by the pretrained model.
 
-Python 3.11+ is required. On this computer the environment is already installed as `.venv`.
+## Timing and validation
+
+The current execution-aligned forecast is issued after close t, trades at close t+1, and targets the annualized population standard deviation of daily log returns **t+2 through t+21**. The original forecasting pilot instead used t+1 through t+20; compare results only within their declared protocol.
+
+- Training origins: 2015–2021. Validation origins: 2022–2023. Inspected development evaluation: 2024–2025.
+- Labels crossing partition boundaries are purged. Preprocessing is fitted on training observations; calibration and model selection use non-held validation labels.
+- Whole-date block bootstrap retains cross-company dependence, with 20/60-session sensitivity. Intervals are conditional on the fitted procedures and observed cohort.
+- Ridge and LSTM share 60-session market inputs. Timestral uses 512 trailing-volatility observations and frozen pretrained weights; this is not an architecture-only ablation. TTM, used in an earlier experiment, is a Mixer rather than a Transformer.
+- Timestral pretraining overlap remains unresolved. Its late-2026 release prevents claiming that this model could have been traded in 2024–2025. Its results are retrospective method transfer.
+- Earlier company holdouts inspected during development are not untouched samples for subsequent design choices. **Do not download or score 2026 prices without the final frozen protocol and explicit authorization.**
+
+## Run the local application
 
 ```bash
 python3 -m venv .venv
@@ -44,133 +59,34 @@ source .venv/bin/activate
 python -m pip install -r requirements-lock.txt
 python -m pip install --no-deps --no-build-isolation -e .
 python -m pytest -q
+python -m volrisk.server --port 8766
 ```
 
-For a fresh checkout, create a local `.local.json` (gitignored) containing your real SEC contact identifier:
+Open http://127.0.0.1:8766/. Tabs: **Portfolio Lab**, **Research Agent**, **About the Project**.
 
-```json
-{"sec_user_agent": "Your name academic research your-email@example.org"}
-```
+A fresh checkout requires locally acquired price data and the five V2 prediction files before the application can start; optional matched-study access additionally requires its completed local forecasts, audit and application configuration. Follow the [reproduction guide](docs/REPRODUCIBILITY.md). Data and fitted artifacts are not bundled. With completed local matched artifacts, the replay defaults to the 19-held-company financial/text study. Its model menu includes market, financial, text and metadata controls, with a validation-fixed equity comparator. Earlier thirty-company V2 windows remain separately selectable. The stock pool, presets and models change together. The assistant receives only evidence for the applied selection; future outcomes are absent until explicitly revealed.
 
-Then run commands from the project root:
+The simulator is long-only and unlevered, with drifting holdings, next-close execution and self-financing transaction costs. Defaults: 10% annual risk target, 20-session rebalancing, sixty-session correlation estimates, 10 bps per dollar traded and zero cash return. The [walkthrough](docs/DEMO_WALKTHROUGH.md) explains the controls and outcome reveal.
 
-```bash
-# Pipeline check only; no pilot test-set evaluation.
-python -m volrisk.cli download --pilot
-python -m volrisk.cli build --pilot
-python -m volrisk.cli train --pilot --baselines-only --run pilot-baselines-v1
+The Research Agent is optional. Configure a local OpenAI API key in its settings or set `OPENAI_API_KEY` in the server environment; `OPENAI_MODEL` overrides the default `gpt-4.1-mini`. The key is held in process memory and is not written to Git or browser storage. Numeric evidence is server-computed. Live model response quality and user efficiency have not been validated.
 
-# Main study; cached pilot files are reused.
-python -m volrisk.cli download
-python -m volrisk.cli build
-OMP_NUM_THREADS=4 LOKY_MAX_CPU_COUNT=4 python -m volrisk.cli train --run main-v1
-python -m volrisk.cli evaluate --run main-v1
-python -m volrisk.cli report --run main-v1
-```
+## Data and reproducibility
 
-The earlier individual-stock demo can be regenerated at `results/demo/main-v1/index.html` with the report command above; its obsolete generated output was removed during workspace cleanup. Use the server above for the current Portfolio Risk Lab. The interface uses a navy/blue gradient, frosted-glass panels, metallic highlights and responsive layouts. The generated individual-stock demo requires no API keys, web service or internet connection. `results/RESULTS.md` contains the experiment summary. Full fitted objects and predictions live in `results/runs/main-v1/`.
+Prices come from [Yahoo Finance via yfinance](https://github.com/ranaroussi/yfinance); structured financials come from [SEC EDGAR](https://www.sec.gov/search-filings/edgar-application-programming-interfaces). Local manifests record resolved identities, retrieval metadata, source hashes and exclusions. Raw vendor data, model weights, per-stock predictions and credentials are excluded from Git. Source rights and pretrained-model licenses are separate from this repository's code license.
 
-Existing run names are never overwritten. Final-test evaluation is guarded against repetition; if you change the design after reading test results, record the change and treat the next experiment as exploratory. Do not rename a run to pretend that the same test period is untouched. A failed evaluation leaves an explicit start marker for audit rather than silently restarting.
+Financial information becomes usable strictly after its filing calendar date. Later disclosures must not flow backward; stale content and unsupported tags remain missing. Current SEC Company Facts is not a complete immutable point-in-time archive. Entity continuity, accounting definitions and extraction quality need additional review before full multimodal fitting.
 
-## Reproducibility and data contract
-
-| Item | Specification |
-|---|---|
-| Forecast time | After the observation day's close |
-| Horizon | Next 20 observed trading days |
-| Target | `sqrt(252) * std(r[t+1:t+21], ddof=0)` |
-| Sequence | Most recent 60 trading days including observation date |
-| Training origins | 2015–2021, with boundary-crossing targets removed |
-| Validation origins | 2022–2023, with boundary-crossing targets removed |
-| Test origins | 2024–2025, with incomplete/end-crossing targets removed |
-| Preprocessing | Training-only median imputation, 1/99% clipping and standardization; financial missing flags |
-| Early stopping | Validation standardized log-target MSE, fixed max epochs/patience |
-| Regimes | Observed SPY trailing volatility, cutoff is training median |
-| Uncertainty | Paired circular date-block bootstrap, 20 and 60 trading-day blocks |
-
-All models use identical eligible observations, including rows with missing accounting features. Financial coverage is exported per company and field; missing values are not presented as real zero financial values. `filing_age_days` is elapsed calendar days since the available snapshot. Financial values older than 180 days are marked missing. Price gaps cause failure rather than silent forward filling or stock removal. The source manifest records timestamps, resolved entities, hashes and the exact study configuration.
-
-Inputs are read only from local trusted artifacts after acquisition. Python pickle/joblib checkpoints must never be loaded from untrusted repositories.
-
-## Sources and important limitations
-
-- Prices: [Yahoo Finance through yfinance](https://github.com/ranaroussi/yfinance). Unofficial client; raw vendor data is excluded from Git. Respect source terms and verify redistribution rights separately.
-- Financials: [SEC EDGAR Company Facts](https://www.sec.gov/search-filings/edgar-application-programming-interfaces). Standard USD US-GAAP tags only. Missing custom tags remain missing; we do not invent issuer-specific mappings or conflate differently defined accounting values merely to improve coverage.
-- XOM historical entity correction: the current ticker map points to a new holding company. The 2015–2025 issuer is [CIK 34088, verified SEC filing](https://www.sec.gov/Archives/edgar/data/34088/000003408825000010/0000034088-25-000010-index.htm). The mapping override and evidence are recorded in `config/universe.json`.
-- [HAR model reference: Corsi (2009)](https://doi.org/10.1093/jjfinec/nbp001). Our daily-return proxy baseline is explicitly labelled HAR-type.
-
-This is a fixed convenience sample, not reconstructed historical S&P 500 membership; survivorship bias and technology overrepresentation apply. Broad sectors are manually assigned research groups, not historical licensed GICS classifications. SEC Company Facts is today's database with filing timestamps, not a complete immutable point-in-time archive. Original filing dates prevent known later facts from flowing backward, but lost historical tags, source corrections and incomplete coverage remain limitations. Raw volume changes can reflect corporate actions. Daily volatility targets overlap and are not independent firm-day observations.
-
-A lower forecast loss need not imply a better top-five list. Higher volatility does not mean negative returns, poor corporate health or default risk. The demo uses held-out historical observations, not a live production data feed. User-selected replay dates are illustrations, not evidence in isolation.
-
-## Layout
+There are separate core and foundation-model environments, pinned in `requirements-lock.txt` and `requirements-foundation-lock.txt`. Existing run directories are preserved; substantive revisions require new versioned runs. AI coding assistance is disclosed; the author is responsible for understanding, verifying and explaining the implementation and findings.
 
 ```text
-config/              Frozen study settings and sample definition
-src/volrisk/         Acquisition, point-in-time features, models, metrics, demo
-tests/               Target, timing, leakage and evaluation invariants
-docs/                Research decisions and data documentation
-data/raw/            Local cached provider data and provenance (ignored)
-data/processed/      Local feature panel, snapshots and coverage (ignored)
-results/runs/        Model weights, validation/test predictions and manifests (ignored)
-results/demo/        Local portable demo and research figures (ignored)
-results/RESULTS.md   Shareable summary, generated from actual results
+config/          Frozen settings, company roles and source definitions
+src/volrisk/     Acquisition, features, models, evaluation and application
+scripts/         Versioned study runners, audits and report generators
+tests/           Timing, leakage, accounting and numerical invariants
+docs/            Methods, protocols and reproduction guide
+results/         Shareable aggregate evidence and audits
+poster/          Poster source; exported PDFs are historical drafts
+output/pdf/      Earlier poster exports, not the current final findings
 ```
 
-## Next research steps
-
-Prioritize the decision-level portfolio evaluation, a reviewed recent-method comparator and a genuinely new holdout. Financial-feature work remains preliminary; text and stock-return prediction are deferred.
-
-## Exploratory robustness extension (v2)
-
-The v2 protocol adds matched-information Ridge baselines (including the same full 60-day sequence as LSTM), financial-missingness/filing-age controls, three selected expanding-window evaluation years, and eight companies excluded from both fitting and validation. These experiments were designed after reviewing v1; they must not be presented as an untouched confirmatory test.
-
-```bash
-OMP_NUM_THREADS=4 LOKY_MAX_CPU_COUNT=4 python -m volrisk.robustness
-python scripts/summarize_robustness.py
-python scripts/check_sec_spotchecks.py
-```
-
-The experiment refuses to overwrite `results/robustness/v2`. Read `docs/EXPERIMENT_V2.md` for the exact scope and `results/ROBUSTNESS_V2.md` for completed comparisons. Detailed fitted artifacts remain local and ignored. Compare top-five scores within a protocol: the held-out-company cohort has eight stocks, not thirty, so its random top-five overlap is much higher.
-
-Original-statement spot checks currently cover ten ratios across two filings (Apple 2021 10-K and Caterpillar 2021 Q3 10-Q). This does not certify the full historical accounting panel. Check values and official source links are in `config/sec-spotchecks.json`, with computed matches in `results/SEC_SPOTCHECKS.json`.
-
-## Optional Research Agent
-
-Open AI settings in the Research Agent tab to configure a local OpenAI API key, or set `OPENAI_API_KEY` in the server environment. Default model: `gpt-4.1-mini`; `OPENAI_MODEL` overrides it. The key stays in process memory, is cleared on restart and never enters Git, browser storage or exports. A ChatGPT login does not supply this API key.
-
-The server recomputes portfolio evidence; the model explains it. Hindsight outcomes enter the context only after reveal. An absent key produces an explicit unavailable message, not a simulated answer. Real model access and semantic answer quality require separate verification.
-
-## Course deliverables and honest history
-
-The final presentation is on December 10, 2026; the course report is due December 13 and repository December 15. The application pivot follows actual preliminary work, not a retrospective rewrite of the experiments. Do not fabricate dates or individual contributions.
-
-AI coding assistance is disclosed. Han should review the implementation and be able to explain target construction, chronology, correlation, costs, and failure cases in the final Q&A.
-
-## Execution-aligned foundation-model experiment
-
-Current implementation ledger: [research status](docs/RESEARCH_STATUS.md). Expansion is a staged design, not an achieved sample size: [dated universe specification](docs/UNIVERSE_EXPANSION.md). The [2026 holdout remains sealed](docs/HOLDOUT_POLICY.md).
-
-A separate exploratory extension now compares pinned IBM TinyTimeMixer r2.1, a LogHAR daily-return proxy, sequence Ridge and persistence on the next-close tradable horizon. It includes validation-only calibration, equal-company comparisons and cost-aware portfolio evaluation. The checkpoint's pretraining overlap and historical availability remain unresolved; this is method transfer, not exact paper replication or an untouched test. The demo still uses its labeled V2/V1 inputs.
-
-- [Methods and reproduction](docs/ALIGNED_METHOD_TRANSFER.md)
-- [Aligned forecast and portfolio results](results/ALIGNED_V1.md)
-- [Run audit](results/ALIGNED_V1_AUDIT.json)
-- [Portfolio V1 turnover correction](results/PORTFOLIO_V1_TURNOVER_CORRECTION.csv): all other metrics verified unchanged.
-- [Fixed validation-exposure controls](results/EXPOSURE_CONTROLS_V1.md): development-only comparisons on 2024–2025, with transaction costs and hypothetical cash-yield sensitivity.
-
-Recent Transformer development comparison: [Timestral 5M results](results/TIMESTRAL_V1.md), with pinned code/weights, common aligned origins and validation-only calibration. The 2026 holdout remains sealed.
-
-[Company and period failure analysis](results/FAILURE_ANALYSIS_V1.md) reports all firms, sectors, quarters, validation-defined historical market-risk groups and post-hoc influence checks. These are descriptive development diagnostics, not a new holdout.
-
-[Universe verification](results/UNIVERSE_VERIFICATION.md): public candidate lists have unresolved reference-date conflicts; 100/500-company expansion is not yet claimed.
-
-First expanded training completed: [cohort construction and limitations](docs/EXPANSION_100.md), [training and held-company results](results/EXPANSION_100_V1.md). Frozen candidate cohort: 100 issuers; retained histories: 99; raw company-date observations: 291,416. Actual fitting/validation-label companies: 64; held-company evaluation: 34. These are reconstructed-reference-cohort results; the 2026 temporal holdout remains sealed.
-
-[Matched pilot training-cohort control](results/MATCHED_EXPANSION_V1.md) holds validation/evaluation firms fixed. The small calibrated LSTM improvement has intervals crossing zero; no reliable benefit from expansion is yet established. Next work prioritizes full-cohort data verification before another comprehensive training grid.
-
-Full-cohort stage completed: [coverage audit](results/FULL_COHORT_COVERAGE_V2.md) and [unified model results](results/FULL_TRAINING_V1.md). Actual collection: 500 reconstructed reference-date candidates, 491 retained histories, 1,428,780 company-date rows. Unified fitting uses 386 firms; common held-company evaluation uses 97 previously unscored firms / 46,657 origins. LSTM has lower calibrated QLIKE than Ridge on average, but both paired 20/60-date intervals cross zero. The existing demo remains on its clearly labeled preliminary evidence; the 2026 final holdout remains sealed.
-
-Full-run decision evaluation: [portfolio results and limitations](results/FULL_PORTFOLIO_V1.md), [tradeoff figure](results/FULL_PORTFOLIO_V1.png). The 384 retained strategy records compare dynamic forecasts with historical-risk and validation-fixed equity controls. Better marginal forecasting does not automatically establish a better portfolio policy; current dynamic-versus-fixed uncertainty remains substantial. The 2026 holdout is sealed, and these research results are not yet substituted into the preliminary demo.
-
-The local demo's About the Project tab now presents the latest full-cohort research summary and report links. Regenerate it with `python scripts/update_demo_research.py` after intentionally updating the research snapshot. The interactive Portfolio Lab and its AI evidence remain explicitly scoped to the preliminary 30-stock replay.
+Local ignored artifacts live under `data/raw/`, `data/processed/`, `data/models/` and the run-specific result directories. Only load trusted local pickle/joblib files. The demo is a historical research tool; no live feed, trading reliability or investment-performance benefit has been established.

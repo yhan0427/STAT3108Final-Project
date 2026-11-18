@@ -1,13 +1,14 @@
-# Portfolio Risk Lab: live demonstration
+# Portfolio Risk Lab: demonstration
 
 Start `.venv/bin/python -m volrisk.server --port 8766`, then open http://127.0.0.1:8766/.
 
-1. Introduce the decision: a portfolio holder wants to know whether forecast-driven risk control improves on a simple historical rule.
-2. Use Diversified five, the static 2024-25 protocol, the first decision date, Sequence Ridge, a 10% target and 10 bps cost. Apply the portfolio.
-3. Explain correlation-aware portfolio risk and the historical/forecast allocation bars. These are scenario rules, not live trade recommendations.
-4. Reveal the full-period historical results. Read risk-target error, return and equity exposure together. A more profitable curve may simply hold more equities. Show an unfavorable case from the completed results as well.
-5. Change to Technology five or the 2020 stress window, apply and compare. These are interactive diagnostics, not independent confirmatory tests.
-6. Optionally open Research Agent. Without a key, show deterministic evidence and export; do not present a simulated model reply. With a configured key, explain the scope of evidence sent to the provider.
-7. Close with the limitations: survivor sample, already-inspected periods, zero cash return, execution lag, fixed correlation methodology and the upcoming recent-method/new-holdout evaluation.
+1. Introduce the decision: does a volatility forecast improve portfolio risk targeting after delays and costs, beyond a simpler constant equity fraction?
+2. With completed local matched artifacts, select **2024–25 · matched financial + text study**, **Held nonfinancial sectors**, the first date, **Ridge · market**,10% target and10bps costs. This is the fixed19-held-company subset,not all491 research companies or historical S&P500 membership.
+3. Apply the basket. Explain correlation-aware portfolio risk,risk contributions and historical/forecast equity fractions. Forecasts use the saved validation-calibrated procedures. The selected date's filing coverage is available in deterministic evidence.
+4. Reveal historical results. Compare risk-target error,net return,drawdown,average equity,turnover and costs together. The fixed comparator uses mean planned equity from earlier validation forecasts and prices,not evaluation exposure or held labels. Its realized equity can drift. Read the metric definitions before comparing curves.
+5. Compare market,financial,text and all-information procedures. Use metadata controls to distinguish content from filing age/availability/length. Show the technology-trio failure: stronger-looking or newer representations need not improve risk targeting. Interactive choices are development scenarios,not independent tests or live recommendations.
+6. Switch to a separately labeled preliminary30-stock V2 window. Verify that presets,tickers and models change together. That older study retains a fixed-half control and earlier forecast timing; do not combine its scores with the matched study.
+7. Optionally open the floating assistant or Research Agent tab. Numeric evidence comes from the applied simulation. Without an API key,show evidence and export; no model response is generated. With a key,questions and selected evidence go to OpenAI. Live semantic answer quality remains unvalidated.
+8. Open About the Project for separate491-history,financial and matched-text research summaries. Explain survivor/provider selection,already-inspected dates,sampled text QA and conditional uncertainty.2026 market outcomes remain sealed. The recent Timestral model is a retrospective comparator with unresolved pretraining overlap,not proof of historical deployability or a guaranteed unseen2026 model test.
 
-The old individual-stock screening workflow and poster belong to preliminary forecasting experiments. The current application evaluates portfolio decisions; it does not claim the final study or modern-model comparison is complete.
+The four artifact integration checks verify cohort/model isolation,absence of future outcomes before reveal,exact reproduction of six registered preset metrics,and invariance of a selected decision to future-return mutations. This verifies the software contract,not alpha or external user efficiency.

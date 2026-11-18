@@ -7,6 +7,9 @@ ROOT=Path(__file__).resolve().parents[1]
 path=ROOT/'src/volrisk/workspace.html';html=path.read_text()
 coverage=json.loads((ROOT/'results/FULL_COHORT_AUDIT_V2.json').read_text())
 scores=pd.read_csv(ROOT/'results/FULL_TRAINING_V1.csv').set_index('model')
+ridge_audit=pd.read_csv(ROOT/'results/RIDGE_REGULARIZATION_AUDIT_V1.csv')
+ridge= ridge_audit.loc[ridge_audit.population.eq('full_market') & ridge_audit.model.eq('Ridge_market_calibrated')].iloc[0]
+scores.loc['Ridge60_calibrated',['mae','qlike']]=ridge[['mae','qlike']].to_numpy()
 portfolio=json.loads((ROOT/'results/FULL_PORTFOLIO_AUDIT_V1.json').read_text())
 rows=''.join(f'<tr><td>{label}</td><td>{100*scores.loc[m,"mae"]:.2f}</td><td>{scores.loc[m,"qlike"]:.3f}</td></tr>' for m,label in [('Ridge60_calibrated','Ridge · calibrated'),('LSTM60_calibrated','LSTM · calibrated'),('Timestral5M_calibrated','Timestral 5M · calibrated')])
 policy=''
@@ -23,4 +26,34 @@ else:
 html=html.replace('These are existing baselines; a recent time-series method has not yet been added or validated.','The separate full-cohort research now includes Timestral 5M; the interactive replay retains its preliminary V2 inputs.')
 html=html.replace("Audit a recent method's code and pretraining overlap, fix a new evaluation protocol, test new observations and assess sensitivity to costs, correlation windows and cash yield.","Finalize the evaluation protocol, resolve remaining identity/coverage limitations and review pretraining overlap before opening the sealed 2026 time holdout.")
 html=html.replace('Thirty fixed US non-financial large-cap stocks, adjusted daily prices and existing SEC-informed forecasting experiments. This survivor-selected sample is not historical S&amp;P 500 membership.','Interactive replay: thirty fixed non-financial large caps. Full research: 491 retained histories from 500 reconstructed reference-date issuers, including financial firms in market-only experiments. Neither panel reconstructs historical index membership at every date.')
+multi_scores_path=ROOT/'results/MULTIMODAL_100_V1.csv'
+if multi_scores_path.exists():
+    multi=pd.read_csv(multi_scores_path).set_index('model')
+    decision=json.loads((ROOT/'results/MULTIMODAL_PORTFOLIO_AUDIT_V1.json').read_text())
+    multi_rows=''
+    for group,label in [('market','Market'),('financial','Market + financial'),('text','Market + text'),('all','All information')]:
+        multi_rows+=f'<tr><td>{label}</td><td>{multi.loc[f"Ridge_{group}_calibrated","qlike"]:.3f}</td><td>{multi.loc[f"LSTM_{group}_calibrated","qlike"]:.3f}</td></tr>'
+    decision_rows=''
+    for item in decision['comparisons']:
+        if item['model'] in ['Ridge_all_calibrated','LSTM_all_calibrated'] and item['benchmark']=='fixed_validation':
+            ci=item['intervals']['60']
+            decision_rows+=f'<tr><td>{escape(item["basket"])}</td><td>{escape(item["model"].split("_")[0])} · all</td><td>{100*item["risk_error_difference"]:+.3f}</td><td>[{100*ci["ci95_low"]:+.3f}, {100*ci["ci95_high"]:+.3f}]</td></tr>'
+    multi_block=f'''<section class="glass researchSnapshot" id="multimodalResearch"><div class="sectionhead"><div><div class="eyebrow">Matched information study</div><h2>Does more information help?</h2></div><span class="chip">100-issuer subset · 19 evaluated</span></div><p>Market history, financial values and annual-report language are compared on identical company-date observations. The fixed subset contains 80 fitting issuers and 20 held issuers; 19 held issuers provide the required guarded history. Missing text does not remove a company. These results use inspected 2024–2025 periods and do not replace the preliminary interactive replay.</p><div class="scroll"><table><thead><tr><th>Information supplied</th><th>Ridge QLIKE ↓</th><th>LSTM QLIKE ↓</th></tr></thead><tbody>{multi_rows}</tbody></table></div><p class="hint">Validation-calibrated ensembles · 9,139 common evaluation origins. All methods also have age, availability and text-length controls. Architecture and static-branch capacity stay the same within each backbone. Full results retain raw forecasts and all controls.</p><h3>Content has to beat its metadata</h3><p>Ridge financial values improve over the simpler filing-age control in this cohort. LSTM financial content does not show that reliable increment. Frozen FinBERT embeddings show no stable extra benefit over their metadata controls; adding them to the financial LSTM increases loss. This is evidence about one pooled-embedding procedure and cohort, not a universal claim about language or deep learning.</p><p class="hint">Quality checks: 1,206 original filings, 44 candidate sections excluded, 1,005 entity-eligible document vectors, and 475 unique fitting-period documents for PCA. The encoder weights and tokenizer artifacts match the original 2020 release. Sampled extraction review is not individual certification of every filing.</p><h3>Forecast loss is only one part of usefulness</h3><p>The separately frozen application grid keeps 1,632 strategy outcomes, including returns, drawdown, equity exposure, turnover and costs. The sector basket does not establish an advantage over fixed equity. In the concentrated technology basket, the all-information LSTM tracks the risk target worse than its fixed-equity control.</p><div class="scroll"><table><thead><tr><th>Basket</th><th>Procedure</th><th>Risk-error Δ (pp)</th><th>60-date 95% interval (pp)</th></tr></thead><tbody>{decision_rows}</tbody></table></div><p class="hint">Dynamic minus validation-fixed equity · 10% target · 10 bps cost · zero cash yield. Negative favors dynamic risk tracking. Intervals condition on fitted procedures and baskets; they do not establish alpha or account for every source of model uncertainty. 2026 market outcomes remain sealed.</p></section>'''
+    modern_path=ROOT/'results/MATCHED_TIMESTRAL_V1.csv'
+    if modern_path.exists():
+        modern=pd.read_csv(modern_path).set_index('model')
+        modern_note=f'<h3>A recent Transformer on the same origins</h3><p>The frozen Timestral 5M comparator has calibrated QLIKE {modern.loc["Timestral5M_calibrated","qlike"]:.3f} on these same 19 companies. Its differences from market-only Ridge and LSTM remain uncertain in both date-block interval lengths. It receives 512 trailing volatility values, so this is not an architecture-only comparison. The simulator labels it retrospective transfer: its 2026 release and unresolved pretraining cutoff prevent a historical-trading claim or assuming a sealed local 2026 sample was unseen by the pretrained model.</p>'
+        multi_block=multi_block.replace('</section>',modern_note+'</section>')
+    if '<section class="glass researchSnapshot" id="multimodalResearch">' in html:
+        start=html.index('<section class="glass researchSnapshot" id="multimodalResearch">');end=html.index('</section>',start)+len('</section>');html=html[:start]+multi_block+html[end:]
+    else:
+        position=html.index('<div class="aboutGrid">');html=html[:position]+multi_block+html[position:]
+html=html.replace('All three rows use the same evaluation origins. Calibration is fitted only on non-held validation companies.', 'All three rows use the same evaluation origins. Ridge includes the separately reported broad regularization audit; the original Ridge QLIKE was 0.373. Calibration is fitted only on non-held validation companies.')
+html=html.replace('Timestral is a recent pretrained Transformer comparator.', 'Timestral is a recent pretrained Transformer comparator released after the evaluation period; this is retrospective transfer, not a historically tradable model.')
+html=html.replace('The Portfolio Lab tab uses its saved 30-stock preliminary inputs.', 'The Portfolio Lab tab offers the matched 19-stock study and separately labeled preliminary 30-stock inputs.')
+html=html.replace('and do not replace the preliminary interactive replay.', 'and can be explored through the matched-study selection in Portfolio Lab.')
+html=html.replace('the interactive replay retains its preliminary V2 inputs.', 'the replay offers both the matched financial/text study and preliminary V2 inputs, with separate universes and model menus.')
+html=html.replace('Interactive replay: thirty fixed non-financial large caps.', 'Interactive replay: either 19 matched held companies or the separately labeled preliminary 30-stock study.')
+html=html.replace('fixed half-equity, historical-risk and forecast-risk simulations.', 'fixed-equity, historical-risk and forecast-risk simulations. The matched study freezes constant exposure from earlier validation forecasts; the preliminary study retains its fixed-half comparator.')
+html=html.replace('Model training targets and tradable holding windows therefore differ by the execution delay.', 'The matched study aligns single-stock targets to post-execution holding windows; preliminary V2 experiments retain their earlier implementation lag.')
 path.write_text(html)
