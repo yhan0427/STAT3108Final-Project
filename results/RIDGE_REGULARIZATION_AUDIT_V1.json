@@ -1,0 +1,302 @@
+{
+  "completed_utc": "2026-11-18T04:21:46.932008+00:00",
+  "registered_config": {
+    "registered_utc": "2026-11-18T04:21:28.683060+00:00",
+    "reason": "The market-only Ridge still selects the upper regularization endpoint after the first extension. Close this baseline concern with one broad fixed grid for both the earlier full-market cohort and the non-financial information-control cohort.",
+    "alpha_grid": [
+      0.01,
+      1.0,
+      100.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "populations": [
+      "full_market",
+      "non_financial"
+    ],
+    "selection": "Non-held validation log-target MSE only. No change to feature scaling, splits, company roles, model inputs or LSTM budgets. Preserve all earlier reported grids and scores.",
+    "scope": "Exploratory robustness audit registered after earlier development scores were inspected; not a new confirmatory test or silent replacement. If the optimum remains at a boundary, report unresolved sensitivity rather than continuing outcome-guided searches.",
+    "financial_primary_plan_sha256": "0bfae8d50deb5588686c38d380a7c6233f393554a070b49f3a7d6a57299ab566",
+    "full_market_run_plan_sha256": "21b39bfc1025cb5f4bca0e225e8ef9b81e5ce4bf2028d0cdda4e3999fc0c7fbf",
+    "market_outcomes_2026": "sealed"
+  },
+  "populations": {
+    "full_market": {
+      "panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+      "train_rows": 650683,
+      "validation_rows": 183780,
+      "evaluation_rows": 46657,
+      "selection": {
+        "market": {
+          "grid": [
+            {
+              "alpha": 0.01,
+              "validation_log_mse": 0.09944793910180903
+            },
+            {
+              "alpha": 1.0,
+              "validation_log_mse": 0.09944754825993282
+            },
+            {
+              "alpha": 100.0,
+              "validation_log_mse": 0.09941075552235852
+            },
+            {
+              "alpha": 10000.0,
+              "validation_log_mse": 0.09817823414729986
+            },
+            {
+              "alpha": 100000.0,
+              "validation_log_mse": 0.09563067926257876
+            },
+            {
+              "alpha": 1000000.0,
+              "validation_log_mse": 0.09470974656185892
+            },
+            {
+              "alpha": 10000000.0,
+              "validation_log_mse": 0.09920259246075765
+            },
+            {
+              "alpha": 100000000.0,
+              "validation_log_mse": 0.13508409124596935
+            }
+          ],
+          "selected_alpha": 1000000.0,
+          "calibration": 1.2017295994838602,
+          "selected_at_boundary": false
+        }
+      },
+      "paired_intervals": {},
+      "predictions_sha256": "8fc47992313341ce537c09de250ce28331d311bde567591a06d9a34cb29db8c0"
+    },
+    "non_financial": {
+      "panel_sha256": "b8a9510f135fb3aaf672d59ee85143d8e75310a918b52a396179008727a9dacd",
+      "train_rows": 550253,
+      "validation_rows": 155750,
+      "evaluation_rows": 38961,
+      "selection": {
+        "market": {
+          "grid": [
+            {
+              "alpha": 0.01,
+              "validation_log_mse": 0.09514580169356006
+            },
+            {
+              "alpha": 1.0,
+              "validation_log_mse": 0.09514540656872829
+            },
+            {
+              "alpha": 100.0,
+              "validation_log_mse": 0.09510882781864782
+            },
+            {
+              "alpha": 10000.0,
+              "validation_log_mse": 0.0940434641833963
+            },
+            {
+              "alpha": 100000.0,
+              "validation_log_mse": 0.09198531406110919
+            },
+            {
+              "alpha": 1000000.0,
+              "validation_log_mse": 0.09169508381790228
+            },
+            {
+              "alpha": 10000000.0,
+              "validation_log_mse": 0.09758247354571982
+            },
+            {
+              "alpha": 100000000.0,
+              "validation_log_mse": 0.1377243351023927
+            }
+          ],
+          "selected_alpha": 1000000.0,
+          "calibration": 1.1940646811270401,
+          "selected_at_boundary": false
+        },
+        "availability": {
+          "grid": [
+            {
+              "alpha": 0.01,
+              "validation_log_mse": 0.0935775502459358
+            },
+            {
+              "alpha": 1.0,
+              "validation_log_mse": 0.09357707496729926
+            },
+            {
+              "alpha": 100.0,
+              "validation_log_mse": 0.09353273887333427
+            },
+            {
+              "alpha": 10000.0,
+              "validation_log_mse": 0.09225529431616933
+            },
+            {
+              "alpha": 100000.0,
+              "validation_log_mse": 0.09008927267988473
+            },
+            {
+              "alpha": 1000000.0,
+              "validation_log_mse": 0.09036306764657917
+            },
+            {
+              "alpha": 10000000.0,
+              "validation_log_mse": 0.09730536223911083
+            },
+            {
+              "alpha": 100000000.0,
+              "validation_log_mse": 0.13769389963394776
+            }
+          ],
+          "selected_alpha": 100000.0,
+          "calibration": 1.1879985472339667,
+          "selected_at_boundary": false
+        },
+        "financial": {
+          "grid": [
+            {
+              "alpha": 0.01,
+              "validation_log_mse": 0.0928389054190127
+            },
+            {
+              "alpha": 1.0,
+              "validation_log_mse": 0.09283841943838415
+            },
+            {
+              "alpha": 100.0,
+              "validation_log_mse": 0.09279308773757573
+            },
+            {
+              "alpha": 10000.0,
+              "validation_log_mse": 0.09146345976652602
+            },
+            {
+              "alpha": 100000.0,
+              "validation_log_mse": 0.08912663376744036
+            },
+            {
+              "alpha": 1000000.0,
+              "validation_log_mse": 0.08960012486644559
+            },
+            {
+              "alpha": 10000000.0,
+              "validation_log_mse": 0.09708241526562016
+            },
+            {
+              "alpha": 100000000.0,
+              "validation_log_mse": 0.13762378598217362
+            }
+          ],
+          "selected_alpha": 100000.0,
+          "calibration": 1.183385541131153,
+          "selected_at_boundary": false
+        }
+      },
+      "paired_intervals": {
+        "Ridge_financial-minus-Ridge_availability": {
+          "20": {
+            "mean_difference": -0.0011222079172312285,
+            "ci95_low": -0.004197810987339077,
+            "ci95_high": 0.002798635825732199,
+            "block_days": 20,
+            "replicates": 1000
+          },
+          "60": {
+            "mean_difference": -0.0011222079172312285,
+            "ci95_low": -0.0037043154367785744,
+            "ci95_high": 0.0027571290300746226,
+            "block_days": 60,
+            "replicates": 1000
+          }
+        },
+        "Ridge_financial-minus-Ridge_market": {
+          "20": {
+            "mean_difference": -0.023469892669390636,
+            "ci95_low": -0.04530300537155561,
+            "ci95_high": 0.001965334794647504,
+            "block_days": 20,
+            "replicates": 1000
+          },
+          "60": {
+            "mean_difference": -0.023469892669390636,
+            "ci95_low": -0.044165570298048774,
+            "ci95_high": 0.004694120962033258,
+            "block_days": 60,
+            "replicates": 1000
+          }
+        },
+        "Ridge_availability-minus-Ridge_market": {
+          "20": {
+            "mean_difference": -0.022347684752159407,
+            "ci95_low": -0.043208952490039323,
+            "ci95_high": 0.00028384190751350343,
+            "block_days": 20,
+            "replicates": 1000
+          },
+          "60": {
+            "mean_difference": -0.022347684752159407,
+            "ci95_low": -0.04222086807626881,
+            "ci95_high": 0.0028156805242766933,
+            "block_days": 60,
+            "replicates": 1000
+          }
+        },
+        "Ridge_financial_calibrated-minus-Ridge_availability_calibrated": {
+          "20": {
+            "mean_difference": -0.002925615901072638,
+            "ci95_low": -0.005538847473651117,
+            "ci95_high": 0.0006796972980693362,
+            "block_days": 20,
+            "replicates": 1000
+          },
+          "60": {
+            "mean_difference": -0.002925615901072638,
+            "ci95_low": -0.005443240867421426,
+            "ci95_high": 0.0005813775971356682,
+            "block_days": 60,
+            "replicates": 1000
+          }
+        },
+        "Ridge_financial_calibrated-minus-Ridge_market_calibrated": {
+          "20": {
+            "mean_difference": -0.014732863559268158,
+            "ci95_low": -0.02915368715265963,
+            "ci95_high": 0.004090080228231613,
+            "block_days": 20,
+            "replicates": 1000
+          },
+          "60": {
+            "mean_difference": -0.014732863559268158,
+            "ci95_low": -0.028950414070770338,
+            "ci95_high": 0.0042769146130911635,
+            "block_days": 60,
+            "replicates": 1000
+          }
+        },
+        "Ridge_availability_calibrated-minus-Ridge_market_calibrated": {
+          "20": {
+            "mean_difference": -0.011807247658195522,
+            "ci95_low": -0.025688282387935264,
+            "ci95_high": 0.004399014512462684,
+            "block_days": 20,
+            "replicates": 1000
+          },
+          "60": {
+            "mean_difference": -0.011807247658195522,
+            "ci95_low": -0.025024333205750454,
+            "ci95_high": 0.004705547999713842,
+            "block_days": 60,
+            "replicates": 1000
+          }
+        }
+      },
+      "predictions_sha256": "1c16afbe815893eb1f1af6fff67f69b9916376ec62c419d9f4bcf4b4df396895"
+    }
+  },
+  "market_outcomes_2026_accessed": false
+}

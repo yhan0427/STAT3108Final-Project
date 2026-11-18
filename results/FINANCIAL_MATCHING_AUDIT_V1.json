@@ -1,0 +1,183 @@
+{
+  "completed_utc": "2026-11-18T03:31:56.937639+00:00",
+  "collection_audit_sha256": "1b706fd5e8c9485cfb8c7a0d14e179d159cdfac7b8b31f7f9fc44c40fa731e16",
+  "source_sha256": "b561e8eece89ae46a19a3ee71ebb3728744601345fc6df0434336172e3455a21",
+  "market_panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+  "content_sets": {
+    "legacy_v1_content": [
+      "liabilities_to_assets",
+      "cash_to_assets",
+      "current_ratio",
+      "operating_margin",
+      "income_to_assets",
+      "cfo_to_assets",
+      "revenue_growth"
+    ],
+    "alternative_v3_content": [
+      "parent_equity_to_assets",
+      "cash_to_assets",
+      "current_ratio",
+      "current_liabilities_to_assets",
+      "income_to_assets",
+      "cfo_to_assets",
+      "revenue_growth"
+    ]
+  },
+  "market_outcomes_2026_accessed": false,
+  "models_fitted": false,
+  "company_rows": 40670,
+  "all_retained_eligible_origins": 1280028,
+  "source_snapshot_coverage_hashes_verified": 491,
+  "legacy_snapshot_exact_agreement": [
+    {
+      "ticker": "AAPL",
+      "legacy_snapshot_sha256": "a26fa5359de5c9cb90c5fd30edc06e0daf3861d7147444624f91aa60e5f9b6c4",
+      "current_snapshot_sha256": "b4b772bb268e31dca9110e45047e10fbd53a71efcba4f22af2aa95721fb54bf3"
+    },
+    {
+      "ticker": "ABBV",
+      "legacy_snapshot_sha256": "0e48f1e1d3068e8318722ea64a9a1bc37cac7c1ce640cd2a23b137c1aec15650",
+      "current_snapshot_sha256": "0b0a400e9cda49f6d637ccced03b76bab7ce02e1d0aeee6c3315f60ec8348d98"
+    },
+    {
+      "ticker": "ADBE",
+      "legacy_snapshot_sha256": "3a058556f2ceb4d47c9f15c70eb65408cd45b102b4572f91e4efaacbc210b93b",
+      "current_snapshot_sha256": "715bcc557353d8995e9678ceaa8daa4487811bddea30f6154cf929399a2fd43a"
+    },
+    {
+      "ticker": "AMAT",
+      "legacy_snapshot_sha256": "867831470cefd9bd03f9b2ab61ab3f10c42a2b6ec55e8e638a322d9a816f4a08",
+      "current_snapshot_sha256": "1eaeae27675237791df75b3596242b76efbcc98c0bc48df6041c103075ed04df"
+    },
+    {
+      "ticker": "AMZN",
+      "legacy_snapshot_sha256": "a30ee80fddcbb7b53bfb9d871f257ff1fb1feade0e9261bc9fab040537252e52",
+      "current_snapshot_sha256": "caaa8f9743ee067535045830747f8a34da2c2bada9706c382b03c47fd1600bb6"
+    },
+    {
+      "ticker": "CAT",
+      "legacy_snapshot_sha256": "ba94b21c9ee101f736eaa59295b2819ff77e77b25fe15546f9f47986a18fbc8c",
+      "current_snapshot_sha256": "e88858332c31a9abb4be27690d9765b032d93f580958f1722f0aee048ab30875"
+    },
+    {
+      "ticker": "COST",
+      "legacy_snapshot_sha256": "bd47bcb67b7b40f588ff78076721886a5ef1d9d0d0514c981e4578bb1cf40dde",
+      "current_snapshot_sha256": "68d3ee8bd4f70bb510916590773b0d3294a0cfdbf6bf07fea3713a56955e8435"
+    },
+    {
+      "ticker": "CSCO",
+      "legacy_snapshot_sha256": "9d18bbd28490a1c8d472fb346b85f50c00e5cfc7f92d0024426cea5c05ff445d",
+      "current_snapshot_sha256": "97b8981dc3a92e6974b5a7bee11c76ec2e04b8b3a497188f64e8a40fa10cddb0"
+    },
+    {
+      "ticker": "CVX",
+      "legacy_snapshot_sha256": "ac1c52131bb2bf8aae215038d5bec922b2ce2cf6267a857d7c543b9e293960ce",
+      "current_snapshot_sha256": "a2aa4438e4b9441bcc0e4dbcbb86eb33d83364f21f6c3d3a0a5f23c08c0c5e79"
+    },
+    {
+      "ticker": "DUK",
+      "legacy_snapshot_sha256": "d9995e7a56f8176d3560790c6eded7305f5cd62e62975de555ab610a2a70d637",
+      "current_snapshot_sha256": "b548a091543195a302e1d8a843427b35d4d7f91eba8564fba91a4d9f3798b318"
+    },
+    {
+      "ticker": "HD",
+      "legacy_snapshot_sha256": "11c69e60f4eda3ab2c58224c3c9b1343ed32706dfe09d5e9ed95acff9d3020f3",
+      "current_snapshot_sha256": "728f98abffce195e18739da64fc4bd62c25a1c55546eea0ec9192ec0c3219263"
+    },
+    {
+      "ticker": "HON",
+      "legacy_snapshot_sha256": "2ed41060bb43a1707001a498a9eaee3ac4e5556525c12131623ae4735d94d82c",
+      "current_snapshot_sha256": "15995ee6bcbf5282c541dca7c22bb641dbb9f3f97f1c1ea49680f2f1a5a8fe5d"
+    },
+    {
+      "ticker": "IBM",
+      "legacy_snapshot_sha256": "f5167fcdd5f06e1f6cc952245a93c638908a97a99361a0561bd47e1eda3a347a",
+      "current_snapshot_sha256": "8f10d2225f18b0290baff7f9a0a41bbd8737fc137f2a8c8be37b4824de9c003f"
+    },
+    {
+      "ticker": "JNJ",
+      "legacy_snapshot_sha256": "737898908ef662d37a051ca365edb967cf6781bd44ce60a8253b935f0084c47a",
+      "current_snapshot_sha256": "223aea28ec25395f592b7c87f2e32b11ff38e79297e3283349988f3c3b5133c9"
+    },
+    {
+      "ticker": "KO",
+      "legacy_snapshot_sha256": "9ded4a03760db127c11beb4992a41648aa9f05f284a3aa64a3c1dcde6166a910",
+      "current_snapshot_sha256": "1ff11ae82374c2c706f4f273658cafa77e24679534334a9c54122334d52aa0cb"
+    },
+    {
+      "ticker": "MCD",
+      "legacy_snapshot_sha256": "8d2ef8f6655d3addfa8f2e113a854f11bcca8f96e213ec460d954974d6873fa6",
+      "current_snapshot_sha256": "fe76eb145f529910d7bbeabe71c0e72d5972f65d0c8655582166b096b2b226e8"
+    },
+    {
+      "ticker": "MRK",
+      "legacy_snapshot_sha256": "0caff563a4cae57e03ec8692d55e9c12441320851fc924783450cd39266224a3",
+      "current_snapshot_sha256": "987141179874ff2b4f26a0b4c617e9f28244bc38f9a1133022eb95f78900d742"
+    },
+    {
+      "ticker": "MSFT",
+      "legacy_snapshot_sha256": "b6543e009a0636e1fc250925df96f71756cacd2013ec4bead42317cc9d586382",
+      "current_snapshot_sha256": "e276aa4de663cb49e10c99e7c1842eb09d674379cd69f53086ceb7b3ce2b8b7d"
+    },
+    {
+      "ticker": "NEE",
+      "legacy_snapshot_sha256": "6fba651223e296c2f16d8ecbe8e3c0b55790bb67217cd16e2e8074799928f879",
+      "current_snapshot_sha256": "67ea9a1198e358390df132e4dbe89ddda699ee8e7c83f4b9f064cd52c656837f"
+    },
+    {
+      "ticker": "NKE",
+      "legacy_snapshot_sha256": "d184237b92b516d850fd9ce899e648508de86bd600723c29140c592e63c03273",
+      "current_snapshot_sha256": "95439a9bed3d2d8972555258f240716233dfc224fe7e4c581e948d43489adad9"
+    },
+    {
+      "ticker": "NVDA",
+      "legacy_snapshot_sha256": "7098729c7d9944d99ea06e479de186cce6d62997ecd369d4772ef1014dea03d3",
+      "current_snapshot_sha256": "14aa969b6de7cf49e5ab0307580ba004bb2a47e0d5a265676237944b96ae70cc"
+    },
+    {
+      "ticker": "ORCL",
+      "legacy_snapshot_sha256": "711fd2fac39469d0045f328a1ccfcc8f6361bc26bb1b0065e3fafdf60491c795",
+      "current_snapshot_sha256": "f7c77f1a28ea29ca92efe22a25c84044c640e8d563ebe9b17f3a3ae5639e5f4c"
+    },
+    {
+      "ticker": "PEP",
+      "legacy_snapshot_sha256": "8031fa0e286364e78214f9c70cf54da4ba2cd36d06c1351ea6734c3ea22875ac",
+      "current_snapshot_sha256": "a7e81de20b9d4eef13d6e4614d58cd965f72a704c25aedd853b8ad56f6c5c378"
+    },
+    {
+      "ticker": "PG",
+      "legacy_snapshot_sha256": "b7b2c51eece1d3fdb8fc90700b1007949ca2e11db701a604a64c7a7b9198ac0b",
+      "current_snapshot_sha256": "fc56632c8d1c4c566969ae8cc583ccb435de27610d030b0786d004948f5b0c7e"
+    },
+    {
+      "ticker": "QCOM",
+      "legacy_snapshot_sha256": "fdf08e23c717d153cbf170616cf72a9cbee40882b6bbf0e214cf5d2f0d84135f",
+      "current_snapshot_sha256": "3528c45f884c0c37156c6b08aa5422d57a299f3955d1e3e642d13aebc215324e"
+    },
+    {
+      "ticker": "TXN",
+      "legacy_snapshot_sha256": "e80dacc4c46bdc16790de9627b28b86f4bfcd00562d50dd5a66d60f82e803d9e",
+      "current_snapshot_sha256": "a0dfd19a0d5a2bc22c7a1ed30c66172aef87e620ed7bb4416b33c00cd77e2c4c"
+    },
+    {
+      "ticker": "UNH",
+      "legacy_snapshot_sha256": "d7b65a499b3519787a4a6adbc13424f4732e9fad4892a3087b39fad2cee79196",
+      "current_snapshot_sha256": "bcddc9202a45491539e4265b6535042236aae030b415137900ad5de44bd306ba"
+    },
+    {
+      "ticker": "UPS",
+      "legacy_snapshot_sha256": "78a6d3132832188e06dfcabb226083f55645e734eaeab6acd9dfbcc37bdc7505",
+      "current_snapshot_sha256": "f7177156f315f10db7e271f5afee1f05f141e565bf76daaf23eb537842d92004"
+    },
+    {
+      "ticker": "WMT",
+      "legacy_snapshot_sha256": "62bf48e7c71ec9a9e88a497b49241615e771a808e03f1e2dad76866e3b4e3915",
+      "current_snapshot_sha256": "ba55706351e46bfec47c427d494fc39a5b90afcecef90f0e911c6899cd38dddc"
+    },
+    {
+      "ticker": "XOM",
+      "legacy_snapshot_sha256": "d88cc36cda917edce54b54c9e2f748270be0c4083ed46dcea497b00730533d49",
+      "current_snapshot_sha256": "fbbe0c83dde0f2af50a2c04bc406b07e8d8c3d8ce509f55c41fc312d795dcdd2"
+    }
+  ]
+}

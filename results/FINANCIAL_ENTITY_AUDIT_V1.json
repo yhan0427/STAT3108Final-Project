@@ -1,0 +1,1620 @@
+{
+  "completed_utc": "2026-11-18T05:12:41.898013+00:00",
+  "registered_plan": {
+    "panel_sha256": "8ca13dc7fcf76bb5f7877388919fb735af9518ff78a289898176cb7a76ad99a3",
+    "config": {
+      "study": "equity-volatility-v1",
+      "data_start": "2014-01-01",
+      "data_end_exclusive": "2026-01-01",
+      "train_start": "2015-01-01",
+      "validation_start": "2022-01-01",
+      "test_start": "2024-01-01",
+      "test_end_exclusive": "2026-01-01",
+      "horizon": 20,
+      "lookback": 60,
+      "annualization": 252,
+      "seeds": [
+        7,
+        42,
+        2026
+      ],
+      "top_k": 5,
+      "bootstrap_replicates": 1000,
+      "bootstrap_block_days": 20,
+      "lstm": {
+        "hidden_size": 24,
+        "epochs": 15,
+        "patience": 4,
+        "batch_size": 512,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001
+      },
+      "boosting": {
+        "max_iter": 200,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.05,
+        "l2_regularization": 10.0
+      }
+    },
+    "financial_features": [
+      "parent_equity_to_assets",
+      "cash_to_assets",
+      "current_ratio",
+      "current_liabilities_to_assets",
+      "income_to_assets",
+      "cfo_to_assets",
+      "revenue_growth",
+      "filing_age_days"
+    ],
+    "masks": {
+      "market": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "filing_age": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "availability": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "financial": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "source_sha256": "72339fa18469b30e3a5bf85a7fdcbe50297bfa083af8ce447863ec7283f65799",
+    "implementation_hashes": {
+      "models": "efbd0afb3f1cb2af7933f4c47e57a90e8cb4b33d51f241a11d33e9d09db0bc5f",
+      "stream_ridge": "abb69d0cf4ae3dad14f49c241e36573c729d8e2a2dabef50578795d9174b7a9c",
+      "metrics": "f4ccdccb5421272af8406b8e3bdd75c7501f88ab3a31ef4967b7df325324ec9c",
+      "aligned": "d2e3e1248ce77ee2462c432dfb66cbd1d3f85157e7290029604cb846c58d0055"
+    },
+    "train_companies": [
+      "A",
+      "AAPL",
+      "ABBV",
+      "ACN",
+      "ADBE",
+      "ADI",
+      "ADM",
+      "ADP",
+      "ADSK",
+      "AEP",
+      "AES",
+      "AKAM",
+      "ALB",
+      "ALGN",
+      "ALLE",
+      "AMAT",
+      "AMD",
+      "AME",
+      "AMGN",
+      "AMT",
+      "AMZN",
+      "APA",
+      "APD",
+      "APH",
+      "APP",
+      "APTV",
+      "ARE",
+      "ATO",
+      "AVGO",
+      "AVY",
+      "AXON",
+      "AZO",
+      "BA",
+      "BALL",
+      "BAX",
+      "BBY",
+      "BDX",
+      "BF.B",
+      "BIIB",
+      "BKNG",
+      "BKR",
+      "BLDR",
+      "BMY",
+      "BR",
+      "BSX",
+      "CAH",
+      "CAT",
+      "CBRE",
+      "CCI",
+      "CCL",
+      "CDNS",
+      "CHD",
+      "CHRW",
+      "CI",
+      "CL",
+      "CMCSA",
+      "CMG",
+      "CMI",
+      "CMS",
+      "CNC",
+      "CNP",
+      "COP",
+      "COR",
+      "COST",
+      "CPB",
+      "CPRT",
+      "CPT",
+      "CRH",
+      "CRL",
+      "CRWD",
+      "CSCO",
+      "CSX",
+      "CTAS",
+      "CTSH",
+      "CTVA",
+      "CVNA",
+      "CVX",
+      "D",
+      "DAL",
+      "DASH",
+      "DD",
+      "DECK",
+      "DG",
+      "DGX",
+      "DHI",
+      "DHR",
+      "DIS",
+      "DLR",
+      "DOC",
+      "DOV",
+      "DOW",
+      "DPZ",
+      "DTE",
+      "DUK",
+      "DVN",
+      "DXCM",
+      "EBAY",
+      "ECL",
+      "ED",
+      "EIX",
+      "EL",
+      "ELV",
+      "EMR",
+      "EQIX",
+      "EQT",
+      "ES",
+      "ESS",
+      "ETN",
+      "ETR",
+      "EVRG",
+      "EW",
+      "EXC",
+      "EXE",
+      "EXPD",
+      "EXPE",
+      "EXR",
+      "F",
+      "FANG",
+      "FAST",
+      "FCX",
+      "FDX",
+      "FE",
+      "FFIV",
+      "FICO",
+      "FOX",
+      "FRT",
+      "FSLR",
+      "FTNT",
+      "FTV",
+      "GD",
+      "GDDY",
+      "GEN",
+      "GILD",
+      "GIS",
+      "GLW",
+      "GM",
+      "GNRC",
+      "GOOG",
+      "GPC",
+      "GRMN",
+      "GWW",
+      "HAL",
+      "HCA",
+      "HD",
+      "HLT",
+      "HON",
+      "HPE",
+      "HPQ",
+      "HRL",
+      "HSIC",
+      "HST",
+      "HSY",
+      "HUBB",
+      "HUM",
+      "IBM",
+      "IDXX",
+      "IEX",
+      "IFF",
+      "INTC",
+      "INTU",
+      "INVH",
+      "IR",
+      "ISRG",
+      "IT",
+      "ITW",
+      "J",
+      "JBHT",
+      "JBL",
+      "JNJ",
+      "KDP",
+      "KEYS",
+      "KHC",
+      "KIM",
+      "KLAC",
+      "KMI",
+      "KO",
+      "KR",
+      "LDOS",
+      "LHX",
+      "LII",
+      "LLY",
+      "LMT",
+      "LNT",
+      "LOW",
+      "LRCX",
+      "LULU",
+      "LUV",
+      "LVS",
+      "LW",
+      "LYB",
+      "LYV",
+      "MAA",
+      "MAR",
+      "MAS",
+      "MCD",
+      "MCHP",
+      "MCK",
+      "MDLZ",
+      "MDT",
+      "MGM",
+      "MKC",
+      "MLM",
+      "MMM",
+      "MNST",
+      "MO",
+      "MOH",
+      "MOS",
+      "MPC",
+      "MPWR",
+      "MRK",
+      "MSFT",
+      "MSI",
+      "MTCH",
+      "MTD",
+      "MU",
+      "NCLH",
+      "NDSN",
+      "NEE",
+      "NEM",
+      "NFLX",
+      "NKE",
+      "NRG",
+      "NTAP",
+      "NUE",
+      "NVDA",
+      "NVR",
+      "NWS",
+      "NXPI",
+      "O",
+      "ODFL",
+      "OKE",
+      "OMC",
+      "ORCL",
+      "ORLY",
+      "OTIS",
+      "PANW",
+      "PAYC",
+      "PAYX",
+      "PCAR",
+      "PCG",
+      "PEP",
+      "PFE",
+      "PG",
+      "PHM",
+      "PLD",
+      "PLTR",
+      "PM",
+      "PNR",
+      "PNW",
+      "POOL",
+      "PPG",
+      "PSA",
+      "PSX",
+      "PTC",
+      "PWR",
+      "QCOM",
+      "REG",
+      "REGN",
+      "RMD",
+      "ROK",
+      "ROL",
+      "ROP",
+      "ROST",
+      "RSG",
+      "RTX",
+      "SBUX",
+      "SHW",
+      "SJM",
+      "SNA",
+      "SNPS",
+      "SPG",
+      "SRE",
+      "STE",
+      "STLD",
+      "STZ",
+      "SWK",
+      "SWKS",
+      "T",
+      "TAP",
+      "TDG",
+      "TDY",
+      "TECH",
+      "TEL",
+      "TER",
+      "TJX",
+      "TKO",
+      "TMUS",
+      "TPL",
+      "TRGP",
+      "TRMB",
+      "TSCO",
+      "TSLA",
+      "TSN",
+      "TTWO",
+      "TXN",
+      "UAL",
+      "UBER",
+      "UHS",
+      "ULTA",
+      "UNH",
+      "UNP",
+      "UPS",
+      "URI",
+      "VICI",
+      "VLO",
+      "VMC",
+      "VRSN",
+      "VRTX",
+      "VST",
+      "VTR",
+      "VTRS",
+      "VZ",
+      "WAB",
+      "WAT",
+      "WDAY",
+      "WEC",
+      "WELL",
+      "WM",
+      "WMT",
+      "WST",
+      "WYNN",
+      "XEL",
+      "XOM",
+      "XYL",
+      "ZBH",
+      "ZBRA",
+      "ZTS"
+    ],
+    "validation_companies": [
+      "A",
+      "AAPL",
+      "ABBV",
+      "ACN",
+      "ADBE",
+      "ADI",
+      "ADM",
+      "ADP",
+      "ADSK",
+      "AEP",
+      "AES",
+      "AKAM",
+      "ALB",
+      "ALGN",
+      "ALLE",
+      "AMAT",
+      "AMD",
+      "AME",
+      "AMGN",
+      "AMT",
+      "AMZN",
+      "APA",
+      "APD",
+      "APH",
+      "APP",
+      "APTV",
+      "ARE",
+      "ATO",
+      "AVGO",
+      "AVY",
+      "AXON",
+      "AZO",
+      "BA",
+      "BALL",
+      "BAX",
+      "BBY",
+      "BDX",
+      "BF.B",
+      "BIIB",
+      "BKNG",
+      "BKR",
+      "BLDR",
+      "BMY",
+      "BR",
+      "BSX",
+      "CAH",
+      "CAT",
+      "CBRE",
+      "CCI",
+      "CCL",
+      "CDNS",
+      "CHD",
+      "CHRW",
+      "CI",
+      "CL",
+      "CMCSA",
+      "CMG",
+      "CMI",
+      "CMS",
+      "CNC",
+      "CNP",
+      "COP",
+      "COR",
+      "COST",
+      "CPB",
+      "CPRT",
+      "CPT",
+      "CRH",
+      "CRL",
+      "CRWD",
+      "CSCO",
+      "CSX",
+      "CTAS",
+      "CTSH",
+      "CTVA",
+      "CVNA",
+      "CVX",
+      "D",
+      "DAL",
+      "DASH",
+      "DD",
+      "DECK",
+      "DG",
+      "DGX",
+      "DHI",
+      "DHR",
+      "DIS",
+      "DLR",
+      "DOC",
+      "DOV",
+      "DOW",
+      "DPZ",
+      "DTE",
+      "DUK",
+      "DVN",
+      "DXCM",
+      "EBAY",
+      "ECL",
+      "ED",
+      "EIX",
+      "EL",
+      "ELV",
+      "EMR",
+      "EQIX",
+      "EQT",
+      "ES",
+      "ESS",
+      "ETN",
+      "ETR",
+      "EVRG",
+      "EW",
+      "EXC",
+      "EXE",
+      "EXPD",
+      "EXPE",
+      "EXR",
+      "F",
+      "FANG",
+      "FAST",
+      "FCX",
+      "FDX",
+      "FE",
+      "FFIV",
+      "FICO",
+      "FOX",
+      "FRT",
+      "FSLR",
+      "FTNT",
+      "FTV",
+      "GD",
+      "GDDY",
+      "GEN",
+      "GILD",
+      "GIS",
+      "GLW",
+      "GM",
+      "GNRC",
+      "GOOG",
+      "GPC",
+      "GRMN",
+      "GWW",
+      "HAL",
+      "HCA",
+      "HD",
+      "HLT",
+      "HON",
+      "HPE",
+      "HPQ",
+      "HRL",
+      "HSIC",
+      "HST",
+      "HSY",
+      "HUBB",
+      "HUM",
+      "IBM",
+      "IDXX",
+      "IEX",
+      "IFF",
+      "INTC",
+      "INTU",
+      "INVH",
+      "IR",
+      "ISRG",
+      "IT",
+      "ITW",
+      "J",
+      "JBHT",
+      "JBL",
+      "JNJ",
+      "KDP",
+      "KEYS",
+      "KHC",
+      "KIM",
+      "KLAC",
+      "KMI",
+      "KO",
+      "KR",
+      "LDOS",
+      "LHX",
+      "LII",
+      "LLY",
+      "LMT",
+      "LNT",
+      "LOW",
+      "LRCX",
+      "LULU",
+      "LUV",
+      "LVS",
+      "LW",
+      "LYB",
+      "LYV",
+      "MAA",
+      "MAR",
+      "MAS",
+      "MCD",
+      "MCHP",
+      "MCK",
+      "MDLZ",
+      "MDT",
+      "MGM",
+      "MKC",
+      "MLM",
+      "MMM",
+      "MNST",
+      "MO",
+      "MOH",
+      "MOS",
+      "MPC",
+      "MPWR",
+      "MRK",
+      "MSFT",
+      "MSI",
+      "MTCH",
+      "MTD",
+      "MU",
+      "NCLH",
+      "NDSN",
+      "NEE",
+      "NEM",
+      "NFLX",
+      "NKE",
+      "NRG",
+      "NTAP",
+      "NUE",
+      "NVDA",
+      "NVR",
+      "NWS",
+      "NXPI",
+      "O",
+      "ODFL",
+      "OKE",
+      "OMC",
+      "ORCL",
+      "ORLY",
+      "OTIS",
+      "PANW",
+      "PAYC",
+      "PAYX",
+      "PCAR",
+      "PCG",
+      "PEP",
+      "PFE",
+      "PG",
+      "PHM",
+      "PLD",
+      "PLTR",
+      "PM",
+      "PNR",
+      "PNW",
+      "POOL",
+      "PPG",
+      "PSA",
+      "PSX",
+      "PTC",
+      "PWR",
+      "QCOM",
+      "REG",
+      "REGN",
+      "RMD",
+      "ROK",
+      "ROL",
+      "ROP",
+      "ROST",
+      "RSG",
+      "RTX",
+      "SBUX",
+      "SHW",
+      "SJM",
+      "SNA",
+      "SNPS",
+      "SPG",
+      "SRE",
+      "STE",
+      "STLD",
+      "STZ",
+      "SWK",
+      "SWKS",
+      "T",
+      "TAP",
+      "TDG",
+      "TDY",
+      "TECH",
+      "TEL",
+      "TER",
+      "TJX",
+      "TKO",
+      "TMUS",
+      "TPL",
+      "TRGP",
+      "TRMB",
+      "TSCO",
+      "TSLA",
+      "TSN",
+      "TTWO",
+      "TXN",
+      "UAL",
+      "UBER",
+      "UHS",
+      "ULTA",
+      "UNH",
+      "UNP",
+      "UPS",
+      "URI",
+      "VICI",
+      "VLO",
+      "VMC",
+      "VRSN",
+      "VRTX",
+      "VST",
+      "VTR",
+      "VTRS",
+      "VZ",
+      "WAB",
+      "WAT",
+      "WDAY",
+      "WEC",
+      "WELL",
+      "WM",
+      "WMT",
+      "WST",
+      "WYNN",
+      "XEL",
+      "XOM",
+      "XYL",
+      "ZBH",
+      "ZBRA",
+      "ZTS"
+    ],
+    "evaluation_companies": [
+      "ABNB",
+      "ABT",
+      "AEE",
+      "AMCR",
+      "ANET",
+      "AOS",
+      "AWK",
+      "BG",
+      "BXP",
+      "CAG",
+      "CARR",
+      "CDW",
+      "CF",
+      "CHTR",
+      "CLX",
+      "COO",
+      "CRM",
+      "CSGP",
+      "CVS",
+      "DDOG",
+      "DE",
+      "DELL",
+      "DLTR",
+      "DRI",
+      "DVA",
+      "EFX",
+      "EME",
+      "EOG",
+      "EPAM",
+      "FIX",
+      "GE",
+      "HAS",
+      "HII",
+      "HWM",
+      "INCY",
+      "IP",
+      "IQV",
+      "IRM",
+      "JCI",
+      "KMB",
+      "LEN",
+      "LH",
+      "LIN",
+      "META",
+      "MRNA",
+      "NI",
+      "NOC",
+      "NOW",
+      "NSC",
+      "ON",
+      "OXY",
+      "PEG",
+      "PH",
+      "PKG",
+      "PODD",
+      "PPL",
+      "RCL",
+      "RL",
+      "RVTY",
+      "SBAC",
+      "SLB",
+      "SMCI",
+      "SO",
+      "STX",
+      "SYK",
+      "SYY",
+      "TGT",
+      "TMO",
+      "TPR",
+      "TT",
+      "TTD",
+      "TXT",
+      "TYL",
+      "UDR",
+      "VRSK",
+      "WDC",
+      "WMB",
+      "WSM",
+      "WY",
+      "YUM"
+    ],
+    "row_counts": {
+      "train": 547522,
+      "validation": 155599,
+      "evaluation": 38480
+    },
+    "ridge_alpha_grid": [
+      0.01,
+      1.0,
+      100.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "entity_guard": true,
+    "entity_policy_sha256": "df6f4872566e84594ff13305e6651aaedc97885b323d47136004c71f4c2d6548",
+    "controls": "All LSTMs have the same 16-coordinate branch and parameters; market zeros all static inputs, availability zeros seven economic values but retains filing age/eight missing flags. Ridge uses the same sixty-day market lag plus current static coordinates.",
+    "scope": "Retained non-financial reference cohort with unchanged company roles and no complete-case deletion. Entity variant conservatively excludes unverified predecessor windows/disclosures for documented transitions; data and evaluation counts can differ. Reuses inspected development years/company cohorts; not a new confirmatory holdout. No text or Timestral refitting in this stage.",
+    "preprocessing": "Training-company training-period imputation/clipping/scaling only; validation-only alpha, epochs and calibration. Same seeds and budgets across groups.",
+    "primary_comparisons": [
+      "financial-minus-availability",
+      "financial-minus-market",
+      "availability-minus-market"
+    ],
+    "uncertainty": "Paired whole-date circular blocks 20/60 sessions; 1000 replicates; conditional ensemble diagnostics, no multiplicity adjustment or tuning on held labels",
+    "market_outcomes_2026_accessed": false,
+    "registered_utc": "2026-11-18T04:52:44.145337+00:00"
+  },
+  "ridge_selection": {
+    "market": [
+      {
+        "alpha": 0.01,
+        "validation_log_mse": 0.09516844844872636
+      },
+      {
+        "alpha": 1.0,
+        "validation_log_mse": 0.09516804710474476
+      },
+      {
+        "alpha": 100.0,
+        "validation_log_mse": 0.09513088224859018
+      },
+      {
+        "alpha": 10000.0,
+        "validation_log_mse": 0.09404935397859389
+      },
+      {
+        "alpha": 100000.0,
+        "validation_log_mse": 0.09197875906049466
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_log_mse": 0.0916950562793377
+      },
+      {
+        "alpha": 10000000.0,
+        "validation_log_mse": 0.09759774055735917
+      },
+      {
+        "alpha": 100000000.0,
+        "validation_log_mse": 0.13770668474136366
+      }
+    ],
+    "filing_age": [
+      {
+        "alpha": 0.01,
+        "validation_log_mse": 0.09413623453230313
+      },
+      {
+        "alpha": 1.0,
+        "validation_log_mse": 0.09413580838379246
+      },
+      {
+        "alpha": 100.0,
+        "validation_log_mse": 0.09409611540179268
+      },
+      {
+        "alpha": 10000.0,
+        "validation_log_mse": 0.09285694522343649
+      },
+      {
+        "alpha": 100000.0,
+        "validation_log_mse": 0.090448147718743
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_log_mse": 0.09045427354490933
+      },
+      {
+        "alpha": 10000000.0,
+        "validation_log_mse": 0.09733350445043122
+      },
+      {
+        "alpha": 100000000.0,
+        "validation_log_mse": 0.13767920136393014
+      }
+    ],
+    "availability": [
+      {
+        "alpha": 0.01,
+        "validation_log_mse": 0.09361448627498406
+      },
+      {
+        "alpha": 1.0,
+        "validation_log_mse": 0.093614005847405
+      },
+      {
+        "alpha": 100.0,
+        "validation_log_mse": 0.09356919126124917
+      },
+      {
+        "alpha": 10000.0,
+        "validation_log_mse": 0.09228112007828032
+      },
+      {
+        "alpha": 100000.0,
+        "validation_log_mse": 0.09010311668327335
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_log_mse": 0.09037325775348216
+      },
+      {
+        "alpha": 10000000.0,
+        "validation_log_mse": 0.0973228472100652
+      },
+      {
+        "alpha": 100000000.0,
+        "validation_log_mse": 0.13767653617554787
+      }
+    ],
+    "financial": [
+      {
+        "alpha": 0.01,
+        "validation_log_mse": 0.0928764453713524
+      },
+      {
+        "alpha": 1.0,
+        "validation_log_mse": 0.09287595419607013
+      },
+      {
+        "alpha": 100.0,
+        "validation_log_mse": 0.09283014089566302
+      },
+      {
+        "alpha": 10000.0,
+        "validation_log_mse": 0.09148997777446737
+      },
+      {
+        "alpha": 100000.0,
+        "validation_log_mse": 0.08914336189936055
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_log_mse": 0.08960996171689707
+      },
+      {
+        "alpha": 10000000.0,
+        "validation_log_mse": 0.0970965676454774
+      },
+      {
+        "alpha": 100000000.0,
+        "validation_log_mse": 0.13760618266110738
+      }
+    ]
+  },
+  "calibration": {
+    "Persistence": 1.159636323639387,
+    "Ridge_market": 1.1940810977929541,
+    "Ridge_filing_age": 1.1909111289474652,
+    "Ridge_availability": 1.188083193014643,
+    "Ridge_financial": 1.183471019236525,
+    "LSTM_market": 1.1609366736954756,
+    "LSTM_filing_age": 1.1545509301138621,
+    "LSTM_availability": 1.163277318020303,
+    "LSTM_financial": 1.1521965629972288
+  },
+  "training_history": {
+    "market/7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5214169159450545,
+        "validation_mse_standardized_log": 0.42083653807640076
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.4038310471935862,
+        "validation_mse_standardized_log": 0.42734459042549133
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3694396936794529,
+        "validation_mse_standardized_log": 0.4061806797981262
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.35307794030821743,
+        "validation_mse_standardized_log": 0.48466500639915466
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3419120118440705,
+        "validation_mse_standardized_log": 0.46837055683135986
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.333224232302705,
+        "validation_mse_standardized_log": 0.4964470863342285
+      },
+      {
+        "epoch": 7,
+        "train_mse_standardized_log": 0.3269609225385851,
+        "validation_mse_standardized_log": 0.5327883362770081
+      }
+    ],
+    "market/42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5289476176007665,
+        "validation_mse_standardized_log": 0.40416836738586426
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.41329434167503537,
+        "validation_mse_standardized_log": 0.3814106285572052
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3758114689142014,
+        "validation_mse_standardized_log": 0.42868271470069885
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.35862315555782026,
+        "validation_mse_standardized_log": 0.45225808024406433
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.34804559519129535,
+        "validation_mse_standardized_log": 0.4691354036331177
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.33977563893606766,
+        "validation_mse_standardized_log": 0.47211673855781555
+      }
+    ],
+    "market/2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5409717889064901,
+        "validation_mse_standardized_log": 0.37847328186035156
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.4308163369449516,
+        "validation_mse_standardized_log": 0.4222334921360016
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.38203853893019457,
+        "validation_mse_standardized_log": 0.48090308904647827
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3592125135106649,
+        "validation_mse_standardized_log": 0.5449592471122742
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3430395713873992,
+        "validation_mse_standardized_log": 0.5604913234710693
+      }
+    ],
+    "filing_age/7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5124234302657263,
+        "validation_mse_standardized_log": 0.4180479347705841
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.40261313779400926,
+        "validation_mse_standardized_log": 0.4249214828014374
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.36324377046977524,
+        "validation_mse_standardized_log": 0.38277262449264526
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.34511320278694124,
+        "validation_mse_standardized_log": 0.4726514518260956
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3332268279822078,
+        "validation_mse_standardized_log": 0.4471491575241089
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32404180879002614,
+        "validation_mse_standardized_log": 0.5004385709762573
+      },
+      {
+        "epoch": 7,
+        "train_mse_standardized_log": 0.3173084763671028,
+        "validation_mse_standardized_log": 0.5520210862159729
+      }
+    ],
+    "filing_age/42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.517896798290519,
+        "validation_mse_standardized_log": 0.3818839192390442
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.4153141613939953,
+        "validation_mse_standardized_log": 0.3935467600822449
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.36578689838428025,
+        "validation_mse_standardized_log": 0.4545757472515106
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.34558916771417253,
+        "validation_mse_standardized_log": 0.5227375626564026
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.33306065861368456,
+        "validation_mse_standardized_log": 0.5221858620643616
+      }
+    ],
+    "filing_age/2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5313085977169646,
+        "validation_mse_standardized_log": 0.359017550945282
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.42810790868754606,
+        "validation_mse_standardized_log": 0.3954842984676361
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3818254119380938,
+        "validation_mse_standardized_log": 0.46739083528518677
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3630257528573603,
+        "validation_mse_standardized_log": 0.480434775352478
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.34809372643749387,
+        "validation_mse_standardized_log": 0.46631309390068054
+      }
+    ],
+    "availability/7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5119680661415643,
+        "validation_mse_standardized_log": 0.4144838750362396
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.39937955327287794,
+        "validation_mse_standardized_log": 0.40330085158348083
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3607697188632138,
+        "validation_mse_standardized_log": 0.36321836709976196
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.343540331967259,
+        "validation_mse_standardized_log": 0.3943691551685333
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.33344592727541195,
+        "validation_mse_standardized_log": 0.407501220703125
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32614497109114843,
+        "validation_mse_standardized_log": 0.447403222322464
+      },
+      {
+        "epoch": 7,
+        "train_mse_standardized_log": 0.32010471295623893,
+        "validation_mse_standardized_log": 0.51728355884552
+      }
+    ],
+    "availability/42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5147592480909824,
+        "validation_mse_standardized_log": 0.3780171573162079
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.40214248770869054,
+        "validation_mse_standardized_log": 0.366504967212677
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3624756080865234,
+        "validation_mse_standardized_log": 0.43176883459091187
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.34313622697954915,
+        "validation_mse_standardized_log": 0.4356488287448883
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3302663167156773,
+        "validation_mse_standardized_log": 0.49237653613090515
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32233715696809934,
+        "validation_mse_standardized_log": 0.5230410695075989
+      }
+    ],
+    "availability/2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5233639250501021,
+        "validation_mse_standardized_log": 0.37668272852897644
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.41454918454622475,
+        "validation_mse_standardized_log": 0.42456209659576416
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3669890010662502,
+        "validation_mse_standardized_log": 0.47972774505615234
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.34434306308157986,
+        "validation_mse_standardized_log": 0.5237016677856445
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3324712066821897,
+        "validation_mse_standardized_log": 0.5421508550643921
+      }
+    ],
+    "financial/7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.513511821530566,
+        "validation_mse_standardized_log": 0.4244566559791565
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.40080294388392357,
+        "validation_mse_standardized_log": 0.4397732615470886
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3613592431748099,
+        "validation_mse_standardized_log": 0.39586547017097473
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3445990731894856,
+        "validation_mse_standardized_log": 0.48638927936553955
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3328837755709343,
+        "validation_mse_standardized_log": 0.46474140882492065
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32363112123644444,
+        "validation_mse_standardized_log": 0.5149677395820618
+      },
+      {
+        "epoch": 7,
+        "train_mse_standardized_log": 0.3159026953903919,
+        "validation_mse_standardized_log": 0.5642097592353821
+      }
+    ],
+    "financial/42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5158665496327923,
+        "validation_mse_standardized_log": 0.3694218099117279
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.39381068437773037,
+        "validation_mse_standardized_log": 0.4231802523136139
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.35572578899166124,
+        "validation_mse_standardized_log": 0.47704023122787476
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.33682944962853223,
+        "validation_mse_standardized_log": 0.490943968296051
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3265348856099922,
+        "validation_mse_standardized_log": 0.48184072971343994
+      }
+    ],
+    "financial/2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5182131594825079,
+        "validation_mse_standardized_log": 0.36711710691452026
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.4130831849307197,
+        "validation_mse_standardized_log": 0.4482346773147583
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3703925396773211,
+        "validation_mse_standardized_log": 0.4957547187805176
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3437885889854446,
+        "validation_mse_standardized_log": 0.4937132000923157
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.32891913282235097,
+        "validation_mse_standardized_log": 0.515360951423645
+      }
+    ]
+  },
+  "paired_intervals": {
+    "Ridge_financial-minus-Ridge_availability": {
+      "20": {
+        "mean_difference": -0.0011666403061509048,
+        "ci95_low": -0.004402057547310729,
+        "ci95_high": 0.002846983548669415,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0011666403061509048,
+        "ci95_low": -0.0039599164176922635,
+        "ci95_high": 0.003015244313566514,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.027753277065544715,
+        "ci95_low": -0.04909856263403055,
+        "ci95_high": -0.0013841481129787986,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.027753277065544715,
+        "ci95_low": -0.04763441698939667,
+        "ci95_high": 0.00024302275728006455,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.02658663675939381,
+        "ci95_low": -0.047227718947626965,
+        "ci95_high": -0.0027051912048175995,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.02658663675939381,
+        "ci95_low": -0.04569381322616922,
+        "ci95_high": -0.0018376962679189977,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial_calibrated-minus-Ridge_availability_calibrated": {
+      "20": {
+        "mean_difference": -0.0030910537181452697,
+        "ci95_low": -0.005845362000536595,
+        "ci95_high": 0.000567087709325017,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0030910537181452697,
+        "ci95_low": -0.005696381166409354,
+        "ci95_high": 0.0005204592519908433,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": -0.017453463706524206,
+        "ci95_low": -0.031319801231719,
+        "ci95_high": 0.0014971299394831736,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.017453463706524206,
+        "ci95_low": -0.031129776521500747,
+        "ci95_high": 0.00269369025288682,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": -0.014362409988378937,
+        "ci95_low": -0.027884219223200165,
+        "ci95_high": 0.0018603236655784317,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.014362409988378937,
+        "ci95_low": -0.026958612309874425,
+        "ci95_high": 0.002531118848616348,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial-minus-LSTM_availability": {
+      "20": {
+        "mean_difference": -0.015966793154441054,
+        "ci95_low": -0.03364199225536057,
+        "ci95_high": -0.00018391761638269908,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.015966793154441054,
+        "ci95_low": -0.03184156679977953,
+        "ci95_high": -0.001973410276266922,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.04155490319112201,
+        "ci95_low": -0.06044425380100095,
+        "ci95_high": -0.02227080132162029,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.04155490319112201,
+        "ci95_low": -0.05894029631810205,
+        "ci95_high": -0.021505512835804846,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.02558811003668096,
+        "ci95_low": -0.04800666983441962,
+        "ci95_high": -0.0025538544074215045,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.02558811003668096,
+        "ci95_low": -0.047193355447692584,
+        "ci95_high": -0.001906939800711957,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial_calibrated-minus-LSTM_availability_calibrated": {
+      "20": {
+        "mean_difference": -0.028670664452982875,
+        "ci95_low": -0.05373112780016787,
+        "ci95_high": -0.009766547289318969,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.028670664452982875,
+        "ci95_low": -0.05335164122681839,
+        "ci95_high": -0.010237220148222105,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": -0.03766438178871922,
+        "ci95_low": -0.05296111772904899,
+        "ci95_high": -0.02359438974357985,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.03766438178871922,
+        "ci95_low": -0.052063746317956766,
+        "ci95_high": -0.021845826649742776,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": -0.00899371733573634,
+        "ci95_low": -0.026002384632063662,
+        "ci95_high": 0.011276456489102044,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.00899371733573634,
+        "ci95_low": -0.027222272427175388,
+        "ci95_high": 0.01110304199341262,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "predictions_sha256": "36e34b1e07fe5a3d73de72fe5077c840441711d504521bae4092cc4121e090c7",
+  "market_outcomes_2026_accessed": false
+}

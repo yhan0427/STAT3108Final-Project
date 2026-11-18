@@ -1,0 +1,202 @@
+{
+  "completed_utc": "2026-11-18T05:16:32.652738+00:00",
+  "plan_sha256": "ca5d20ece7466a62e614999dacaf7082eacfd5d894d2a169b352f71de5cfa433",
+  "predictions_sha256": "36e34b1e07fe5a3d73de72fe5077c840441711d504521bae4092cc4121e090c7",
+  "original_predictions_sha256": "89d9843b04c083e619564b243fa005b0df96fb9e57513e9c5c48e318f552ae15",
+  "paired_intervals": {
+    "Ridge_filing_age-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.02261033315543029,
+        "ci95_low": -0.04374016732062835,
+        "ci95_high": 0.0023949565481444636,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.02261033315543029,
+        "ci95_low": -0.04221320419854413,
+        "ci95_high": 0.0035084862112879094,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability-minus-Ridge_filing_age": {
+      "20": {
+        "mean_difference": -0.003976303603963517,
+        "ci95_low": -0.0061216630555575215,
+        "ci95_high": -0.002386068631390084,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.003976303603963517,
+        "ci95_low": -0.005879956183434743,
+        "ci95_high": -0.002540467296315593,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial-minus-Ridge_filing_age": {
+      "20": {
+        "mean_difference": -0.005142943910114421,
+        "ci95_low": -0.008345296083098676,
+        "ci95_high": -0.0021535816255832912,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.005142943910114421,
+        "ci95_low": -0.007846956960901732,
+        "ci95_high": -0.002055797895606562,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_filing_age_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": -0.013688618699132505,
+        "ci95_low": -0.027233617121580636,
+        "ci95_high": 0.0027932349060182087,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.013688618699132505,
+        "ci95_low": -0.026509626920360504,
+        "ci95_high": 0.003660227052591034,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability_calibrated-minus-Ridge_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.0006737912892464353,
+        "ci95_low": -0.0012459528962513334,
+        "ci95_high": -0.00024974559297467365,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0006737912892464353,
+        "ci95_low": -0.001222078908267703,
+        "ci95_high": -0.0002936925946502668,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial_calibrated-minus-Ridge_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.0037648450073917046,
+        "ci95_low": -0.006290903869465825,
+        "ci95_high": -0.0005606103727403738,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0037648450073917046,
+        "ci95_low": -0.006149746867902086,
+        "ci95_high": -0.0004152181016258288,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.04649647800756018,
+        "ci95_low": -0.06667870147559778,
+        "ci95_high": -0.026359433978556068,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.04649647800756018,
+        "ci95_low": -0.06555095281020251,
+        "ci95_high": -0.0258007266195332,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability-minus-LSTM_filing_age": {
+      "20": {
+        "mean_difference": 0.020908367970879225,
+        "ci95_low": 0.008538832934294827,
+        "ci95_high": 0.036973477702457166,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.020908367970879225,
+        "ci95_low": 0.009471840066352738,
+        "ci95_high": 0.03443175280726943,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial-minus-LSTM_filing_age": {
+      "20": {
+        "mean_difference": 0.0049415748164381755,
+        "ci95_low": -0.008796087569583898,
+        "ci95_high": 0.016601635501396927,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0049415748164381755,
+        "ci95_low": -0.006409199889095178,
+        "ci95_high": 0.015721396354288982,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": -0.033171310740529474,
+        "ci95_low": -0.04763525085532985,
+        "ci95_high": -0.018363941294976965,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.033171310740529474,
+        "ci95_low": -0.048968976518890865,
+        "ci95_high": -0.015295010692163442,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability_calibrated-minus-LSTM_filing_age_calibrated": {
+      "20": {
+        "mean_difference": 0.02417759340479313,
+        "ci95_low": 0.006384060272580025,
+        "ci95_high": 0.04938680100180815,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.02417759340479313,
+        "ci95_low": 0.00546159278918101,
+        "ci95_high": 0.04785879069266135,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial_calibrated-minus-LSTM_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.004493071048189745,
+        "ci95_low": -0.012720105192257615,
+        "ci95_high": 0.0030157002067800064,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.004493071048189745,
+        "ci95_low": -0.012893625623847087,
+        "ci95_high": 0.004073949684064226,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "scope": "Exploratory sensitivity; policy and training population changed. Paired original forecasts rescored on identical80held company-date keys; not a causal estimate or independent replication.",
+  "market_outcomes_2026_accessed": false
+}

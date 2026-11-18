@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-11-18T04:32:20.953993+00:00",
+  "old_grid_prediction_cases_checked": 200,
+  "max_abs_prediction_difference": 0.0,
+  "full_market_evaluation_origins": 46657,
+  "same_origins_and_targets": true,
+  "paired_comparisons": {
+    "LSTM60_calibrated-minus-broad-Ridge": {
+      "20": {
+        "mean_difference": -0.011324739911596915,
+        "ci95_low": -0.04571385131147223,
+        "ci95_high": 0.025831230893473958,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.011324739911596915,
+        "ci95_low": -0.057777930642674814,
+        "ci95_high": 0.03490367143514586,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M_calibrated-minus-broad-Ridge": {
+      "20": {
+        "mean_difference": 0.047532982338026705,
+        "ci95_low": 0.010595728672556051,
+        "ci95_high": 0.09060312028400923,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.047532982338026705,
+        "ci95_low": 0.011640168023134886,
+        "ci95_high": 0.09309693473555213,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "market_outcomes_2026_accessed": false
+}

@@ -1,0 +1,693 @@
+{
+  "completed_utc": "2026-11-18T04:37:52.493574+00:00",
+  "registered_config": {
+    "registered_utc": "2026-11-18T04:24:49.911607+00:00",
+    "reason": "The completed matched financial experiment shows that disclosure availability/age controls recover much of the calibrated loss difference versus market-only. Separate age from missing-field indicators without changing the dataset or tuning to held outcomes.",
+    "dataset_sha256": "b8a9510f135fb3aaf672d59ee85143d8e75310a918b52a396179008727a9dacd",
+    "main_plan_sha256": "0bfae8d50deb5588686c38d380a7c6233f393554a070b49f3a7d6a57299ab566",
+    "ridge_audit_sha256": "354be1ae242876aaad4c10754b0f4619d705a6d09ad01b09fde29a7beef09bf7",
+    "masks": {
+      "filing_age": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "missingness": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "mask_definitions": "Age includes scaled filing-age value and its missing flag. Missingness includes only seven economic-field missing flags; no age value/age-missing flag. Existing combined availability group is their union.",
+    "lstm_config": {
+      "study": "equity-volatility-v1",
+      "data_start": "2014-01-01",
+      "data_end_exclusive": "2026-01-01",
+      "train_start": "2015-01-01",
+      "validation_start": "2022-01-01",
+      "test_start": "2024-01-01",
+      "test_end_exclusive": "2026-01-01",
+      "horizon": 20,
+      "lookback": 60,
+      "annualization": 252,
+      "seeds": [
+        7,
+        42,
+        2026
+      ],
+      "top_k": 5,
+      "bootstrap_replicates": 1000,
+      "bootstrap_block_days": 20,
+      "lstm": {
+        "hidden_size": 24,
+        "epochs": 15,
+        "patience": 4,
+        "batch_size": 512,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001
+      },
+      "boosting": {
+        "max_iter": 200,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.05,
+        "l2_regularization": 10.0
+      }
+    },
+    "ridge_alpha_grid": [
+      0.01,
+      1.0,
+      100.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "comparisons": [
+      "filing_age-minus-market",
+      "missingness-minus-market",
+      "availability-minus-filing_age",
+      "availability-minus-missingness",
+      "filing_age-minus-missingness"
+    ],
+    "scope": "Post-result exploratory mechanism diagnostic; not a causal decomposition, independent confirmation or a new untouched sample. Reuse existing market/combined controls; fit only the two new masked-input groups with equal architecture, seeds and budgets.",
+    "market_outcomes_2026": "sealed"
+  },
+  "ridge_selection": {
+    "filing_age": {
+      "grid": [
+        {
+          "alpha": 0.01,
+          "validation_log_mse": 0.09409688582468026
+        },
+        {
+          "alpha": 1.0,
+          "validation_log_mse": 0.09409646657237038
+        },
+        {
+          "alpha": 100.0,
+          "validation_log_mse": 0.09405742631864429
+        },
+        {
+          "alpha": 10000.0,
+          "validation_log_mse": 0.09283743765500065
+        },
+        {
+          "alpha": 100000.0,
+          "validation_log_mse": 0.09044340804518014
+        },
+        {
+          "alpha": 1000000.0,
+          "validation_log_mse": 0.09044677753240894
+        },
+        {
+          "alpha": 10000000.0,
+          "validation_log_mse": 0.0973163370883529
+        },
+        {
+          "alpha": 100000000.0,
+          "validation_log_mse": 0.13769662657754086
+        }
+      ],
+      "selected_alpha": 100000.0
+    },
+    "missingness": {
+      "grid": [
+        {
+          "alpha": 0.01,
+          "validation_log_mse": 0.0946743730413143
+        },
+        {
+          "alpha": 1.0,
+          "validation_log_mse": 0.09467396819480216
+        },
+        {
+          "alpha": 100.0,
+          "validation_log_mse": 0.09463653714441259
+        },
+        {
+          "alpha": 10000.0,
+          "validation_log_mse": 0.09359091886815167
+        },
+        {
+          "alpha": 100000.0,
+          "validation_log_mse": 0.09169302962533536
+        },
+        {
+          "alpha": 1000000.0,
+          "validation_log_mse": 0.09161795079523495
+        },
+        {
+          "alpha": 10000000.0,
+          "validation_log_mse": 0.09757164832618503
+        },
+        {
+          "alpha": 100000000.0,
+          "validation_log_mse": 0.13772161071706054
+        }
+      ],
+      "selected_alpha": 1000000.0
+    }
+  },
+  "training_history": {
+    "filing_age/7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5114231470533723,
+        "validation_mse_standardized_log": 0.40186041593551636
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.40234793759066445,
+        "validation_mse_standardized_log": 0.3957906663417816
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3652574860428727,
+        "validation_mse_standardized_log": 0.3858591616153717
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3466252144884615,
+        "validation_mse_standardized_log": 0.44835007190704346
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.3344472173098577,
+        "validation_mse_standardized_log": 0.478071391582489
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32445773118175775,
+        "validation_mse_standardized_log": 0.4811914265155792
+      },
+      {
+        "epoch": 7,
+        "train_mse_standardized_log": 0.3179102764141957,
+        "validation_mse_standardized_log": 0.537194013595581
+      }
+    ],
+    "filing_age/42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5141707850191536,
+        "validation_mse_standardized_log": 0.4077959358692169
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.39907754816003965,
+        "validation_mse_standardized_log": 0.396448016166687
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3580054270243401,
+        "validation_mse_standardized_log": 0.42238348722457886
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3421603720453634,
+        "validation_mse_standardized_log": 0.50215744972229
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.33168329517255746,
+        "validation_mse_standardized_log": 0.4936830401420593
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32305465492156066,
+        "validation_mse_standardized_log": 0.5270769000053406
+      }
+    ],
+    "filing_age/2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5269266573399168,
+        "validation_mse_standardized_log": 0.3687109649181366
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.41866187485007295,
+        "validation_mse_standardized_log": 0.375998854637146
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3771456863964181,
+        "validation_mse_standardized_log": 0.4790179431438446
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.353390752991349,
+        "validation_mse_standardized_log": 0.46437937021255493
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.33904825072527794,
+        "validation_mse_standardized_log": 0.4897364675998688
+      }
+    ],
+    "missingness/7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5185498524336485,
+        "validation_mse_standardized_log": 0.37855061888694763
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.39744039224820876,
+        "validation_mse_standardized_log": 0.39193886518478394
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.36605232998258663,
+        "validation_mse_standardized_log": 0.4275428354740143
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.34952693619356334,
+        "validation_mse_standardized_log": 0.47960376739501953
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.33974067890262105,
+        "validation_mse_standardized_log": 0.4673722982406616
+      }
+    ],
+    "missingness/42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5280039722832183,
+        "validation_mse_standardized_log": 0.4186907708644867
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.42003829402730103,
+        "validation_mse_standardized_log": 0.3835785984992981
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.3710261758236731,
+        "validation_mse_standardized_log": 0.45043444633483887
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3511749677866207,
+        "validation_mse_standardized_log": 0.4770975112915039
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.33945422432775435,
+        "validation_mse_standardized_log": 0.4879644811153412
+      },
+      {
+        "epoch": 6,
+        "train_mse_standardized_log": 0.32952809081275014,
+        "validation_mse_standardized_log": 0.5004934668540955
+      }
+    ],
+    "missingness/2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.5357015040056176,
+        "validation_mse_standardized_log": 0.3924386203289032
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.42555817806613255,
+        "validation_mse_standardized_log": 0.43423083424568176
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.38544245404555644,
+        "validation_mse_standardized_log": 0.5260408520698547
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.3637318553498083,
+        "validation_mse_standardized_log": 0.5896408557891846
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.34783454756831966,
+        "validation_mse_standardized_log": 0.7001826763153076
+      }
+    ]
+  },
+  "calibration": {
+    "Ridge_filing_age": 1.1908880524686816,
+    "Ridge_missingness": 1.193457147266153,
+    "LSTM_filing_age": 1.1823528312981733,
+    "LSTM_missingness": 1.1856503257763282
+  },
+  "paired_intervals": {
+    "Ridge_filing_age-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.019200652450892586,
+        "ci95_low": -0.04022174475733814,
+        "ci95_high": 0.004679049727848671,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.019200652450892586,
+        "ci95_low": -0.039709174322338794,
+        "ci95_high": 0.00748177215001605,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_missingness-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.0007222600540781335,
+        "ci95_low": -0.001124820068588156,
+        "ci95_high": -0.0003729568058104469,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0007222600540781335,
+        "ci95_low": -0.0010816615780056965,
+        "ci95_high": -0.00043182103188390604,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability-minus-Ridge_filing_age": {
+      "20": {
+        "mean_difference": -0.0031470323012668185,
+        "ci95_low": -0.005449358185243851,
+        "ci95_high": -0.001347268085081309,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0031470323012668185,
+        "ci95_low": -0.005430151686699769,
+        "ci95_high": -0.0012664852348013554,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability-minus-Ridge_missingness": {
+      "20": {
+        "mean_difference": -0.02162542469808127,
+        "ci95_low": -0.04232497817916469,
+        "ci95_high": 0.0012178823866146223,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.02162542469808127,
+        "ci95_low": -0.04151978226744945,
+        "ci95_high": 0.0038299535277021377,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_filing_age-minus-Ridge_missingness": {
+      "20": {
+        "mean_difference": -0.018478392396814453,
+        "ci95_low": -0.03963476422268429,
+        "ci95_high": 0.005639687058379856,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.018478392396814453,
+        "ci95_low": -0.03911922269064492,
+        "ci95_high": 0.008443527374083286,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_filing_age_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": -0.011700119386271062,
+        "ci95_low": -0.02566910761232714,
+        "ci95_high": 0.004779820267656406,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.011700119386271062,
+        "ci95_low": -0.025010630471849815,
+        "ci95_high": 0.005261040559176121,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_missingness_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": -2.7121393042862613e-05,
+        "ci95_low": -0.0001340287200987561,
+        "ci95_high": 8.091427547273585e-05,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -2.7121393042862613e-05,
+        "ci95_low": -0.000142149887822556,
+        "ci95_high": 8.2800385024553e-05,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability_calibrated-minus-Ridge_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.00010712827192446233,
+        "ci95_low": -0.0008622652212699002,
+        "ci95_high": 0.0005682578261420667,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.00010712827192446233,
+        "ci95_low": -0.0009257759851491636,
+        "ci95_high": 0.0006877817982807831,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_availability_calibrated-minus-Ridge_missingness_calibrated": {
+      "20": {
+        "mean_difference": -0.011780126265152662,
+        "ci95_low": -0.025641798651149898,
+        "ci95_high": 0.0044806833541974735,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.011780126265152662,
+        "ci95_low": -0.02502849792485851,
+        "ci95_high": 0.0047993654810639125,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_filing_age_calibrated-minus-Ridge_missingness_calibrated": {
+      "20": {
+        "mean_difference": -0.011672997993228197,
+        "ci95_low": -0.02567148950138137,
+        "ci95_high": 0.004861489109391197,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.011672997993228197,
+        "ci95_low": -0.025051315306956003,
+        "ci95_high": 0.0053656486395766475,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.03444385766049286,
+        "ci95_low": -0.05540190641161314,
+        "ci95_high": -0.014923352668455056,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.03444385766049286,
+        "ci95_low": -0.05194853062791702,
+        "ci95_high": -0.017083546789639876,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_missingness-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.0059645322113376295,
+        "ci95_low": -0.013601371713641753,
+        "ci95_high": 0.002525855497449226,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0059645322113376295,
+        "ci95_low": -0.013294495734082165,
+        "ci95_high": 0.00042433064847998894,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability-minus-LSTM_filing_age": {
+      "20": {
+        "mean_difference": -0.008892791253209322,
+        "ci95_low": -0.022818762323152292,
+        "ci95_high": 0.007891880323653885,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.008892791253209322,
+        "ci95_low": -0.02444441170094586,
+        "ci95_high": 0.013745886138937029,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability-minus-LSTM_missingness": {
+      "20": {
+        "mean_difference": -0.037372116702364545,
+        "ci95_low": -0.06516043613327513,
+        "ci95_high": -0.00776820845625982,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.037372116702364545,
+        "ci95_low": -0.06655842618774957,
+        "ci95_high": -0.0010334294650296704,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age-minus-LSTM_missingness": {
+      "20": {
+        "mean_difference": -0.028479325449155227,
+        "ci95_low": -0.04950697973743744,
+        "ci95_high": -0.009146565705210007,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.028479325449155227,
+        "ci95_low": -0.04791743022161856,
+        "ci95_high": -0.010067685966559083,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": -0.029571827872379927,
+        "ci95_low": -0.04072903957040998,
+        "ci95_high": -0.018790455421269517,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.029571827872379927,
+        "ci95_low": -0.03918055365198882,
+        "ci95_high": -0.021165241346774118,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_missingness_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": -0.0021753314931354396,
+        "ci95_low": -0.006073225713274329,
+        "ci95_high": 0.0015960477172593682,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.0021753314931354396,
+        "ci95_low": -0.004458828070793819,
+        "ci95_high": 0.00021461735041618138,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability_calibrated-minus-LSTM_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.005119222974512788,
+        "ci95_low": -0.018732147683455606,
+        "ci95_high": 0.008156061278051263,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.005119222974512788,
+        "ci95_low": -0.018134417365643966,
+        "ci95_high": 0.008433249014111813,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_availability_calibrated-minus-LSTM_missingness_calibrated": {
+      "20": {
+        "mean_difference": -0.03251571935375728,
+        "ci95_low": -0.048748887298441235,
+        "ci95_high": -0.01721782594743003,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.03251571935375728,
+        "ci95_low": -0.0477254511350844,
+        "ci95_high": -0.015325738343026868,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age_calibrated-minus-LSTM_missingness_calibrated": {
+      "20": {
+        "mean_difference": -0.027396496379244493,
+        "ci95_low": -0.03715663248141307,
+        "ci95_high": -0.01770285770292879,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.027396496379244493,
+        "ci95_low": -0.0371161580439812,
+        "ci95_high": -0.018890004512810706,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "statistics_sha256": "4d04fc5a3dab98c5baf8d823008b1794d608b2d4e441589a455b1352dbb883fd",
+  "predictions_sha256": "a597c26b8a85913876bf04d11797be524dee480bc910e87af96a31414608e622",
+  "market_outcomes_2026_accessed": false
+}

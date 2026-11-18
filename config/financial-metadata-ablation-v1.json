@@ -1,0 +1,99 @@
+{
+  "registered_utc": "2026-11-18T04:24:49.911607+00:00",
+  "reason": "The completed matched financial experiment shows that disclosure availability/age controls recover much of the calibrated loss difference versus market-only. Separate age from missing-field indicators without changing the dataset or tuning to held outcomes.",
+  "dataset_sha256": "b8a9510f135fb3aaf672d59ee85143d8e75310a918b52a396179008727a9dacd",
+  "main_plan_sha256": "0bfae8d50deb5588686c38d380a7c6233f393554a070b49f3a7d6a57299ab566",
+  "ridge_audit_sha256": "354be1ae242876aaad4c10754b0f4619d705a6d09ad01b09fde29a7beef09bf7",
+  "masks": {
+    "filing_age": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "missingness": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  "mask_definitions": "Age includes scaled filing-age value and its missing flag. Missingness includes only seven economic-field missing flags; no age value/age-missing flag. Existing combined availability group is their union.",
+  "lstm_config": {
+    "study": "equity-volatility-v1",
+    "data_start": "2014-01-01",
+    "data_end_exclusive": "2026-01-01",
+    "train_start": "2015-01-01",
+    "validation_start": "2022-01-01",
+    "test_start": "2024-01-01",
+    "test_end_exclusive": "2026-01-01",
+    "horizon": 20,
+    "lookback": 60,
+    "annualization": 252,
+    "seeds": [
+      7,
+      42,
+      2026
+    ],
+    "top_k": 5,
+    "bootstrap_replicates": 1000,
+    "bootstrap_block_days": 20,
+    "lstm": {
+      "hidden_size": 24,
+      "epochs": 15,
+      "patience": 4,
+      "batch_size": 512,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001
+    },
+    "boosting": {
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "l2_regularization": 10.0
+    }
+  },
+  "ridge_alpha_grid": [
+    0.01,
+    1.0,
+    100.0,
+    10000.0,
+    100000.0,
+    1000000.0,
+    10000000.0,
+    100000000.0
+  ],
+  "comparisons": [
+    "filing_age-minus-market",
+    "missingness-minus-market",
+    "availability-minus-filing_age",
+    "availability-minus-missingness",
+    "filing_age-minus-missingness"
+  ],
+  "scope": "Post-result exploratory mechanism diagnostic; not a causal decomposition, independent confirmation or a new untouched sample. Reuse existing market/combined controls; fit only the two new masked-input groups with equal architecture, seeds and budgets.",
+  "market_outcomes_2026": "sealed"
+}

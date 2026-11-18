@@ -1,0 +1,3809 @@
+{
+  "built_utc": "2026-11-18T04:02:00.415510+00:00",
+  "market_panel_sha256": "801ea86e5d5e1db343db8d09ac40924bfd6fa70746fb2ff80d6993aecb358084",
+  "financial_coverage_audit_sha256": "1b706fd5e8c9485cfb8c7a0d14e179d159cdfac7b8b31f7f9fc44c40fa731e16",
+  "original_checks_sha256": "ad8fd744e44796b1cb5e8cbc74ec803ba23a51765e4862fdd2c212bb042cb90d",
+  "source_sha256": "448df20a9d873b677edaba8c0e99cfaf114d4198313c90cca5ad4dfd0b317b47",
+  "panel_sha256": "b8a9510f135fb3aaf672d59ee85143d8e75310a918b52a396179008727a9dacd",
+  "features": [
+    "parent_equity_to_assets",
+    "cash_to_assets",
+    "current_ratio",
+    "current_liabilities_to_assets",
+    "income_to_assets",
+    "cfo_to_assets",
+    "revenue_growth",
+    "filing_age_days"
+  ],
+  "retained_non_financial_firms": 415,
+  "market_rows": 1204414,
+  "counts": [
+    {
+      "role": "held_company",
+      "split": "test",
+      "firms_context60": 83,
+      "origins_context60": 39346,
+      "firms_context512": 81,
+      "origins_context512": 38961
+    },
+    {
+      "role": "held_company",
+      "split": "train",
+      "firms_context60": 81,
+      "origins_context60": 133814,
+      "firms_context512": 79,
+      "origins_context512": 110620
+    },
+    {
+      "role": "held_company",
+      "split": "validation",
+      "firms_context60": 81,
+      "origins_context60": 38880,
+      "firms_context512": 81,
+      "origins_context512": 38537
+    },
+    {
+      "role": "training_company",
+      "split": "test",
+      "firms_context60": 331,
+      "origins_context60": 158976,
+      "firms_context512": 330,
+      "origins_context512": 157949
+    },
+    {
+      "role": "training_company",
+      "split": "train",
+      "firms_context60": 327,
+      "origins_context60": 550253,
+      "firms_context512": 322,
+      "origins_context512": 457471
+    },
+    {
+      "role": "training_company",
+      "split": "validation",
+      "firms_context60": 329,
+      "origins_context60": 157431,
+      "firms_context512": 327,
+      "origins_context512": 155750
+    }
+  ],
+  "source_ledger": [
+    {
+      "ticker": "A",
+      "status": "aligned",
+      "snapshot_sha256": "2d1f1b74bb01d8febf3ab0e21bb49e2793f8c5b160ae9e698a61b131f5369177",
+      "first_available_snapshot": "2013-03-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AAPL",
+      "status": "aligned",
+      "snapshot_sha256": "b4b772bb268e31dca9110e45047e10fbd53a71efcba4f22af2aa95721fb54bf3",
+      "first_available_snapshot": "2013-01-24",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ABBV",
+      "status": "aligned",
+      "snapshot_sha256": "0b0a400e9cda49f6d637ccced03b76bab7ce02e1d0aeee6c3315f60ec8348d98",
+      "first_available_snapshot": "2013-05-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ABNB",
+      "status": "aligned",
+      "snapshot_sha256": "e79618d471718418eb77c9def033ee13dadbce71e6e98eb8a74380a184673fda",
+      "first_available_snapshot": "2021-05-14",
+      "market_first_date": "2020-12-10",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ABT",
+      "status": "aligned",
+      "snapshot_sha256": "aee79ec2be73d3b5aa0448abdb7bc0df468f45638120690685ee83e5cedc4d76",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ACN",
+      "status": "aligned",
+      "snapshot_sha256": "5e6baa6909618da5510e2ba75d6baaba3f5b0084be5240212aed22bc5d4d8cf0",
+      "first_available_snapshot": "2013-03-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ADBE",
+      "status": "aligned",
+      "snapshot_sha256": "715bcc557353d8995e9678ceaa8daa4487811bddea30f6154cf929399a2fd43a",
+      "first_available_snapshot": "2013-01-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ADI",
+      "status": "aligned",
+      "snapshot_sha256": "5228370ddcea530f649e48387306e1d77bba8d81ad116d54231954a13c3102e0",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ADM",
+      "status": "aligned",
+      "snapshot_sha256": "14ac610dec1a5aa7a5a06b41d39e95864c8d6770accd156c6193cbc206bc1c67",
+      "first_available_snapshot": "2013-05-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ADP",
+      "status": "aligned",
+      "snapshot_sha256": "47740cc82a7a31f4497a2793b27da17163b5b9754e6092483f1d9699f45e0eb6",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ADSK",
+      "status": "aligned",
+      "snapshot_sha256": "cd9794891d30731e024806870a6fd6ccbbf5048a27918790b6fd3d4af7fbec12",
+      "first_available_snapshot": "2013-03-18",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AEE",
+      "status": "aligned",
+      "snapshot_sha256": "36621a5da53b74be0d583de02088c42ec999aafefefb2a755b9c2fcc4386237d",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AEP",
+      "status": "aligned",
+      "snapshot_sha256": "30f8b1cbcae27014ba6b1ffdad711182f8c87332970563eb888f7c3edd07ae78",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AES",
+      "status": "aligned",
+      "snapshot_sha256": "2305b3b29e0eebebc0da8d3ff62061efd9ce1b0f34aa03326f2218bc3e6e05fa",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AKAM",
+      "status": "aligned",
+      "snapshot_sha256": "b4ccd8620169d8f433a2ff63099d9f22cf9e1d9e9c8505975b569f24fc6fe303",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ALB",
+      "status": "aligned",
+      "snapshot_sha256": "f47878021a9582396971afd4021fb83b5eea047637ad5d3a958a8c454c9b68c9",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ALGN",
+      "status": "aligned",
+      "snapshot_sha256": "0fbbe386f68745f9879bf1780d9820b098d55a4c8c08fd0c7f7e5c5e6bdaca8b",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ALLE",
+      "status": "aligned",
+      "snapshot_sha256": "6433b80d5edf7ffa408b3ee3f808fb9d44a3d46ae406e7100c3db3d2bab16e66",
+      "first_available_snapshot": "2014-04-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AMAT",
+      "status": "aligned",
+      "snapshot_sha256": "1eaeae27675237791df75b3596242b76efbcc98c0bc48df6041c103075ed04df",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AMCR",
+      "status": "aligned",
+      "snapshot_sha256": "433a0231ee37572796e3a2f32626e27fdd62b9a27c586a753b886b474188a234",
+      "first_available_snapshot": "2019-05-09",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AMD",
+      "status": "aligned",
+      "snapshot_sha256": "7245eaab4e0003e6d629ff6ab9f8f79960da17d02fba32b54fa136bb51985e44",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AME",
+      "status": "aligned",
+      "snapshot_sha256": "4c36bafb1edd5c3e5b2db71e80eee4cf802271021efd0d5fcdc9558af374c8a7",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AMGN",
+      "status": "aligned",
+      "snapshot_sha256": "21f0d04fcfe01396d5fe5ebe93523abdf13f25c0f6114ba65fb37ed9f4987afd",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AMT",
+      "status": "aligned",
+      "snapshot_sha256": "130a3394239e09cc37d6d566fe81e4b9c95b0d1c1b119ac097ee42b6c3790a42",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AMZN",
+      "status": "aligned",
+      "snapshot_sha256": "caaa8f9743ee067535045830747f8a34da2c2bada9706c382b03c47fd1600bb6",
+      "first_available_snapshot": "2013-01-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ANET",
+      "status": "aligned",
+      "snapshot_sha256": "d59e4b9720e1ed5278d0cbaa8a3749bf4772cabb986b39aaf3132737b7e992a7",
+      "first_available_snapshot": "2014-08-08",
+      "market_first_date": "2014-06-06",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AOS",
+      "status": "aligned",
+      "snapshot_sha256": "978e57795806c590705339ed3aec94b7395e782afcbbb1db6dd1dc0f2473ff97",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "APA",
+      "status": "aligned",
+      "snapshot_sha256": "f258db686e4a6d5bd206d002810198cbaff3e235e18b68621727f17769ea6fbd",
+      "first_available_snapshot": "2021-05-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "APD",
+      "status": "aligned",
+      "snapshot_sha256": "8cc279c4371890eb71cb58d6b2f87cba179f271e273699a108d84e3801f9fa50",
+      "first_available_snapshot": "2013-01-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "APH",
+      "status": "aligned",
+      "snapshot_sha256": "82fc65e4cf86f8ed804265585d49e58baab0d815c07cb89770b6fff47481be81",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "APP",
+      "status": "aligned",
+      "snapshot_sha256": "58a7101ad5a0f44ce1184513e8deb2ff991d780c16119e7ef35954761c33486e",
+      "first_available_snapshot": "2021-05-14",
+      "market_first_date": "2021-04-15",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "APTV",
+      "status": "aligned",
+      "snapshot_sha256": "93578846dc6b09610ebb36bbe083085aa83de53dc10244c015419231bdbcfa21",
+      "first_available_snapshot": "2013-02-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ARE",
+      "status": "aligned",
+      "snapshot_sha256": "fd0ad3c7902ea87cd2acc79df331be86072e2a2c8f901a88cf8f2fd695946002",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ATO",
+      "status": "aligned",
+      "snapshot_sha256": "285e0b6ed1fc8129bfe9aeb0b03dfa267f15fd42a6829bd3698b7cb0e1b63a6d",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AVGO",
+      "status": "aligned",
+      "snapshot_sha256": "80755b345cf32313e0ef042bf91d928ee7abec867b652f5f8d5b52d76b82c280",
+      "first_available_snapshot": "2018-06-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AVY",
+      "status": "aligned",
+      "snapshot_sha256": "459842de18370d30bff909e581ee1ac8a1c5c3d2fe78917d806f002ce08ec356",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AWK",
+      "status": "aligned",
+      "snapshot_sha256": "dd6a4fd1f50c6fe1af5dccfab3f47b4e4c821874b31543872b666140c82b57db",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AXON",
+      "status": "aligned",
+      "snapshot_sha256": "9fdf2034bb5eb2e21595ab8de40316c1ac613c84a2004a4770ea157357aef447",
+      "first_available_snapshot": "2013-03-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "AZO",
+      "status": "aligned",
+      "snapshot_sha256": "e99378c93ed541bc0b7949f3015839a63fbe06ffb5c07d0193779ac498ea7d8d",
+      "first_available_snapshot": "2013-03-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BA",
+      "status": "aligned",
+      "snapshot_sha256": "8a975848aa0ed708c1caf0cc2b1646a2c9c011835089b1673a3285f100df93c1",
+      "first_available_snapshot": "2013-02-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BALL",
+      "status": "aligned",
+      "snapshot_sha256": "d107d8fec780114cb53ab248e3f4b759ade7042cc3a5e269d3dad15009e2ba9c",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BAX",
+      "status": "aligned",
+      "snapshot_sha256": "336317d7d12a02e415f79b0d22a48f38b12728ce5b6407abc1fd4ca596c53af3",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BBY",
+      "status": "aligned",
+      "snapshot_sha256": "98774b78952a723a1a224220768d180dae73ca813f3a1ead8ea4245ad2ac3906",
+      "first_available_snapshot": "2013-06-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BDX",
+      "status": "aligned",
+      "snapshot_sha256": "7f65c4f615ee8502243d6da4dc4eeba02366da15766b4f06684f194b4a27a111",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BF.B",
+      "status": "aligned",
+      "snapshot_sha256": "7e8cb5c1e1fd88a57771aa40cbedddca2fa8909ce70bebd790178d124d2d5a6f",
+      "first_available_snapshot": "2013-03-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BG",
+      "status": "aligned",
+      "snapshot_sha256": "d62819fe74cc1dc1d11564a9c0545046a00b5d1b45be5ce78f28bfdf7d2fc051",
+      "first_available_snapshot": "2024-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BIIB",
+      "status": "aligned",
+      "snapshot_sha256": "6ae6d7da72a7f157993b35dab87efea914846e8b429371ef47c0ad96ef9e2128",
+      "first_available_snapshot": "2013-02-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BKNG",
+      "status": "aligned",
+      "snapshot_sha256": "c08075a80ce8cbae33d75162aebba4f3a1872eb4986fb6b27ed103e854cc71cc",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BKR",
+      "status": "aligned",
+      "snapshot_sha256": "812d772f04dcf6e016195542f3ae53bbf9d559da7a499de97daf2fdbc2af2f8e",
+      "first_available_snapshot": "2017-07-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BLDR",
+      "status": "aligned",
+      "snapshot_sha256": "f695f97f39231c554b256073cfbba3baa8895bd3de6be2b45c51982be4e68d0f",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BMY",
+      "status": "aligned",
+      "snapshot_sha256": "0498e4c1db40e6bfa8f5a33e14a1a9c576a07f6329dea7a6ff3955aff10d3f88",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BR",
+      "status": "aligned",
+      "snapshot_sha256": "0d906752e8ff9e8d7fe03c77d8542c24c04f1c36969cfceab6dacdccb1f9d79c",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BSX",
+      "status": "aligned",
+      "snapshot_sha256": "26101ddd5302ddb716b40e6b78d8f103bbfb2d6f21b10d4116c4e22c96390a08",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "BXP",
+      "status": "aligned",
+      "snapshot_sha256": "2cd15db59c67074a334e2c490b09b20c448181e82195466a2bbd7049fe8506d0",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CAG",
+      "status": "aligned",
+      "snapshot_sha256": "396ca0ac891e9b7f195bf0999d4b1696ef1e64dadbb241144a18c6f37e6340d9",
+      "first_available_snapshot": "2013-04-03",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CAH",
+      "status": "aligned",
+      "snapshot_sha256": "66604dc80f9fb8cc9a1301d96ff00d2faf236c12889fbb8dcc553ba5dd898a27",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CARR",
+      "status": "aligned",
+      "snapshot_sha256": "2db2281a106dfd1b76e3b82c599dbf87a92070c3e4acb7138d762179d1959cc3",
+      "first_available_snapshot": "2020-05-11",
+      "market_first_date": "2020-03-19",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CAT",
+      "status": "aligned",
+      "snapshot_sha256": "e88858332c31a9abb4be27690d9765b032d93f580958f1722f0aee048ab30875",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CBRE",
+      "status": "aligned",
+      "snapshot_sha256": "c082ad79d41953da608f57c24396fb2cfb44169359661873c302bc07c8e49292",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CCI",
+      "status": "aligned",
+      "snapshot_sha256": "af14dfd88fcbd1164cea87375d33c5749190542fcbede1808abb93d97b3125d0",
+      "first_available_snapshot": "2013-02-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CCL",
+      "status": "aligned",
+      "snapshot_sha256": "e32bf504ef978d27459d7d65325715fd961a6a19cc4e2fa54be206676ee8ab99",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CDNS",
+      "status": "aligned",
+      "snapshot_sha256": "4620f89121a0812900c971eac4594c321f033ab110c043e5613cd0d40e345252",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CDW",
+      "status": "aligned",
+      "snapshot_sha256": "d46f0ba90c7488fab461a19ba45cad5ab9876761d006d1a8774a8370f3166a48",
+      "first_available_snapshot": "2013-03-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CEG",
+      "status": "aligned",
+      "snapshot_sha256": "a7458189e4a5119cce65feeb8e276132ffd3d184f9c3803f6e2b8691fe56d702",
+      "first_available_snapshot": "2022-05-12",
+      "market_first_date": "2022-01-19",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CF",
+      "status": "aligned",
+      "snapshot_sha256": "b48f5c80a822e3031ef6a6da80a0742c9d1aaec1287043981cce2ea68300a4dd",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CHD",
+      "status": "aligned",
+      "snapshot_sha256": "97cbb2224de6f138257c14d0aa23f1505cb80e5c6e595c803f44578c3a09216c",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CHRW",
+      "status": "aligned",
+      "snapshot_sha256": "698244170b00ef5bd4ce800d7c1fbe768b51f296facf0d9e969818a19baceaea",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CHTR",
+      "status": "aligned",
+      "snapshot_sha256": "663a2909f9f641eb1b3ace2e58dad177a0ee1a06a0bc0fb566575601c8c7c7c7",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CI",
+      "status": "aligned",
+      "snapshot_sha256": "e702ab03a79b99a75655a569bcc0322796b19343b79a7f3cc6da4be828a439ef",
+      "first_available_snapshot": "2019-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CL",
+      "status": "aligned",
+      "snapshot_sha256": "92623cc97a1935cd49a083d145794f9e25471e2d2ee309612e0fc28ed93dc453",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CLX",
+      "status": "aligned",
+      "snapshot_sha256": "82988fff47aac25a073446d95db38fe8e0c8a645b6940d49b16d5397a9fd5fc4",
+      "first_available_snapshot": "2013-02-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CMCSA",
+      "status": "aligned",
+      "snapshot_sha256": "398671dab7fecbcd6fa5df6a936802d0a78191b9065f1f68e8a234a22746f4f0",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CMG",
+      "status": "aligned",
+      "snapshot_sha256": "bfe39d3ea74373d0b3abec62a108b70279b122eb096364f7f0371fead71ad02a",
+      "first_available_snapshot": "2013-02-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CMI",
+      "status": "aligned",
+      "snapshot_sha256": "3811161f4bbb277975c0b847514c9812d9fa83c4cc29edce4d06e780e3543a7f",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CMS",
+      "status": "aligned",
+      "snapshot_sha256": "2561492c235e3df75f9c41c1808de5475b368d18ddad850660a7a28db40fdbf7",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CNC",
+      "status": "aligned",
+      "snapshot_sha256": "37ab41b4f389378bb804fe105328b4ac9e6c1b78929021a26fa3571d790c4650",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CNP",
+      "status": "aligned",
+      "snapshot_sha256": "51bf91ef4701435bd498923f2f3ce70fe346a795c6814157639568058f4cd9ef",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "COO",
+      "status": "aligned",
+      "snapshot_sha256": "a44e2daeaa7a2909e817f905fec4faca7eb8bf59e7e76e5ceb7c4fbdcc67b7bc",
+      "first_available_snapshot": "2013-03-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "COP",
+      "status": "aligned",
+      "snapshot_sha256": "1c883fa5360a3f2ea5246ffa9515754cd6649ec72ecc578a9b9eb3338c204930",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "COR",
+      "status": "aligned",
+      "snapshot_sha256": "20ef4f50c8d8eef1232e27107ab33ad23c714de430b1cd1c0df0eb5e498c810a",
+      "first_available_snapshot": "2013-02-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "COST",
+      "status": "aligned",
+      "snapshot_sha256": "68d3ee8bd4f70bb510916590773b0d3294a0cfdbf6bf07fea3713a56955e8435",
+      "first_available_snapshot": "2013-03-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CPB",
+      "status": "aligned",
+      "snapshot_sha256": "d1e9ace7c879d1cc6ae4364111715432c7d42c5f746f461c96583cc18ebcdc60",
+      "first_available_snapshot": "2013-03-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CPRT",
+      "status": "aligned",
+      "snapshot_sha256": "19d6ebde1fdaacaea6492a21c6351936102eb7a038f0b9ba6f9a94172f1ae256",
+      "first_available_snapshot": "2013-03-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CPT",
+      "status": "aligned",
+      "snapshot_sha256": "70ab0d1ef63abfab036cca455e2f6f693d074b6a3a223b2504c2dd0a1267513b",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CRH",
+      "status": "aligned",
+      "snapshot_sha256": "5578cc1f701e79ebecb57c3b13a29017f5d40980dc6b4054af59552ef26b9706",
+      "first_available_snapshot": "2024-02-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CRL",
+      "status": "aligned",
+      "snapshot_sha256": "25da45f6918ce8273cec0c48751d69c91083ae59a8b4cca16f59b7aa201afbe4",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CRM",
+      "status": "aligned",
+      "snapshot_sha256": "81f62bf566b8e5db00589a3021882cfca5a255505c5f0b05e3d15d87e450cf29",
+      "first_available_snapshot": "2013-03-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CRWD",
+      "status": "aligned",
+      "snapshot_sha256": "947389cb5e0e5ab50f7e0c959dec37e60dd7cc474b49ff42a25087b3b04b6264",
+      "first_available_snapshot": "2019-07-19",
+      "market_first_date": "2019-06-12",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CSCO",
+      "status": "aligned",
+      "snapshot_sha256": "97b8981dc3a92e6974b5a7bee11c76ec2e04b8b3a497188f64e8a40fa10cddb0",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CSGP",
+      "status": "aligned",
+      "snapshot_sha256": "17e793b3ce502d35787189863f0f05f2459ba177df60b07e3f16932ac8893aac",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CSX",
+      "status": "aligned",
+      "snapshot_sha256": "824fed435c17af242f759bd79f6c2c885826adef54eb2c67499cd8aa77d6eb7d",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CTAS",
+      "status": "aligned",
+      "snapshot_sha256": "916b71ff382ae85246eb9f488699a83f861efa94fd9991f5ab0d4d60c88c12cd",
+      "first_available_snapshot": "2013-01-09",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CTSH",
+      "status": "aligned",
+      "snapshot_sha256": "9c76bc49f4a8adae12bd658040eaac3bf698fe2a54c6d765bddeb38aea622a28",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CTVA",
+      "status": "aligned",
+      "snapshot_sha256": "7cef03d3862b4b7ea7a53c8b6bc47af0690712f67081e1929134f21e0ac87e83",
+      "first_available_snapshot": "2019-05-31",
+      "market_first_date": "2019-05-24",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CVNA",
+      "status": "aligned",
+      "snapshot_sha256": "a2a09967c4fd98ece30bdb7cd89bff480e0d28feef3defeb95f1589e76129e17",
+      "first_available_snapshot": "2017-08-08",
+      "market_first_date": "2017-04-28",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CVS",
+      "status": "aligned",
+      "snapshot_sha256": "b44c7c2d4e29160c9b6296f9d146a793733495dadaec02105d6c324dc2d22b1a",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "CVX",
+      "status": "aligned",
+      "snapshot_sha256": "a2aa4438e4b9441bcc0e4dbcbb86eb33d83364f21f6c3d3a0a5f23c08c0c5e79",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "D",
+      "status": "aligned",
+      "snapshot_sha256": "f07b0af67f3eea268b5d1408e041b5782b7cdd47b9910c49996469f93819f6a0",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DAL",
+      "status": "aligned",
+      "snapshot_sha256": "e74d7299db474b99c6a0eadc7b0151e69a1c80ce73a870c1f3439e25595bcdea",
+      "first_available_snapshot": "2013-02-13",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DASH",
+      "status": "aligned",
+      "snapshot_sha256": "2bc3f8f43e28455a6f4001d607b7f1a062e5b861555bfda0c16e9c22802ab4f4",
+      "first_available_snapshot": "2021-03-05",
+      "market_first_date": "2020-12-09",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DD",
+      "status": "aligned",
+      "snapshot_sha256": "61a7cf67c12ea16de272856bf3d5203a7eedcbca71d7537e0e7fc27b6770c8e1",
+      "first_available_snapshot": "2017-11-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DDOG",
+      "status": "aligned",
+      "snapshot_sha256": "ff613a14f0290b95750d16097bd2d5e7d73ab413ce7c4d969185f919a0d880a2",
+      "first_available_snapshot": "2019-11-13",
+      "market_first_date": "2019-09-19",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DE",
+      "status": "aligned",
+      "snapshot_sha256": "9b18f41707bb106f62ef937dffcf2c3e4ba2df013973aee3fc816dde80584382",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DECK",
+      "status": "aligned",
+      "snapshot_sha256": "bfd6094afe2151c58dc0f4666a2b1c6842aabcc3cb61d6c2c23da6f405f27729",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DELL",
+      "status": "aligned",
+      "snapshot_sha256": "e14856c4f0c7e41035febf8291c06226d6c08cdbd14f27f0468a3777c0ea2aa6",
+      "first_available_snapshot": "2016-06-10",
+      "market_first_date": "2016-08-17",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DG",
+      "status": "aligned",
+      "snapshot_sha256": "7d42a4608df21a3c35701edacf103d7a509af3eddfce53bd1fb1d9421597206a",
+      "first_available_snapshot": "2013-03-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DGX",
+      "status": "aligned",
+      "snapshot_sha256": "f81dbee7a7801611149f5f07b848cfbbf5dac8c89680c717297283f76c9b5ed9",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DHI",
+      "status": "aligned",
+      "snapshot_sha256": "a2a012dc6109bd53c7e86f42a91078b2d15828a7f4258fe1826758868c6c9c26",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DHR",
+      "status": "aligned",
+      "snapshot_sha256": "392e1c890379ad95a560861ca64775d497b161e2a0e8b06fea20961d0b00acd3",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DIS",
+      "status": "aligned",
+      "snapshot_sha256": "5eb2fda01114abbf998577a9b639aa818aeb850fc70b3c05ea6392b596864756",
+      "first_available_snapshot": "2019-05-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DLR",
+      "status": "aligned",
+      "snapshot_sha256": "28f79e9429068f132d65b52634ac2fbb0fb30e47b7283bc31554438e752d3186",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DLTR",
+      "status": "aligned",
+      "snapshot_sha256": "fc48bc88af40b9c9251bc30e614069a0f99b5e51e5e7f31b653b5e65b30550be",
+      "first_available_snapshot": "2013-03-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DOC",
+      "status": "aligned",
+      "snapshot_sha256": "43b22d1baebb04ffddd18a366aacfed3d194ae3594fb855a68a79e5af6170569",
+      "first_available_snapshot": "2013-02-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DOV",
+      "status": "aligned",
+      "snapshot_sha256": "c7e827fc62a1e5ecc38a8a6c7ab0beeb69cec99688c3b7685fe7ae4592b72241",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DOW",
+      "status": "aligned",
+      "snapshot_sha256": "662adc349d418ae8aeb241912e0d7b15248dce2d4b1e0a6fc512efc8852a5def",
+      "first_available_snapshot": "2019-05-03",
+      "market_first_date": "2019-03-20",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DPZ",
+      "status": "aligned",
+      "snapshot_sha256": "424072b95021d4ae1bb8559b2200c07062533598d67996927873c3e981606b83",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DRI",
+      "status": "aligned",
+      "snapshot_sha256": "bb27c7bff7022264ca0b779f3adff71b72cd895916108fe73406331a7b2c2ef2",
+      "first_available_snapshot": "2013-01-02",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DTE",
+      "status": "aligned",
+      "snapshot_sha256": "f6906077fff7d44995c46c6d8e4aadfad587e235c8fed8024df544a99c7641eb",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DUK",
+      "status": "aligned",
+      "snapshot_sha256": "b548a091543195a302e1d8a843427b35d4d7f91eba8564fba91a4d9f3798b318",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DVA",
+      "status": "aligned",
+      "snapshot_sha256": "a76f1703d2a8a3b5c0bea70bbd1a3f804390527a994a99d233d7ba66ee5bb65b",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DVN",
+      "status": "aligned",
+      "snapshot_sha256": "202b16c9474aaf57d8373882de7bea2ac9cfe1fac7513649facbfd69aeb5145f",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "DXCM",
+      "status": "aligned",
+      "snapshot_sha256": "49725d71a89f16cc49e3b19bafb00e6da7ebd5ec49b7936b7f95f1b7089639f3",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EBAY",
+      "status": "aligned",
+      "snapshot_sha256": "01346c96455d064cbb318de1200f6415e460c84ad7eb80d0612b437243826262",
+      "first_available_snapshot": "2013-02-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ECL",
+      "status": "aligned",
+      "snapshot_sha256": "97f10d0112c36b6b160ba20e027fcd3d230749e4b9c5d697488476152007d621",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ED",
+      "status": "aligned",
+      "snapshot_sha256": "f75d654a35cf3cef6859abc6be342cd45a0d1fae432c6b8624f698e3f178083d",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EFX",
+      "status": "aligned",
+      "snapshot_sha256": "b702ea2777affeef1548a8f39ff458b9b7078bd582de370416f88b9b4ebd05c1",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EIX",
+      "status": "aligned",
+      "snapshot_sha256": "717ddc7e1e749a69f007ddea5e592673042157a4f10cf672c59d441f92a6b391",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EL",
+      "status": "aligned",
+      "snapshot_sha256": "e5da351ec7b2969ba7d1360d39165171c3ac7820e8b773a97d1a64460a79fe46",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ELV",
+      "status": "aligned",
+      "snapshot_sha256": "43743c452db60981aed37302b315b53ee1efe071a03e74eabece99dc93f7fcb3",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EME",
+      "status": "aligned",
+      "snapshot_sha256": "6ee300b61d011968c1a00b571c91d958644908d0b7b6fd55bdeb0b6e77870294",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EMR",
+      "status": "aligned",
+      "snapshot_sha256": "d4464beee0e335f2e0fc1580021ea05c72b2d03d10b21a7fef922caffc2803fb",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EOG",
+      "status": "aligned",
+      "snapshot_sha256": "d52e9fbd55b47e2c5e0933ceb72ca3317f597829dc9c0331d48d43dd7ff27584",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EPAM",
+      "status": "aligned",
+      "snapshot_sha256": "46bcadc5a7398795ced6a5cd9ea81c21473efc4e63eb2a022a2789147fa840f4",
+      "first_available_snapshot": "2013-03-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EQIX",
+      "status": "aligned",
+      "snapshot_sha256": "44793eb5c0e00c250d888a1be5ee55dcdef2041a8f9b4b9dae3de4af9888962f",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EQT",
+      "status": "aligned",
+      "snapshot_sha256": "0bce51785117c673539e03d4028fdc7e1da833da1ca64039f3e1264553902956",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ES",
+      "status": "aligned",
+      "snapshot_sha256": "05cd0d02dac28d2d388ca18b5e782a665090cd9c3988e5ff402b90ff20b07eec",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ESS",
+      "status": "aligned",
+      "snapshot_sha256": "25a48e6568f46058a0e1b5f3d62280db7a32090f8f274843aa88e6f425ce383b",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ETN",
+      "status": "aligned",
+      "snapshot_sha256": "8c60999af7af6cd30035aeffe0e03031b1f747c7d6440d8ebb262d01710e8d02",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ETR",
+      "status": "aligned",
+      "snapshot_sha256": "e5877b050fccd3ca8c542e465f522054624b8b16b18583fe35e7d0f59e9c3443",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EVRG",
+      "status": "aligned",
+      "snapshot_sha256": "a812c995adb3ce6ce24f09a1826701ec79115e540feee458ef572583d5ba550e",
+      "first_available_snapshot": "2018-08-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EW",
+      "status": "aligned",
+      "snapshot_sha256": "582e08bebfa6f8ee4aa4337fa395ce8ed595062f709632b0ee4e7f003d740a0e",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EXC",
+      "status": "aligned",
+      "snapshot_sha256": "d62a72376a7fcc771ff305894acb48673b8a835f32b840950134fc8b49f386e6",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EXE",
+      "status": "aligned",
+      "snapshot_sha256": "bb1189a0ccd60fb918270e543f2252c4f6affa9ac27f30d49ac4d863498f4ee2",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2021-02-10",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EXPD",
+      "status": "aligned",
+      "snapshot_sha256": "d16cb7aa6cbb8a48a170b8bb275122f5094a6d02fbab780581ea03a2a70a966f",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EXPE",
+      "status": "aligned",
+      "snapshot_sha256": "b511b09bc592ad52b4dfc370cf70b590a51ed801f2d7627629b5f962d2cde33b",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "EXR",
+      "status": "aligned",
+      "snapshot_sha256": "fed3daac772b5de7ce64d4f6ab936ee7ae34b8ae8c9111b3f2aef3cc1d8ab7c6",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "F",
+      "status": "aligned",
+      "snapshot_sha256": "14be9c3c8f173d72749609eb3629254a6caa402286be4ba5d453cf0e1c5e3a5e",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FANG",
+      "status": "aligned",
+      "snapshot_sha256": "e3c72060a2ac25f1f411a88b1c558a4338ed0eab479ca47e5daa1b1319c8b62b",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FAST",
+      "status": "aligned",
+      "snapshot_sha256": "97ce32445d82716a3093ae419a0c4f1295f040f43e5b75c72f91048bba49e578",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FCX",
+      "status": "aligned",
+      "snapshot_sha256": "160ca2c2da33a15a71aadda6b8eb1906d49b33181c2c9eea94a2068157dc1aae",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FDX",
+      "status": "aligned",
+      "snapshot_sha256": "09c65b3126e2dcdcd8ff1c30df111dfbed392e647b6a69409d3156ae3b8a4a14",
+      "first_available_snapshot": "2013-03-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FE",
+      "status": "aligned",
+      "snapshot_sha256": "a887d43d0a443ced9709ab0625dd43218fb33a7aeed583a8b7b771ca5189e595",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FFIV",
+      "status": "aligned",
+      "snapshot_sha256": "d19121ffb3a14847e542386b15fbb653e92e251e4ce457360f1ba969ef5b43d2",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FICO",
+      "status": "aligned",
+      "snapshot_sha256": "b51cd8778f4aaaf46384f07a8c777bb73a70ef86852b98bc6daa6cf8673d5f1b",
+      "first_available_snapshot": "2013-01-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FIX",
+      "status": "aligned",
+      "snapshot_sha256": "45381e4dd96609bc6a8fddf54ff8925d7b77adbffe2c5c028a2c6fb26f14fc0d",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FOX",
+      "status": "aligned",
+      "snapshot_sha256": "57e0771e760ff04d2cdd14a25f7b6f8daa60d672d8350b53f2f9a5ac9a808495",
+      "first_available_snapshot": "2019-03-18",
+      "market_first_date": "2019-03-13",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FRT",
+      "status": "aligned",
+      "snapshot_sha256": "dc5daefa4dedb9f5d1a245ea286492ace3cd2152183724902908ba525468f089",
+      "first_available_snapshot": "2013-02-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FSLR",
+      "status": "aligned",
+      "snapshot_sha256": "2a564da3d20b68eefe9fad4ba4dfc34bda6ce3cbcf103089e4514d9b98a3e905",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FTNT",
+      "status": "aligned",
+      "snapshot_sha256": "a436f6ddee928534d79c1547c101da06e509edec19aee1b7ec261e3160af88ef",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "FTV",
+      "status": "aligned",
+      "snapshot_sha256": "5dfc19000d897e0e8c601747bf40de51970fb9a8d521f18e6f6807b8c53ed192",
+      "first_available_snapshot": "2016-08-02",
+      "market_first_date": "2016-07-05",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GD",
+      "status": "aligned",
+      "snapshot_sha256": "01301b391dfbc6af08d4709d1721a0b874d9f27c21f5056e130d6437d27fc8e2",
+      "first_available_snapshot": "2013-02-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GDDY",
+      "status": "aligned",
+      "snapshot_sha256": "ccfe3c0301626ff149befaad8f76d9994ebbdf7b6506fc768482b9cd2df4f256",
+      "first_available_snapshot": "2015-08-06",
+      "market_first_date": "2015-03-31",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GE",
+      "status": "aligned",
+      "snapshot_sha256": "61917380b24aacf48996d060de78188996598d98a31456054b996ccc3b1b7de8",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GEHC",
+      "status": "aligned",
+      "snapshot_sha256": "b054236b8c96079b6dffe1f7af441572b59ab93522c8fcace5db771bf8b073b5",
+      "first_available_snapshot": "2023-04-25",
+      "market_first_date": "2022-12-15",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GEN",
+      "status": "aligned",
+      "snapshot_sha256": "2cd6e0bfbc9a41481866537ee447110a6dd79d8fd26c03e5168f355357d60793",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GEV",
+      "status": "aligned",
+      "snapshot_sha256": "84337adf3d4d9652f324d1bec306d4d03f671ef3e15e4e8539dc7d53b3993d3a",
+      "first_available_snapshot": "2024-04-30",
+      "market_first_date": "2024-03-27",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GILD",
+      "status": "aligned",
+      "snapshot_sha256": "352374f9b138be43d040e125ef9d168ae7e13dcd50f3a1438ccc8f2ad07092e2",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GIS",
+      "status": "aligned",
+      "snapshot_sha256": "2489b630c193b0592150853fa2ea16eb497f2179f6b56ef6320d32f0994e50d4",
+      "first_available_snapshot": "2013-03-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GLW",
+      "status": "aligned",
+      "snapshot_sha256": "a62aca703a19a91f46d28efae6b326eac7ce2eed7ffcf021973853ab94acc303",
+      "first_available_snapshot": "2013-02-13",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GM",
+      "status": "aligned",
+      "snapshot_sha256": "186b9770c3576ffce37260f6e3c234a86da17d545b73b9532254db24a7c1922e",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GNRC",
+      "status": "aligned",
+      "snapshot_sha256": "3fb1dc5cb19680b7433cca559485e0396016366912143deaa9783394df1e58cc",
+      "first_available_snapshot": "2013-03-13",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GOOG",
+      "status": "aligned",
+      "snapshot_sha256": "f4ab826fd54714a8381b310842671990852d8977e0883849bbaec430d6d8f4a5",
+      "first_available_snapshot": "2015-10-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GPC",
+      "status": "aligned",
+      "snapshot_sha256": "9123bdede79a7dae3a5596f7466d089973d0df17362ad11563883482cde49c71",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GRMN",
+      "status": "aligned",
+      "snapshot_sha256": "6795bc9447431612eb7f4ce0b9ce0f2cefb07d67b55c336f584757868088f963",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "GWW",
+      "status": "aligned",
+      "snapshot_sha256": "5d35ba1f3259c8350e2c08f580847da5c225c1a7b0f3dc4a35d1698a65fcf5e9",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HAL",
+      "status": "aligned",
+      "snapshot_sha256": "858a52efe126d53f23fd4d47b7cf5a3c797db74b0ff9a5e381753449eefe8c2c",
+      "first_available_snapshot": "2013-02-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HAS",
+      "status": "aligned",
+      "snapshot_sha256": "3e8dfbf5f2b278380c6881a7d19c9bd39f6a794cee16fe3f4c48f816545fd752",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HCA",
+      "status": "aligned",
+      "snapshot_sha256": "2367d08a451da952b1b085a65853e49e164ccf34a1b124b4eb0dfa4551ba903e",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HD",
+      "status": "aligned",
+      "snapshot_sha256": "728f98abffce195e18739da64fc4bd62c25a1c55546eea0ec9192ec0c3219263",
+      "first_available_snapshot": "2013-03-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HII",
+      "status": "aligned",
+      "snapshot_sha256": "f0b9d7648c8a30777db51706c293446231f582c4fc566846e081b9591db0a4a7",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HLT",
+      "status": "aligned",
+      "snapshot_sha256": "b8c0df5c76cfb64a969264eec266136030553186ce494be0cc8320c458cf124c",
+      "first_available_snapshot": "2014-05-09",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HON",
+      "status": "aligned",
+      "snapshot_sha256": "15995ee6bcbf5282c541dca7c22bb641dbb9f3f97f1c1ea49680f2f1a5a8fe5d",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HPE",
+      "status": "aligned",
+      "snapshot_sha256": "030e891c21abb3c088e52137c9c6c27ff8f7a9f8d6b88717e22ac38ab4c5eac7",
+      "first_available_snapshot": "2015-12-17",
+      "market_first_date": "2015-10-19",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HPQ",
+      "status": "aligned",
+      "snapshot_sha256": "badd218a8ba9f9da1b5133ffa3a55e69c1bb5f9c419e514232c02741d48eeb72",
+      "first_available_snapshot": "2013-03-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HRL",
+      "status": "aligned",
+      "snapshot_sha256": "9c641a93f5510d2be40ca93faaa212e2b2846bce842fb4377376b8c2185cb8ee",
+      "first_available_snapshot": "2013-03-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HSIC",
+      "status": "aligned",
+      "snapshot_sha256": "704e24bac2c5fb8d9d4d9a6a891aaf80b34636809e200c7ed9fd18422d491961",
+      "first_available_snapshot": "2013-02-13",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HST",
+      "status": "aligned",
+      "snapshot_sha256": "689f75a6dfb88b67305129cf2e8e3409a87b979d5487e9ffc0b8495c08dfa1d2",
+      "first_available_snapshot": "2014-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HSY",
+      "status": "aligned",
+      "snapshot_sha256": "5f1dbe888a8a0f9af946339340f886b26459ae73cac1241422e4723163650dc3",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HUBB",
+      "status": "aligned",
+      "snapshot_sha256": "a3cff03b3ccbabf73ee50aa522aca48d85a68371fd425c869dd94bfda7cb37bc",
+      "first_available_snapshot": "2013-02-13",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HUM",
+      "status": "aligned",
+      "snapshot_sha256": "6693ee6fdf906428d84ac71a255d5cda4003b3ad7c1ec3ee0b1add8c111e3390",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "HWM",
+      "status": "aligned",
+      "snapshot_sha256": "266ad95f9a82474f4ee10e01e1be767c8c7f9a08465ba9074d50eb4456cef55e",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2016-11-01",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IBM",
+      "status": "aligned",
+      "snapshot_sha256": "8f10d2225f18b0290baff7f9a0a41bbd8737fc137f2a8c8be37b4824de9c003f",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IDXX",
+      "status": "aligned",
+      "snapshot_sha256": "2107a6107550ed88f5ad4c214cdb42cb3fe10c7ac68e64164e1e250079b024bc",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IEX",
+      "status": "aligned",
+      "snapshot_sha256": "a2f195b16a20cf36c751ce70a43ce2a84f557e4bcb003b567a4f823ecb3516f1",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IFF",
+      "status": "aligned",
+      "snapshot_sha256": "bd6a5cd18b830881284786493f4756e618e88c85a24e1c77d9f6958a3a1a2b88",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "INCY",
+      "status": "aligned",
+      "snapshot_sha256": "adf9bafa61a0cb6aac4a38182cd3c24a0f158aeb2e392678447be06c085480b2",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "INTC",
+      "status": "aligned",
+      "snapshot_sha256": "a2ef91824f6f7efc814e03ff39e5f63d6a38ae4ade27d922e22e09ead141ccfd",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "INTU",
+      "status": "aligned",
+      "snapshot_sha256": "9f328d259254edf10a069c1f318ca2afdfdb89bdb5a38303d099ce0dc0377e15",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "INVH",
+      "status": "aligned",
+      "snapshot_sha256": "15fc7a820f772b6a11ef5f48b6e13fcecba160cb4a74a73e7fa4e17a1aaf1f06",
+      "first_available_snapshot": "2017-05-12",
+      "market_first_date": "2017-02-01",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IP",
+      "status": "aligned",
+      "snapshot_sha256": "e87e3111f5b9f55414b1bd4527aaf4dde6a1f01bb93b9f91f91850f321d60326",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IQV",
+      "status": "aligned",
+      "snapshot_sha256": "6756ddea651fba8ee621cb5faadde775e6a2211a1fb3f73ae04fb5d8b4b7b5b5",
+      "first_available_snapshot": "2013-05-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IR",
+      "status": "aligned",
+      "snapshot_sha256": "412f3fe56a77de91c8967f9b6d3660fe8280079b72871e782fcf240a7315b329",
+      "first_available_snapshot": "2017-08-04",
+      "market_first_date": "2017-05-12",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IRM",
+      "status": "aligned",
+      "snapshot_sha256": "b2b2437db0c8127c23a5832f40418b9804060939b13c28031d797ec73370f5bc",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ISRG",
+      "status": "aligned",
+      "snapshot_sha256": "c45722297292962703eea50e7b6587029c433079b5545dc8d0842435db1a2132",
+      "first_available_snapshot": "2013-02-04",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "IT",
+      "status": "aligned",
+      "snapshot_sha256": "82ff208269ac95f629345209e593b86b267d087b15334dcf113bc032a0d8fa8f",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ITW",
+      "status": "aligned",
+      "snapshot_sha256": "87085f2d42f82b1403d4ef019f3a7c06f352cee5a37055b351cec9039ec31c8a",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "J",
+      "status": "aligned",
+      "snapshot_sha256": "cd651f991e1a792aa95af303220d3b68f8214ac965435ed18519d20909b45400",
+      "first_available_snapshot": "2013-01-24",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "JBHT",
+      "status": "aligned",
+      "snapshot_sha256": "88a39a5142002723e816c7bf4042d7ef60cde5e58487b220bd089a1b7fa9538c",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "JBL",
+      "status": "aligned",
+      "snapshot_sha256": "e8f3b38c3d55cd547e2ca52c1b583ea51db59d3dc639cda2c611966ce985d665",
+      "first_available_snapshot": "2013-01-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "JCI",
+      "status": "aligned",
+      "snapshot_sha256": "9a41226f99601b17f48719e7297b7fa4caa3b371d197282e2523354b7475e07c",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "JNJ",
+      "status": "aligned",
+      "snapshot_sha256": "223aea28ec25395f592b7c87f2e32b11ff38e79297e3283349988f3c3b5133c9",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KDP",
+      "status": "aligned",
+      "snapshot_sha256": "54306b8bcc08c3424d73786f206b2aeef43c4636a99faf49c8792e67dcdf2292",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KEYS",
+      "status": "aligned",
+      "snapshot_sha256": "27c6a0fa45562337ff1bd9d29d4dadc66b35b0026b72140d26ccd4641a12d90a",
+      "first_available_snapshot": "2015-03-05",
+      "market_first_date": "2014-10-20",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KHC",
+      "status": "aligned",
+      "snapshot_sha256": "86eab35705384a5e75a2cfd75146bbf90c9c67ac4be5ad84d389e7513949019e",
+      "first_available_snapshot": "2015-08-10",
+      "market_first_date": "2015-07-06",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KIM",
+      "status": "aligned",
+      "snapshot_sha256": "2132c59dd39cc62d84ca06f96e454558708751c83645e958c7c29ee8fa09f3ef",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KLAC",
+      "status": "aligned",
+      "snapshot_sha256": "2d37be85e45103f83b1c766e72dc4d8b0d70238f824c19ca1c2ab3775358a027",
+      "first_available_snapshot": "2013-01-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KMB",
+      "status": "aligned",
+      "snapshot_sha256": "5d33cc0be667358ab47c933c87b5373a5532f5445f79108ebf31002d5deac71b",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KMI",
+      "status": "aligned",
+      "snapshot_sha256": "5391e2a39d7d61250cb1d1cdc19957d9b39ba5532a12bcbe830e4c9c0cd49a86",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KO",
+      "status": "aligned",
+      "snapshot_sha256": "1ff11ae82374c2c706f4f273658cafa77e24679534334a9c54122334d52aa0cb",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "KR",
+      "status": "aligned",
+      "snapshot_sha256": "5d4b907e0b95d988d9c17e531ae17bbe85871fe6c079bd59df16eb46ed4ff609",
+      "first_available_snapshot": "2013-04-02",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LDOS",
+      "status": "aligned",
+      "snapshot_sha256": "3e3d60dec98961780eb05b4bd09a98386823c4ae9b11e37b56190f7b8d3a2b81",
+      "first_available_snapshot": "2013-03-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LEN",
+      "status": "aligned",
+      "snapshot_sha256": "aa4ede9dfda347076babc7501351f4759f22064e0b87d35ee4b5020926a73fac",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LH",
+      "status": "aligned",
+      "snapshot_sha256": "b8b9b76eac3aaf5265f273f56c0193d3816153f826b91efa69b806516a0072cf",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LHX",
+      "status": "aligned",
+      "snapshot_sha256": "d9728dc7fe62c3f6c9a84893ecf27c6680909ebd9a6dd011df102c8d3ffb44e6",
+      "first_available_snapshot": "2013-01-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LII",
+      "status": "aligned",
+      "snapshot_sha256": "662e940529eafc9c9500de23d4918086c7e096f65513bccc4df9c5ec89ccc114",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LIN",
+      "status": "aligned",
+      "snapshot_sha256": "3d045c727e9add50132c8ad416c779b53bbbc6a5def40c0822158f76802d4bcc",
+      "first_available_snapshot": "2017-10-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LLY",
+      "status": "aligned",
+      "snapshot_sha256": "21e929454283d5f71136ba37ad40bb1a88be9fce4220c829f68146193320afcc",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LMT",
+      "status": "aligned",
+      "snapshot_sha256": "397ec83649048ce05905b5ea8728fbd4c6089826267d28929944e107660e910f",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LNT",
+      "status": "aligned",
+      "snapshot_sha256": "101d5393a2a756550021bf5d87b282378711271f6f3c2dac9879684dd59860f6",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LOW",
+      "status": "aligned",
+      "snapshot_sha256": "aafb96e87d292b17dd80eef2849b7ae85a91bee40e117309d6d267105207694a",
+      "first_available_snapshot": "2013-04-02",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LRCX",
+      "status": "aligned",
+      "snapshot_sha256": "8c6701e2231122b3a844ea2dde7cb50d48a0d131d485e8afd35377a017e7d2c4",
+      "first_available_snapshot": "2013-01-31",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LULU",
+      "status": "aligned",
+      "snapshot_sha256": "8675bce6e49af89c2d7d9bda285ffc0b418443168d421e623723309d887dedbb",
+      "first_available_snapshot": "2013-03-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LUV",
+      "status": "aligned",
+      "snapshot_sha256": "a1160aef95a5d41a74696063ae5eaeea95aa6a854e8aca0f1aeced28050896bf",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LVS",
+      "status": "aligned",
+      "snapshot_sha256": "2ef08630c0bb255807b1ba13af6fee5089398713d97f835d2539d8bfe56c4b73",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LW",
+      "status": "aligned",
+      "snapshot_sha256": "6e618cb35ee2ea94b0eb786e52c0c3b394da8d712ede11a5954b3326a477e78e",
+      "first_available_snapshot": "2017-01-10",
+      "market_first_date": "2016-11-10",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LYB",
+      "status": "aligned",
+      "snapshot_sha256": "50c889aaf35bd7081def0b4f300b1fd01ea76ef265f9bf5789230653874c9613",
+      "first_available_snapshot": "2013-02-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "LYV",
+      "status": "aligned",
+      "snapshot_sha256": "81c61ff4cc3638f26631b32cb99e3d9d1ab85afe25fcc74d8a20fa027f286695",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MAA",
+      "status": "aligned",
+      "snapshot_sha256": "5af9e927eafb182f7791f30a050841be286f8a41aeb4dd82180446823e84b185",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MAR",
+      "status": "aligned",
+      "snapshot_sha256": "d120b8dba35b9285afc39bd350e9c0e602624f4bd39e1752238d8d29e5ff214f",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MAS",
+      "status": "aligned",
+      "snapshot_sha256": "93370e826b492252783b8cddf379546df01e54114c6ea4567eab5e9b68e9d242",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MCD",
+      "status": "aligned",
+      "snapshot_sha256": "fe76eb145f529910d7bbeabe71c0e72d5972f65d0c8655582166b096b2b226e8",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MCHP",
+      "status": "aligned",
+      "snapshot_sha256": "16916c56dea6af3b03bcb9f168ecec184918b845cbf126a9f0699804e0e2d813",
+      "first_available_snapshot": "2013-02-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MCK",
+      "status": "aligned",
+      "snapshot_sha256": "32fe098f9c64a6543670d3a4778aef18ecbb1de8a6cb5631e10f12a85c1c4fa0",
+      "first_available_snapshot": "2013-01-31",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MDLZ",
+      "status": "aligned",
+      "snapshot_sha256": "e7428857d60dc2548b95b3bf952366b51ef884cbd267b7983ebca652bf2cc138",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MDT",
+      "status": "aligned",
+      "snapshot_sha256": "6fa17ceb28b02282bc1df711d79ec5bed0e586a7072d69fa1eb7a8990fd56318",
+      "first_available_snapshot": "2015-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "META",
+      "status": "aligned",
+      "snapshot_sha256": "6c337ea9b4bb92219e10591b8532867fb2ea43cab3f05ca1f2c952ed5b24b039",
+      "first_available_snapshot": "2013-02-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MGM",
+      "status": "aligned",
+      "snapshot_sha256": "2a862fe4802f657602c13419d0f350d9530f41a441dcf5bdd7f35e38363423d7",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MKC",
+      "status": "aligned",
+      "snapshot_sha256": "c46b3e90eb2bbbfdfcf62c67041a860eccb33a7b8d70304ae298f473d4ac0339",
+      "first_available_snapshot": "2013-01-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MLM",
+      "status": "aligned",
+      "snapshot_sha256": "272789b1a349b022d9d2ded2ea7f7b584b0e1c5d78513904a290afe3890833c3",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MMM",
+      "status": "aligned",
+      "snapshot_sha256": "3d4af125012308d486d9e6f060796fdb0b4200e8cf55996ed4d03c90e1151f30",
+      "first_available_snapshot": "2013-02-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MNST",
+      "status": "aligned",
+      "snapshot_sha256": "a5192bd367cbe58921726e346350891a938bd907435a730061a1193d30b3f3a7",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MO",
+      "status": "aligned",
+      "snapshot_sha256": "e1479b30c22573d59f2e16ae5b9d05ff628a148e58e20140bb7358fa578ba84f",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MOH",
+      "status": "aligned",
+      "snapshot_sha256": "3a1a80a2ce276fd0aed41de1d31bceba88cab2a9ffffbff2ade1fbb6658920c3",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MOS",
+      "status": "aligned",
+      "snapshot_sha256": "7243602398374acc3144b2e09ea8ed15dad542c80b02845844afdda4d49ed2c2",
+      "first_available_snapshot": "2013-01-04",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MPC",
+      "status": "aligned",
+      "snapshot_sha256": "a9bf195b74eca94544ef4436f3ce73a60f8f80c52d3c53f86aec2bb35a700627",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MPWR",
+      "status": "aligned",
+      "snapshot_sha256": "cd49b888a6571b482a5ac9220fd1d283d72f289e433d4db03ab65f2b4401a179",
+      "first_available_snapshot": "2013-03-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MRK",
+      "status": "aligned",
+      "snapshot_sha256": "987141179874ff2b4f26a0b4c617e9f28244bc38f9a1133022eb95f78900d742",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MRNA",
+      "status": "aligned",
+      "snapshot_sha256": "79171070407597d7169dbb29d2253e1b49d32602f170e70b92f63a218117ef3e",
+      "first_available_snapshot": "2019-03-13",
+      "market_first_date": "2018-12-07",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MSFT",
+      "status": "aligned",
+      "snapshot_sha256": "e276aa4de663cb49e10c99e7c1842eb09d674379cd69f53086ceb7b3ce2b8b7d",
+      "first_available_snapshot": "2013-01-24",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MSI",
+      "status": "aligned",
+      "snapshot_sha256": "585b85048059da7364d7af8d0c184bb6bfbfa769c1c235763b83beff650aa23e",
+      "first_available_snapshot": "2013-02-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MTCH",
+      "status": "aligned",
+      "snapshot_sha256": "ad218ee8a523221463f4dd8b5aa739ca91a8a96824edefaf08fc6428602b6923",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MTD",
+      "status": "aligned",
+      "snapshot_sha256": "c7d527f587da493f545a971d7b0b28024b1ab9a7a6b75591757171b74a5d8746",
+      "first_available_snapshot": "2013-02-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "MU",
+      "status": "aligned",
+      "snapshot_sha256": "b9756f53efc62d3df753e5eb0603130f0e3de66cda468485d4579bb27d35e0c1",
+      "first_available_snapshot": "2013-01-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NCLH",
+      "status": "aligned",
+      "snapshot_sha256": "714e41d897512846c241e0b0694f42eb9859ffa08b32a5d4a97a1ae5c2969ee9",
+      "first_available_snapshot": "2013-05-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NDSN",
+      "status": "aligned",
+      "snapshot_sha256": "27b314e650df3e8e3770683423917e77e6e17e5f525a680dd27f17afb4bf7f24",
+      "first_available_snapshot": "2013-03-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NEE",
+      "status": "aligned",
+      "snapshot_sha256": "67ea9a1198e358390df132e4dbe89ddda699ee8e7c83f4b9f064cd52c656837f",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NEM",
+      "status": "aligned",
+      "snapshot_sha256": "fbd66b05fcb9f56becfdeced344e69809a929423d00d780fef7d64c7d6957c4d",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NFLX",
+      "status": "aligned",
+      "snapshot_sha256": "be9c2a8ab53d63b7bd7f50c8efc551cb84150cc5e9d3da88c40c4d2758b3dba5",
+      "first_available_snapshot": "2013-02-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NI",
+      "status": "aligned",
+      "snapshot_sha256": "134a38da759641657650b3ea92c9ff932037e8617c649c801e9714887cb65a3d",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NKE",
+      "status": "aligned",
+      "snapshot_sha256": "95439a9bed3d2d8972555258f240716233dfc224fe7e4c581e948d43489adad9",
+      "first_available_snapshot": "2013-01-09",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NOC",
+      "status": "aligned",
+      "snapshot_sha256": "76f6a44596608eab75f45d551c7e5a8595f443e01d9442dfe1ac91093241fa16",
+      "first_available_snapshot": "2013-02-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NOW",
+      "status": "aligned",
+      "snapshot_sha256": "1f2f533f238e6468f96bde6666e2833f11b854774c75c501c9debb947ec01756",
+      "first_available_snapshot": "2013-03-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NRG",
+      "status": "aligned",
+      "snapshot_sha256": "34496466441b07993d21a4e810f0b421c02fee4b78f3d1c635d5ec9fc4e8ff09",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NSC",
+      "status": "aligned",
+      "snapshot_sha256": "59e0f402da8a8b36eabbced83f687d18229458059a09443f6d6781b9f5f5ae56",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NTAP",
+      "status": "aligned",
+      "snapshot_sha256": "618648a32d9d91000f4e75c8bd244f8fb8c796536b9c70c4b3c673bb7a83ba06",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NUE",
+      "status": "aligned",
+      "snapshot_sha256": "0cc67198d8ad0d82bb983319fd5f09f33541215775a8759ec85eb4b997830235",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NVDA",
+      "status": "aligned",
+      "snapshot_sha256": "14aa969b6de7cf49e5ab0307580ba004bb2a47e0d5a265676237944b96ae70cc",
+      "first_available_snapshot": "2013-03-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NVR",
+      "status": "aligned",
+      "snapshot_sha256": "41703f4148cd8a764c92c82d7f6f099ffb40dc39dd33d7b0ecb939a1a31df22e",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NWS",
+      "status": "aligned",
+      "snapshot_sha256": "3de301fb2de237fd086d251fc86ee8ac2334b53bd02e5f17ea0c2093b3f6515e",
+      "first_available_snapshot": "2013-11-12",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "NXPI",
+      "status": "aligned",
+      "snapshot_sha256": "e1d77cae97432269138776c8954cbcdb1f0c46425fa52de776ac7dbb2ff2c197",
+      "first_available_snapshot": "2019-10-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "O",
+      "status": "aligned",
+      "snapshot_sha256": "a4ec6a420d5f4e62e981c8dba9aeb914cdb14f98095c38ae01438d3d4f4d298f",
+      "first_available_snapshot": "2013-02-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ODFL",
+      "status": "aligned",
+      "snapshot_sha256": "c37400bbb5fc7af5123411af3f236f62891d6dd3a92b5275432de6ad53bbc081",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "OKE",
+      "status": "aligned",
+      "snapshot_sha256": "60812ae06f0d3b326d994ad047ee436d25279603135522a4e373195515d2ba8a",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "OMC",
+      "status": "aligned",
+      "snapshot_sha256": "dbe82d791f9412042a28fe7da8db89ae1b1ea79beef3ff4df2374e484ed16c45",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ON",
+      "status": "aligned",
+      "snapshot_sha256": "2bbf90c5d874d7dc3ebca8e6b91e9311c7b73c6188bac649780d5edf66177cf7",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ORCL",
+      "status": "aligned",
+      "snapshot_sha256": "f7c77f1a28ea29ca92efe22a25c84044c640e8d563ebe9b17f3a3ae5639e5f4c",
+      "first_available_snapshot": "2013-03-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ORLY",
+      "status": "aligned",
+      "snapshot_sha256": "6293352742dbd60ffa11c22f2ffe9f94e327342fb9dc25d5e48dd814b3deebfd",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "OTIS",
+      "status": "aligned",
+      "snapshot_sha256": "2dcf719589b07f194df5b7823fd6bd55290cee7ed9b14a9648919414e2b3d40d",
+      "first_available_snapshot": "2020-05-08",
+      "market_first_date": "2020-03-19",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "OXY",
+      "status": "aligned",
+      "snapshot_sha256": "a7fd3f6d9690801263ee96e734c817475596b7bba75ca1851d90982363629b20",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PANW",
+      "status": "aligned",
+      "snapshot_sha256": "6af5a3533b8719c427a2a78db00d09483bd714858e23d8e43165cf43bb8eb442",
+      "first_available_snapshot": "2013-03-04",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PAYC",
+      "status": "aligned",
+      "snapshot_sha256": "ee26bf7ae46e1c3a70984e9989b71d14249f5e84651913589e83eae397d172e0",
+      "first_available_snapshot": "2014-06-12",
+      "market_first_date": "2014-04-15",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PAYX",
+      "status": "aligned",
+      "snapshot_sha256": "26678846056c069c5e73b5928136eccb4454a53479e0ad01a22436b90d2bfcad",
+      "first_available_snapshot": "2013-03-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PCAR",
+      "status": "aligned",
+      "snapshot_sha256": "28251ce836543e0911a2e4858c5023cb7ce68ca5161a65430ca622bd1376439a",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PCG",
+      "status": "aligned",
+      "snapshot_sha256": "9e0f1c76f2a2562a233efb587191f80da8fe7b8caf4515a63022528686445fb6",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PEG",
+      "status": "aligned",
+      "snapshot_sha256": "fa556ca7ce2eb840a1a4752fcd2967e3d9f3c568914328957903cf99830c92e2",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PEP",
+      "status": "aligned",
+      "snapshot_sha256": "a7e81de20b9d4eef13d6e4614d58cd965f72a704c25aedd853b8ad56f6c5c378",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PFE",
+      "status": "aligned",
+      "snapshot_sha256": "52ea842c0914f83a0998e216025c25efa3c7227f4bb491e5c576646d6b8351da",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PG",
+      "status": "aligned",
+      "snapshot_sha256": "fc56632c8d1c4c566969ae8cc583ccb435de27610d030b0786d004948f5b0c7e",
+      "first_available_snapshot": "2013-01-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PH",
+      "status": "aligned",
+      "snapshot_sha256": "bc22e828b231b51fb0956053a6367f26da8fabca4a4092c3182deb03f7d262de",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PHM",
+      "status": "aligned",
+      "snapshot_sha256": "7268a48f69508ae606b5044061a50e82296e2f045de81711e372f68572f3e6cb",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PKG",
+      "status": "aligned",
+      "snapshot_sha256": "a60f38dfa500c9ff535b7d103b64f50f3daefb3842deff8aed78c777797f7f1b",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PLD",
+      "status": "aligned",
+      "snapshot_sha256": "026ebf3f6423e6bf84b7736e6beef2ae36013414196e2226d2fdc9aaff5cd378",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PLTR",
+      "status": "aligned",
+      "snapshot_sha256": "382d0810b4d152fee3ebeaf5432c3b9f982c253c5d006a0874385bffe1f0fc99",
+      "first_available_snapshot": "2020-11-13",
+      "market_first_date": "2020-09-30",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PM",
+      "status": "aligned",
+      "snapshot_sha256": "a974f559a910286326603b444a3a790225a3be52d2a4049130e7e4878fcff78a",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PNR",
+      "status": "aligned",
+      "snapshot_sha256": "dab4e98c9885fa2c864e61c889aba3597860e7aefa4cde9834a9e3ef472349e8",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PNW",
+      "status": "aligned",
+      "snapshot_sha256": "360ceda908876376ef87329922e5bd32153c611de7658201bdde1a59786cfefd",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PODD",
+      "status": "aligned",
+      "snapshot_sha256": "68aab3fc962e0d55d55c658bdfbf02a5650a8e1a0d1eb3069e19a3a9da97c055",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "POOL",
+      "status": "aligned",
+      "snapshot_sha256": "ee87e247d97fe4739ef11c39201afff979dd49f7e8de25d511ea5e29926f57dd",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PPG",
+      "status": "aligned",
+      "snapshot_sha256": "a02ffc9e45a4f4fe7b0a0bc7b11011513164e04c55df09f240d04cf89b4e6d81",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PPL",
+      "status": "aligned",
+      "snapshot_sha256": "6ae4c78bfba557f620e2a5072c805b7db96ae2fb2452a2f82d5f85844b82e9d0",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PSA",
+      "status": "aligned",
+      "snapshot_sha256": "679ab66c463995eb74f85c8c48b520c3353e67cfda87f0b7703aa66b678d2165",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PSX",
+      "status": "aligned",
+      "snapshot_sha256": "c1f28a31dd0ca6595f87dcf305fb1738cce911aadcfffe500f3fdc99b5546f21",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PTC",
+      "status": "aligned",
+      "snapshot_sha256": "af9b55b5dece66dd705919ea1eecac684ff4a5c5aea15b439979e9d7056ccd13",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "PWR",
+      "status": "aligned",
+      "snapshot_sha256": "3bed86a8e1317097e17c2a19cff5a6edb9259cfbc28e95b52c52ac48725fa162",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "Q",
+      "status": "aligned",
+      "snapshot_sha256": "229e411e2025cfdf71ff0c7f48f9ad2c1a70154b02587eae342807e4aad1f343",
+      "first_available_snapshot": "2025-11-18",
+      "market_first_date": "2025-10-27",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "QCOM",
+      "status": "aligned",
+      "snapshot_sha256": "3528c45f884c0c37156c6b08aa5422d57a299f3955d1e3e642d13aebc215324e",
+      "first_available_snapshot": "2013-01-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "RCL",
+      "status": "aligned",
+      "snapshot_sha256": "16a82ca7d8d27b02b1a98c45f3042c7328861eed23fc5ba8717643cce23cf566",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "REG",
+      "status": "aligned",
+      "snapshot_sha256": "051014a9411768ff042c8ac461d32c6713c25047d71284debfd8aee13670ef28",
+      "first_available_snapshot": "2017-05-10",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "REGN",
+      "status": "aligned",
+      "snapshot_sha256": "a46f8ec95a9ca6389ee789e30cfd18a784ec9a815532d8902537676aa6e6c6b7",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "RL",
+      "status": "aligned",
+      "snapshot_sha256": "fb52cbb056f0cc5ad75dd7cee65f0a2f385f8f8f9a4c62547acd2ef47c0345a8",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "RMD",
+      "status": "aligned",
+      "snapshot_sha256": "2de70f1989681f2bf59cb7f178cb8176e291ebbf1047b7af8aae44416440c43b",
+      "first_available_snapshot": "2013-01-31",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ROK",
+      "status": "aligned",
+      "snapshot_sha256": "bf1eb4330b10f6ae74df74bdd962b078e03f7fff96d42943487833531e8fe169",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ROL",
+      "status": "aligned",
+      "snapshot_sha256": "c305b1c3810752fe7ce052c4ce6495704315c65c6ecbcd2ea0f9f215921b05bb",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ROP",
+      "status": "aligned",
+      "snapshot_sha256": "f91ab5e6fc1a21805dfeb92f7b78666df605b865bafe435c7669679562fc11c8",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ROST",
+      "status": "aligned",
+      "snapshot_sha256": "206431440f3833bbc1dc6f28c5b1d639f21f65986eb7fa379c50c5a30958a49a",
+      "first_available_snapshot": "2013-04-02",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "RSG",
+      "status": "aligned",
+      "snapshot_sha256": "f475aecc266a988572914ef6ed22a598cd9d888e6f8eef19de7b1eae6d435490",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "RTX",
+      "status": "aligned",
+      "snapshot_sha256": "032bfefdd66ef7e3ecd17f3b01ef52fd43623c8782aba4232aaf09c55ac04dbe",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "RVTY",
+      "status": "aligned",
+      "snapshot_sha256": "7b0be1f3a0ade6cafaf084a53ae10046830839ed6ea891fa1d1d3a7dbffb7127",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SBAC",
+      "status": "aligned",
+      "snapshot_sha256": "f8b2b5cbff07436f7c5aeaddb81d888a122ab7893b086d4c51c87a25a3118e15",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SBUX",
+      "status": "aligned",
+      "snapshot_sha256": "c261a270e64874dc420f94f1bac3edee859e9c4d908a6b3684d29c5138091f58",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SHW",
+      "status": "aligned",
+      "snapshot_sha256": "c4678a1429460047ffa555cd6f977ece143679768ac4b847f7f50cc42c6eaf5c",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SJM",
+      "status": "aligned",
+      "snapshot_sha256": "b09199138b9c87f1d37aeca7bba68e9bd03b76fe76de9fa2ea3e9a90c3fa40ae",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SLB",
+      "status": "aligned",
+      "snapshot_sha256": "31ea99071988bc106bae99b7a25fe49e20cfd0d918b0a4aee826af3eef5372c3",
+      "first_available_snapshot": "2013-01-31",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SMCI",
+      "status": "aligned",
+      "snapshot_sha256": "e601ab7d57fdfdf95da86b30fd99475a3f2e057bf12fc4e9f3a4f310cb047f60",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SNA",
+      "status": "aligned",
+      "snapshot_sha256": "131b07242668654547f55daa8feb799b1122df6c28e78715f5464a0ebed5ac56",
+      "first_available_snapshot": "2013-02-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SNDK",
+      "status": "aligned",
+      "snapshot_sha256": "5513ba6f99e5ec0e01662fcc9ba75c15343efbd8dbe041589b52ef2b6d26f921",
+      "first_available_snapshot": "2025-03-07",
+      "market_first_date": "2025-02-13",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SNPS",
+      "status": "aligned",
+      "snapshot_sha256": "2e7db11545cba2dcb429ce5f1d19f8ee11c723ee7b1d9633bf5bf80e803247b5",
+      "first_available_snapshot": "2013-03-04",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SO",
+      "status": "aligned",
+      "snapshot_sha256": "21832096c0fd7a0c9e8c310bc2afeb5eaeb9d836ed797f73fb352f26ac5da829",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SOLV",
+      "status": "aligned",
+      "snapshot_sha256": "6085a9ba08040a17a3c87ee215f79ff7809b31e77e3387892a1d7eab9163981b",
+      "first_available_snapshot": "2024-05-10",
+      "market_first_date": "2024-03-26",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SPG",
+      "status": "aligned",
+      "snapshot_sha256": "5c9e13cb62dfbb811f380ae81e2e575af14476ab2d2c1aee72495338ad238821",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SRE",
+      "status": "aligned",
+      "snapshot_sha256": "dbb76994bf571ac52aa5e4d0eaff92b3f605c2d9d3ab33afd3e6ef4e74314547",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "STE",
+      "status": "aligned",
+      "snapshot_sha256": "abddc2ec36dabd4dc0685d2c7f2bb2b8e725e706b882da8bbdb34fcb08e62d6b",
+      "first_available_snapshot": "2019-05-30",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "STLD",
+      "status": "aligned",
+      "snapshot_sha256": "6d9dda0ba0dfdb923935e0fe4f20744019df4b754063fefa9c5303f335e30392",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "STX",
+      "status": "aligned",
+      "snapshot_sha256": "52daf480ab8cf982512e6a844ad35495dea3bb8346fc46fe94d07a9c9622c306",
+      "first_available_snapshot": "2013-01-29",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "STZ",
+      "status": "aligned",
+      "snapshot_sha256": "4b60be05db3f88087b788532c5ae5266f6806faee2f716abada9f52b80a2e9d1",
+      "first_available_snapshot": "2013-01-09",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SW",
+      "status": "aligned",
+      "snapshot_sha256": "2004cc17ea4f91a8989bdabd20d85cd080bb029b8e08290a668594c9b7dcf03e",
+      "first_available_snapshot": "2024-06-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SWK",
+      "status": "aligned",
+      "snapshot_sha256": "1cec21484a654d359e182063010adc7082e3b27c0f8b5f0731b94d855c0fd1d8",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SWKS",
+      "status": "aligned",
+      "snapshot_sha256": "7b72d8790847c797a71c31322e145c64ba8bbd4ad56447bdd8fe586f96cf94c1",
+      "first_available_snapshot": "2013-01-31",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SYK",
+      "status": "aligned",
+      "snapshot_sha256": "d98aef727b191468d8c6e51a2c2465c3404b975a1015cace12ed3b63ba4e5ef1",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "SYY",
+      "status": "aligned",
+      "snapshot_sha256": "9895f22e2b281e2d3de5402c363203ea68d067da2fede131a4a33a1219083baf",
+      "first_available_snapshot": "2013-02-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "T",
+      "status": "aligned",
+      "snapshot_sha256": "6cead64f13dc6dba7842035324198017f08ac5fb0f80e9b8688d464d0de7b060",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TAP",
+      "status": "aligned",
+      "snapshot_sha256": "0be06fb766a220b39a08a517447ceae4d2527f956a8715f51e4cbc48e27707b2",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TDG",
+      "status": "aligned",
+      "snapshot_sha256": "800e3c9f52e98f0bf23f44aaa5495e2e205c735c5fea18812888169727b91052",
+      "first_available_snapshot": "2013-02-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TDY",
+      "status": "aligned",
+      "snapshot_sha256": "54e014457c763d6d4b19dfd6a58a490fdc1288238685154a24d1bdaee66f9f24",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TECH",
+      "status": "aligned",
+      "snapshot_sha256": "ae33dbc5d71aacc6e0d0299a3ade82e539c0f59ac174b4fe319674e08e499a17",
+      "first_available_snapshot": "2013-02-11",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TEL",
+      "status": "aligned",
+      "snapshot_sha256": "d6fffcda61cfbb9e0964846c2f8e95894ab9daa8da657ac885c498727a1797f6",
+      "first_available_snapshot": "2013-01-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TER",
+      "status": "aligned",
+      "snapshot_sha256": "3bfec7825304357050daf30612c47d56d465e412292599bf27d07a9dfbfa57b8",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TGT",
+      "status": "aligned",
+      "snapshot_sha256": "fa52c026d8c72f345a294aed69a708cd818bbb8a93f5cbfb8275d19df6c222d5",
+      "first_available_snapshot": "2013-03-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TJX",
+      "status": "aligned",
+      "snapshot_sha256": "a1e994282213d8c5504eed13dba4a5140b9464934d4d81e061ebfaf58a3266e6",
+      "first_available_snapshot": "2013-04-02",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TKO",
+      "status": "aligned",
+      "snapshot_sha256": "dbbf7210d853f3b2f1db40fa29cf89ba72e6b3df08f5298dae8c6b50d99da13c",
+      "first_available_snapshot": "2023-11-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TMO",
+      "status": "aligned",
+      "snapshot_sha256": "95ac69f13c49d7b3c2ed5d65a1b888b05fbc24ff29c8fa8af1d8d72c82d0d691",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TMUS",
+      "status": "aligned",
+      "snapshot_sha256": "7cc0c67d00c53e2a46b17aeca8b336c86f69c838b227cba8bc9dd7209b197500",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TPL",
+      "status": "aligned",
+      "snapshot_sha256": "3d0b1fabaf8f5036d85bc3c08f51bcb37d9bd39538f637381c3e4034b1ff4f85",
+      "first_available_snapshot": "2021-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TPR",
+      "status": "aligned",
+      "snapshot_sha256": "c8929ac7392562653862f3dbefda1365cfebb61d9030cb4235bb56a16d0fbc0c",
+      "first_available_snapshot": "2013-02-05",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TRGP",
+      "status": "aligned",
+      "snapshot_sha256": "ce8dcd83b5e44c0cfb8099d7c913764d70fa40381868a3dd1a498396b5f6eb71",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TRMB",
+      "status": "aligned",
+      "snapshot_sha256": "1f19576f9af7836075fdfb6408db8b7f12dff3b4c9337bd5a485d74fb71d8095",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TSCO",
+      "status": "aligned",
+      "snapshot_sha256": "294f3a393f0d4792fa4cea1b811b7f79af6759a5044e61b0e25de39d9ff2cfe7",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TSLA",
+      "status": "aligned",
+      "snapshot_sha256": "ad10876d89fd050ca6e791e8d29a8472c9809530d0245e2407e2d2b2149e7548",
+      "first_available_snapshot": "2013-03-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TSN",
+      "status": "aligned",
+      "snapshot_sha256": "92fa488e1ab2ad0a379615f006526eb35c0d6419458381c5f3f13292e5db35e8",
+      "first_available_snapshot": "2013-02-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TT",
+      "status": "aligned",
+      "snapshot_sha256": "0187196f7149a4e2ad1cc2efe2a0a2ca7bd7ae76cef0e081a46b60f6c9db1187",
+      "first_available_snapshot": "2013-02-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TTD",
+      "status": "aligned",
+      "snapshot_sha256": "1e3081b855946696ebc880219d750c321ba5f3a8ffd22e86bd3cb2eb0a2cbfa3",
+      "first_available_snapshot": "2016-11-10",
+      "market_first_date": "2016-09-21",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TTWO",
+      "status": "aligned",
+      "snapshot_sha256": "8930e312f8915850a734ba3677e142eec6f17a91b9c9bcc5badd5ade2465a676",
+      "first_available_snapshot": "2013-02-06",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TXN",
+      "status": "aligned",
+      "snapshot_sha256": "a0dfd19a0d5a2bc22c7a1ed30c66172aef87e620ed7bb4416b33c00cd77e2c4c",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TXT",
+      "status": "aligned",
+      "snapshot_sha256": "08157a198315a370fbbaebee3fa429a1fc70bb9f779d1f4bdc4e61ff96acae28",
+      "first_available_snapshot": "2013-02-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "TYL",
+      "status": "aligned",
+      "snapshot_sha256": "08417337748f24dea73ad3f2ba93d932904cd22aa9500100233e959880299747",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UAL",
+      "status": "aligned",
+      "snapshot_sha256": "d6f1295d0556020d5a37ee5a7541c2d0c8a1fed09754462d285a2995c03453ef",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UBER",
+      "status": "aligned",
+      "snapshot_sha256": "38d161eceaf008dbaa4a8341f560e02e85e45e4a6131891d2f6c69837cf3f8fd",
+      "first_available_snapshot": "2019-06-04",
+      "market_first_date": "2019-05-10",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UDR",
+      "status": "aligned",
+      "snapshot_sha256": "299d64f98e056d341809e5262a16e789fe81c67aa74f6311b5fac674b72e2036",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UHS",
+      "status": "aligned",
+      "snapshot_sha256": "54861c604f56d80f79b062c9b3d0a86ce53864df352ed7285e4dd994316d9623",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ULTA",
+      "status": "aligned",
+      "snapshot_sha256": "aecb086c2ae5cc3401b07b23947d89e420ae1dfb2927011febc3fd7976e22d74",
+      "first_available_snapshot": "2013-04-03",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UNH",
+      "status": "aligned",
+      "snapshot_sha256": "bcddc9202a45491539e4265b6535042236aae030b415137900ad5de44bd306ba",
+      "first_available_snapshot": "2013-02-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UNP",
+      "status": "aligned",
+      "snapshot_sha256": "c0420bbb11956c524935942700c9f8d53cd9a71063f7f5ffd43e6cc67674626b",
+      "first_available_snapshot": "2013-02-08",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "UPS",
+      "status": "aligned",
+      "snapshot_sha256": "f7177156f315f10db7e271f5afee1f05f141e565bf76daaf23eb537842d92004",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "URI",
+      "status": "aligned",
+      "snapshot_sha256": "915f840ed9fa2831563bb14572784675e664d852a53aa4002d2903b4daad7bbc",
+      "first_available_snapshot": "2013-01-23",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VICI",
+      "status": "aligned",
+      "snapshot_sha256": "1d322f8ab6b3fced7052727cfde4e0bfc8d7c40a6198ee3e74efead246cde88e",
+      "first_available_snapshot": "2017-11-13",
+      "market_first_date": "2018-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VLO",
+      "status": "aligned",
+      "snapshot_sha256": "f66b5f99ae114e07b092413d37b10fd8781ffc5461fa0fa2782850da3cc5d1b6",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VLTO",
+      "status": "aligned",
+      "snapshot_sha256": "2a8889c240046bf2ed50584e339c0b558ce16af30e0e19d114127f0e8d6f108b",
+      "first_available_snapshot": "2023-10-26",
+      "market_first_date": "2023-10-04",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VMC",
+      "status": "aligned",
+      "snapshot_sha256": "e7e86d45aaf6ed9d6e024d439056e0ff415cf55e1ffdce40a9819eaf4fa08824",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VRSK",
+      "status": "aligned",
+      "snapshot_sha256": "f02b5aaf0de6e5a429228562a837c4f1c9b13110f837dc1b2bdf8a62d01b1789",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VRSN",
+      "status": "aligned",
+      "snapshot_sha256": "ff0fa8bc9f2deb7647fafac9e21e31f3dc922e05ebd907a29dafec483468f131",
+      "first_available_snapshot": "2013-02-28",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VRTX",
+      "status": "aligned",
+      "snapshot_sha256": "052fe9c8f7df880f5dd79e5e41c4e8e596aeaf8c98b590523b2fd8543315fe5b",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VST",
+      "status": "aligned",
+      "snapshot_sha256": "da68b81a957d10b25fb21e7989a953d96378a3cc8597a024de5fb884d80a08af",
+      "first_available_snapshot": "2017-05-18",
+      "market_first_date": "2016-10-05",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VTR",
+      "status": "aligned",
+      "snapshot_sha256": "dd98716ca6923ebc5b6bcdbf8adf64f566c0128c895db9d7c9f2cc310462a0fe",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VTRS",
+      "status": "aligned",
+      "snapshot_sha256": "cf63f164b0fa88bc2377646e61c8f551fdada390276d26e9e1c082e5ab9b1719",
+      "first_available_snapshot": "2020-05-07",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": true,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "VZ",
+      "status": "aligned",
+      "snapshot_sha256": "4e664a73215cb1f7b90799af1cfb1adc23c94f9c02e13b39f21554c3efe56c60",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WAB",
+      "status": "aligned",
+      "snapshot_sha256": "66dc0e3ae89b27198d6236400644c2ccfd46718cd867ac7d4008013bc8b3dd51",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WAT",
+      "status": "aligned",
+      "snapshot_sha256": "4b9cb8d547f734f4129a0f5a2bcab41d812e0e36f07eff73ecdfb1cf56f17d7c",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WDAY",
+      "status": "aligned",
+      "snapshot_sha256": "08bfed8c13b35eda40f6e5da8955868b90dc35118922122e4c3592515f2eef86",
+      "first_available_snapshot": "2013-03-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WDC",
+      "status": "aligned",
+      "snapshot_sha256": "cc1577aa3b8da342d1dc6889bed7166c35498052ab85c4210cdae0d35c1b8380",
+      "first_available_snapshot": "2013-02-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WEC",
+      "status": "aligned",
+      "snapshot_sha256": "e329428f72d94d40d743d8a205063e00e5e7a9d4de62866e459c627bf9b253a3",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WELL",
+      "status": "aligned",
+      "snapshot_sha256": "aa804d415a00672046d524130c9bb7a44a82bc5d2f13815a0a43c81b401c843c",
+      "first_available_snapshot": "2013-02-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WM",
+      "status": "aligned",
+      "snapshot_sha256": "1ef937a4dd07a1ec9d9adc26d846c97127af78252fe1429ea139a6d79fe19f16",
+      "first_available_snapshot": "2013-02-14",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WMB",
+      "status": "aligned",
+      "snapshot_sha256": "f9b6f098fb27935b6c167d2fefa39e883c80bc842ef263a6e70dbb733accf24c",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WMT",
+      "status": "aligned",
+      "snapshot_sha256": "ba55706351e46bfec47c427d494fc39a5b90afcecef90f0e911c6899cd38dddc",
+      "first_available_snapshot": "2013-03-26",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WSM",
+      "status": "aligned",
+      "snapshot_sha256": "e6cfa0d73c81d5a38aed6b19b0cdb33b726f5deef153e6b7b05212351cc4676d",
+      "first_available_snapshot": "2013-04-04",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WST",
+      "status": "aligned",
+      "snapshot_sha256": "afc3c7e8d1cd804a9303dc8eae8909af2d4d94ef3a6fbf4f2d146556211233ea",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WY",
+      "status": "aligned",
+      "snapshot_sha256": "5105fa22df13c66870adc6e2e930711090c35ae889433e081d73768c8ffe94f4",
+      "first_available_snapshot": "2013-02-19",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "WYNN",
+      "status": "aligned",
+      "snapshot_sha256": "5872286ae3dd02edcbc53f1ed668e0c02d4693c5b0992a376817a10b77d80403",
+      "first_available_snapshot": "2013-03-01",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "XEL",
+      "status": "aligned",
+      "snapshot_sha256": "a60e41d7c628dbbb3486152dd011fde058a14fead3af34454260f47f3faaa27f",
+      "first_available_snapshot": "2013-02-22",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "XOM",
+      "status": "aligned",
+      "snapshot_sha256": "fbbe0c83dde0f2af50a2c04bc406b07e8d8c3d8ce509f55c41fc312d795dcdd2",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "XYL",
+      "status": "aligned",
+      "snapshot_sha256": "c59710ee5adb525a5de69bce8c80b6498cfd39806a26db1aefdcc795a19a8b2d",
+      "first_available_snapshot": "2013-02-25",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "YUM",
+      "status": "aligned",
+      "snapshot_sha256": "1a425192ac7493e86ddc2d8420f1042749f7e562532e43ad5f0fa6fb2a2c5400",
+      "first_available_snapshot": "2013-02-20",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ZBH",
+      "status": "aligned",
+      "snapshot_sha256": "be1b87b355bc1da3a798bf5b79d44dc1c5002ecfd9b518a88841526c407111ea",
+      "first_available_snapshot": "2013-02-27",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ZBRA",
+      "status": "aligned",
+      "snapshot_sha256": "3f8a32d18bdcb5ee46ee0e4c3c1b971a9289f52e220cab524f4f3336b0fbe01b",
+      "first_available_snapshot": "2013-02-21",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    },
+    {
+      "ticker": "ZTS",
+      "status": "aligned",
+      "snapshot_sha256": "a47f4c374de827a811d0c670a07d504b204fbb619b9f8fe6683ee64adde5d4ba",
+      "first_available_snapshot": "2013-05-15",
+      "market_first_date": "2014-01-02",
+      "entity_history_review_flag": false,
+      "flag_interpretation": "Late supported data or entity transition; not proof of incorporation date. No CIK stitching performed."
+    }
+  ],
+  "scope": "All retained non-financial issuers, unchanged company roles and market eligibility. No complete-case deletion, custom-tag backfill, CIK stitching or financial-sector ratio assumptions. Original quantities remain in earlier datasets; V3 indicators are separately defined alternatives.",
+  "market_outcomes_2026_accessed": false
+}

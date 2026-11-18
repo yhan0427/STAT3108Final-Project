@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-11-18T04:16:00.192938+00:00",
+  "main_plan_sha256": "0bfae8d50deb5588686c38d380a7c6233f393554a070b49f3a7d6a57299ab566",
+  "reason": "All three primary Ridge variants select the largest predeclared alpha (10000) on validation. This separate sensitivity expands regularization to check for an artificially weak baseline; it does not replace or overwrite the primary frozen run.",
+  "alpha_grid": [
+    1.0,
+    100.0,
+    10000.0,
+    100000.0,
+    1000000.0
+  ],
+  "groups": [
+    "market",
+    "availability",
+    "financial"
+  ],
+  "selection": "Validation log-target MSE from non-held firms only; identical common sample/scalers and new grid across groups; no changes to LSTM budget or held-period dates.",
+  "timing": "Registered after inspecting primary validation alpha choices, before inspecting the financial experiment held-company scores. All periods/company cohorts remain development evidence.",
+  "market_outcomes_2026": "sealed"
+}

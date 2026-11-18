@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-18T04:53:51.227866+00:00",
+  "dataset_manifest_sha256": "bc9c4ffcb7297771295593073ae2ccd482820d0bdaa922324ad54fd61ce99e7c",
+  "comparisons": [
+    "filing_age-minus-market",
+    "availability-minus-filing_age",
+    "financial-minus-filing_age"
+  ],
+  "scope": "Supplementary age/metadata comparisons in the documented identity-spell sensitivity. Registered after previous precursor-reference results were inspected; conditional exploratory evidence, not new confirmation. No model refitting/tuning based on these comparisons.",
+  "blocks": [
+    20,
+    60
+  ],
+  "replicates": 1000,
+  "market_outcomes_2026": "sealed"
+}

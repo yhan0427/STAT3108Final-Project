@@ -1,0 +1,130 @@
+{
+  "built_utc": "2026-11-18T04:51:03.461777+00:00",
+  "parent_panel_sha256": "b8a9510f135fb3aaf672d59ee85143d8e75310a918b52a396179008727a9dacd",
+  "policy_sha256": "df6f4872566e84594ff13305e6651aaedc97885b323d47136004c71f4c2d6548",
+  "source_sha256": "178d8f358e8a75980442c34ba7ad6d66b753d12236a5a255cd82c309e331271e",
+  "panel_sha256": "8ca13dc7fcf76bb5f7877388919fb735af9518ff78a289898176cb7a76ad99a3",
+  "features": [
+    "parent_equity_to_assets",
+    "cash_to_assets",
+    "current_ratio",
+    "current_liabilities_to_assets",
+    "income_to_assets",
+    "cfo_to_assets",
+    "revenue_growth",
+    "filing_age_days"
+  ],
+  "retained_non_financial_firms": 415,
+  "market_rows": 1204414,
+  "counts": [
+    {
+      "role": "held_company",
+      "split": "test",
+      "firms_context60": 83,
+      "origins_context60": 39099,
+      "firms_context512": 80,
+      "origins_context512": 38480
+    },
+    {
+      "role": "held_company",
+      "split": "train",
+      "firms_context60": 80,
+      "origins_context60": 132089,
+      "firms_context512": 78,
+      "origins_context512": 109172
+    },
+    {
+      "role": "held_company",
+      "split": "validation",
+      "firms_context60": 80,
+      "origins_context60": 38400,
+      "firms_context512": 80,
+      "origins_context512": 38057
+    },
+    {
+      "role": "training_company",
+      "split": "test",
+      "firms_context60": 331,
+      "origins_context60": 158976,
+      "firms_context512": 330,
+      "origins_context512": 157949
+    },
+    {
+      "role": "training_company",
+      "split": "train",
+      "firms_context60": 327,
+      "origins_context60": 547522,
+      "firms_context512": 321,
+      "origins_context512": 454646
+    },
+    {
+      "role": "training_company",
+      "split": "validation",
+      "firms_context60": 329,
+      "origins_context60": 157431,
+      "firms_context512": 327,
+      "origins_context512": 155599
+    }
+  ],
+  "changes": [
+    {
+      "ticker": "MTCH",
+      "start": "2020-07-01",
+      "role": "training_company",
+      "excluded_origins_by_period": {
+        "train": 1502
+      },
+      "first_price": "2014-01-02",
+      "first_post_guard_origin": "2020-12-18",
+      "snapshot_sha256": "45bf70f45f40a185329385b9d816621f761141850130220d38e643164d17c24f",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/891103/000110465920080606/tm206790d25_8k.htm",
+        "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2020-109"
+      ]
+    },
+    {
+      "ticker": "DD",
+      "start": "2019-06-03",
+      "role": "training_company",
+      "excluded_origins_by_period": {
+        "train": 1229
+      },
+      "first_price": "2014-01-02",
+      "first_post_guard_origin": "2019-11-19",
+      "snapshot_sha256": "ff4d1633920c9c6f67c83f521a271f2b0def171797d632b24f7770fa71915fe3",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1666700/000119312519163322/d715311dex991.htm"
+      ]
+    },
+    {
+      "ticker": "SW",
+      "start": "2024-07-08",
+      "role": "held_company",
+      "excluded_origins_by_period": {
+        "train": 1725,
+        "validation": 480,
+        "test": 247
+      },
+      "first_price": "2014-01-02",
+      "first_post_guard_origin": "2024-12-24",
+      "snapshot_sha256": "ba620e7ad113444cb0a2d02af02dcc320c90abeb897655eab6b6366b9d59e828",
+      "sources": [
+        "https://www.smurfitkappa.com/us/newsroom/2024/smurfit-westrock-makes-its-debut-in-new-york-and-london"
+      ]
+    },
+    {
+      "ticker": "KHC",
+      "start": "2015-07-06",
+      "role": "training_company",
+      "excluded_origins_by_period": {},
+      "first_price": "2015-07-06",
+      "first_post_guard_origin": "2015-07-06",
+      "snapshot_sha256": "86eab35705384a5e75a2cfd75146bbf90c9c67ac4be5ad84d389e7513949019e",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1545158/000119312515244355/d36612dex991.htm"
+      ]
+    }
+  ],
+  "scope": "Conservative documented identity-spell sensitivity, not exhaustive entity certification. Raw and earlier predecessor-reference results preserved. No performance-based company replacement or date choice.",
+  "market_outcomes_2026_accessed": false
+}

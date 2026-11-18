@@ -1,0 +1,41 @@
+{
+  "registered_utc": "2026-11-18T04:50:58.836371+00:00",
+  "scope": "Conservative current-security/business-spell restrictions for documented transitions discovered during source QA; not an exhaustive corporate-action database or proof that every earlier vendor return is wrong. Earlier reference/predecessor-series results remain preserved. No outcomes used to choose boundaries.",
+  "rule": "Do not assign unverified predecessor market windows or pre-spell filings to the current-security multimodal primary study. Filter source disclosures by filing date, retaining later-disclosed comparative periods. If vendor history includes earlier-spell prices, require 119 prior price offsets for a60-by60-feature window,531 for512-rv20. IPO histories beginning at/aftertheboundary retain their original warm-up rules.",
+  "spells": {
+    "MTCH": {
+      "cik": 891103,
+      "start": "2020-07-01",
+      "reason": "Old IAC/old Match separation; new Match security/target business. Current CIK previously IAC; vendor history starts2014, beforeformerMatchIPO2015. Pretransition linkage not independently reconciled.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/891103/000110465920080606/tm206790d25_8k.htm",
+        "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2020-109"
+      ]
+    },
+    "DD": {
+      "cik": 1666700,
+      "start": "2019-06-03",
+      "reason": "DowDuPont distributions and new DuPont trading spell; do not automatically use combined/predecessor histories as current standalone business.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1666700/000119312519163322/d715311dex991.htm"
+      ]
+    },
+    "SW": {
+      "cik": 2005951,
+      "start": "2024-07-08",
+      "reason": "New Smurfit Westrock afterJuly2024combination/listing; vendorhistory predatescurrentsecurity. No automaticWestRock/SmurfitKappastitch.",
+      "sources": [
+        "https://www.smurfitkappa.com/us/newsroom/2024/smurfit-westrock-makes-its-debut-in-new-york-and-london"
+      ]
+    },
+    "KHC": {
+      "cik": 1637459,
+      "start": "2015-07-06",
+      "reason": "Kraft/Heinzcombination; currentKHCtrading startsJuly6. Existingpricecachealreadybeginsatthisdate; disclosurefilterstillprotectscurrentbusinessscope.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1545158/000119312515244355/d36612dex991.htm"
+      ]
+    }
+  },
+  "market_outcomes_2026": "sealed"
+}

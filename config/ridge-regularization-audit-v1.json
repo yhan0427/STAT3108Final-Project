@@ -1,0 +1,23 @@
+{
+  "registered_utc": "2026-11-18T04:21:28.683060+00:00",
+  "reason": "The market-only Ridge still selects the upper regularization endpoint after the first extension. Close this baseline concern with one broad fixed grid for both the earlier full-market cohort and the non-financial information-control cohort.",
+  "alpha_grid": [
+    0.01,
+    1.0,
+    100.0,
+    10000.0,
+    100000.0,
+    1000000.0,
+    10000000.0,
+    100000000.0
+  ],
+  "populations": [
+    "full_market",
+    "non_financial"
+  ],
+  "selection": "Non-held validation log-target MSE only. No change to feature scaling, splits, company roles, model inputs or LSTM budgets. Preserve all earlier reported grids and scores.",
+  "scope": "Exploratory robustness audit registered after earlier development scores were inspected; not a new confirmatory test or silent replacement. If the optimum remains at a boundary, report unresolved sensitivity rather than continuing outcome-guided searches.",
+  "financial_primary_plan_sha256": "0bfae8d50deb5588686c38d380a7c6233f393554a070b49f3a7d6a57299ab566",
+  "full_market_run_plan_sha256": "21b39bfc1025cb5f4bca0e225e8ef9b81e5ce4bf2028d0cdda4e3999fc0c7fbf",
+  "market_outcomes_2026": "sealed"
+}
