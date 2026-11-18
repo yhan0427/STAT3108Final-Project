@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-11-18T03:59:05.204502+00:00",
+  "source_sha256": "d3d2086fca6c72d7f88c8fad71223d50f11e6d391ff68fce022c6d833793f295",
+  "min_chars": 2500,
+  "max_chars": 350000,
+  "development_quality_documents": 40,
+  "previous_new_company_results": {
+    "accepted": 13,
+    "wrong_end_boundaries": 2,
+    "abstentions": 5
+  },
+  "changes": "Accept singular Disclosure, Part II heading prefix, optional heading comma and parenthesized item number; no outcome-driven changes",
+  "next_quality_sample": "Next fixed issuer hash per sector excluding all 20 already inspected issuers; oldest/latest original annual filing",
+  "validation_rule": "Review every candidate boundary, retain false candidates and abstentions separately; no automatic document acceptance or universal accuracy claim."
+}

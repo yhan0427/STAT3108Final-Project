@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-11-18T05:15:08.299861+00:00",
+  "source_sha256": "ac743b4bdb5870b6d4617b6ce00de15066470acce7b754af25b0cc7c1b0fe420",
+  "metadata_sha256": "27bcfef8da4dac54a58fa1bd5498109aa533ef1259bbab732a21b6448a418217",
+  "metadata_url": "https://huggingface.co/api/models/ProsusAI/finbert/tree/0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031?recursive=true&expand=true",
+  "original_url": "https://huggingface.co/ProsusAI/finbert/resolve/5fcfed04a2ca89adf4170ec0a4715103ed7745db/pytorch_model.bin",
+  "original_commit": {
+    "id": "5fcfed04a2ca89adf4170ec0a4715103ed7745db",
+    "title": "First version of finbert",
+    "date": "2020-12-24T12:41:41.000Z"
+  },
+  "original_sha256": "e15a7b5738df7f17553399b6d94c6e2ff69c89245d066e8e5d183f5803a554e3",
+  "safetensors_sha256": "e5897858ff819aad7629b96ce521ae5477952d03634ef5dd30ed2d76357a9f00",
+  "safetensors_commit": {
+    "id": "2f829913942c0144ed7b1cb8bcdad3bf8494c3b4",
+    "title": "Add safetensors weights and finance tag",
+    "date": "2026-10-12T08:14:38.000Z"
+  },
+  "shared_tensors": 202,
+  "different_tensors": [],
+  "original_only_keys": [],
+  "safetensors_only_keys": [],
+  "shared_parameters_bitwise_equal": true,
+  "limitations": "Repository timestamps and exact parameter equality support earlier parameter availability; not exhaustive pretraining-corpus or tokenizer historical provenance certification. Not evidence of historically deployable full data pipeline.",
+  "market_outcomes_2026_accessed": false
+}

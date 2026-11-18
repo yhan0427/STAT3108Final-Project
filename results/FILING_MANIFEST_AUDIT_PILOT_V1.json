@@ -1,0 +1,254 @@
+{
+  "updated_utc": "2026-11-18T03:18:47.525969+00:00",
+  "plan": {
+    "created_utc": "2026-11-18T03:18:39.194819+00:00",
+    "roster_sha256": "0eca3c9fdb8abee8e60be9a9a3cbd05efa7f9c199ebe812e30521cbdbec34459",
+    "selection": "One retained training-role issuer per non-financial sector, fixed SHA256 rank; no outcome-based selection",
+    "companies": [
+      {
+        "ticker": "FOX",
+        "cik": 1754301,
+        "sector": "Communication Services",
+        "issuer_id": "CIK0001754301"
+      },
+      {
+        "ticker": "NKE",
+        "cik": 320187,
+        "sector": "Consumer Discretionary",
+        "issuer_id": "CIK0000320187"
+      },
+      {
+        "ticker": "KR",
+        "cik": 56873,
+        "sector": "Consumer Staples",
+        "issuer_id": "CIK0000056873"
+      },
+      {
+        "ticker": "FANG",
+        "cik": 1539838,
+        "sector": "Energy",
+        "issuer_id": "CIK0001539838"
+      },
+      {
+        "ticker": "RMD",
+        "cik": 943819,
+        "sector": "Health Care",
+        "issuer_id": "CIK0000943819"
+      },
+      {
+        "ticker": "LHX",
+        "cik": 202058,
+        "sector": "Industrials",
+        "issuer_id": "CIK0000202058"
+      },
+      {
+        "ticker": "AVGO",
+        "cik": 1730168,
+        "sector": "Information Technology",
+        "issuer_id": "CIK0001730168"
+      },
+      {
+        "ticker": "CRH",
+        "cik": 849395,
+        "sector": "Materials",
+        "issuer_id": "CIK0000849395"
+      },
+      {
+        "ticker": "WELL",
+        "cik": 766704,
+        "sector": "Real Estate",
+        "issuer_id": "CIK0000766704"
+      },
+      {
+        "ticker": "CMS",
+        "cik": 811156,
+        "sector": "Utilities",
+        "issuer_id": "CIK0000811156"
+      }
+    ],
+    "earliest_filing": "2013-01-01",
+    "last_filing": "2025-12-31",
+    "source_sha256": "af0decb6812f56e07ba7e185f38dd30938ade41cf21340354320ddc6ac227351",
+    "parser_sha256": "4ea212c5212ae974dd39b51f7413ef2623335ede97b071976766835f215e80c0"
+  },
+  "companies": [
+    {
+      "ticker": "FOX",
+      "cik": 1754301,
+      "sector": "Communication Services",
+      "issuer_id": "CIK0001754301",
+      "status": "ready",
+      "annual_records": 7,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0001754301.json",
+          "sha256": "5976065f1cc5c497e8eaf944b77bc5cff81fe85754a4db3722f83b0a1a1a21ba"
+        }
+      ]
+    },
+    {
+      "ticker": "NKE",
+      "cik": 320187,
+      "sector": "Consumer Discretionary",
+      "issuer_id": "CIK0000320187",
+      "status": "ready",
+      "annual_records": 13,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000320187.json",
+          "sha256": "82b35431826e823acaa306b8ce2e4197f07421ca08709be16396dde2c22cbe79"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000320187-submissions-001.json",
+          "sha256": "6639ce46b49f353592d7465e798fcacc8aeba9a0a586ca96bd7ef52e9b38e118"
+        }
+      ]
+    },
+    {
+      "ticker": "KR",
+      "cik": 56873,
+      "sector": "Consumer Staples",
+      "issuer_id": "CIK0000056873",
+      "status": "ready",
+      "annual_records": 15,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000056873.json",
+          "sha256": "90d0aa6d1c5c17c1ef94b7dd384b30f9ebe3b66f22b817ad12e47102c01f1b6f"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000056873-submissions-001.json",
+          "sha256": "60d7c7a4ce61f9ad18efa37ab8f172091dc6467c2419b946ea0f4d89d357a470"
+        }
+      ]
+    },
+    {
+      "ticker": "FANG",
+      "cik": 1539838,
+      "sector": "Energy",
+      "issuer_id": "CIK0001539838",
+      "status": "ready",
+      "annual_records": 15,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0001539838.json",
+          "sha256": "790e7388de9b44260711acf35f4db0c2fb7fa181d89105bba24dba2564dbdfb3"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0001539838-submissions-001.json",
+          "sha256": "c7908427b6be409fc66026b02bb23ad87fa2409c9863470836ec9f4800dd2eea"
+        }
+      ]
+    },
+    {
+      "ticker": "RMD",
+      "cik": 943819,
+      "sector": "Health Care",
+      "issuer_id": "CIK0000943819",
+      "status": "ready",
+      "annual_records": 16,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000943819.json",
+          "sha256": "9939ab6d309c3968ee9a0db4d379ea19fe24762db2f0ff802bb5698d8d10d6fd"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000943819-submissions-001.json",
+          "sha256": "06f5e2d8d4d78d8319d0d664a619946408613d53aecbe4d1574719e0ca112f21"
+        }
+      ]
+    },
+    {
+      "ticker": "LHX",
+      "cik": 202058,
+      "sector": "Industrials",
+      "issuer_id": "CIK0000202058",
+      "status": "ready",
+      "annual_records": 13,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000202058.json",
+          "sha256": "9171fc30681ae083b689e322edbf1a4913d28c3f54ac95fd9a2f41612b673eec"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000202058-submissions-001.json",
+          "sha256": "ccabdd339f4eb7837602b6cb45dcaa44d898c528cd273db8f0ccd12dea4aec35"
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "cik": 1730168,
+      "sector": "Information Technology",
+      "issuer_id": "CIK0001730168",
+      "status": "ready",
+      "annual_records": 8,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0001730168.json",
+          "sha256": "53c35cd3bc89f60ebc698a429de40ad51ea0eee5e11bcbf75ab88d04f3544e5d"
+        }
+      ]
+    },
+    {
+      "ticker": "CRH",
+      "cik": 849395,
+      "sector": "Materials",
+      "issuer_id": "CIK0000849395",
+      "status": "ready",
+      "annual_records": 15,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000849395.json",
+          "sha256": "406285d3bd6a4642cd5aac5c31390a3e85452c252561edca1952ab7f4978d3b7"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000849395-submissions-001.json",
+          "sha256": "f48c814c88777638e76c3a2f63f34ae113c956f7dcad879765d988e7561704de"
+        }
+      ]
+    },
+    {
+      "ticker": "WELL",
+      "cik": 766704,
+      "sector": "Real Estate",
+      "issuer_id": "CIK0000766704",
+      "status": "ready",
+      "annual_records": 13,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000766704.json",
+          "sha256": "b42695ae28656317121b4f19a6c1e2ec158d602bdfb535df72180edc9271b6ab"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000766704-submissions-001.json",
+          "sha256": "5130081f3ee7767ea1d5e73324f6b3940d41c304c2df8e759cc1c391865da637"
+        }
+      ]
+    },
+    {
+      "ticker": "CMS",
+      "cik": 811156,
+      "sector": "Utilities",
+      "issuer_id": "CIK0000811156",
+      "status": "ready",
+      "annual_records": 13,
+      "sources": [
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000811156.json",
+          "sha256": "a510c3f0069ef851ee6429de7356edf51e21ce90b2c63aba351aaa7656c41d84"
+        },
+        {
+          "path": "data/raw/sec-submissions-v1/CIK0000811156-submissions-001.json",
+          "sha256": "89d7d7335c34ce68185ef0e86e206a53bc738b9923a2d75b2e5ebe24ce0a625e"
+        }
+      ]
+    }
+  ],
+  "annual_records": 128,
+  "primary_10k_candidates": 107,
+  "report_texts_downloaded": 0,
+  "embeddings_computed": 0,
+  "market_outcomes_2026_accessed": false,
+  "limits": "Metadata only, not text hashes or extraction validation. Amendments/foreign/transition forms retained separately; not substituted for original 10-K. Current SEC metadata is not an immutable historical archive. No report-period date is used as disclosure time."
+}

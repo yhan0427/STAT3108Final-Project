@@ -1,0 +1,98 @@
+{
+  "registered_utc": "2026-11-18T05:18:12.827548+00:00",
+  "source_sha256": "44e43037b1d0d85879a78ecc56a15be836744273dd7ff9253fab2e601a657f90",
+  "dataset_manifest_sha256": "28c3609b572aa02bfce567f7c1aaa387af72dbd32afa7b33a17021a4c2371593",
+  "forecast_plan_sha256": "fc8e67a87b94ff1230a488a605e549781b445903f4bd0f1b0cf44a70639ed336",
+  "selection": "Held-role companies with>=400 common512-context origins in each2022-23validation/2024-25evaluation partition; one per nonfinancial sector or all3eligibletechnology companies, fixed issuer SHA rank; no text-availability/forecast-outcome ranking. Basket coverage conditioning remains a limitation.",
+  "baskets": {
+    "Held nonfinancial sectors": {
+      "CAG": 0.1,
+      "LH": 0.1,
+      "UDR": 0.1,
+      "TXT": 0.1,
+      "AEE": 0.1,
+      "YUM": 0.1,
+      "PKG": 0.1,
+      "META": 0.1,
+      "OXY": 0.1,
+      "EPAM": 0.1
+    },
+    "Held technology trio": {
+      "EPAM": 0.3333333333333333,
+      "DDOG": 0.3333333333333333,
+      "SMCI": 0.3333333333333333
+    }
+  },
+  "models": [
+    "Persistence",
+    "Ridge_market",
+    "Ridge_financial_control",
+    "Ridge_financial",
+    "Ridge_text_control",
+    "Ridge_text",
+    "Ridge_metadata",
+    "Ridge_financial_text_control",
+    "Ridge_all",
+    "LSTM_market",
+    "LSTM_financial_control",
+    "LSTM_financial",
+    "LSTM_text_control",
+    "LSTM_text",
+    "LSTM_metadata",
+    "LSTM_financial_text_control",
+    "LSTM_all",
+    "Persistence_calibrated",
+    "Ridge_market_calibrated",
+    "Ridge_financial_control_calibrated",
+    "Ridge_financial_calibrated",
+    "Ridge_text_control_calibrated",
+    "Ridge_text_calibrated",
+    "Ridge_metadata_calibrated",
+    "Ridge_financial_text_control_calibrated",
+    "Ridge_all_calibrated",
+    "LSTM_market_calibrated",
+    "LSTM_financial_control_calibrated",
+    "LSTM_financial_calibrated",
+    "LSTM_text_control_calibrated",
+    "LSTM_text_calibrated",
+    "LSTM_metadata_calibrated",
+    "LSTM_financial_text_control_calibrated",
+    "LSTM_all_calibrated"
+  ],
+  "cost_bps": [
+    0,
+    10,
+    25
+  ],
+  "cash_annual": [
+    0,
+    0.04
+  ],
+  "target": 0.1,
+  "rebalance_days": 20,
+  "correlation_history": 60,
+  "execution": "After-close origin signal, execute next close, earn following returns; unchanged temporal/portfolio engine. No terminal forced sale.",
+  "fixed_control": "For each model/basket mean scheduled validation equity; never fit forecasts or calibration to held labels. Does not match realized evaluation exposure.",
+  "primary": {
+    "cost_bps": 10,
+    "cash_annual": 0,
+    "metric": "20-session rolling net risk-target absolute error"
+  },
+  "required_metrics": [
+    "risk_target_mae",
+    "total_return",
+    "annualized_return",
+    "realized_volatility",
+    "max_drawdown",
+    "mean_equity_fraction",
+    "turnover",
+    "cost_initial_capital"
+  ],
+  "uncertainty": "Primary dynamic-minus-fixed/historical risk-error differences, whole-date blocks20/60; conditional, not multiplicity-adjusted.",
+  "scope": "Exploratory application in inspected calendar periods; baskets frozen during first matched model run, before matched evaluation scores. Not a fresh holdout, alpha claim or historical-index strategy.",
+  "engine_hashes": {
+    "temporal": "8d715a4261bb819e385d465d12a780a0769e62fa8f1ce4f69d5007df7ab0b508",
+    "portfolio": "2d68d56e717441a2af75d3e08f79c5e0425743b8b0818017ee9a877dc09dbac8"
+  },
+  "market_outcomes_2026_accessed": false
+}

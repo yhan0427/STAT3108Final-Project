@@ -1,0 +1,403 @@
+{
+  "completed_utc": "2026-11-18T05:42:26.090402+00:00",
+  "plan": {
+    "policy_sha256": "3165b11a84d8c17fd7bff96b8efab97cd8c8f5383fa2d4a93a787ad861292361",
+    "source_sha256": "8dcd0d6f3eed20ba8a3e046199fc6c4bc5edde35fe032c94fdb8a85789d55f02",
+    "model_artifacts": {
+      "model.safetensors": "7ace108c4987e7f2a99a75a445240019d1d31c2117139d1bd05ffdfd25aca738",
+      "LICENSE": "648194727930df730890e9f9affdbcc5c930d406d6829559b25ca3d5a973fc8c",
+      "config.json": "b5f27f61513f8fd1a3aa996f3720d3679cb40bce5bcb08eb3dc320ce726e7c2f",
+      "README.md": "295a9aa5a97eb8fe93935ab8e3736ee762fffaf869dcc41de6fcc98c77829f12"
+    },
+    "engine_hashes": {
+      "temporal": "8d715a4261bb819e385d465d12a780a0769e62fa8f1ce4f69d5007df7ab0b508",
+      "portfolio": "a8683cee1adcc6a436b8e669b22a8bc0ead6d5a217338285d77ebb9ce2dd3cd4"
+    }
+  },
+  "policy": {
+    "registered_utc": "2026-11-18T05:41:09.013091+00:00",
+    "status": "Exploratory matched retrospective transfer extension after primary multimodal scores; no fresh holdout or architecture-only claim.",
+    "matched_dataset_manifest_sha256": "28c3609b572aa02bfce567f7c1aaa387af72dbd32afa7b33a17021a4c2371593",
+    "parent_predictions_sha256": "a12423bed2e3e1389ecdfc039aaefd97a12b3a11f0fe47b20ae0bb4628c2f5d6",
+    "full_market_predictions_sha256": "ec03e298df9fb332a23ef87e4170340230e56508758b4f6d6f10ade321187001",
+    "timestral_config_sha256": "365a60ecf239c2eab4fc291347ceab92e6e9912cda9aee71ce15cd70d90d01c4",
+    "inference_source_sha256": "1869c6eac18a7ed6f9feefaf3107e55108456872d0622f8f04b37f2106725328",
+    "weights_and_code": "Existing pinned Timestral5M, unchanged512-rv20 context,21st point quantile-RMS summary; do not refit or change checkpoint.",
+    "reuse": "Reuse raw frozen full-market forecasts only after exact company-date,target,rv20 checks; never reuse its broader-population calibration. Compute missing held validation contexts with same frozen worker.",
+    "calibration": "Matched80training-role2022-23validation only; no held labels.",
+    "forecast_comparisons": [
+      "Timestral5M-minus-Ridge_market",
+      "Timestral5M-minus-LSTM_market",
+      "Timestral5M-minus-Ridge_all",
+      "Timestral5M-minus-LSTM_all"
+    ],
+    "application_config_sha256": "75f7834c34afcd74ce7bc9e9d71706376e3de30d5550b524b2ef8cf5bdcb9ed5",
+    "application": "Same frozen10sector/3techbaskets,cost0/10/25,cash0/4%,target10%,next-close execution andvalidation-fixedcontrol. Raw andmatched-calibratedvariants.",
+    "critical_limit": "Released2026 with unverified pretraining overlap. Retrospective methods comparator only; cannot count a sealed local2026price sample as fresh pretrained-model validation without an independently established training cutoff.",
+    "market_outcomes_2026_accessed": false
+  },
+  "raw_forecasts_reused": 46869,
+  "new_held_validation_forecasts": 8856,
+  "nonheld_validation_calibration": 1.0143905306234402,
+  "paired_intervals": {
+    "Timestral5M-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.06604869979547726,
+        "ci95_low": -0.14163377486793405,
+        "ci95_high": 0.00109947671514364,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.06604869979547726,
+        "ci95_low": -0.12232504210639766,
+        "ci95_high": -0.01850778860711743,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.05660442650168376,
+        "ci95_low": -0.11958435894152716,
+        "ci95_high": 0.004672956211057725,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.05660442650168376,
+        "ci95_low": -0.10561095353328255,
+        "ci95_high": -0.008015397114069154,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M-minus-Ridge_all": {
+      "20": {
+        "mean_difference": -0.03611360225672772,
+        "ci95_low": -0.10768276730866828,
+        "ci95_high": 0.022783115711339244,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.03611360225672772,
+        "ci95_low": -0.09582106431887967,
+        "ci95_high": 0.010600633398423941,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M-minus-LSTM_all": {
+      "20": {
+        "mean_difference": -0.07476856484166022,
+        "ci95_low": -0.13986265468524078,
+        "ci95_high": -0.01015666102156977,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.07476856484166022,
+        "ci95_low": -0.127347507254226,
+        "ci95_high": -0.02428712787758201,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": 0.016623181731711217,
+        "ci95_low": -0.010186940708620586,
+        "ci95_high": 0.04029497375982349,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.016623181731711217,
+        "ci95_low": -0.0037734999313927932,
+        "ci95_high": 0.03880439597472587,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": 0.02540191457436664,
+        "ci95_low": -0.01290027071579752,
+        "ci95_high": 0.06318488294246852,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.02540191457436664,
+        "ci95_low": -0.012021695025643963,
+        "ci95_high": 0.055990551312793096,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M_calibrated-minus-Ridge_all_calibrated": {
+      "20": {
+        "mean_difference": 0.03343834499028548,
+        "ci95_low": 0.009859883256175301,
+        "ci95_high": 0.05406163324453963,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.03343834499028548,
+        "ci95_low": 0.01722300286618138,
+        "ci95_high": 0.05072194156860992,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Timestral5M_calibrated-minus-LSTM_all_calibrated": {
+      "20": {
+        "mean_difference": 0.012534771498958429,
+        "ci95_low": -0.024303638279360877,
+        "ci95_high": 0.051377162586783806,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.012534771498958429,
+        "ci95_low": -0.024573358587090723,
+        "ci95_high": 0.044621741477870874,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "frozen_validation_exposures": {
+    "Held nonfinancial sectors": {
+      "Timestral5M": 0.5942358494817007,
+      "Timestral5M_calibrated": 0.5863968924855407
+    },
+    "Held technology trio": {
+      "Timestral5M": 0.22184038153888827,
+      "Timestral5M_calibrated": 0.21869326934917865
+    }
+  },
+  "decision_comparisons": [
+    {
+      "basket": "Held nonfinancial sectors",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.5942358494817007,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.0045489131970166685,
+      "return_difference": -0.0041202428022530935,
+      "equity_difference": 0.24916988933240536,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004548913197016671,
+          "ci95_low": -0.013755338474655241,
+          "ci95_high": 0.006364569675611532,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004548913197016671,
+          "ci95_low": -0.01366490030656172,
+          "ci95_high": 0.00823359623523444,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held nonfinancial sectors",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.5942358494817007,
+      "benchmark": "historical",
+      "risk_error_difference": -0.0007081796488660856,
+      "return_difference": -0.009626850464310888,
+      "equity_difference": -0.03395499947442493,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0007081796488660881,
+          "ci95_low": -0.004040783852216043,
+          "ci95_high": 0.0035844874819389192,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0007081796488660881,
+          "ci95_low": -0.0038809624269042307,
+          "ci95_high": 0.0033195898595857845,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held nonfinancial sectors",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.5863968924855407,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": -0.005422998703293852,
+      "return_difference": -0.003814358602246548,
+      "equity_difference": 0.24731874517390207,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.005422998703293853,
+          "ci95_low": -0.014476990105364816,
+          "ci95_high": 0.005438392374239591,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.005422998703293853,
+          "ci95_low": -0.014509613544252198,
+          "ci95_high": 0.0074305580253078585,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held nonfinancial sectors",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.5863968924855407,
+      "benchmark": "historical",
+      "risk_error_difference": -0.0009482510071612861,
+      "return_difference": -0.01035821405387849,
+      "equity_difference": -0.04364107618676871,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.0009482510071612918,
+          "ci95_low": -0.004337393317745601,
+          "ci95_high": 0.003033423727511772,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.0009482510071612918,
+          "ci95_low": -0.004190251158989727,
+          "ci95_high": 0.002930509065793919,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held technology trio",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.22184038153888827,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.0014077334592805593,
+      "return_difference": 0.03766311921744525,
+      "equity_difference": 0.017266621544217875,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0014077334592805506,
+          "ci95_low": -0.003282689164866498,
+          "ci95_high": 0.007030038441488272,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0014077334592805506,
+          "ci95_low": -0.003978906529010979,
+          "ci95_high": 0.00771985568323349,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held technology trio",
+      "model": "Timestral5M",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.22184038153888827,
+      "benchmark": "historical",
+      "risk_error_difference": -0.003757259718149303,
+      "return_difference": -0.04438734861081328,
+      "equity_difference": -0.03249451121542796,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.003757259718149313,
+          "ci95_low": -0.011069113276913076,
+          "ci95_high": 0.003380899788825901,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.003757259718149313,
+          "ci95_low": -0.011261310467346849,
+          "ci95_high": 0.0033603267393731103,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held technology trio",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.21869326934917865,
+      "benchmark": "fixed_validation",
+      "risk_error_difference": 0.001198055343364847,
+      "return_difference": 0.03713219317652028,
+      "equity_difference": 0.017026252839462935,
+      "intervals": {
+        "20": {
+          "mean_difference": 0.0011980553433648478,
+          "ci95_low": -0.003480186118774932,
+          "ci95_high": 0.0066805791760355575,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": 0.0011980553433648478,
+          "ci95_low": -0.004061011670034788,
+          "ci95_high": 0.007330371072860163,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    },
+    {
+      "basket": "Held technology trio",
+      "model": "Timestral5M_calibrated",
+      "cost_bps": 10,
+      "cash_annual": 0,
+      "fixed_validation_exposure": 0.21869326934917865,
+      "benchmark": "historical",
+      "risk_error_difference": -0.004036357920238841,
+      "return_difference": -0.04642893712263385,
+      "equity_difference": -0.035890692070612545,
+      "intervals": {
+        "20": {
+          "mean_difference": -0.004036357920238842,
+          "ci95_low": -0.011657074716255557,
+          "ci95_high": 0.0032464051389710187,
+          "block_days": 20,
+          "replicates": 1000
+        },
+        "60": {
+          "mean_difference": -0.004036357920238842,
+          "ci95_low": -0.011787959013795934,
+          "ci95_high": 0.0034282120101779886,
+          "block_days": 60,
+          "replicates": 1000
+        }
+      }
+    }
+  ],
+  "strategy_records": 96,
+  "predictions_sha256": "33d6b26b66f59df4558ef2287ede56b96c05b1f8e0cb8dea62219f01c677c316",
+  "market_outcomes_2026_accessed": false
+}

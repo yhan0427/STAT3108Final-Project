@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-11-18T04:40:38.993527+00:00",
+  "plan": {
+    "registered_config_sha256": "6ecc6d65bf4e74b95ca03a24748f60baf5443255b174d9338c41d06d893a3a21",
+    "manifest_sha256": "25fbb7ef531b13fd080e1067628e9d20142622ef3104acacf8461fd777237821",
+    "sample_sha256": "42edcb1bcd176835607867993351e93c6418704705c52363f7b049231dea971f",
+    "source_sha256": "b262c39f0eb76a542458724ac7fcbacaee2e724e4e4d1ebdb3a19e4bf7f329e5",
+    "sampled_ordinary": 130,
+    "all_flagged": 44,
+    "total_selected": 174
+  },
+  "candidate_documents": 1059,
+  "candidate_companies": 93,
+  "review_complete": false,
+  "accepted_for_training": 0,
+  "excerpts_local_only": true,
+  "market_outcomes_2026_accessed": false,
+  "selection": "All flagged candidates plus min issuer/accession SHA per sector/filing year among ordinary candidates; no forecast outcomes or losses used."
+}

@@ -1,0 +1,137 @@
+{
+  "completed_utc": "2026-11-18T05:27:08.759921+00:00",
+  "predictions_sha256": "a12423bed2e3e1389ecdfc039aaefd97a12b3a11f0fe47b20ae0bb4628c2f5d6",
+  "source_sha256": "77ab86e3bb8fadf47385c4391860b0a98626556f0c289caf5e454d8a2fe4444a",
+  "contrasts": {
+    "Ridge_financial_calibrated-minus-Ridge_filing_age_calibrated": {
+      "companies_with_lower_mean_loss": 15,
+      "companies_with_higher_mean_loss": 4,
+      "leave_one_company_out_min_difference": -0.005144891547190763,
+      "leave_one_company_out_max_difference": -0.002727534015171501,
+      "worst_mean_loss_increases": {
+        "SMCI": 0.0065716719437847355,
+        "OXY": 0.004925850595537571,
+        "PODD": 0.0004358521331523883
+      },
+      "largest_mean_loss_reductions": {
+        "EPAM": -0.03694076363256196,
+        "AEE": -0.016869508263469415,
+        "DDOG": -0.008138085787490625
+      }
+    },
+    "Ridge_text_calibrated-minus-Ridge_text_control_calibrated": {
+      "companies_with_lower_mean_loss": 15,
+      "companies_with_higher_mean_loss": 4,
+      "leave_one_company_out_min_difference": -0.00305558688337606,
+      "leave_one_company_out_max_difference": -0.0008436340282106274,
+      "worst_mean_loss_increases": {
+        "OXY": 0.015348566416336236,
+        "FIX": 0.009795970320227984,
+        "BG": 0.0043281220794311
+      },
+      "largest_mean_loss_reductions": {
+        "META": -0.024466584976641552,
+        "SMCI": -0.010742594336915233,
+        "AEE": -0.007454795363916572
+      }
+    },
+    "Ridge_all_calibrated-minus-Ridge_financial_text_control_calibrated": {
+      "companies_with_lower_mean_loss": 10,
+      "companies_with_higher_mean_loss": 9,
+      "leave_one_company_out_min_difference": -0.00142094682578987,
+      "leave_one_company_out_max_difference": 0.0004315068654673528,
+      "worst_mean_loss_increases": {
+        "OXY": 0.013901805247287196,
+        "EPAM": 0.008271695954828013,
+        "FIX": 0.008221156456540007
+      },
+      "largest_mean_loss_reductions": {
+        "META": -0.019442361195342813,
+        "SMCI": -0.014520047381679852,
+        "UDR": -0.004370770313841595
+      }
+    },
+    "Ridge_all_calibrated-minus-Ridge_market_calibrated": {
+      "companies_with_lower_mean_loss": 18,
+      "companies_with_higher_mean_loss": 1,
+      "leave_one_company_out_min_difference": -0.019258231526840634,
+      "leave_one_company_out_max_difference": -0.015017947739853854,
+      "worst_mean_loss_increases": {
+        "OXY": 0.02716006557022047,
+        "UDR": -0.004281911152354014,
+        "BG": -0.004363971348315075
+      },
+      "largest_mean_loss_reductions": {
+        "META": -0.04916504259554154,
+        "EPAM": -0.04595692322533949,
+        "FIX": -0.03291345178959431
+      }
+    },
+    "LSTM_financial_calibrated-minus-LSTM_filing_age_calibrated": {
+      "companies_with_lower_mean_loss": 8,
+      "companies_with_higher_mean_loss": 11,
+      "leave_one_company_out_min_difference": 0.0014923343574930255,
+      "leave_one_company_out_max_difference": 0.009424682435978165,
+      "worst_mean_loss_increases": {
+        "SMCI": 0.08095772388891813,
+        "FIX": 0.06045052181448276,
+        "CSGP": 0.024842123524740457
+      },
+      "largest_mean_loss_reductions": {
+        "EPAM": -0.06182454152381439,
+        "AEE": -0.024584762865543758,
+        "PODD": -0.00563660911265019
+      }
+    },
+    "LSTM_text_calibrated-minus-LSTM_text_control_calibrated": {
+      "companies_with_lower_mean_loss": 7,
+      "companies_with_higher_mean_loss": 12,
+      "leave_one_company_out_min_difference": 0.0006341893773884273,
+      "leave_one_company_out_max_difference": 0.01629690722307082,
+      "worst_mean_loss_increases": {
+        "FIX": 0.09571201755131815,
+        "EPAM": 0.07400093061879148,
+        "BG": 0.05055178576017884
+      },
+      "largest_mean_loss_reductions": {
+        "SMCI": -0.18621690367096494,
+        "DDOG": -0.027799925596594176,
+        "PODD": -0.018925872314071942
+      }
+    },
+    "LSTM_all_calibrated-minus-LSTM_financial_text_control_calibrated": {
+      "companies_with_lower_mean_loss": 8,
+      "companies_with_higher_mean_loss": 11,
+      "leave_one_company_out_min_difference": 0.0069878248078261915,
+      "leave_one_company_out_max_difference": 0.019238394309730098,
+      "worst_mean_loss_increases": {
+        "FIX": 0.1501780216180733,
+        "EPAM": 0.10207042263466873,
+        "AEE": 0.03691108993238084
+      },
+      "largest_mean_loss_reductions": {
+        "SMCI": -0.07033222941619702,
+        "CSGP": -0.036010136270344335,
+        "PODD": -0.015264307985145241
+      }
+    },
+    "LSTM_all_calibrated-minus-LSTM_market_calibrated": {
+      "companies_with_lower_mean_loss": 8,
+      "companies_with_higher_mean_loss": 11,
+      "leave_one_company_out_min_difference": 0.0009855623547157702,
+      "leave_one_company_out_max_difference": 0.015712418253541114,
+      "worst_mean_loss_increases": {
+        "FIX": 0.22673559604787194,
+        "SMCI": 0.05638108968376624,
+        "YUM": 0.025273244805884516
+      },
+      "largest_mean_loss_reductions": {
+        "PODD": -0.038347810130984226,
+        "META": -0.03492644070932488,
+        "DDOG": -0.032219511540388206
+      }
+    }
+  },
+  "scope": "Post-result descriptive diagnostics, not causal language/content effects or new confirmatory subgroups. Leave-one-company-out rescoring does not refit models or estimate leave-one-company-out generalization.",
+  "market_outcomes_2026_accessed": false
+}

@@ -1,5 +1,7 @@
 # Research decision log
 
+Dated entries preserve decisions at each stage; statements of future work apply to the entry date. For current evidence, see README.md and results/FULL_TRAINING_V1.md.
+
 ## 2026-11-11: Application A — Portfolio Risk Lab
 
 The current primary question is whether volatility forecasts improve portfolio risk-target decisions after execution delays and transaction costs. The original forecasting question below remains the record of the earlier stage, not a preregistration of the portfolio application. V1–V3 forecasting results had already been inspected before this pivot.
@@ -12,7 +14,7 @@ A recent-method replication, an audit of any pretrained model's data overlap, an
 
 ## Original forecasting-stage decisions
 
-2026-11-07: Start locally. No Git initialization, commits or remote publishing until Han supplies the repository. Requested commit author: Han; confirm/use the supplied address when committing. Do not backdate commits or manufacture past contributions.
+2026-11-07: Begin the original thirty-company forecasting study; preserve source provenance and actual experiment chronology.
 
 ## Question
 Do publicly available fundamentals improve 20-trading-day equity volatility forecasts over a market-only model? Does that translate into better top-five risk screening?
@@ -48,7 +50,7 @@ A separate accounting audit found that turnover used previous-close NAV as its d
 
 ## 2026-11-11: Reserve 2026 for the final evaluation
 
-Before any 2026 download or scoring, Han raised the risk of exhausting the final holdout. Keep the temporal configuration as a draft and defer access to 2026 outcomes. Finish fixed-exposure controls, cash sensitivity and debugging on already inspected 2024–2025 data first. Freeze the final experiment before opening 2026, with explicit authorization. See `docs/HOLDOUT_POLICY.md`; this local policy does not establish pretrained-data disjointness.
+Before any 2026 download or scoring, reserve the period as a final temporal holdout. Keep the temporal configuration as a draft and defer access to 2026 outcomes. Finish fixed-exposure controls, cash sensitivity and debugging on already inspected 2024–2025 data first. Freeze the final experiment before opening 2026, with explicit authorization. See `docs/HOLDOUT_POLICY.md`; this local policy does not establish pretrained-data disjointness.
 
 ## 2026-11-11: Complete one recent Transformer comparison
 
@@ -56,4 +58,4 @@ Choose Timestral 5M for local resource feasibility before scoring; pin official 
 
 ## 2026-11-11: Start and complete first expanded-company training
 
-On Han's instruction to begin training promptly, reconstruct the incomplete dated page using explicit official December amendments rather than silently accepting a flawed list. Preserve source hashes, issuer mapping and every amendment; state that full independent roster verification is incomplete. Freeze 100 candidate issuers before accessing new-company prices, with sector-proportional/hash selection and distinct training versus held-company roles. Retain missing-data failures and short-history exclusions. One failure (WBD) leaves 99 histories, while Q supplies no early training labels. Fit Ridge and three LSTM seeds, and apply pinned Timestral inference, without any 2026 observations. Observe a stronger LSTM result on the new-company sample; retain it without rewriting the earlier thirty-company finding. A matched original-only control is required before attributing gains to expansion.
+Reconstruct the incomplete dated page using explicit official December amendments rather than silently accepting a flawed list. Preserve source hashes, issuer mapping and every amendment; state that full independent roster verification is incomplete. Freeze 100 candidate issuers before accessing new-company prices, with sector-proportional/hash selection and distinct training versus held-company roles. Retain missing-data failures and short-history exclusions. One failure (WBD) leaves 99 histories, while Q supplies no early training labels. Fit Ridge and three LSTM seeds, and apply pinned Timestral inference, without any 2026 observations. Observe a stronger LSTM result on the new-company sample; retain it without rewriting the earlier thirty-company finding. A matched original-only control is required before attributing gains to expansion.

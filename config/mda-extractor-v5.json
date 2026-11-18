@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-11-18T03:51:56.782625+00:00",
+  "source_sha256": "45f0d70b2fc97e6d9cde072e5f895fab2980dbc1d4d83a509fd8dc2b4048c88f",
+  "min_chars": 2500,
+  "max_chars": 350000,
+  "development_documents": 20,
+  "accepted_development_texts": 19,
+  "next_quality_sample": "Next fixed issuer hash in each non-financial training-company sector, excluding development pilot; oldest/latest original 10-K; no model outcomes used",
+  "validation_rule": "Review every candidate boundary; reject unsupported/incorporated sections; report false candidates and abstentions separately. No claim of universal accuracy from this small stratified sample."
+}

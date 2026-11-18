@@ -1,0 +1,15 @@
+{
+  "model_id": "ProsusAI/finbert",
+  "revision": "0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031",
+  "weights": "model.safetensors",
+  "hidden_size": 768,
+  "encoder": "BertModel via AutoModel; frozen evaluation mode",
+  "pooling": "Last hidden states, mean of non-special attended tokens per non-overlapping 510-content-token chunk, then content-token-weighted document mean",
+  "max_model_tokens": 512,
+  "chunk_content_tokens": 510,
+  "overlap_tokens": 0,
+  "dimension_reduction": "Not fitted in embedding stage; training-company/training-period documents only if added later",
+  "pretraining": "Model card: BERT base; finance adaptation on Reuters TRC2 subset; Financial PhraseBank sentiment fine-tuning. Complete document-level overlap/cutoff unverified.",
+  "license": "Model card states CC-BY-NC-SA-4.0; weights remain local, not covered by repository code license",
+  "source": "https://huggingface.co/ProsusAI/finbert"
+}

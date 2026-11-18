@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-11-18T04:07:36.032509+00:00",
+  "roster_sha256": "3404d535962cd2173415093f205c010bc26ef8bc6ba2b8a35048c3249478bbcb",
+  "source_sha256": "5ee4f663977b137baf8ecf9071c60d175aa423eb1e23be05f78b37a2de3e9e39",
+  "parent_roster_sha256": "0eca3c9fdb8abee8e60be9a9a3cbd05efa7f9c199ebe812e30521cbdbec34459",
+  "market_data_manifest_sha256": "f8f8ae93131e667dcd7961904607a1c54c5ad5daa0995a71c5703adedda05e36",
+  "scope": "100 fixed retained non-financial reference-cohort issuers: 80 existing training-role, 20 existing held-role. Does not redefine historical membership or untouched status. No substitution for absent financials/text. Sampled for computational feasibility, not model outcomes.",
+  "selection": "Within each existing role: at least one issuer per sector; allocate remaining seats by proportional largest remainders with alphabetical ties; fixed SHA256 multimodal-100-v1 issuer rank. No text-availability or performance threshold.",
+  "role_counts": {
+    "training_company": 80,
+    "held_company": 20
+  },
+  "filings": "Original 10-Ks disclosed 2013-01-01 through 2025-12-31; amendments/foreign/transition forms retained as separate metadata, no automatic primary-text substitution.",
+  "encoder": "Pinned frozen FinBERT; complete accepted MD&A chunks, content-token weighting; no text-model fitting at corpus stage.",
+  "dimensionality_reduction": "If applied, fit on unique documents actually available to training-role training-period origins only; never on all encoded documents.",
+  "evaluation": "Four matched information groups market/financial/text/all plus availability/age/length controls. Same eligibility and budget; unchanged 2026 sealing. Full-market and full-financial studies remain separate scopes.",
+  "market_outcomes_2026": "sealed"
+}

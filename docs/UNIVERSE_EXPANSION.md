@@ -34,7 +34,7 @@ Develop the expanded sample on pre-2026 data under the agreed sealed-holdout pol
 
 Keep a failure ledger: missing provider coverage, unresolved identifier, insufficient history, delisted before reference date, post-reference delisting, and missing terminal return. Do not replace a missing terminal return with zero or omit the last loss silently. If reliable dead-security histories/terminal returns require unavailable licensed data, label the fixed-cohort limitation and leave historical-membership evaluation incomplete. Index deletions and market delistings are different events.
 
-Neither this design nor a future raw observation count supports an unqualified resume claim of a historical S&P 500 backtest. Only use verified retained counts, dates, and explicitly named scope after acquisition and filtering.
+Neither this design nor a future raw observation count supports an unqualified claim of a historical S&P 500 backtest. Only use verified retained counts, dates, and explicitly named scope after acquisition and filtering.
 
 ## Public-source verification outcome
 

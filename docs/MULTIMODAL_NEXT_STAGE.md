@@ -1,6 +1,6 @@
 # Next stage: financial features and FinBERT text representations
 
-Status: planned implementation, not completed resume claims. 2026 remains sealed. Existing full market-only fits, forecasts and company roles are preserved as evidence.
+Status updated2026-11-18: financial coverage/original-value checks and guarded financial experiments complete. The100-company original-report corpus, sampled structural QA, frozen FinBERT encoding and training-document-only PCA are complete; matched eight-group Ridge/LSTM training and the1,632-outcome portfolio application are complete. See [text pipeline](../results/TEXT_PIPELINE_100_V1.md) and [identity sensitivity](../results/FINANCIAL_ENTITY_V1.md). The frozen text representation does not show stable incremental value.2026 remains sealed.
 
 ## Incremental-information question
 
@@ -20,8 +20,8 @@ Do filing-available financial values and annual-report language improve executio
 
 ProsusAI/finbert is a financial-language/sentiment encoder associated with a 2019 paper. It is not the project's claim to the newest time-series architecture. The contemporary time-series model comparison is separate. The model card describes BERT-base hidden size 768 and three sentiment labels; use the backbone hidden states for embedding experiments and inspect the license/pretraining restrictions before distribution. No commercial deployment or completed FinBERT training is claimed.
 
-## First deliverable
+## Current deliverable and next gate
 
-A coverage/identity audit and document manifest, followed by a small verified embedding pipeline. Do not begin the large multimodal training grid until financial coverage and text extraction quality are measured. Actual usable cohort size may be below 491 and must be reported for both full and matched samples. Resume bullets remain future claims until their corresponding artifacts and results exist.
+The frozen matched cohort retains80 fitting companies and19 evaluable held companies, with no availability-driven replacement. All methods use identical company-date origins. Financial/text content must be compared against availability,age and length controls; raw and validation-calibrated scores must both be shown. Forecast metrics,date-block intervals,year/company failures,seed diagnostics and the fixed-policy application are complete; see [forecast results](../results/MULTIMODAL_100_V1.md),[failures](../results/MULTIMODAL_FAILURES_100_V1.md) and [decision results](../results/MULTIMODAL_PORTFOLIO_V1.md). A supplementary simple-age control preserves the earlier larger-cohort mechanism finding. A supervised temporal Transformer fusion remains a separate future comparison; the existing Timestral transfer benchmark is not that experiment.
 
 Sources: https://www.sec.gov/search-filings/edgar-application-programming-interfaces ; https://huggingface.co/ProsusAI/finbert .

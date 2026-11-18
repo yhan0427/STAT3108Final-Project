@@ -1,0 +1,1709 @@
+{
+  "created_utc": "2026-11-18T05:12:55.737371+00:00",
+  "review_complete": true,
+  "reviewer": "agent-assisted boundary/interior review; not independent human certification",
+  "manifest_sha256": "25fbb7ef531b13fd080e1067628e9d20142622ef3104acacf8461fd777237821",
+  "sample_sha256": "be84a0c63d62e7e087a803749ff1f238d5f5ebf91023fa7abbe90b62b75004d1",
+  "decision_ledger_sha256": "87473d5957dbafcc55c915cce07e38f3fb092ac600dcd3793fdd1d8bf9d86ab1",
+  "source_sha256": "98984b01dc115ca8b5ce00cdb3108008d4d89db0d856c53ee5d961b5a7298caa",
+  "candidate_documents": 1059,
+  "sample_documents": 174,
+  "decision_counts": [
+    {
+      "selection_reason": "all_flagged",
+      "decision": "accept",
+      "count": 13
+    },
+    {
+      "selection_reason": "all_flagged",
+      "decision": "exclude",
+      "count": 31
+    },
+    {
+      "selection_reason": "sector_year_hash_sample",
+      "decision": "accept",
+      "count": 129
+    },
+    {
+      "selection_reason": "sector_year_hash_sample",
+      "decision": "exclude",
+      "count": 1
+    },
+    {
+      "selection_reason": "supplementary_attestation_scope_review",
+      "decision": "exclude",
+      "count": 12
+    }
+  ],
+  "supplementary_attestation_screen": {
+    "documents": 26,
+    "scope": "Added after an ordinary sample revealed ICFR contamination, before any text forecast fitting; all matching contexts inspected."
+  },
+  "training_eligibility": "All flags explicitly reviewed; ordinary candidates eligible under sampled QA unless explicitly excluded. Unreviewed ordinary documents are not individually certified. Entity-spell restrictions apply separately.",
+  "limitations": "Sampling detected extraction errors. No universal extraction accuracy or independent reviewer agreement claimed. No parser repairs or outcome-based company replacements.",
+  "documents": [
+    {
+      "index": 130,
+      "accession": "0000009389-23-000011",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "f629b16f5face8be4fd78465eb5a26b08df5a3c4a791a611153b0d66ae1829d5",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BALL"
+    },
+    {
+      "index": 30,
+      "accession": "0000014693-15-000014",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "a47273f3df423e9f23b27c3a7263d3f3ba855dc6ec4991ef91a527d9743bcb6a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BF.B"
+    },
+    {
+      "index": 43,
+      "accession": "0000014693-21-000091",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "ec825b7c60c82b8a13c46f9ee678c12b460ea07a320932ed79b5ba8a26ed696c",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BF.B"
+    },
+    {
+      "index": 28,
+      "accession": "0000023217-14-000009",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "2b7968f8d2b0728746cbf7ff7801764d975156211978acdf588ed60b3e68b59a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CAG"
+    },
+    {
+      "index": 95,
+      "accession": "0000029905-25-000006",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "19ccd6e970db018a535ccf0865fd09b5b483e4f045dec17eb38f7869075115ba",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DOV"
+    },
+    {
+      "index": 1,
+      "accession": "0000029989-14-000002",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "36bbf8368e0af8c4fd1076c1f9c32209cdf1a67390dc637d35ced2d20f2d8d81",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "OMC"
+    },
+    {
+      "index": 9,
+      "accession": "0000029989-22-000012",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "05b1ea5e8eaa88a5e070eb58f77c0f66b9cc83a8d60770c4baa67577325f0441",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "OMC"
+    },
+    {
+      "index": 11,
+      "accession": "0000029989-24-000007",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "a4012abbfdac57b891dc8778ce5319306d9a364f879fa24691d967f05efa31ec",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "OMC"
+    },
+    {
+      "index": 12,
+      "accession": "0000029989-25-000009",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "6298c992bfc48baf336a761264c03e4b186f4a49a66272dec596d00b1d93919b",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "OMC"
+    },
+    {
+      "index": 80,
+      "accession": "0000032604-13-000044",
+      "decision": "exclude",
+      "reason": "Item 7 is largely incorporation-by-reference and non-GAAP definitions, not the substantive MD&A",
+      "text_sha256": "3b741e4511a7538f6cadd1b59b57d291cec596ede4ee200c6f528133641e9b27",
+      "selection_reason": "all_flagged",
+      "ticker": "EMR"
+    },
+    {
+      "index": 82,
+      "accession": "0000032604-14-000048",
+      "decision": "exclude",
+      "reason": "Incorporation-by-reference stub and definitions; no substantive MD&A",
+      "text_sha256": "22a8328536806e2afdef32e86ceb9dab72f6f3481757a4aded020c1202b1561e",
+      "selection_reason": "all_flagged",
+      "ticker": "EMR"
+    },
+    {
+      "index": 84,
+      "accession": "0000032604-15-000051",
+      "decision": "exclude",
+      "reason": "Incorporation-by-reference stub and definitions; no substantive MD&A",
+      "text_sha256": "1d354dd767da53d2e1f93146169bd8eb340eb40ef86e195938ad267b78c31e47",
+      "selection_reason": "all_flagged",
+      "ticker": "EMR"
+    },
+    {
+      "index": 36,
+      "accession": "0000047111-18-000011",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "ace77e134c981437f6691e0b04e3384526981a07bb1dc1ce3c0808199887c0d6",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HSY"
+    },
+    {
+      "index": 38,
+      "accession": "0000047111-19-000010",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "3da6369e916f62697535fdb91edf24d58fad91f15a66d45238f92576ef9de7ca",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HSY"
+    },
+    {
+      "index": 46,
+      "accession": "0000048465-23-000083",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "b1e14fa60c828445a40043b93e10943612e0d1a75254bf46eaf8fc94fe43663e",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HRL"
+    },
+    {
+      "index": 71,
+      "accession": "0000049071-19-000023",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "989898c622f1a64fa8f04efd3026946aba177cf0da503f40b4601a959ca523ef",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HUM"
+    },
+    {
+      "index": 108,
+      "accession": "0000068505-21-000008",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "9e57e2bd09024e2191796bcc4736ce142ffbc6173b91aa5720aa8a19d1894a03",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "MSI"
+    },
+    {
+      "index": 160,
+      "accession": "0000072741-13-000015",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "aaa17ee964b6b55fc1a32ac2c7ad8522de1ae6b75c6beb65e4583554c44916c7",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ES"
+    },
+    {
+      "index": 164,
+      "accession": "0000072741-16-000063",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "b244e85ae94507d3607f1f4b895b0a45e49a19ce625aa89875c6093fed3743ff",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ES"
+    },
+    {
+      "index": 165,
+      "accession": "0000072741-17-000007",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "79a0089f475d0c81eda4dc371fa89638cf7ccc3ac41711174081f9e38aab791f",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ES"
+    },
+    {
+      "index": 167,
+      "accession": "0000072741-19-000017",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "77d75852412a4a2463d7f5cecb39a8c098497e06e89abe4fe914443bd8e22718",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ES"
+    },
+    {
+      "index": 120,
+      "accession": "0000075677-14-000009",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "f54c2123fd027ceaec81dc7f46621ec21cf665846518d661d3daa8373830c88d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PKG"
+    },
+    {
+      "index": 29,
+      "accession": "0000077476-14-000007",
+      "decision": "exclude",
+      "reason": "Overbroad incorporated financial section includes consolidated financial statements and independent-auditor report; not pure MD&A",
+      "text_sha256": "42d03afb2747a37358cad2e41fd450909b1cf52cd7c44c304976b0449392a9da",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 31,
+      "accession": "0000077476-15-000012",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "7f1b53427ab2e80ff1fc731a3926e5417d3cafc1d40ba166c436edf71822bb6a",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 33,
+      "accession": "0000077476-16-000066",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "5102198f73c6369899b0788797fffe36f2c4cd2eb44e553620f38eb84993982b",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 35,
+      "accession": "0000077476-17-000010",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "403f79740a7662e4270d88cbf34e266421b2bfcf1b9978d02c10842d521914d7",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 37,
+      "accession": "0000077476-18-000012",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "5facf3f3e3659225ad7e9c99dc91c738d5e3a4675b0bf5f6a942b0a905f28a93",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 39,
+      "accession": "0000077476-19-000017",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "2cb8c9e564ddc864e46992e536748087af00ceb3a31b7f27fc719d8bc14fdb23",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 41,
+      "accession": "0000077476-20-000015",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "277b93bdcf0e554c77fdd880694da3b25de07d903f1cb3850ae85b73048155af",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 42,
+      "accession": "0000077476-21-000007",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes independent-auditor report and consolidated financial statements; excluded from pure MD&A",
+      "text_sha256": "0d260fa7ab158fa410d10790a1a365ab1b482732d6b7c079a2fbf9eb531c33f2",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 45,
+      "accession": "0000077476-22-000010",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes audited financial statements and auditor report; not pure MD&A",
+      "text_sha256": "055fad4b064c6235b34f2b8c2e668c1d7c79e1791954103245d040c9fd9f001a",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 47,
+      "accession": "0000077476-23-000007",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes audited financial statements and auditor report; not pure MD&A",
+      "text_sha256": "6a80639605e80b50e86c3f390d1721a8e61997dcffd9b5a7293b0416d7adc99f",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 49,
+      "accession": "0000077476-24-000008",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes audited financial statements and auditor report; not pure MD&A",
+      "text_sha256": "b3133fea6074ab3f82bf6875f60331e7419d5b465b409be0dc8ef5f6c0047af7",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 51,
+      "accession": "0000077476-25-000007",
+      "decision": "exclude",
+      "reason": "Overbroad financial section includes audited financial statements and auditor report; not pure MD&A",
+      "text_sha256": "207ba523cdfa03557bf6d2ab6a86c4738e70620e4ffff0bee8c6f5736f8dfc59",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 122,
+      "accession": "0000079879-16-000065",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "09c48a7781c4d39c13f1dddd17c5024a05d970c3f33a2da99405cbb5dadeb1bd",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PPG"
+    },
+    {
+      "index": 124,
+      "accession": "0000079879-18-000010",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "cda63fceee670713e8c95cb6ee77abc419ff51eb77a96b920de04cbbe57745c4",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PPG"
+    },
+    {
+      "index": 162,
+      "accession": "0000107815-14-000041",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "4f30a4bd905e8615af5b09f406296f8dbf7b693e9a00ba311489d259de01341a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "WEC"
+    },
+    {
+      "index": 163,
+      "accession": "0000107815-15-000040",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "4561924a73068e812a8654b07bae4b4800641eaa34adb3f762800a56f23e8c11",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "WEC"
+    },
+    {
+      "index": 170,
+      "accession": "0000107815-22-000116",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "e8f3d082d21627c38cf0e259e99e513a231d53693800a8591dbceff80415d141",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "WEC"
+    },
+    {
+      "index": 66,
+      "accession": "0000721371-14-000181",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "5c4a5970c81b23e1f42a7a45385a66dc52a7993f9ef4c465108d6fbd67a27f65",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CAH"
+    },
+    {
+      "index": 113,
+      "accession": "0000769397-23-000036",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "61b19a140df1e97d9282b4d815097e206a14680b641988363ac2d62fc652efd3",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ADSK"
+    },
+    {
+      "index": 20,
+      "accession": "0000822416-20-000007",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "60192f3c3c8a6f1615b16841caf50570c8665bf42f86ddf56846cf240a2624cf",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PHM"
+    },
+    {
+      "index": 76,
+      "accession": "0000875320-24-000062",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "6268efdcacccd014a3b8def5252238f423ad8416d44fafaaef16026b13f5c9bb",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VRTX"
+    },
+    {
+      "index": 86,
+      "accession": "0000878927-17-000005",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "cb3a9d3f4a920fa5afff9ea876dd38bcae4e562f13e367f2da779ae82ba9e93c",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ODFL"
+    },
+    {
+      "accession": "0000885725-13-000007",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "77432fb0b15915515581b310d25ea8963ec66c8591d9fe588b26273c0ef03e43",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-14-000005",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "5a51f5ed02e219e53c46d8f37c735c8ad6b35dab23ef91a425b80f687d633e1a",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-15-000006",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "000ab1dcc5aa2b82eedfae82cf32bbc016f20abb02fe4983ea0d221948f5087e",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-16-000028",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "429f1f1f147cd1fe7a3c3b2587d79911095102219a023c357b213f9805e46d8b",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-17-000006",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "bbcf9ad5e64a1f10d8dee58e4e70b38b3d2b70ef76c00094277a0bcd756ba8db",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-18-000010",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "240415f8cfe089aef1e45011493e665bc0b7a2fa36f4a9a09aaca2ebf4972c9f",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-19-000011",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "05fcfa984bdf4c8abca12cbe7c8e6db6ea1c8b3ff6b6b5cf9db53cec1cf7cec5",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-20-000012",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "e4119b7df736a996901219df1ffe15454d9a9ebda0252661940d7ae4806d2e76",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-21-000008",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "8645aa417385634cba1b76ced829932da677d16b4606d4da4e9292e4609375c8",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "index": 74,
+      "accession": "0000885725-22-000006",
+      "decision": "exclude",
+      "reason": "Section includes a formal independent-accountant internal-control attestation after management narrative; not pure MD&A",
+      "text_sha256": "72c8bed3d8a6648b60567c2ae38cee4fdfa2be3041ff2afd2f871972792d6729",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BSX"
+    },
+    {
+      "accession": "0000885725-23-000008",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "fbeda8e261a943552ca5280adec31248f6496b3cec8175e6ebf24b1c61d3b49c",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-24-000017",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "460f725aad58b11f519772a00544212af1b1a75a51f7575efccbf52cacf34a02",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "accession": "0000885725-25-000011",
+      "ticker": "BSX",
+      "decision": "exclude",
+      "text_sha256": "cf63d84ce3eb59924be20ae7133e0956e8883d99e3923c50d731e169aeb31a5b",
+      "selection_reason": "supplementary_attestation_scope_review",
+      "reason": "Agent inspected formal independent auditor/ICFR attestation embedded inside extracted span; outside primary MD&A scope."
+    },
+    {
+      "index": 4,
+      "accession": "0000891103-17-000003",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "b72b2cca4ed66991d2f311e704d06e9807369e8b06fc769e317ed3178a6b5c59",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "MTCH"
+    },
+    {
+      "index": 7,
+      "accession": "0000891103-20-000004",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "65f15500019ce1a3afd9e6048946773fde954acf607d6e744e4df0eb7c4bdd99",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "MTCH"
+    },
+    {
+      "index": 55,
+      "accession": "0000895126-16-000395",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "26227c006a31376b2951ed19157773b8241cbf944a9dfe5b2f095ea662e4fb2e",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "EXE"
+    },
+    {
+      "index": 58,
+      "accession": "0000895126-19-000070",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "6d213893cc67dfd37a89b5959d642df91152670639c8e4b787ba7af5a80cf0c9",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "EXE"
+    },
+    {
+      "index": 63,
+      "accession": "0000895126-24-000013",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "6309aee660924d510e1c5245d4e2c29f39668c4f6af64723cd00bc53175d2afd",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "EXE"
+    },
+    {
+      "index": 78,
+      "accession": "0000920148-25-000032",
+      "decision": "exclude",
+      "reason": "Item 8 end includes an unrecognized formal Item 7A market-risk section; boundary too broad",
+      "text_sha256": "4f96c89327fc3d36f71b450e286b3cc48f5883ed427883f23ebae429f9124ae1",
+      "selection_reason": "all_flagged",
+      "ticker": "LH"
+    },
+    {
+      "index": 168,
+      "accession": "0000936340-20-000127",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "c85611f7a5003f5954045f9c39c8d3144d9b3013969c7de2436f8fe4681293ef",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DTE"
+    },
+    {
+      "index": 171,
+      "accession": "0000936340-23-000073",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "4e1e1f511113975626b301d81375f5df9c1babe71ea63b65c3ecee02f635598c",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DTE"
+    },
+    {
+      "index": 172,
+      "accession": "0000936340-24-000076",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "f381fbe0ef72ede7b91060fab79cb0a3723f99146ddb21ed16910103e177e0c9",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DTE"
+    },
+    {
+      "index": 13,
+      "accession": "0000945841-13-000019",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "106a61edb3134eac64da331a63bf0a8444eb73d102efdc23cdaa7446bb9a3bf8",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "POOL"
+    },
+    {
+      "index": 18,
+      "accession": "0000945841-18-000020",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "034e3b4a36668f5eeeccbbf0416d976a0b34046bc52fb656453a7cc379aec5e2",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "POOL"
+    },
+    {
+      "index": 137,
+      "accession": "0000950123-14-002876",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "fcacfe66103cc3f4a2962d6ab9e893156b5bf4cc37170f062a00b70b915c737a",
+      "selection_reason": "all_flagged",
+      "ticker": "HST"
+    },
+    {
+      "index": 153,
+      "accession": "0000950170-22-001965",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "cd8e36a5b68d3c590f81994a8b75c06e00fa322593447b436eff729507f6408b",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HST"
+    },
+    {
+      "index": 155,
+      "accession": "0000950170-23-003778",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "d522e2c3bf1a1baf93dd9f6679911cae56d2d8ba0ee96074be1bdf442d0db79a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HST"
+    },
+    {
+      "index": 131,
+      "accession": "0000950170-24-022794",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "8994dbc456fca49b02c41943abf287f42b765ec1da0709625627285d9b30aa24",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PKG"
+    },
+    {
+      "index": 166,
+      "accession": "0001002910-18-000069",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "735ece3e34a7b98baa9679626720b4381e2cd1a72257e605c4d4f9327eaa73c4",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "AEE"
+    },
+    {
+      "index": 52,
+      "accession": "0001035002-13-000008",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "fd3cc8c6caf62dd85d7665df42a0c04c4aecf5d292ecb72d0706237afb515562",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VLO"
+    },
+    {
+      "index": 56,
+      "accession": "0001035002-17-000009",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "49d3f5209e0cb170786cc8c5598cc1359de0910e3d14e02685977a906b0eab5c",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VLO"
+    },
+    {
+      "index": 59,
+      "accession": "0001035002-20-000007",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "11286477182787fb5387343de1210be6acf6cc5ae2adb7946a28eb7deda4d789",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VLO"
+    },
+    {
+      "index": 61,
+      "accession": "0001035002-22-000007",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "0c1aa2f9139b1f482107097f8903f4b9d0f6ab8fe4063d1b1fbf310bbe05fba8",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VLO"
+    },
+    {
+      "index": 62,
+      "accession": "0001035002-23-000027",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "7a9f55be69bbcf9499251875a2b4aadb2fd2fcda5f4db79876d7cb0b1308268b",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VLO"
+    },
+    {
+      "index": 138,
+      "accession": "0001035443-15-000018",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "5aa0d66afe34e6b155020d4f22871910d382749955ec577c9b6e456e71cafe91",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ARE"
+    },
+    {
+      "index": 151,
+      "accession": "0001035443-21-000044",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "e5bbb962f662070b58f6ee9c4c29021047098b3277a0daf1974adfbad37050ba",
+      "selection_reason": "all_flagged",
+      "ticker": "ARE"
+    },
+    {
+      "index": 159,
+      "accession": "0001035443-25-000067",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "c2ecc96eb6900ea955a115f1944177ccb9d41b8668746c0e4641f7070428668e",
+      "selection_reason": "all_flagged",
+      "ticker": "ARE"
+    },
+    {
+      "index": 15,
+      "accession": "0001041061-15-000007",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "1aabbc8d1e213c77b2e3ce197b45dcf3b48f45e29d4ae7d56142d8a4162e4416",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "YUM"
+    },
+    {
+      "index": 25,
+      "accession": "0001041061-25-000013",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "4e46a4f869c6add1909894a90b7279c9be74c80b5cee1c8a1cd4a66259cba16d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "YUM"
+    },
+    {
+      "index": 26,
+      "accession": "0001047469-13-003283",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "faceec58c4b1bfeef139e0308bcf60efb91382ff57c0530ba6d8b545bf1f1fc2",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DG"
+    },
+    {
+      "index": 136,
+      "accession": "0001047469-14-001416",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "e0108b211782d7d01a21f8e4b62828bc504cf9e76c55fc170b36eef584eb79f9",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 81,
+      "accession": "0001047469-14-001513",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "142cce22627fad0b0b57439644a94635f83c08aba7896b007e079e608535adfa",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "FIX"
+    },
+    {
+      "index": 139,
+      "accession": "0001047469-15-001339",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "dbf6333d7177c44048617ac583c4640d136dc89d7554f428f7bbc6a5fcc50798",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 141,
+      "accession": "0001047469-16-010465",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "3b7331777fc5de6df20ca544f6c11e2e5dd72fcf9e99d42e37786be2d68b2b08",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 94,
+      "accession": "0001050915-24-000009",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "f9bfcb20c1304dec371d227b03ed22ed1c8d2e2eb0918138273838bc5bb86f48",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PWR"
+    },
+    {
+      "index": 142,
+      "accession": "0001057352-17-000008",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "1ca2c1192e662eb3f82ab6b5707681984f5a1b5234a2de2685cf6df96c0a895f",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CSGP"
+    },
+    {
+      "index": 148,
+      "accession": "0001057352-20-000036",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "c2604e2d4a7cccaf01be56cc18ecffa1af173cea3aad4a4b1b325f477b7df195",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CSGP"
+    },
+    {
+      "index": 104,
+      "accession": "0001058290-18-000009",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "375dbbd9ce7eb9ed5814341ec83840e62605019dbc724f070dd14f3cd97489e1",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CTSH"
+    },
+    {
+      "index": 67,
+      "accession": "0001071739-15-000034",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "8b3b041109c44c9c8900b474714f6836c296979859c241ff34e3e92bd70b6dce",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CNC"
+    },
+    {
+      "index": 102,
+      "accession": "0001094285-16-000177",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "07cb788ab8e0a8f10c6345409ee4457a4579a6935025b8d46bc5409417b1e8ec",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "TDY"
+    },
+    {
+      "index": 111,
+      "accession": "0001094285-22-000049",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "98eaa62323977f6b84f8ef09361d54b9d4aaa73d8919ad333b18279776fbf6c6",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "TDY"
+    },
+    {
+      "index": 117,
+      "accession": "0001094285-25-000053",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "d6216ab5f07dbc3dadbacaae7057c239ef5d44daa00751c5ec69ce70d10f4807",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "TDY"
+    },
+    {
+      "index": 79,
+      "accession": "0001104659-13-011048",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "271168de164a6867764ae59d7ee40cabf627828c96b812e2286b898ca6bfbb70",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "TXT"
+    },
+    {
+      "index": 121,
+      "accession": "0001104659-15-012578",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "171ab70353e39744a09f1019cd8aafbd53b871e9fe02710f7314bff456b6557d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BALL"
+    },
+    {
+      "index": 14,
+      "accession": "0001144204-14-010483",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "a49a4d711d5686f278074a4a56d7d0881cb89249048a0aaa6494457e43bef0ad",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "GRMN"
+    },
+    {
+      "index": 68,
+      "accession": "0001145197-16-000083",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "b3b35158e4a923dd7cc29c5faeadfbb9cd2048ae2f26ecaa218ee56e63c2812e",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PODD"
+    },
+    {
+      "index": 69,
+      "accession": "0001145197-17-000005",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "58565ac6ff9464c287c3ffa4d9aac544ac8a34339fee345e272cae2d738dc8f6",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PODD"
+    },
+    {
+      "index": 75,
+      "accession": "0001145197-23-000020",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "b72614e4266911182670ab74cbf177ce7ecf30dddcdd1b8c98281a468566c0a2",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PODD"
+    },
+    {
+      "index": 134,
+      "accession": "0001193125-13-073292",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "2bea071bc23f9b491f4f7b88b69166475effc236db55e2fc962f4f2f8c6e9466",
+      "selection_reason": "all_flagged",
+      "ticker": "HST"
+    },
+    {
+      "index": 0,
+      "accession": "0001193125-13-077102",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "fc827e31fa6c9b049867ec58361cb76365a40fc83ec966c15f54cfaba0971d42",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "LYV"
+    },
+    {
+      "index": 65,
+      "accession": "0001193125-13-077574",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "cf3be29280dd67c185539c028b2597a5626ea08579b1573ced6207300f60c313",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HCA"
+    },
+    {
+      "index": 119,
+      "accession": "0001193125-13-083569",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "5211b9afdb8ebb20da40f76d8d928eb8c4f7af83e91dc8fb3dc8451a80d56ee3",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PKG"
+    },
+    {
+      "index": 135,
+      "accession": "0001193125-14-078397",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "293e6d3ca7b444bda5c3e55d49dd112d22a7403a6b8dc9f30c091f1c26f74c20",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DLR"
+    },
+    {
+      "index": 87,
+      "accession": "0001193125-17-064821",
+      "decision": "accept",
+      "reason": "Agent reviewed source context, opening, interior, tail and subsequent heading. Long PWR narrative checked: no formal auditor report; acceptable MD&A.",
+      "text_sha256": "74995c90d6c37a019fc96cc7b14f17af63623ed19c3296d29679bded81f4c8f2",
+      "selection_reason": "all_flagged",
+      "ticker": "PWR"
+    },
+    {
+      "index": 88,
+      "accession": "0001193125-18-047130",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "679b1916f8052c64f2fb019a98c248c516a80ee11ab61f1f731f205f863fe892",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "SNA"
+    },
+    {
+      "index": 70,
+      "accession": "0001193125-18-056057",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "6e29f4c2f3083c618ab8c0c92fbd50f01cfda4e079c6d13eff9c5769df0a898e",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HCA"
+    },
+    {
+      "index": 110,
+      "accession": "0001193125-21-060650",
+      "decision": "exclude",
+      "reason": "Formal Item 7A reverses Qualitative/Quantitative order; selected Item 8 end includes a separate market-risk section",
+      "text_sha256": "d0c215bd31d710bd282c5c8832f60ba065edc1be757a298764a6da8891c0cd8e",
+      "selection_reason": "all_flagged",
+      "ticker": "PLTR"
+    },
+    {
+      "index": 96,
+      "accession": "0001234452-13-000483",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "831ebc069d975a8f4cb45a198479f4c3e553fdb8cd01245229376a22960bcfff",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "QCOM"
+    },
+    {
+      "index": 100,
+      "accession": "0001234452-15-000271",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "516e721529bc149c5756d4d41e769038260fce19b4548d6f14077f14e5f60be1",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "QCOM"
+    },
+    {
+      "index": 103,
+      "accession": "0001234452-17-000190",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "ebd2952264fc99b536f5daf0b8f8f6ce31be867a3263a8e1969f57732fc7ceda",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "QCOM"
+    },
+    {
+      "index": 99,
+      "accession": "0001274494-14-000011",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "ee784db2eccf6f874e01b359b272679b58eda2a61a1cd5f0bd3d2cc75dec0992",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "FSLR"
+    },
+    {
+      "index": 146,
+      "accession": "0001297996-19-000032",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "91c17b061a63d0259d1e8071d0d95ffe0755a535b9391add4f5db81ba3192bcb",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DLR"
+    },
+    {
+      "index": 115,
+      "accession": "0001321655-24-000022",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "52f67a11b60406d9af96c128057437f5c4cbd6774cba20b9ed180b4e995fe7cd",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PLTR"
+    },
+    {
+      "index": 2,
+      "accession": "0001326801-15-000006",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "06ef4e3fc232a625480d95cd2ae2871c22763b503908c0852091c1d704c1edc6",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "META"
+    },
+    {
+      "index": 6,
+      "accession": "0001326801-19-000009",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "777311a0b268a8dfca6e5e13e550933389c4fcc297abbde7d1ba49261a733352",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "META"
+    },
+    {
+      "index": 3,
+      "accession": "0001335258-16-000167",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "d407cb218f1caf0e0f598a1a8f193f5e2a702b60d1f8781a406d0077ea26972d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "LYV"
+    },
+    {
+      "index": 5,
+      "accession": "0001335258-18-000023",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "4913bd25657b242d19e40734ae59ae75c225e3ff7147cd3a0dbb21fac29732f9",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "LYV"
+    },
+    {
+      "index": 8,
+      "accession": "0001335258-21-000009",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "a45b422f5b18fe0b522fbb4198294263a634a98fad60f2f67ac7a064286f1557",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "LYV"
+    },
+    {
+      "index": 105,
+      "accession": "0001375365-19-000039",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "6d9c683bfa2013efe34242f0dcf4af2811f3a55939b2fd8084082343c6e118dd",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "SMCI"
+    },
+    {
+      "index": 85,
+      "accession": "0001383312-16-000108",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "b93d719146b0fba435209cb63391c798ea9f630ebf7aa69e46950f378e7a09fb",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BR"
+    },
+    {
+      "index": 89,
+      "accession": "0001383312-19-000042",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "9d3cb7698695536315a32d7f5400d614ed9efcb836fad56035dedc5b66502286",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BR"
+    },
+    {
+      "index": 133,
+      "accession": "0001393311-13-000004",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "02d6cfe6768a3752108a41bdf88e6f944c796342d772171d1254a696ad44905f",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSA"
+    },
+    {
+      "index": 157,
+      "accession": "0001393311-24-000043",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "0fb3d766a60a7d1645bf007e6a60da075736ae586b238949807bda623fd2c24d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSA"
+    },
+    {
+      "index": 169,
+      "accession": "0001410636-21-000101",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "fc6cae002587c2e81eb855696ae2e52409090f2553f7fedf1614409366964c8a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "AWK"
+    },
+    {
+      "index": 173,
+      "accession": "0001410636-25-000022",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "4584d3079743e0e733fc64d6aee19e049efeadf6ec3d6e3b64043bbba4b4d12d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "AWK"
+    },
+    {
+      "index": 44,
+      "accession": "0001437749-22-017530",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "58429e3eaec049e0ff57bdfbfc3a338885b3d21c191b694ed62eb915aff6c3a3",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CAG"
+    },
+    {
+      "index": 90,
+      "accession": "0001442145-20-000012",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "7e47f00ccd00b188e1857fd748d256c47244936331dfe39932719c28915ba784",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "VRSK"
+    },
+    {
+      "index": 27,
+      "accession": "0001445305-13-000278",
+      "decision": "exclude",
+      "reason": "Overbroad incorporated financial section includes consolidated financial statements and independent-auditor report; not pure MD&A",
+      "text_sha256": "0d944e955208f54b1289c9f4fd8b3c2f346c03d76ffabf1fbf789f8043b3008a",
+      "selection_reason": "all_flagged",
+      "ticker": "PEP"
+    },
+    {
+      "index": 161,
+      "accession": "0001445305-13-000414",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "7b7b81e04f51bcfb95b32d6e68563715172b40a5c7be9331c4480c3f70b61123",
+      "selection_reason": "all_flagged",
+      "ticker": "AEE"
+    },
+    {
+      "index": 97,
+      "accession": "0001445305-13-002262",
+      "decision": "exclude",
+      "reason": "Formal Item 7A reverses Qualitative/Quantitative order; selected Item 8 end includes a separate market-risk section",
+      "text_sha256": "af0dd1eccc85216af0adbe1695409237a8945adc94b26bbb6be5fa01661a3b81",
+      "selection_reason": "all_flagged",
+      "ticker": "SMCI"
+    },
+    {
+      "index": 98,
+      "accession": "0001445305-14-003958",
+      "decision": "exclude",
+      "reason": "Formal Item 7A reverses Qualitative/Quantitative order; selected Item 8 end includes a separate market-risk section",
+      "text_sha256": "96ffb03dab9b247317d774a410a53d5cbe1f526b13a591e13cb26f297db54184",
+      "selection_reason": "all_flagged",
+      "ticker": "SMCI"
+    },
+    {
+      "index": 107,
+      "accession": "0001467373-20-000376",
+      "decision": "accept",
+      "reason": "Repeated page headings retained but start/end surround MD&A narrative; no substantive Item 7A body included",
+      "text_sha256": "00928f18d8e5618571eef208c8f77c8fc4729fda37f1b04f270f7d105b52edb9",
+      "selection_reason": "all_flagged",
+      "ticker": "ACN"
+    },
+    {
+      "index": 109,
+      "accession": "0001467373-21-000229",
+      "decision": "accept",
+      "reason": "Repeated page headings retained but start/end surround MD&A narrative; no substantive Item 7A body included",
+      "text_sha256": "faa557eece5ec4c810bee6b9c90fe836987882044616efc700d10365a6ac9429",
+      "selection_reason": "all_flagged",
+      "ticker": "ACN"
+    },
+    {
+      "index": 112,
+      "accession": "0001467373-22-000295",
+      "decision": "accept",
+      "reason": "Repeated page headings retained but start/end surround MD&A narrative; no substantive Item 7A body included",
+      "text_sha256": "a9d83aebc42d35947384f0be45230c426c8405fc6a8326e69c544aeaaad1376c",
+      "selection_reason": "all_flagged",
+      "ticker": "ACN"
+    },
+    {
+      "index": 114,
+      "accession": "0001467373-23-000324",
+      "decision": "accept",
+      "reason": "Repeated page headings retained but start/end surround MD&A narrative; no substantive Item 7A body included",
+      "text_sha256": "1502d8acc014ea8f2d7b8be1f07bd0a9a844739dfd96a4132d43f76b58af2a36",
+      "selection_reason": "all_flagged",
+      "ticker": "ACN"
+    },
+    {
+      "index": 116,
+      "accession": "0001467373-24-000278",
+      "decision": "accept",
+      "reason": "Repeated page headings retained but start/end surround MD&A narrative; no substantive Item 7A body included",
+      "text_sha256": "3c12a99dc93f88b529a392ac0879bcf6f476593633c6819350ebb03bc5204b56",
+      "selection_reason": "all_flagged",
+      "ticker": "ACN"
+    },
+    {
+      "index": 118,
+      "accession": "0001467373-25-000217",
+      "decision": "accept",
+      "reason": "Repeated page headings retained but start/end surround MD&A narrative; no substantive Item 7A body included",
+      "text_sha256": "6f73f42c9ced24b080125a1ec92dfcaf9ad80255ca326eaee4c64a60105f5a13",
+      "selection_reason": "all_flagged",
+      "ticker": "ACN"
+    },
+    {
+      "index": 17,
+      "accession": "0001521332-17-000013",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "abda019a0829e3c275cca4535946c2bedc9f88f38927a6f8836bb0586faf53e9",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "APTV"
+    },
+    {
+      "index": 53,
+      "accession": "0001534701-14-000042",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "fd2cef49c865499ce0f2850db08adfec0c783356e2bb4f4e25f3a7b2974498bd",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSX"
+    },
+    {
+      "index": 54,
+      "accession": "0001534701-15-000038",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "1cefb00eb392eff6c31946e3c045969c859ad231a29bceb56ebddfb5b208983b",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSX"
+    },
+    {
+      "index": 57,
+      "accession": "0001534701-18-000065",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "e46ddf8a61c9aab2b3b8ee54e3a4b47e946ba231428d999146ed6c6c6c007d4d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSX"
+    },
+    {
+      "index": 60,
+      "accession": "0001534701-21-000074",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "e50440c30cb7deb0cd6f41bcc425c31cd0606f4532ffabb00151cb7f6bb1498a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSX"
+    },
+    {
+      "index": 64,
+      "accession": "0001534701-25-000074",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "bde81149db591b53976a1c10b21ae23f487be4bfa9b2e566ba82a26bf8389e3b",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PSX"
+    },
+    {
+      "index": 93,
+      "accession": "0001543151-23-000010",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "d962ca4c52136cf3d9b821a7e7c5bfeacf60b4c64f01f89f5728a267346bc2e4",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "UBER"
+    },
+    {
+      "index": 77,
+      "accession": "0001551152-25-000020",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "230cdeb025dad4ecd2e05134988a435768f17bb8582e92a2c2e53dbb59c9fce4",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ABBV"
+    },
+    {
+      "index": 143,
+      "accession": "0001558370-17-000934",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "4a2806da2e962206120aa27abd09c23d62e841b4f419597673ef318b5cf9cfd8",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 123,
+      "accession": "0001558370-17-001300",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "58f80cc32c62fce46089de7ae3dcdcf43e0bb849a6872ecbf88db2b9389cb2d4",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BALL"
+    },
+    {
+      "index": 145,
+      "accession": "0001558370-18-000981",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "8a6f53da55cd9129267b7a30b82de6431c31fde9cc2593db0c6d190504337c81",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 147,
+      "accession": "0001558370-19-000875",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "00ce78d5934913acd5e44d18f98b33a1267369e3947d48c11f539bab93210fc2",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 125,
+      "accession": "0001558370-19-000909",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "544defce350dfe15de580739d9b74035d4ef2e04b2c6cddbf5504f1ddd830486",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BALL"
+    },
+    {
+      "index": 149,
+      "accession": "0001558370-20-001135",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "d8ac3c325efe27a3ca76d4f5f0ee6bcaa1205e3f81d5dc5ffb11c59bf2e8e46f",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 152,
+      "accession": "0001558370-21-001700",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "06771de7053925ae256d9d80bb289ce9de6df56e2cd513e28735c93c3447a20c",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 92,
+      "accession": "0001558370-22-001753",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "76e065feb803319a07c729949954a05aac6a6b9e56f94c909f9fd8ae36c83fdf",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "FIX"
+    },
+    {
+      "index": 154,
+      "accession": "0001558370-22-001845",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "8f6a12270c164680d85a6fd32b66cf54f5215bbedd73c2e36d7346098d888c61",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 156,
+      "accession": "0001558370-23-001840",
+      "decision": "exclude",
+      "reason": "Extract includes separate Item 7A Qualitative and Quantitative market-risk section; incorrect primary MD&A endpoint.",
+      "text_sha256": "1aecedad85c29faf22ef2bf0b14164061ed24a661a27b759a04ceb3aa5dfcf4b",
+      "selection_reason": "all_flagged",
+      "ticker": "SPG"
+    },
+    {
+      "index": 50,
+      "accession": "0001558370-25-009180",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "39b54be4b031674fe86dc67cc7a7179a4a64b21d03d81bf0c464a4127b4a622d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CAG"
+    },
+    {
+      "index": 21,
+      "accession": "0001559720-21-000010",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "f6aba918e02f71f8331816169a54095acaf1c4aeb4994b68822f5a8443ee315a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ABNB"
+    },
+    {
+      "index": 22,
+      "accession": "0001559720-22-000006",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "7151ff5c987e1a081a0788146f5d0309bacb5130830a3cef6ef12f52f37f90bb",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ABNB"
+    },
+    {
+      "index": 23,
+      "accession": "0001559720-23-000003",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "01b6ea9dac2c505472c71bff245e3559658159e5db61533950fa536c95687c1c",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ABNB"
+    },
+    {
+      "index": 24,
+      "accession": "0001559720-24-000006",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "9c529afed55b6d006002ede99730ce27f41ba7f0c8d6e16ea5dd9916e528cb00",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ABNB"
+    },
+    {
+      "index": 140,
+      "accession": "0001564590-16-012990",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "a8f87ec184e2b6a5c55a114672f29eea5e3c2ef3071163939b499c65358af7f2",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "HST"
+    },
+    {
+      "index": 127,
+      "accession": "0001564590-20-006774",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "a7394f58bf9d2d589bac4bd45fd26455d838e8db2498a8d13ac997d591c99802",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PKG"
+    },
+    {
+      "index": 40,
+      "accession": "0001564590-20-033366",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "b115a6099b4b3b5bd60e2883cf731bf7a6492e771de97595b6b3e0238886d4a1",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CAG"
+    },
+    {
+      "index": 128,
+      "accession": "0001564590-21-008051",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "eb62094cd2b5fe8e25cc83396cada81c5057a6b512a1ae60d55effaaa7887a2a",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "PKG"
+    },
+    {
+      "index": 83,
+      "accession": "0001579241-15-000005",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "0ba60c5c2acc20248fc143b7c35b8bbd2102b043837fa186a2524a595bb5c963",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ALLE"
+    },
+    {
+      "index": 91,
+      "accession": "0001579241-21-000020",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "49b051d0139b7c97cf3a20aa570d937566173e0ac9c9e1fb987aef523fd26a09",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "ALLE"
+    },
+    {
+      "index": 106,
+      "accession": "0001601046-20-000154",
+      "decision": "accept",
+      "reason": "Agent inspected source context, start/interior/tail/end; valid MD&A boundary. Identity eligibility separate.",
+      "text_sha256": "4490db9299692127e9fa5aa31e29b5bcba5d10739eca9097c1261c2e972c3b71",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "KEYS"
+    },
+    {
+      "index": 16,
+      "accession": "0001615774-16-004243",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "29c828eb463748677388d680d23035e1adaa28e5b0f10a4b399c860070091050",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "GRMN"
+    },
+    {
+      "index": 19,
+      "accession": "0001615774-19-002739",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries. Identity eligibility remains separate.",
+      "text_sha256": "4ce910ec9a2cfe01896c2f171cc2873018574e06ac8f7ea237d62699186f7720",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "GRMN"
+    },
+    {
+      "index": 101,
+      "accession": "0001628280-15-007025",
+      "decision": "exclude",
+      "reason": "Formal Item 7A reverses Qualitative/Quantitative order; selected Item 8 end includes a separate market-risk section",
+      "text_sha256": "0c020095f34b1adfe4b8f085b3db277a5ecbfdc8d81e4a1c9e943f55d8acc845",
+      "selection_reason": "all_flagged",
+      "ticker": "SMCI"
+    },
+    {
+      "index": 34,
+      "accession": "0001628280-17-007184",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "404546063bebbea62d9bcf375503fe0253d18b86a4906d0b4693f0b384c3e732",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "CAG"
+    },
+    {
+      "index": 72,
+      "accession": "0001628280-20-003693",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "3f0a67579ee21d925a2cbc83816ce4bc84c709be90215ff67781528b6c3338ee",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BAX"
+    },
+    {
+      "index": 73,
+      "accession": "0001628280-21-001867",
+      "decision": "accept",
+      "reason": "Agent reviewed source context and section start/interior/tail/end; acceptable MD&A; identity eligibility remains separate.",
+      "text_sha256": "8348de6726826ae223ac255297ee2f17cdd94a499707087eccfa6fd156237765",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "BAX"
+    },
+    {
+      "index": 10,
+      "accession": "0001628280-23-029065",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, section opening, interior, tail and subsequent heading; valid MD&A boundary. Structural quality acceptance does not certify issuer/security continuity.",
+      "text_sha256": "e964e503d7c6cb8b1a489a67ebccbe6517fa6e6045d3d6546159a3b3184132bc",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "FOX"
+    },
+    {
+      "index": 32,
+      "accession": "0001637459-16-000100",
+      "decision": "accept",
+      "reason": "Agent inspected source-before, opening, interior, tail and next heading; valid MD&A boundaries; identity eligibility separate.",
+      "text_sha256": "a05a0e2ee91b21bac57a835072160221e4a3ecec88889fa0740c7f5f60d84b01",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "KHC"
+    },
+    {
+      "index": 48,
+      "accession": "0001637459-24-000018",
+      "decision": "accept",
+      "reason": "Agent inspected opening, preceding context, interior, tail and subsequent Item 7A; appropriate MD&A boundaries. Historical entity eligibility is checked separately.",
+      "text_sha256": "1953592e153d618c342c61efb4c2e94733c72521f92782d84163d794cdf6349e",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "KHC"
+    },
+    {
+      "index": 126,
+      "accession": "0001666700-19-000006",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "5cdc3a513c3221cefaae0f597fedda51518e4f7314cb47e951e47c28c9242577",
+      "selection_reason": "all_flagged",
+      "ticker": "DD"
+    },
+    {
+      "index": 129,
+      "accession": "0001666700-22-000009",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "66ed1b3691f6cf69fb067c49e2327977dc3f669f7ebd01dd0f6d405ad817e63b",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "DD"
+    },
+    {
+      "index": 144,
+      "accession": "0001687229-18-000018",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "9b41e2547b290c77acb9f3418c1c99a1da36894831b323364269709ac8b88061",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "INVH"
+    },
+    {
+      "index": 150,
+      "accession": "0001687229-21-000005",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "840800e34737f758e6a7f0e2b6d19b60ff6fe91a0df176ca3acc616c65f31d2d",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "INVH"
+    },
+    {
+      "index": 158,
+      "accession": "0001687229-25-000008",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "3d3fec71b80481276c66a6779d75c70ce4e5dda21a7adc4d5d3ed9f08a8bd184",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "INVH"
+    },
+    {
+      "index": 132,
+      "accession": "0002005951-25-000005",
+      "decision": "accept",
+      "reason": "Agent inspected section opening, interior, tail and following heading; plausible MD&A span. Long financial operating discussion accepted where no separate section contamination observed; identity eligibility remains separate.",
+      "text_sha256": "c6fbe1662b23bd880052a07d1bd26287bd8a88c10a275d467eb54e0f053d55cc",
+      "selection_reason": "sector_year_hash_sample",
+      "ticker": "SW"
+    }
+  ],
+  "market_outcomes_2026_accessed": false
+}

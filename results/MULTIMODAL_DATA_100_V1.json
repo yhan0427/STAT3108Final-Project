@@ -1,0 +1,74 @@
+{
+  "built_utc": "2026-11-18T05:14:08.968160+00:00",
+  "parent_panel_sha256": "8ca13dc7fcf76bb5f7877388919fb735af9518ff78a289898176cb7a76ad99a3",
+  "roster_sha256": "3404d535962cd2173415093f205c010bc26ef8bc6ba2b8a35048c3249478bbcb",
+  "quality_review_sha256": "e4b7b505476eeb5a59a1cb24bb5a7ec79fa8de2f5ba7c581dc63b9a61886b993",
+  "entity_policy_sha256": "df6f4872566e84594ff13305e6651aaedc97885b323d47136004c71f4c2d6548",
+  "source_sha256": "d8e71fac537a3a5353d41d481c53230a177bdc593e904dc5e7044c81828f6a8f",
+  "text_features_sha256": "0ede3d04772aeaa85ffd6c6bfb2fe7b893a5d85672335b400c2d5278c789b370",
+  "files": {
+    "documents.pkl": "566ed643b1a6e05fd2d4dc339a912946f2c43b057908bde0afa6330c688cce76",
+    "training_document_pca.joblib": "aacee8322527a5ff1aa8849a15684bf0aa29867df1be64f901406bab1d984453",
+    "panel.pkl": "315c9a3330768352f851e9047de46f4b7f0f08bd0b7db624d1404f64f6ed223c",
+    "document_vectors.npz": "4b484292b6070921a7fdf35cd0dfbf68009b9cf6517de21021b604281e5fae80"
+  },
+  "companies": 100,
+  "market_rows": 291119,
+  "document_vectors": 1005,
+  "pre_spell_documents_excluded": 10,
+  "training_unique_documents_for_pca": 475,
+  "pca_components": 32,
+  "pca_explained_variance_fraction": 0.925782047289331,
+  "counts": [
+    {
+      "role": "held_company",
+      "split": "test",
+      "companies": 19,
+      "origins": 9139,
+      "text_available_fraction": 0.9434292592187329,
+      "companies_with_any_text": 18
+    },
+    {
+      "role": "held_company",
+      "split": "train",
+      "companies": 19,
+      "origins": 30178,
+      "text_available_fraction": 0.8028365034130823,
+      "companies_with_any_text": 16
+    },
+    {
+      "role": "held_company",
+      "split": "validation",
+      "companies": 19,
+      "origins": 8856,
+      "text_available_fraction": 0.8589656729900632,
+      "companies_with_any_text": 17
+    },
+    {
+      "role": "training_company",
+      "split": "test",
+      "companies": 80,
+      "origins": 38480,
+      "text_available_fraction": 0.8604989604989605,
+      "companies_with_any_text": 69
+    },
+    {
+      "role": "training_company",
+      "split": "train",
+      "companies": 80,
+      "origins": 130065,
+      "text_available_fraction": 0.7966785837850305,
+      "companies_with_any_text": 68
+    },
+    {
+      "role": "training_company",
+      "split": "validation",
+      "companies": 80,
+      "origins": 37730,
+      "text_available_fraction": 0.8313543599257885,
+      "companies_with_any_text": 67
+    }
+  ],
+  "scope": "Fixed 80 training /20 held reference issuers; no text-availability deletion/replacement. Sampled structural QA, not exhaustive certification. Strict next-trading-date join,550-day staleness,identity-spell guards. PCA fitted on unique documents actually joined to fitting origins only.",
+  "market_outcomes_2026_accessed": false
+}

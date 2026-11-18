@@ -1,0 +1,12 @@
+{
+  "registered_utc": "2026-11-18T04:12:54.679140+00:00",
+  "cohort_sha256": "3404d535962cd2173415093f205c010bc26ef8bc6ba2b8a35048c3249478bbcb",
+  "extractor_sha256": "d3d2086fca6c72d7f88c8fad71223d50f11e6d391ff68fce022c6d833793f295",
+  "all_flagged": "Review every candidate with any predeclared collector quality flag before supervised use; reject unresolved boundaries rather than substituting the whole report.",
+  "ordinary_sample": "For each sector and filing calendar year, inspect the unflagged candidate with smallest SHA256 of text-quality-100-v1:issuer_id:accession. Include both original company roles; selection does not access market labels or predictions.",
+  "method": "Agent-assisted source boundary and interior-text inspection, with explicit decisions, hashes, reasons and rejected cases. This is development QA, not independent human certification or a universal extraction-accuracy estimate.",
+  "training_gate": "No supervised text fit until this QA and date/role/PCA checks finish. Unreviewed bulk candidates may be frozen-encoded but are not claimed individually validated.",
+  "alignment": "Strictly after filing calendar date; most recent accepted original annual 10-K, stale after 550 calendar days. Staleness/availability/log content length remain separate controls. No later amendment or future filing is backfilled.",
+  "reduction": "Up to 32 components fitted only on unique documents actually joined to training-company, training-period origins; no validation/evaluation or held-company documents.",
+  "market_outcomes_2026": "sealed"
+}

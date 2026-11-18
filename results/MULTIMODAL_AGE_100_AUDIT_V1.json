@@ -1,0 +1,396 @@
+{
+  "completed_utc": "2026-11-18T05:25:08.718321+00:00",
+  "plan": {
+    "registered_utc": "2026-11-18T05:24:08.561497+00:00",
+    "policy_sha256": "d1c63ad51218350c348da90f186dfa9939adf1fae9d13de8d2927340b8088aa6",
+    "parent_predictions_sha256": "9c27fa28e7e79683ad1a8141ab6cb9232648ddfa16407ba866b8d0c0820e5275",
+    "parent_preprocessing_sha256": "df02b75f751ab20d7a3ff600144e97eddeef3f848fccb15c203a23fbf9a19ef1",
+    "source_sha256": "7168711488cae590590c87d6a98701bb46c45ac3d98b0596be4cffe901993642",
+    "market_outcomes_2026_accessed": false
+  },
+  "policy": {
+    "registered_utc": "2026-11-18T05:23:07.652703+00:00",
+    "parent_plan_sha256": "fc8e67a87b94ff1230a488a605e549781b445903f4bd0f1b0cf44a70639ed336",
+    "reason": "The earlier415-issuer entity sensitivity found filing age alone competitive with full financial values, whereas combined missingness/age controls fit differently. Register an age-only sensitivity for the matched100cohort before first primary held scores, avoiding a favorable but weaker metadata comparator.",
+    "mask": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "name": "filing_age",
+    "same_architecture_and_budget": true,
+    "comparisons": [
+      "filing_age-minus-market",
+      "financial-minus-filing_age",
+      "all-minus-filing_age"
+    ],
+    "scope": "Supplementary mechanism sensitivity, not an untouched confirmation; same training/validation/scalers/seeds/52-coordinate branch as parent; no extra tuning.",
+    "market_outcomes_2026_accessed": false
+  },
+  "ridge_choices": [
+    {
+      "alpha": 0.01,
+      "validation_log_mse": 0.0931748134123896
+    },
+    {
+      "alpha": 1.0,
+      "validation_log_mse": 0.09317280620597014
+    },
+    {
+      "alpha": 100.0,
+      "validation_log_mse": 0.09301663047756063
+    },
+    {
+      "alpha": 10000.0,
+      "validation_log_mse": 0.09046515247402409
+    },
+    {
+      "alpha": 100000.0,
+      "validation_log_mse": 0.08829682367706049
+    },
+    {
+      "alpha": 1000000.0,
+      "validation_log_mse": 0.09226225635073357
+    },
+    {
+      "alpha": 10000000.0,
+      "validation_log_mse": 0.11513199888311865
+    },
+    {
+      "alpha": 100000000.0,
+      "validation_log_mse": 0.1678985258164045
+    }
+  ],
+  "calibration": {
+    "Ridge_filing_age": 1.1935167030098646,
+    "LSTM_filing_age": 1.1538345441286817
+  },
+  "history": {
+    "7": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.6396488843668805,
+        "validation_mse_standardized_log": 0.36535564064979553
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.5242223854491223,
+        "validation_mse_standardized_log": 0.4002697169780731
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.502728224307962,
+        "validation_mse_standardized_log": 0.37936919927597046
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.486832377575895,
+        "validation_mse_standardized_log": 0.3897019624710083
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.4708450081594692,
+        "validation_mse_standardized_log": 0.4021493196487427
+      }
+    ],
+    "42": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.6272642780036767,
+        "validation_mse_standardized_log": 0.36264365911483765
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.5236826396861923,
+        "validation_mse_standardized_log": 0.3854394853115082
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.4920493456565151,
+        "validation_mse_standardized_log": 0.3845856785774231
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.47552714855440054,
+        "validation_mse_standardized_log": 0.4264114797115326
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.4563466025018382,
+        "validation_mse_standardized_log": 0.40588468313217163
+      }
+    ],
+    "2026": [
+      {
+        "epoch": 1,
+        "train_mse_standardized_log": 0.642987358775403,
+        "validation_mse_standardized_log": 0.3750710189342499
+      },
+      {
+        "epoch": 2,
+        "train_mse_standardized_log": 0.526828861280566,
+        "validation_mse_standardized_log": 0.39209532737731934
+      },
+      {
+        "epoch": 3,
+        "train_mse_standardized_log": 0.49730834339480084,
+        "validation_mse_standardized_log": 0.3961009383201599
+      },
+      {
+        "epoch": 4,
+        "train_mse_standardized_log": 0.476345156030351,
+        "validation_mse_standardized_log": 0.4227333068847656
+      },
+      {
+        "epoch": 5,
+        "train_mse_standardized_log": 0.44923421959011256,
+        "validation_mse_standardized_log": 0.41659820079803467
+      }
+    ]
+  },
+  "paired_intervals": {
+    "Ridge_filing_age-minus-Ridge_market": {
+      "20": {
+        "mean_difference": -0.017336318354835758,
+        "ci95_low": -0.026897727129835205,
+        "ci95_high": -0.00787069066805605,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.017336318354835758,
+        "ci95_low": -0.024324098764777053,
+        "ci95_high": -0.009031908430441004,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial-minus-Ridge_filing_age": {
+      "20": {
+        "mean_difference": -0.009475252647416181,
+        "ci95_low": -0.01466802859087575,
+        "ci95_high": -0.004779710813426197,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.009475252647416181,
+        "ci95_low": -0.014729060089807712,
+        "ci95_high": -0.005484031587292356,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_all-minus-Ridge_filing_age": {
+      "20": {
+        "mean_difference": -0.012598779183913786,
+        "ci95_low": -0.01975977902402328,
+        "ci95_high": -0.006450547023144015,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.012598779183913786,
+        "ci95_low": -0.018860122019235898,
+        "ci95_high": -0.006862980489819095,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_filing_age_calibrated-minus-Ridge_market_calibrated": {
+      "20": {
+        "mean_difference": -0.01166131518379692,
+        "ci95_low": -0.017185571347329637,
+        "ci95_high": -0.005840831283295149,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.01166131518379692,
+        "ci95_low": -0.01629729244076288,
+        "ci95_high": -0.006584576620306706,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_financial_calibrated-minus-Ridge_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.00452823031082363,
+        "ci95_low": -0.007913358195865187,
+        "ci95_high": -0.0016606573826237227,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.00452823031082363,
+        "ci95_low": -0.00847193897242252,
+        "ci95_high": -0.001655699551209846,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "Ridge_all_calibrated-minus-Ridge_filing_age_calibrated": {
+      "20": {
+        "mean_difference": -0.00515384807477734,
+        "ci95_low": -0.009398750633056443,
+        "ci95_high": -0.000813560086115913,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.00515384807477734,
+        "ci95_low": -0.009797927950327127,
+        "ci95_high": -0.0010075692397822373,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age-minus-LSTM_market": {
+      "20": {
+        "mean_difference": -0.01073788644962987,
+        "ci95_low": -0.022039645568316623,
+        "ci95_high": 0.004822691764459446,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.01073788644962987,
+        "ci95_low": -0.020879218525278097,
+        "ci95_high": 0.004611585863677772,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial-minus-LSTM_filing_age": {
+      "20": {
+        "mean_difference": 0.009760919899573027,
+        "ci95_low": -0.00018074999917932073,
+        "ci95_high": 0.019842368332534138,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.009760919899573027,
+        "ci95_low": -0.0009376877334961328,
+        "ci95_high": 0.019220289353061946,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_all-minus-LSTM_filing_age": {
+      "20": {
+        "mean_difference": 0.028902024789606334,
+        "ci95_low": 0.011349433469964396,
+        "ci95_high": 0.0457636388900835,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.028902024789606334,
+        "ci95_low": 0.010013203580847303,
+        "ci95_high": 0.04471655578918666,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_filing_age_calibrated-minus-LSTM_market_calibrated": {
+      "20": {
+        "mean_difference": -0.012772028197633593,
+        "ci95_low": -0.019946121798865596,
+        "ci95_high": -0.003098971628996111,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": -0.012772028197633593,
+        "ci95_low": -0.01983749190945073,
+        "ci95_high": -0.0026592180955836236,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_financial_calibrated-minus-LSTM_filing_age_calibrated": {
+      "20": {
+        "mean_difference": 0.005674723280199608,
+        "ci95_low": -0.0018889034649349655,
+        "ci95_high": 0.01266640703015861,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.005674723280199608,
+        "ci95_low": -0.0015376181880126293,
+        "ci95_high": 0.012054045966423762,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    },
+    "LSTM_all_calibrated-minus-LSTM_filing_age_calibrated": {
+      "20": {
+        "mean_difference": 0.0256391712730418,
+        "ci95_low": 0.013343891824287909,
+        "ci95_high": 0.03766045368598654,
+        "block_days": 20,
+        "replicates": 1000
+      },
+      "60": {
+        "mean_difference": 0.0256391712730418,
+        "ci95_low": 0.014155029246122688,
+        "ci95_high": 0.036296247120204954,
+        "block_days": 60,
+        "replicates": 1000
+      }
+    }
+  },
+  "predictions_sha256": "a12423bed2e3e1389ecdfc039aaefd97a12b3a11f0fe47b20ae0bb4628c2f5d6",
+  "market_outcomes_2026_accessed": false
+}

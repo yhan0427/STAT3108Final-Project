@@ -1,0 +1,1525 @@
+{
+  "updated_utc": "2026-11-18T04:38:03.684848+00:00",
+  "plan": {
+    "registered_utc": "2026-11-18T04:10:09.179046+00:00",
+    "cohort_sha256": "3404d535962cd2173415093f205c010bc26ef8bc6ba2b8a35048c3249478bbcb",
+    "extractor_sha256": "d3d2086fca6c72d7f88c8fad71223d50f11e6d391ff68fce022c6d833793f295",
+    "parser_review_sha256": "9d4338c45a4524129beb09e469a2c8583175ecc2a0670f88345ed0adccbbec95",
+    "runner_sha256": "99bf8fdcf6f45d0d16a0ed3c33c2881e1586bc719335811ec3335e54153fbd12",
+    "metadata_parser_sha256": "4ea212c5212ae974dd39b51f7413ef2623335ede97b071976766835f215e80c0",
+    "metadata_helper_sha256": "af0decb6812f56e07ba7e185f38dd30938ade41cf21340354320ddc6ac227351",
+    "earliest_filing": "2013-01-01",
+    "cutoff": "2025-12-31",
+    "extraction": "Original 10-K only; frozen v6 standalone Item 7 to Item 7A/8 candidates; no silent full-report fallback",
+    "quality_flags": "Multiple body candidates; <1500 or >30000 words; end heading Item 8; source fraction >0.65 or start fraction <0.03. Flagged candidates require explicit review before any fit.",
+    "bulk_review": "All flagged candidates plus an outcome-independent sector/year/hash sample of ordinary candidates before supervised fitting; no automatic claim of full-corpus semantic correctness.",
+    "scope": "100 fixed retained non-financial reference-cohort issuers: 80 existing training-role, 20 existing held-role. Does not redefine historical membership or untouched status. No substitution for absent financials/text. Sampled for computational feasibility, not model outcomes."
+  },
+  "companies": [
+    {
+      "ticker": "ABBV",
+      "cik": 1551152,
+      "issuer_id": "CIK0001551152",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001551152.json": "672c031cd01165bb8fae1baddd9fdf5bfbfdeaf8bf1b168e4be8361907c9e333",
+        "CIK0001551152-submissions-001.json": "1332895f28dda3427423dfd15c730ae5f518a1fffd89489c5e1a06cc77bf2eb7"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "ABNB",
+      "cik": 1559720,
+      "issuer_id": "CIK0001559720",
+      "sector": "Consumer Discretionary",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 5,
+      "original_10ks": 5,
+      "sources": {
+        "CIK0001559720.json": "4fabeb95e971f1f3e954410382cf5f6e15064af5352fc941199fab30989b7abf",
+        "CIK0001559720-submissions-001.json": "eb54765aedb6aecc40e0871df4881b53e5abd2a6560bbbba683937ea02a9bcbe"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ACN",
+      "cik": 1467373,
+      "issuer_id": "CIK0001467373",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001467373.json": "0b9422e86eedf44261b2edcde35ebf61875987026f7c8d81439e92a61a39a5a4",
+        "CIK0001467373-submissions-001.json": "068a1032c5d7b9a2154554e603c2bbc9239943e283dbedb828ed1b3120716c81",
+        "CIK0001467373-submissions-002.json": "cc0b522aaf25bfac987e5a0796897773fd9c97dbfd6dfbbd3ddbc7c084243335"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ADI",
+      "cik": 6281,
+      "issuer_id": "CIK0000006281",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000006281.json": "a4b7b1d3df0de46efbda2ebd6fe565930dc1a92d84036ff83b7c155e415e6d1c",
+        "CIK0000006281-submissions-001.json": "3fcdf5e7c862aa83d26221fc6c7d5a457cdbfcf1b54f512c3028691a3c784072"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ADP",
+      "cik": 8670,
+      "issuer_id": "CIK0000008670",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000008670.json": "791494a87d46c7ce1911048338e2e73a6929f2c6f20313929bc09756e0325247",
+        "CIK0000008670-submissions-001.json": "ad7b6e9a6c3bbf2f14debd626f4a8e5f077545a37d69232106727ee04f8d2858"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ADSK",
+      "cik": 769397,
+      "issuer_id": "CIK0000769397",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000769397.json": "821c5ba136e733770e4b6915e28f72f312f68d8f83df650e2cf0237213af48e4",
+        "CIK0000769397-submissions-001.json": "f596c2ea0ecab84149fceaa81255a78334028f8cf37e9dcfbadf33f8dd1c6bd7"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "AEE",
+      "cik": 1002910,
+      "issuer_id": "CIK0001002910",
+      "sector": "Utilities",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001002910.json": "3f9a041028d9853730615d6febc72fa37105da3163303a3c65798a116e759fd9",
+        "CIK0001002910-submissions-001.json": "d541a0cb18eb2d72c108055183492e312cd1578f4f35de929d63eb30513a8b6b"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "AEP",
+      "cik": 4904,
+      "issuer_id": "CIK0000004904",
+      "sector": "Utilities",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000004904.json": "3e849f78f6d9c9da7d4337b24eb18ffa96e38c547bdc74414285e0b39c029caa",
+        "CIK0000004904-submissions-001.json": "5f72f367df8a842765812e89f753f8ad4f1bd98a6b6da0d9666f4410b55eb18d"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ALLE",
+      "cik": 1579241,
+      "issuer_id": "CIK0001579241",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 12,
+      "original_10ks": 12,
+      "sources": {
+        "CIK0001579241.json": "43bc8f717adfa6f76d6275195e7557e8ce20bed6ef3e2aea8d12b95a95f24ebf",
+        "CIK0001579241-submissions-001.json": "1aaa249903cedb7d7484eaeaa964c73a2c51c47f6ad74c176d3eaf582a2095b7"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "APTV",
+      "cik": 1521332,
+      "issuer_id": "CIK0001521332",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001521332.json": "621b7a8b601b6dfca556dca2475b06bd557f5452db4f99d66826c4375ecbb63d",
+        "CIK0001521332-submissions-001.json": "698524fbe7f372e7d77eb46bdc484eac9423131a41e7399a9f4556a190590f4e"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "ARE",
+      "cik": 1035443,
+      "issuer_id": "CIK0001035443",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001035443.json": "bdb0b5b86037895237c2ef996623400df73d95c321ae6a1d7c340dbdb2c9d58e",
+        "CIK0001035443-submissions-001.json": "3a3d3a2c4bd5b8b1729b400abc8c443141062226919c7cff7ec169c9ae87a0c1"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "AWK",
+      "cik": 1410636,
+      "issuer_id": "CIK0001410636",
+      "sector": "Utilities",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001410636.json": "9a8bbef46a22b6a560694db1070455f3cfc350c9abacbe760c4160ff641a2939",
+        "CIK0001410636-submissions-001.json": "0aadb6045f86f6000b472e30377528c0470e3bc9fe907ddfa0f76084bd31d508"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "BALL",
+      "cik": 9389,
+      "issuer_id": "CIK0000009389",
+      "sector": "Materials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000009389.json": "802dc1b22d6c945c7b35997e30a14c3db913fd2be2fbb2a19cf74d0773d54c56",
+        "CIK0000009389-submissions-001.json": "89737adfae54181269a36f15b28e44e4d8699edacdfa27136a0cf0115e0d4023"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "BAX",
+      "cik": 10456,
+      "issuer_id": "CIK0000010456",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000010456.json": "eca29089976a2759585fbdebadf6bb84bb203f6f78410bd6fc09b699d75f7bb6",
+        "CIK0000010456-submissions-001.json": "631ebf58bb3ca931b61c49b3ee933949f5ee36027e0ac509edf945c1da27a148"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "BBY",
+      "cik": 764478,
+      "issuer_id": "CIK0000764478",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 12,
+      "sources": {
+        "CIK0000764478.json": "6fb575399604e4f4a62bcf46499276e4b8d80eedfb3eb041726562ff78973677",
+        "CIK0000764478-submissions-001.json": "c38f30d8e72158226b630248cfa794a68cfed05f59cd6646ee51bd91392a8806"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "BF.B",
+      "cik": 14693,
+      "issuer_id": "CIK0000014693",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000014693.json": "2bd63d6f230887a6db517125d44a60255cb0935a23abd784a771370cbc36cf53",
+        "CIK0000014693-submissions-001.json": "9113c97d2a54c840bd66a7a251f26aa3717a60318367fecf63f05ca8f1ce5128"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "BG",
+      "cik": 1996862,
+      "issuer_id": "CIK0001996862",
+      "sector": "Consumer Staples",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 2,
+      "original_10ks": 2,
+      "sources": {
+        "CIK0001996862.json": "bfe850ef85fda716a8f2709ce09170522574f78931943aa25808e997ce155237"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "BR",
+      "cik": 1383312,
+      "issuer_id": "CIK0001383312",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001383312.json": "4f4acc294e7cf7df3fb99e48d2b2120bd4e03da1ffdcf300446127e6ad902dac",
+        "CIK0001383312-submissions-001.json": "e973e50a4a85ef2e1ebc7f0925db28a3db82c8cbeb21cf2078699454b4f634b4"
+      },
+      "other_annual_forms": 2
+    },
+    {
+      "ticker": "BSX",
+      "cik": 885725,
+      "issuer_id": "CIK0000885725",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 16,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000885725.json": "a2ff5a483e460d4eed92bcc545e205f02c3df29a61da8b739829a50bef8fc74a",
+        "CIK0000885725-submissions-001.json": "c9b4fb04b53bca116fb91764fd01f825427e86df7b0dc47c06d052ee502f9255"
+      },
+      "other_annual_forms": 3
+    },
+    {
+      "ticker": "CAG",
+      "cik": 23217,
+      "issuer_id": "CIK0000023217",
+      "sector": "Consumer Staples",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000023217.json": "b7e0fa8562d4a95d3def9ad625d102f95f5f0a220814116ee53c4b865458243c",
+        "CIK0000023217-submissions-001.json": "7a4575a13cfd3bb77041ad683d77aecac95e0f314152fa0e31ee3bbd38e091d4"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "CAH",
+      "cik": 721371,
+      "issuer_id": "CIK0000721371",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000721371.json": "46d1c249726c90c9744f789d2e4ee67e1cd9ae472286ccd7bebd2e9d455caf18",
+        "CIK0000721371-submissions-001.json": "ec0860dbc85edbd8bd1b2c260ccac580f4aa1ff2fc5378ae2569a9bceb67f2f7"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "CNC",
+      "cik": 1071739,
+      "issuer_id": "CIK0001071739",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001071739.json": "42b55f8b7074f2ced0766da3fdd83d049a6965a429a14b45ccef1082d435c8f2",
+        "CIK0001071739-submissions-001.json": "db7988346d8854691507b0738a90140bcae396e6d63d002d7960b0288b0fe78d"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "CRH",
+      "cik": 849395,
+      "issuer_id": "CIK0000849395",
+      "sector": "Materials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 2,
+      "sources": {
+        "CIK0000849395.json": "406285d3bd6a4642cd5aac5c31390a3e85452c252561edca1952ab7f4978d3b7",
+        "CIK0000849395-submissions-001.json": "f48c814c88777638e76c3a2f63f34ae113c956f7dcad879765d988e7561704de"
+      },
+      "other_annual_forms": 13
+    },
+    {
+      "ticker": "CSGP",
+      "cik": 1057352,
+      "issuer_id": "CIK0001057352",
+      "sector": "Real Estate",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001057352.json": "e69c5ca3417694a73f8793feccaeacd00ebd93c4256a32996dcd3b1b58f0e23e"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "CSX",
+      "cik": 277948,
+      "issuer_id": "CIK0000277948",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000277948.json": "eca174411a8e9b5ff800759ce3a65a4d94b4481ad557c242bb840787f6db2a53",
+        "CIK0000277948-submissions-001.json": "967837343e1322fd0852f51358916af2ad5f4b285fe2a38c5d88f7c510e5b6da"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "CTSH",
+      "cik": 1058290,
+      "issuer_id": "CIK0001058290",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001058290.json": "b31b3267a5edd7ba1ce14beb9a9a502e2461358e0b308321520df1d16067cf40",
+        "CIK0001058290-submissions-001.json": "f60a834cf571815560dc5dcf4fd33e9c0a7aa72507c46417aabe0122a5e1f2ee",
+        "CIK0001058290-submissions-002.json": "439e0eae1c0aeb71fd79f77ba0aa60c239f34159235cd054f1ff1a917b832afe"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "DD",
+      "cik": 1666700,
+      "issuer_id": "CIK0001666700",
+      "sector": "Materials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 8,
+      "original_10ks": 8,
+      "sources": {
+        "CIK0001666700.json": "7af04b29f9f7b85a89ac02d97e0694c5abdbe7699f227d493cc8127bdb0102d7",
+        "CIK0001666700-submissions-001.json": "b244eaca56d848c0fb24447ee078ead489c1ca24de60f6a0de95ce88b97c366a"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "DDOG",
+      "cik": 1561550,
+      "issuer_id": "CIK0001561550",
+      "sector": "Information Technology",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 6,
+      "original_10ks": 6,
+      "sources": {
+        "CIK0001561550.json": "07465d204179acd7d7fc8f2df84cc8b8ee36a78ab4feebedf45e35f896a665e0",
+        "CIK0001561550-submissions-001.json": "0e3f59bfcba5e931e816fb4836bb082d86fb2dd957ce45a2c3fe0c4e4069fc90"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "DG",
+      "cik": 29534,
+      "issuer_id": "CIK0000029534",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000029534.json": "b9211199ed927649e6e3e2072db6e3a70b8d0c6a6663144a1653767570abc276",
+        "CIK0000029534-submissions-001.json": "9bd8071f44120b79c1cd2163223a32d4c840368ca6652df33b76f303dfc12415"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "DLR",
+      "cik": 1297996,
+      "issuer_id": "CIK0001297996",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 16,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001297996.json": "61e04d23f2f808059001e5393180601621d71bb526ba7c1b9d0ccf539c364792",
+        "CIK0001297996-submissions-001.json": "421017466550495cc4cd9e11446b96c6671a08c8ab4b6c83c4486b5e2c1d91fa"
+      },
+      "other_annual_forms": 3
+    },
+    {
+      "ticker": "DOV",
+      "cik": 29905,
+      "issuer_id": "CIK0000029905",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000029905.json": "87d8fd1ed83c08901b746300eb895c2e394c665d5311642d57665008d1690eac",
+        "CIK0000029905-submissions-001.json": "dc726690f24e11c8a508e7c5cb37a2b81c5e483af33c1af94ed14b3572c6cfd7"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "DPZ",
+      "cik": 1286681,
+      "issuer_id": "CIK0001286681",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001286681.json": "983b465f0806c5704bdc93f5a6ea482ca4bd569a7fa31013e81609f036727475",
+        "CIK0001286681-submissions-001.json": "bb7479af5a6069a43c271d0909b9289f4cad255c3d4c534e1046646c1f532402"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "DTE",
+      "cik": 936340,
+      "issuer_id": "CIK0000936340",
+      "sector": "Utilities",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000936340.json": "f7ac6b9a288a7c684840b4d1a5a1f3c8851f03626423269a4da8898cccab4d2e",
+        "CIK0000936340-submissions-001.json": "0dd7faf01291371c807f01ae0b4e778f10936daf5c314434d5587da641de6f07"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "EIX",
+      "cik": 827052,
+      "issuer_id": "CIK0000827052",
+      "sector": "Utilities",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000827052.json": "777c6760b98c48c83a62681371821188042bc8025393ada98a4994df580f996d",
+        "CIK0000827052-submissions-001.json": "31c7ff510b95c0ca720c059f01a7f41775ac61ff69041bda836bad3a0a1a9de0"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "EMR",
+      "cik": 32604,
+      "issuer_id": "CIK0000032604",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000032604.json": "4b38b1e5f6929fbffeded10d53ce2b7898cefd9a3a036dd2853ab18e7d6a92e8",
+        "CIK0000032604-submissions-001.json": "9d843da0d224e29587fff8e118e902915d6eebed222afe05c59041125c951a1d"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "EPAM",
+      "cik": 1352010,
+      "issuer_id": "CIK0001352010",
+      "sector": "Information Technology",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001352010.json": "8bf22cacf3c5723f67cf284c4d199dd54fa05a4a76875dc8d1b784cd73fa1a99",
+        "CIK0001352010-submissions-001.json": "006e76934c4944285f9061daf528b79af5339d2f865b5e6ccf27e7adc024f560"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ES",
+      "cik": 72741,
+      "issuer_id": "CIK0000072741",
+      "sector": "Utilities",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000072741.json": "779eadc9d8799d8add23ac5d0c0b6b44f99b3a993de743c938417a550b717916",
+        "CIK0000072741-submissions-001.json": "883d25d1c2d6f190b67a766a96c38e44fe016bf7c8f1532bdaf79d4a1e3d065d"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ETR",
+      "cik": 65984,
+      "issuer_id": "CIK0000065984",
+      "sector": "Utilities",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000065984.json": "1eb3ecfbf1a81f5cd5c63207d08444f0f50b82869e8e3bd3fb75ea1bf7e14fb0",
+        "CIK0000065984-submissions-001.json": "61f3bd75ec95ddc97e14ce370dfb6c5526f9aa4294b190c84279550d2ce1ba8e"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "EXE",
+      "cik": 895126,
+      "issuer_id": "CIK0000895126",
+      "sector": "Energy",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 16,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000895126.json": "2c1e9d833b7cd1e6e6875f73a840753f761ade9f1bda54da123ca6ff13834f86",
+        "CIK0000895126-submissions-001.json": "8fd4a0ad1a8742e254a9d0e77df175f0b4afed2148148571195b262c56bb16c2"
+      },
+      "other_annual_forms": 3
+    },
+    {
+      "ticker": "FCX",
+      "cik": 831259,
+      "issuer_id": "CIK0000831259",
+      "sector": "Materials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 16,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000831259.json": "571deb9f1fa0494d8899cad435038814a1330203419e6d6eca107231711c0200",
+        "CIK0000831259-submissions-001.json": "e653de214525113d8fc1cc6e8021c68eb8070fe25a000f9d6d91fd568a469466"
+      },
+      "other_annual_forms": 3
+    },
+    {
+      "ticker": "FIX",
+      "cik": 1035983,
+      "issuer_id": "CIK0001035983",
+      "sector": "Industrials",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001035983.json": "780aff868b88cd9e603a5c28e1e256c122e5c2ff150c429a7799f246a79a631d",
+        "CIK0001035983-submissions-001.json": "da3e323967f110180edd8e02a039b2fb8baec1d6874656ae4b78a446343954e0"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "FOX",
+      "cik": 1754301,
+      "issuer_id": "CIK0001754301",
+      "sector": "Communication Services",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 7,
+      "original_10ks": 7,
+      "sources": {
+        "CIK0001754301.json": "5976065f1cc5c497e8eaf944b77bc5cff81fe85754a4db3722f83b0a1a1a21ba"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "FSLR",
+      "cik": 1274494,
+      "issuer_id": "CIK0001274494",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001274494.json": "e5d7e6b4c2ba7758ca918d4fce160869f0c5c17a383d74225cb4325c910d514d",
+        "CIK0001274494-submissions-001.json": "82bbd2687aeb94214e89defc17b981c41e46ed33c33be08c1eea2e38b3f6d02f"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "GILD",
+      "cik": 882095,
+      "issuer_id": "CIK0000882095",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000882095.json": "9a3ba340d579278a369cf35ed0808b482ffd1bdafc5ec234d5f5ad5fe2d4c40b",
+        "CIK0000882095-submissions-001.json": "0209f9624db355fed8b554bb760d0a51553851a48fa6c4608952d520414d1c15"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "GRMN",
+      "cik": 1121788,
+      "issuer_id": "CIK0001121788",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001121788.json": "ef3df33e7f8c5518e9cd648ec1048601f998a2a5bb8b7e104c5cb8aa5d58eb37",
+        "CIK0001121788-submissions-001.json": "f59a04c827debbd3d842aa797b596f6a071d0afe74cbf6e232c9519234da1aec"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "HCA",
+      "cik": 860730,
+      "issuer_id": "CIK0000860730",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000860730.json": "7316227720217da826761df5a52319d241fdce362e48f1adf713e1211cf6cbfc",
+        "CIK0000860730-submissions-001.json": "8d4bd29ef5bfa49e556f3d2fbdb66fcf812ba3d35a61fd66ce4ae678e23b4ad8"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "HD",
+      "cik": 354950,
+      "issuer_id": "CIK0000354950",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000354950.json": "69435b50efc57a00c0f7a301e18dee67a0e9ce18bdaeafb1b240564dda549bbd",
+        "CIK0000354950-submissions-001.json": "fc5290f6af851830796105af53fab4c5c2192be6df8e128652a01124593f3b2b"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "HRL",
+      "cik": 48465,
+      "issuer_id": "CIK0000048465",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000048465.json": "c827c3eb503f18920be5394264156ce1048ce12a5d062eab21e97bb49fc7c623",
+        "CIK0000048465-submissions-001.json": "3d434d52b2de943c5874af4295645f2ed5f3f7dadf97f88119235774d504567a"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "HST",
+      "cik": 1070750,
+      "issuer_id": "CIK0001070750",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001070750.json": "dd1acad26b246b1145651892a1321cc76d1f01fb0018ce2f7b4181edfd2baec7",
+        "CIK0001070750-submissions-001.json": "492bef79bf250c93bd6249e8a91480cbacd93ae0b6018747569ec8fe01764b8e"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "HSY",
+      "cik": 47111,
+      "issuer_id": "CIK0000047111",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000047111.json": "530d7a3d49d811c76357e25df3f2ae47f96db4acc71ac702d50e1cc50454a85d",
+        "CIK0000047111-submissions-001.json": "6d9870c0b31353ede24bd02a9c51ab89db3be62fa86c8f8269385577e4abc687"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "HUM",
+      "cik": 49071,
+      "issuer_id": "CIK0000049071",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000049071.json": "4edfee5a2e139013a871ee2890f49cc41270f18b66e90d54ec8ac7b645304c4a",
+        "CIK0000049071-submissions-001.json": "fc6ac23dc234ca326b80a63f455b57f5ba63fbc04b44b464a429b5e9bcf61eab"
+      },
+      "other_annual_forms": 2
+    },
+    {
+      "ticker": "IBM",
+      "cik": 51143,
+      "issuer_id": "CIK0000051143",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000051143.json": "9359de8009bc4333deb34af0b3df0bf8adf30249f6b322eb2c09b262abf6844c",
+        "CIK0000051143-submissions-001.json": "d970c78c1814c7d65ac3f80ebcf41815687d4cbd2291d05563b34bc5f824221a"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "IDXX",
+      "cik": 874716,
+      "issuer_id": "CIK0000874716",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000874716.json": "562bd14aa0f8068a1ad043cf130a22fda3d57984758007bdb42da70c8cb5da92",
+        "CIK0000874716-submissions-001.json": "6caf58f6fae0843eb990d70ba9ccf504381367f65121ebfd9f77b5c825211b6c"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "INVH",
+      "cik": 1687229,
+      "issuer_id": "CIK0001687229",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 9,
+      "original_10ks": 9,
+      "sources": {
+        "CIK0001687229.json": "d2c599edddc16c661f23c5f67ccf164cb337b9e340ec5f4e9e264c5ce265870c"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ITW",
+      "cik": 49826,
+      "issuer_id": "CIK0000049826",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000049826.json": "e9a36f9641df5607777a005899b43bfc8e4d0e7ff4f41bb536933c9147f27462",
+        "CIK0000049826-submissions-001.json": "ec453f7f92afc43946623dbb105c2342fbce98fc721953ea8fed36bb2e05f7e4"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "JBL",
+      "cik": 898293,
+      "issuer_id": "CIK0000898293",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000898293.json": "ea749cce5b0da5f19d9c4f5cf97a2b0d3072753056b2fc93e0dba511384562d2",
+        "CIK0000898293-submissions-001.json": "ed1ad2b82d0d81e1da855d271a908cbfcc8a5c61440ad5e174a3bf8c0af740d3"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "KEYS",
+      "cik": 1601046,
+      "issuer_id": "CIK0001601046",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 12,
+      "sources": {
+        "CIK0001601046.json": "b90a15d8bb38c0447af80acc69228300808b6f674bfa98a65d8f5d49380b7b7b",
+        "CIK0001601046-submissions-001.json": "a56edfb1cb90750770bd82ca96a1c36a6a5daba65903d5d69ba0e15741eab9f2"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "KHC",
+      "cik": 1637459,
+      "issuer_id": "CIK0001637459",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 10,
+      "original_10ks": 10,
+      "sources": {
+        "CIK0001637459.json": "951c279f7c025d6fee7155481b92a1f211539ae0f45b36b93ad1d354550cd010"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "LH",
+      "cik": 920148,
+      "issuer_id": "CIK0000920148",
+      "sector": "Health Care",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000920148.json": "00db836a7e4a8a7433cf61248039dc2a5f1ce8860ac18692f32ebaf50234371e",
+        "CIK0000920148-submissions-001.json": "b9c7ff8f5dc9a79d7f4f1d55b5a13706ac704ff5d3a22747170b7664e7ebcdf3"
+      },
+      "other_annual_forms": 2
+    },
+    {
+      "ticker": "LYV",
+      "cik": 1335258,
+      "issuer_id": "CIK0001335258",
+      "sector": "Communication Services",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 20,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001335258.json": "d2393e4fc6f03199567fc553429441877636811ade042e4c483bef419de2b5d7",
+        "CIK0001335258-submissions-001.json": "b52af36dd6bdb49956bd3fc35f93165763208a4739156049328abd7ef73612eb"
+      },
+      "other_annual_forms": 7
+    },
+    {
+      "ticker": "MAS",
+      "cik": 62996,
+      "issuer_id": "CIK0000062996",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000062996.json": "30c6d9e36648213dfc52dc953c93cd404224464cb17230a09989ba034fef6e87",
+        "CIK0000062996-submissions-001.json": "eb3519ccf110d1bf538067fe689ef1828df4608597997207ded4b8ae7167720d"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "META",
+      "cik": 1326801,
+      "issuer_id": "CIK0001326801",
+      "sector": "Communication Services",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001326801.json": "b5251968dff0be3d809b1fc7aecc2a1d770cb1c06d79410420bd3a6292244d22",
+        "CIK0001326801-submissions-001.json": "b3b23554b0e1828cb154c1a5091b6a7d418bf873d0b65bcf68c8f4ab67d8ffad",
+        "CIK0001326801-submissions-002.json": "691ca121268ad6e7007e4eecd8ddc4896b02493baa59052ec2bf6149b55cce43"
+      },
+      "other_annual_forms": 2
+    },
+    {
+      "ticker": "MSI",
+      "cik": 68505,
+      "issuer_id": "CIK0000068505",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000068505.json": "80e4632b9937279c615059dc2aab561c77778437316be5c1d5dd457612d66a64",
+        "CIK0000068505-submissions-001.json": "da3c1bf76aee809e005f8d7f65d9469eb4ad32a6f6a447f309181405c9db33c0"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "MTCH",
+      "cik": 891103,
+      "issuer_id": "CIK0000891103",
+      "sector": "Communication Services",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000891103.json": "da40caf90d705e42c74569fdedfbd9c7478a90af8d729e07af1d37853a3a1cdb",
+        "CIK0000891103-submissions-001.json": "b7daaae9a123e539316b9711b8d523600198f8ea33d06f71efa65f4600006c05"
+      },
+      "other_annual_forms": 2
+    },
+    {
+      "ticker": "NVDA",
+      "cik": 1045810,
+      "issuer_id": "CIK0001045810",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001045810.json": "7b9eaf21cd37e5763cec24bc9d33e61566eff3bdc16033d975463df920702b54",
+        "CIK0001045810-submissions-001.json": "6545ee17590ce11c4f677219107597234168def2434f3776364cbf2c6cbb249e"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "NVR",
+      "cik": 906163,
+      "issuer_id": "CIK0000906163",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000906163.json": "5f2c42cd2c076035a09890633da00e2e86f6053565bd54f767a53f218806458c"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ODFL",
+      "cik": 878927,
+      "issuer_id": "CIK0000878927",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000878927.json": "1a80896ec584f2dadd23d642dbe42e4f143291db5422cbe6659a7f7b7975be35"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "OMC",
+      "cik": 29989,
+      "issuer_id": "CIK0000029989",
+      "sector": "Communication Services",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000029989.json": "b68a38e1d6e4cbda3323981d12a73c04fdb73403729e55c7f14b5c80d6164691",
+        "CIK0000029989-submissions-001.json": "193c097c28d40bc7d3352b7c14b3ebc730909e3885a61288fbe60f204de47158"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "OXY",
+      "cik": 797468,
+      "issuer_id": "CIK0000797468",
+      "sector": "Energy",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000797468.json": "1121cd7526097d3c1182853b643807aa77edad2db724753be881982ecdac8d3f",
+        "CIK0000797468-submissions-001.json": "68282d5727a66fb1137d1b50faf46cbe84fe51ce2dfb1a4518c12efa0b217bcd"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "PEP",
+      "cik": 77476,
+      "issuer_id": "CIK0000077476",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000077476.json": "cd13b34cb86b8f2470307b2feca73db6791ef3a6dea4bba67789d9164d02a32a",
+        "CIK0000077476-submissions-001.json": "e17fd90874b43ec0cf90d908275899d3f97039a7649619667d798ec22e29a2e9"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PHM",
+      "cik": 822416,
+      "issuer_id": "CIK0000822416",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000822416.json": "582ae31469c148f9e96961635604566d8834c828c994dd88fe697da3b9d6a52e"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PKG",
+      "cik": 75677,
+      "issuer_id": "CIK0000075677",
+      "sector": "Materials",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000075677.json": "c5f0ce0a064119669b79be15dc602e8dfb71ee211cc866ddec33957dd5b6dbf1"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PLTR",
+      "cik": 1321655,
+      "issuer_id": "CIK0001321655",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 5,
+      "original_10ks": 5,
+      "sources": {
+        "CIK0001321655.json": "28fc184bc7a631c6f3df1535e78d301c67e304e1f0a2cc621f9fed36e3cb1f77"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PODD",
+      "cik": 1145197,
+      "issuer_id": "CIK0001145197",
+      "sector": "Health Care",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 15,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001145197.json": "7739d59514b2a9b17fb941a5d431a35f730bbf89d6743462831653efc1bb6d81",
+        "CIK0001145197-submissions-001.json": "2c8e11da410250dce1f4b70b31f16d9db45648c411686d492ed8c58f4acc7e25"
+      },
+      "other_annual_forms": 2
+    },
+    {
+      "ticker": "POOL",
+      "cik": 945841,
+      "issuer_id": "CIK0000945841",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000945841.json": "75ce70d4c63bfe1eb6f84d809c021602238bacdfc88accf1f0965e84f36a8f9b"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PPG",
+      "cik": 79879,
+      "issuer_id": "CIK0000079879",
+      "sector": "Materials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000079879.json": "728bb5550007b7a5060570b4d9712fc59d05b31bfcc36c9bf2115fef69026ec3",
+        "CIK0000079879-submissions-001.json": "f765733c78a89a3b77356b2f85760feddb7d41f12c369334ec7bf02f93a65103",
+        "CIK0000079879-submissions-002.json": "68b80a0d6841017050c0fc8356191bb9a1b84138514a87a99a21d993c373c21b"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "PSA",
+      "cik": 1393311,
+      "issuer_id": "CIK0001393311",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001393311.json": "2bf9ee40e06db8d2eb4af81c087bf97dcf06c0696802dfcde745938d8ee5ecc5",
+        "CIK0001393311-submissions-001.json": "6ae3a956c7dcf9e9048ed463f9a79c98969815b8ed87691396587a641ac51bbf"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PSX",
+      "cik": 1534701,
+      "issuer_id": "CIK0001534701",
+      "sector": "Energy",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001534701.json": "1adec613ca36b79612f49e39a3c9ff97d16e0ed3763bfcf26ad2efc3e72537bc",
+        "CIK0001534701-submissions-001.json": "1ea4c9bafa5b485f45629fe15b11246c661b669c0e648d2735e371e207089197"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "PWR",
+      "cik": 1050915,
+      "issuer_id": "CIK0001050915",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001050915.json": "b37b21e4c85bfb112cc74c37a58757eb171578351410ce9873e6e5936b4b68bc",
+        "CIK0001050915-submissions-001.json": "5e1a98bc409523df78a4bcc39a9aeaf42dd2c49250ecfdc4dd4c05f6d039684f"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "QCOM",
+      "cik": 804328,
+      "issuer_id": "CIK0000804328",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000804328.json": "494e92730941bbc88b3a43d4f7c9236a8d45314a6b549a892c872afb16251d78",
+        "CIK0000804328-submissions-001.json": "91ec053e0a812a09f792f536f4382163cc70349eff23ba03c365751f8f3eed58"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "SBUX",
+      "cik": 829224,
+      "issuer_id": "CIK0000829224",
+      "sector": "Consumer Discretionary",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000829224.json": "27344743a6cd6d8231768d7f3529f1fe993c3e99bf1549ab8cdc40c987e078b3",
+        "CIK0000829224-submissions-001.json": "729b151c7bdb7893216e34f492cbbfee18656846c7934642f2013ac721534ecf"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "SMCI",
+      "cik": 1375365,
+      "issuer_id": "CIK0001375365",
+      "sector": "Information Technology",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 12,
+      "sources": {
+        "CIK0001375365.json": "485858f00aa32c67befca04076deb7ed477dc868105ecba3aff2bbfad3a2fb18",
+        "CIK0001375365-submissions-001.json": "954c51049774db447d6bea3c84ccaff9c1e15f421364cbf0eb9b958e86d20fe7"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "SNA",
+      "cik": 91440,
+      "issuer_id": "CIK0000091440",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000091440.json": "b9b9bb564b1d7e29ced81844e93c1ebce653ef200c9ede0ff575a0bab0204fd7",
+        "CIK0000091440-submissions-001.json": "c2fb634d659587decb220c80bfbd8a085fc0d3adc6884a416e82565384598000"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "SPG",
+      "cik": 1063761,
+      "issuer_id": "CIK0001063761",
+      "sector": "Real Estate",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001063761.json": "b02bb76a6fd2eae7864bd7520d3e4639b0797e2c39fe5e924d1106d0edac4186",
+        "CIK0001063761-submissions-001.json": "e004db862001810f1627c604e6df5498ff1ec555d6108a148a155de07ca5e2ba"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "SW",
+      "cik": 2005951,
+      "issuer_id": "CIK0002005951",
+      "sector": "Materials",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 1,
+      "original_10ks": 1,
+      "sources": {
+        "CIK0002005951.json": "0cedc5b730d210ea6e309a858ced39a9ee1ba0e1a439390bbde244bb40a31402"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "SWK",
+      "cik": 93556,
+      "issuer_id": "CIK0000093556",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000093556.json": "ea10d345e236636e3625c8f3307ff77037597b931f53cf6635b1f39e817bab42",
+        "CIK0000093556-submissions-001.json": "95ef0a42eb83948597f37fd32b0c5f7f8637ea788664e4f25b86dd1aba4ed988"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "TDY",
+      "cik": 1094285,
+      "issuer_id": "CIK0001094285",
+      "sector": "Information Technology",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001094285.json": "47553196820d3ebc3272da9173f1200894c106bbb7ddaaa0b1d49a0e3349b0cb",
+        "CIK0001094285-submissions-001.json": "448a7daa5a48f41095861f8d50139b09c568f67de6138b54eb7cec5e7c41330b"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "TPL",
+      "cik": 1811074,
+      "issuer_id": "CIK0001811074",
+      "sector": "Energy",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 5,
+      "original_10ks": 5,
+      "sources": {
+        "CIK0001811074.json": "13c397f9eb513df19675ca5efc6c913629a304dfbbe3a1d1dece06cf5b445c4d",
+        "CIK0001811074-submissions-001.json": "c17f15c60c7577742d7d7c5a3441d3b13d24dd9c350b0ee41ac6cfb602bd9a33"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "TXT",
+      "cik": 217346,
+      "issuer_id": "CIK0000217346",
+      "sector": "Industrials",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000217346.json": "9142d7f6f7eb3bb84551461898888a3846017b8e392efb31f7c2beedf600b4fe",
+        "CIK0000217346-submissions-001.json": "6cedd29357ead7e3cce6eb3222084d2b91ce896720df0b04a1e5fefbebf16d9e"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "UBER",
+      "cik": 1543151,
+      "issuer_id": "CIK0001543151",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 6,
+      "original_10ks": 6,
+      "sources": {
+        "CIK0001543151.json": "6299680107a60456b17deec331aed844004108136e8577a60a68068c9d217680",
+        "CIK0001543151-submissions-001.json": "cd31f2259fa2ed08426e4a5d9bbcce0258e353a29b9a78c26f1b0ae1c99d7b0d"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "UDR",
+      "cik": 74208,
+      "issuer_id": "CIK0000074208",
+      "sector": "Real Estate",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 14,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000074208.json": "12ea4926aa95ffb4075e46fbbfb66ed413b7eb8454722d88f788d2a1f666db74",
+        "CIK0000074208-submissions-001.json": "8431d7fb33fd34272204afede27c2918d5f5893386f6a0168822114bba1f31c2"
+      },
+      "other_annual_forms": 1
+    },
+    {
+      "ticker": "URI",
+      "cik": 1067701,
+      "issuer_id": "CIK0001067701",
+      "sector": "Industrials",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001067701.json": "f57db63586185962f7f7ad3ce30ed0f910f0500c91b6c5f8b16fe18e213da2ae",
+        "CIK0001067701-submissions-001.json": "9c7c82566009de1fba56bc91d5473c954ac64b4f57fb5a03a92b3c4868f66379"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "VLO",
+      "cik": 1035002,
+      "issuer_id": "CIK0001035002",
+      "sector": "Energy",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001035002.json": "a8fb21ec2671e9f8880cfa9f09168afadff3a8543892cbd62a98353593c8ae7d",
+        "CIK0001035002-submissions-001.json": "0b79d8ca93c18e7da38f147a4fd8f7e11796bfa8b2122c21c919c15fcc54bf9b"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "VRSK",
+      "cik": 1442145,
+      "issuer_id": "CIK0001442145",
+      "sector": "Industrials",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001442145.json": "28c0be6eac53068ddd65984078e34457378368317d7de3714b92b50b71a3aec9",
+        "CIK0001442145-submissions-001.json": "766d812bd50681f771aab2812ee97f4dd9b5e6770e25744fd9e1481f89c063ff"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "VRTX",
+      "cik": 875320,
+      "issuer_id": "CIK0000875320",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000875320.json": "0b5199428b7cd1f80e993e8249733ded3bd18f761b7d9e8e0346ae66c34dc878",
+        "CIK0000875320-submissions-001.json": "a23e158eaabab669df1b4f011cb2b477f746f58cbc21a3596deccd4ff4b197dc"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "WEC",
+      "cik": 783325,
+      "issuer_id": "CIK0000783325",
+      "sector": "Utilities",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000783325.json": "252bba7858ad278e0a93d90f61606680955f40e59e6b6307b6c739e8533a0299",
+        "CIK0000783325-submissions-001.json": "77c90e770cdbd46f6e94468eab50a02c7a1be16f3c7065f2ef586f3eba82aa92"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "WMT",
+      "cik": 104169,
+      "issuer_id": "CIK0000104169",
+      "sector": "Consumer Staples",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000104169.json": "0940010df46e19f6f53510ae255e0977145bd1bea4823a4e22a27d9e5ca11672",
+        "CIK0000104169-submissions-001.json": "2fa0ba804c0042c3dfcbdf1126be1fdfeb22875c2078aab162493532a14c7932"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "XOM",
+      "cik": 34088,
+      "issuer_id": "CIK0000034088",
+      "sector": "Energy",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0000034088.json": "e15a0dfae2c0aa6b192dde3f6e7c6bece443f0dc445f7ae62b1cba0f98caaec3",
+        "CIK0000034088-submissions-001.json": "40ba5eba757d1cc0a33282c5a2f5656ee79f030fbb76e0783ce2956f8c1407a1"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "YUM",
+      "cik": 1041061,
+      "issuer_id": "CIK0001041061",
+      "sector": "Consumer Discretionary",
+      "role": "held_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001041061.json": "88d7109b15ea0cfc481f7a7f169502e85b7c93a476057fa8197ea8feda62234e",
+        "CIK0001041061-submissions-001.json": "98030370cbca5fb67f45d3c8b2d10b2d87f6ece3b2afc15155f23520534a4624"
+      },
+      "other_annual_forms": 0
+    },
+    {
+      "ticker": "ZTS",
+      "cik": 1555280,
+      "issuer_id": "CIK0001555280",
+      "sector": "Health Care",
+      "role": "training_company",
+      "status": "metadata_ready",
+      "annual_forms": 13,
+      "original_10ks": 13,
+      "sources": {
+        "CIK0001555280.json": "7008ae53ff7c4b0e798113da1009aad8d1379c1646df8b54386099d0ed9700c4",
+        "CIK0001555280-submissions-001.json": "9ffd7b604ed3c79c77d7ff28d93d857f465d2895b55936b153d86de696bdee40"
+      },
+      "other_annual_forms": 0
+    }
+  ],
+  "companies_attempted": 100,
+  "companies_planned": 100,
+  "complete": true,
+  "original_documents": 1206,
+  "extraction_statuses": {
+    "candidate_needs_review": 1059,
+    "rejected_no_plausible_boundary": 147
+  },
+  "local_manifest_sha256": "25fbb7ef531b13fd080e1067628e9d20142622ef3104acacf8461fd777237821",
+  "accepted_for_training": 0,
+  "models_fitted": false,
+  "market_outcomes_2026_accessed": false,
+  "scope": "Original annual 10-K metadata and frozen-parser candidates only. Every bulk candidate is unreviewed until the declared quality process. Foreign forms/amendments, extraction abstentions and failures are explicit, with no replacement or invented text."
+}

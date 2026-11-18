@@ -1,0 +1,54 @@
+{
+  "completed_utc": "2026-11-18T05:21:56.948390+00:00",
+  "metadata_sha256": "27bcfef8da4dac54a58fa1bd5498109aa533ef1259bbab732a21b6448a418217",
+  "source_sha256": "9b45df45103b178f6e2bc8581fe36153e0b9d99efafef5428fb9163ff524957d",
+  "metadata_url": "https://huggingface.co/api/models/ProsusAI/finbert/tree/0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031?recursive=true&expand=true",
+  "checks": [
+    {
+      "file": "vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "git_blob_sha1": "fb140275c155a9c7c5a3b3e0e77a9e839594a938",
+      "last_commit": {
+        "id": "5fcfed04a2ca89adf4170ec0a4715103ed7745db",
+        "title": "First version of finbert",
+        "date": "2020-12-24T12:41:41.000Z"
+      },
+      "matches": true
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "ffc7913f6084b138dad68de5a0c2f0ee25ac983709260901e01f53be5796b9d9",
+      "git_blob_sha1": "cd79adc84d3c96daa03456853766c63141aef734",
+      "last_commit": {
+        "id": "5fcfed04a2ca89adf4170ec0a4715103ed7745db",
+        "title": "First version of finbert",
+        "date": "2020-12-24T12:41:41.000Z"
+      },
+      "matches": true
+    },
+    {
+      "file": "special_tokens_map.json",
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "git_blob_sha1": "e7b0375001f109a6b8873d756ad4f7bbb15fbaa5",
+      "last_commit": {
+        "id": "5fcfed04a2ca89adf4170ec0a4715103ed7745db",
+        "title": "First version of finbert",
+        "date": "2020-12-24T12:41:41.000Z"
+      },
+      "matches": true
+    },
+    {
+      "file": "config.json",
+      "sha256": "f6449ddda85eb726207a40be59c0cd3bd4b142ccb27298d5e45f9ae3396b1abe",
+      "git_blob_sha1": "e3d6323dc93e170f3eef66cebb32dbaf4589aee0",
+      "last_commit": {
+        "id": "5fcfed04a2ca89adf4170ec0a4715103ed7745db",
+        "title": "First version of finbert",
+        "date": "2020-12-24T12:41:41.000Z"
+      },
+      "matches": true
+    }
+  ],
+  "scope": "Local artifact bytes match pinned repository objects whose reported last modification is2020. Supports earlier availability; not an exhaustive training-corpus audit.",
+  "market_outcomes_2026_accessed": false
+}

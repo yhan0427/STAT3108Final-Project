@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-11-18T05:20:08.376889+00:00",
+  "dataset_manifest_sha256": "28c3609b572aa02bfce567f7c1aaa387af72dbd32afa7b33a17021a4c2371593",
+  "source_sha256": "77d0c388f618ed267083ab7655610c45fb4fe6f1415730540b6dca55fdee13e5",
+  "market_rows": 291119,
+  "available_daily_document_assignments_checked": 232615,
+  "document_vectors_checked": 1005,
+  "unique_training_pca_documents_checked": 475,
+  "pca_recomputed_max_absolute_difference": 0.0,
+  "past_only_join_and_550day_staleness": true,
+  "issuer_and_role_alignment": true,
+  "excluded_sections_absent": true,
+  "pre_spell_sections_absent": true,
+  "all_dataset_hashes_match": true,
+  "market_outcomes_2026_accessed": false,
+  "limitations": "Structural/temporal consistency checks do not certify every unreviewed section, all corporate histories or original SEC fact correctness."
+}

@@ -1,6 +1,12 @@
 # Research status and next decision
 
-Updated 2026-11-12. This ledger separates completed evidence from resume ambitions.
+Updated 2026-11-18. Current evidence is summarized in README.md. Dated stage notes below preserve the development history; their next-step statements are not all current.
+
+## Current next stage
+
+Structured SEC coverage is complete on491 retained firms. The earlier81-held-company financial experiment remains preserved. A conservative entity-spell sensitivity now evaluates80 held companies: calibrated LSTM QLIKE0.294007(market),0.260836(filing age),0.285014(combined metadata),0.256343(financial). Financial beats combined metadata in the paired date intervals, but its increment over the simpler age control crosses zero. Do not select only the favorable comparator. See [entity sensitivity](../results/FINANCIAL_ENTITY_V1.md).
+
+The fixed100-issuer text cohort is collected and quality-screened:1,206 originals,1,059 candidate sections,44 exclusions. FinBERT vectors and training-document-only PCA are complete. All202 tensors match the original2020 FinBERT checkpoint. The matched eight-group Ridge/LSTM comparison is complete on80 fitting and19 held companies. Ridge financial values improve over simple-age and combined-metadata controls in this cohort; LSTM financial-content gains do not persist against simple age. FinBERT increments are uncertain for Ridge and worsen the financial LSTM. The registered1,632-outcome portfolio grid does not establish reliable dynamic superiority over fixed equity. Forecast,seed,company/year and decision reports are complete. See [text pipeline](../results/TEXT_PIPELINE_100_V1.md).2026 market outcomes remain sealed.
 
 ## Question
 
@@ -18,10 +24,10 @@ Does better marginal volatility forecasting improve portfolio risk decisions bey
 | TTM r2.1 | Actually evaluated; fixed checkpoint, raw and validation-calibrated forecasts; Mixer architecture, NOT Transformer |
 | Fixed validation-exposure and cash-yield controls | Development runner implemented; results are in EXPOSURE_CONTROLS_V1 after completion |
 | Recent Transformer | Timestral 5M actually evaluated on common aligned 2024–2025 origins; see TIMESTRAL_V1.md |
-| FinBERT financial-text representations | Not implemented |
-| Market / financial / text / combined matched-sample ablation | Not implemented |
+| FinBERT financial-text representations | 100-company corpus quality/encoding and training-only PCA complete; matched predictive and decision experiments complete |
+| Market / financial / text / combined matched-sample ablation | Eight matched groups and supplementary simple-age sensitivity complete; fixed-policy application complete |
 | Full-scale market observations | Achieved: 500 reference-cohort candidates, 491 usable histories / 1,428,780 rows; not 500 usable firms or full-scale financial/text fusion |
-| 2026 temporal holdout | SEALED; no acquisition/scoring in this stage; user reaffirmed this choice |
+| 2026 temporal holdout | SEALED; no acquisition/scoring in this stage; reserved for the final frozen protocol |
 
 The interactive portfolio replay uses labeled preliminary V2/V1 evidence. The About tab now displays the completed full-cohort research summary; it does not change the replay or assistant evidence.
 
@@ -37,7 +43,7 @@ A release in late 2026 cannot be described as a model that could have been trade
 
 `freeze_validation_exposure` computes the average planned stock fraction on validation rebalance dates. `evaluate_policies` compares that constant fraction with dynamic forecast exposure on later development dates. Both restore the same within-stock weights, charge costs and earn returns only after execution. `simulate` accrues the hypothetical cash yield between closes using calendar days. A constant chosen on validation avoids using development outcomes to engineer a flattering comparison. It need not match realized exposure in the later period, so that remaining difference is reported.
 
-## Efficient next steps
+## Earlier stage plan (historical; see current next stage above)
 
 1. Finish and inspect the existing fixed-exposure controls, including failure cases and both date-block interval lengths.
 2. Audit and pin one Timestral feasibility configuration. Run on development data only; don't install a collection of foundation models.
@@ -45,7 +51,7 @@ A release in late 2026 cannot be described as a model that could have been trade
 4. Complete the modern-model comparison and selection design before requesting final 2026 access. Preserve the sealed holdout meanwhile.
 5. Consider text only after a specific incremental-information hypothesis and consistent four-way samples are feasible.
 
-Each update should state the question, completed artifacts, observed results/limits, and what decision follows. No claimed skill or dataset scale enters the resume until its corresponding artifact and count exist.
+Research summaries distinguish questions, completed artifacts, observed results/limits and the subsequent design decision. Report only verified dataset counts and implemented methods.
 
 ## Completed Timestral stage
 
@@ -67,7 +73,7 @@ Next: run a matched original-30-only training control using the same aligned tar
 
 ## Pilot control complete; prioritize data scale
 
-The matched original30/expanded64 control is complete. Calibrated LSTM changes QLIKE 0.3023 to 0.2985 on identical held-company origins, with both date-block intervals crossing zero. No reliable expansion benefit is established. Following Han’s 2026-11-12 question, prioritize the full dated universe and coverage ledger rather than retraining every intermediate batch. Run the next comprehensive comparison after final cohort/roles and protocol freeze. Any company already scored during development is not an untouched company holdout for later design choices. The 2026 temporal holdout remains sealed.
+The matched original30/expanded64 control is complete. Calibrated LSTM changes QLIKE 0.3023 to 0.2985 on identical held-company origins, with both date-block intervals crossing zero. No reliable expansion benefit is established. As of 2026-11-12, prioritize the full dated universe and coverage ledger rather than retraining every intermediate batch. Run the next comprehensive comparison after final cohort/roles and protocol freeze. Any company already scored during development is not an untouched company holdout for later design choices. The 2026 temporal holdout remains sealed.
 
 ## Full-cohort unified run completed
 

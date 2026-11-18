@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-18T03:57:37.211006+00:00",
+  "documents_checked": 19,
+  "all_content_tokens_encoded": true,
+  "hidden_dimensions": 768,
+  "sentiment_dimensions": 3,
+  "embedding_hashes_verified": true,
+  "finite_embeddings_and_probability_sums": true,
+  "padding_batch_invariance_max_abs_difference": 1.1920928955078125e-07,
+  "comparison_content_tokens": 818,
+  "comparison_chunks": 2,
+  "frozen_parameters": true,
+  "market_outcomes_2026_accessed": false
+}

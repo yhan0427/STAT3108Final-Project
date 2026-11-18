@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-11-18T05:24:33.994723+00:00",
+  "source_sha256": "3bedabbed3758b6be820bd09e0d874f4d9dc2114c7a609be9e2c8d1bc9c7c407",
+  "predictions_sha256": "9c27fa28e7e79683ad1a8141ab6cb9232648ddfa16407ba866b8d0c0820e5275",
+  "scores_reconciled": 34,
+  "max_metric_difference": 0.0,
+  "seed_diagnostics": 48,
+  "market_outcomes_2026_accessed": false
+}

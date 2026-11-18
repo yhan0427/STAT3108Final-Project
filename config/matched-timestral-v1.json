@@ -1,0 +1,22 @@
+{
+  "registered_utc": "2026-11-18T05:41:09.013091+00:00",
+  "status": "Exploratory matched retrospective transfer extension after primary multimodal scores; no fresh holdout or architecture-only claim.",
+  "matched_dataset_manifest_sha256": "28c3609b572aa02bfce567f7c1aaa387af72dbd32afa7b33a17021a4c2371593",
+  "parent_predictions_sha256": "a12423bed2e3e1389ecdfc039aaefd97a12b3a11f0fe47b20ae0bb4628c2f5d6",
+  "full_market_predictions_sha256": "ec03e298df9fb332a23ef87e4170340230e56508758b4f6d6f10ade321187001",
+  "timestral_config_sha256": "365a60ecf239c2eab4fc291347ceab92e6e9912cda9aee71ce15cd70d90d01c4",
+  "inference_source_sha256": "1869c6eac18a7ed6f9feefaf3107e55108456872d0622f8f04b37f2106725328",
+  "weights_and_code": "Existing pinned Timestral5M, unchanged512-rv20 context,21st point quantile-RMS summary; do not refit or change checkpoint.",
+  "reuse": "Reuse raw frozen full-market forecasts only after exact company-date,target,rv20 checks; never reuse its broader-population calibration. Compute missing held validation contexts with same frozen worker.",
+  "calibration": "Matched80training-role2022-23validation only; no held labels.",
+  "forecast_comparisons": [
+    "Timestral5M-minus-Ridge_market",
+    "Timestral5M-minus-LSTM_market",
+    "Timestral5M-minus-Ridge_all",
+    "Timestral5M-minus-LSTM_all"
+  ],
+  "application_config_sha256": "75f7834c34afcd74ce7bc9e9d71706376e3de30d5550b524b2ef8cf5bdcb9ed5",
+  "application": "Same frozen10sector/3techbaskets,cost0/10/25,cash0/4%,target10%,next-close execution andvalidation-fixedcontrol. Raw andmatched-calibratedvariants.",
+  "critical_limit": "Released2026 with unverified pretraining overlap. Retrospective methods comparator only; cannot count a sealed local2026price sample as fresh pretrained-model validation without an independently established training cutoff.",
+  "market_outcomes_2026_accessed": false
+}
